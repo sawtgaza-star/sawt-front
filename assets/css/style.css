@@ -496,8 +496,9 @@ a {
 }
 
 .platform-card:hover .up-center-icon {
-    border: 3px dotted  #E1723B;
+    border: 3px dotted #E1723B;
 }
+
 .platform-card:hover .center-icon {
     background-color: #E1723B;
 }
@@ -1047,11 +1048,18 @@ footer {
         display: none;
         /* إخفاء السهم تماماً */
     }
-    .nav-face{
+
+    .nav-face {
         display: none !important;
     }
-    .font-mob-22{
+
+    .font-mob-22 {
         font-size: 22px !important;
+    }
+
+    .icon-search {
+        margin-top: 15px;
+        justify-content: center;
     }
 
 }
