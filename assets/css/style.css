@@ -98,7 +98,7 @@ a {
     font-size: 30px;
 }
 
-/* Font Color */
+
 .font-color-green {
     color: #738c52 !important;
 }
@@ -107,10 +107,8 @@ a {
     background-color: var(--olive-green) !important;
 }
 
-/* لمنع الالتصاق بالحواف */
 .navbar .container {
     max-width: 95%;
-    /* تضمن وجود مسافة جانبية */
 }
 
 .nav-face {
@@ -131,7 +129,6 @@ a {
     border-radius: 50px !important;
 }
 
-/* خطوط الفصل بين الإحصائيات */
 .border-start-custom {
     border-left: 1px dashed rgba(255, 255, 255, 0.3);
 }
@@ -156,32 +153,32 @@ a {
     opacity: 0.8;
 }
 
-/* لجعل الكاروسل يبدأ من خلف النافبار */
+
 .herocarousel {
     margin-top: -160px;
-    /* نفس ارتفاع الناف والـ Top Bar اللي عملناه قبل */
+
 }
 
-/* تنسيق الصورة لتمتد على كامل العرض والارتفاع */
+
 .carousel-img {
     height: 100vh;
-    /* ليأخذ كامل ارتفاع الشاشة */
+
     object-fit: cover;
-    /* لضمان عدم تشوه الصورة عند تغيير الحجم */
+
 }
 
-/* وضع النصوص في المنتصف فوق الصورة */
+
 .carousel-caption-custom {
     position: absolute;
     top: 55%;
-    /* تحريك النص للوسط */
+
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
     z-index: 5;
 }
 
-/* طبقة ظل خفيفة فوق الصورة عشان الكلام يبين بوضوح */
+
 .carousel-item::after {
     content: "";
     position: absolute;
@@ -190,7 +187,7 @@ a {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
-    /* شفافية سوداء */
+
     z-index: 1;
 }
 
@@ -571,7 +568,7 @@ a {
 }
 
 
-/* تنسيق عام للأزرار */
+
 .owl-nav button {
     position: absolute;
     width: 30px;
@@ -581,16 +578,16 @@ a {
     border-radius: 50%;
 }
 
-/* سهم اليسار */
+
 .owl-nav .owl-prev {
     right: -50px;
-    /* غير الرقم حسب المسافة اللي بدك ياها */
+
 }
 
-/* سهم اليمين */
+
 .owl-nav .owl-next {
     left: -50px;
-    /* غير الرقم حسب المسافة */
+
 }
 
 .stories-wrapper {
@@ -653,23 +650,22 @@ a {
 /* سهم اليسار */
 .owl-nav2 .owl-prev {
     right: -50px;
-    /* غير الرقم حسب المسافة اللي بدك ياها */
+  
 }
 
-/* سهم اليمين */
 .owl-nav2 .owl-next {
     left: -50px;
-    /* غير الرقم حسب المسافة */
+
 }
 
 
-/* حاوية البطاقة الأساسية */
+
 .main-container {
     width: 280px;
     cursor: pointer;
 }
 
-/* الجسم الداخلي للبطاقة الذي سيدور */
+
 .the-card {
     transition: transform 0.8s cubic-bezier(0.975, 0.885, 0.32, 1.275);
     transform-style: preserve-3d;
@@ -677,21 +673,21 @@ a {
     height: 80%;
 }
 
-/* حركة الـ Hover */
+
 .main-container:hover .the-card,
 .main-container.is-flipped .the-card {
-    /* أضفنا هذا الكلاس */
+
     transform: rotateY(180deg);
 }
 
-/* الوجهين (الأمامي والخلفي) */
+
 .face {
     backface-visibility: hidden;
     border-radius: 50px 0px 50px 0px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* التصميم الأمامي (الصورة الأولى) */
+
 .front-face {
     background-color: #4C5C37;
     max-width: 95%;
@@ -764,7 +760,7 @@ a {
     position: relative;
 }
 
-/* الأيقونة بين الكروت */
+
 .creators-carousel2 .item::after {
     content: "";
     position: absolute;
@@ -780,7 +776,7 @@ a {
 
 
 
-/* تنسيق الروابط داخل الفوتر */
+
 .footer-links li {
     margin-bottom: 12px;
 }
@@ -795,10 +791,10 @@ a {
 .footer-links a:hover {
     color: var(--text-orange);
     padding-right: 5px;
-    /* حركة خفيفة عند الوقوف على الرابط */
+
 }
 
-/* تنسيق أزرار التواصل الاجتماعي */
+
 .social-circle {
     width: 40px;
     height: 40px;
@@ -818,7 +814,7 @@ a {
     transform: translateY(-3px);
 }
 
-/* تعديل صندوق النشرة البريدية */
+
 .newsletter-input input:focus {
     box-shadow: none;
 }
@@ -828,7 +824,7 @@ a {
     border: none;
 }
 
-/* الشريط السفلي */
+
 .border-start {
     border-left: 1px solid #ccc !important;
 }
@@ -933,7 +929,7 @@ a {
     font-size: 11px;
 }
 
-/* تأثيرات التمرير */
+
 .video-card:hover .play-overlay {
     background: var(--sout-orange);
     transition: 0.3s;
@@ -990,15 +986,15 @@ footer {
 .footer-links a:hover {
     color: var(--text-orange);
     padding-right: 5px;
-    /* حركة خفيفة عند الوقوف على الرابط */
+ 
 }
 
-/* تنسيق أزرار التواصل الاجتماعي */
+
 .social-circle {
     width: 40px;
     height: 40px;
     background: linear-gradient(45deg, #738C52, #E1723B);
-    /* اللون البني في الصورة */
+
     color: white !important;
     display: flex;
     align-items: center;
@@ -1014,19 +1010,19 @@ footer {
     transform: translateY(-3px);
 }
 
-/* تعديل صندوق النشرة البريدية */
+
 .newsletter-input input:focus {
     box-shadow: none;
 }
 
 .btn-orange {
     background: linear-gradient(45deg, #738C52, #E1723B);
-    /* اللون البني في الصورة */
+
     color: white !important;
     border: none;
 }
 
-/* الشريط السفلي */
+
 .border-start {
     border-left: 1px solid #ccc !important;
 }
@@ -1046,7 +1042,7 @@ footer {
 
     .creators-carousel2 .item::after {
         display: none;
-        /* إخفاء السهم تماماً */
+
     }
 
     .nav-face {
