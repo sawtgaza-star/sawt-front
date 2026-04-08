@@ -955,6 +955,19 @@ a {
     direction: rtl;
 }
 
+.creator-card {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.btn-green {
+    background-color: #738C52;
+    color: white;
+}
+
+.btn-green:hover {
+    background-color: #738C52 !important;
+}
 
 /* footer */
 
