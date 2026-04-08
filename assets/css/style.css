@@ -229,7 +229,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
     border-bottom: 2px dashed #e1723b;
 }
 
@@ -755,7 +755,7 @@ a {
 
 .two-thirds {
     background: url("../images/imagePersons.jpeg") center/cover no-repeat;
-    min-height: 589px;
+    min-height: 389px;
     position: relative;
 }
 
@@ -763,7 +763,7 @@ a {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.45);
+    /* background: rgba(0, 0, 0, 0.45); */
 }
 
 .two-thirds>div {
@@ -773,7 +773,7 @@ a {
 
 .one-third {
     background: url("../images/صورثلاثي.png") center/cover no-repeat;
-    min-height: 589px;
+    min-height: 389px;
 }
 
 .opinion-card-wrapper {
@@ -782,15 +782,14 @@ a {
     right: 64%;
     transform: translateX(50%);
     z-index: 20;
-
     width: min(900px, 55%);
-    height: 572px;
+    height: 350px;
 }
 
 .opinion-card {
     background: #e2d9ca;
     border-radius: 20px;
-    padding: 65px;
+    padding: 35px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
     height: 100%;
 }
@@ -840,14 +839,14 @@ a {
 }
 
 .quote-icon {
-    width: 94px;
-    height: 94px;
+    width: 50px;
+    height: 50px;
     background: linear-gradient(to bottom right, #738c52, #e1723b);
     border-radius: 0 20px 0 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 33px;
+    font-size: 23px;
     color: white;
 }
 
@@ -856,8 +855,8 @@ a {
 }
 
 .user-avatar {
-    width: 103px;
-    height: 103px;
+    width: 83px;
+    height: 83px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px dashed #738c52;
@@ -866,8 +865,8 @@ a {
 
 .opinion-text {
     margin-top: 5%;
-    margin-bottom: 10%;
-    font-size: 20px;
+    margin-bottom: 2%;
+    font-size: 17px;
     color: #000000;
     line-height: 36px;
     font-weight: 500;
@@ -1078,7 +1077,7 @@ footer {
     }
 
     .one-third {
-        min-height: 489px;
+        min-height: 289px;
         padding: 2rem 1.25rem !important;
     }
 
@@ -1109,7 +1108,7 @@ footer {
     }
 
     .userOpenionNav {
-        padding-bottom: 10px;
+        padding-bottom: 5px;
     }
 }
 

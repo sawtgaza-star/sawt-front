@@ -37,27 +37,27 @@ const observerOptions = {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-    // جلب كل العناصر التي تحمل كلاس counter
-    const counters = document.querySelectorAll(".counter");
+  // جلب كل العناصر التي تحمل كلاس counter
+  const counters = document.querySelectorAll(".counter");
 
-    counters.forEach(element => {
-        const targetText = element.innerText;
-        const targetNumber = parseInt(targetText.replace(/[^0-9]/g, ''));
-        const suffix = targetText.replace(/[0-9]/g, ''); 
-        
-        let currentNumber = 0;
-        const duration = 2000; 
-        const stepTime = Math.abs(Math.floor(duration / targetNumber));
+  counters.forEach((element) => {
+    const targetText = element.innerText;
+    const targetNumber = parseInt(targetText.replace(/[^0-9]/g, ""));
+    const suffix = targetText.replace(/[0-9]/g, "");
 
-        const timer = setInterval(() => {
-            currentNumber += 1;
-            element.innerText = currentNumber + suffix;
-            
-            if (currentNumber >= targetNumber) {
-                clearInterval(timer);
-            }
-        }, stepTime);
-    });
+    let currentNumber = 0;
+    const duration = 2000;
+    const stepTime = Math.abs(Math.floor(duration / targetNumber));
+
+    const timer = setInterval(() => {
+      currentNumber += 1;
+      element.innerText = currentNumber + suffix;
+
+      if (currentNumber >= targetNumber) {
+        clearInterval(timer);
+      }
+    }, stepTime);
+  });
 });
 
 const observer = new IntersectionObserver((entries) => {
