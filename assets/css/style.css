@@ -1154,7 +1154,7 @@ a {
   width: 300px;
   height: 300px;
   position: absolute;
-  bottom: 0;
+  bottom: -64px;
   left: 0;
 }
 
@@ -2095,6 +2095,14 @@ footer {
 }
 
 @media (max-width: 991px) {
+  .share-story-card .share-img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: -35px;
+    left: 20px;
+  }
+
   .opinion-card-wrapper {
     position: absolute;
     top: -10%;
@@ -2147,6 +2155,14 @@ footer {
 }
 
 @media (max-width: 767px) {
+  .share-story-card .share-img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+  }
+
   .two-thirds {
     min-height: 320px;
   }
@@ -2161,6 +2177,14 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .share-story-card .share-img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: -15px;
+    left: 10px;
+  }
+
   .two-thirds {
     min-height: 280px;
     padding: 2rem 1.25rem !important;
