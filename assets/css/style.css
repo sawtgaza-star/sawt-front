@@ -214,6 +214,11 @@ a {
   object-fit: cover;
 }
 
+.highlight-text {
+  background: linear-gradient(to top, #d1e095 40%, transparent 40%);
+  padding: 0 5px;
+}
+
 .carousel-caption-custom {
   position: absolute;
   top: 55%;
@@ -284,6 +289,19 @@ a {
   transform: translateY(-10px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
+.count h3 {
+  background-image: url("../images/bgRed.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+}
+.count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .news-card img {
   border-radius: 25px;
@@ -319,6 +337,11 @@ a {
 
 .bg-icon-left img {
   width: 50%;
+}
+
+.blur-img img {
+  height: auto;
+  filter: blur(2px);
 }
 
 .btn-dark-green {
@@ -403,8 +426,29 @@ a {
 }
 
 .platform-sections {
-  background-color: #38422a;
+  background: url(../images/0ba71d0f939f6a058a2171ac625f21a40b2ba4bd.png);
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  background-color: rgb(235, 235, 235);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   color: #fff;
+  position: relative;
+  z-index: -2;
+}
+
+.platform-sections .torn-top {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  top: -200px;
+  left: 0;
+  z-index: -1;
+}
+.platform-sections .torn-top img {
+  width: 100%;
+  height: 100%;
 }
 
 .text-light-muted {
@@ -432,37 +476,35 @@ a {
   transform: translateX(-50%);
   width: 80px;
   height: 80px;
-  background-color: #2b3421;
-  border: 3px dotted #738c52;
+  background-color: #e8f0df;
+  border: 2px solid #4c5c37;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
 }
 
-.center-icon {
+.center-img {
   position: absolute;
   bottom: 7px;
   left: 50%;
   transform: translateX(-50%);
   width: 60px;
   height: 60px;
-  background-color: #738c52;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 1.5rem;
 }
 
 .platform-card {
-  background: transparent;
+  background: white;
   padding: 20px;
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
   transition: 0.3s;
   height: 100%;
 }
@@ -472,13 +514,17 @@ a {
 }
 
 .platform-card:hover .up-center-icon {
-  border: 3px dotted #e1723b;
+  border: 2px solid #e1723b;
+  background: #f4ebd4;
 }
 
 .platform-card:hover .center-icon {
   background-color: #e1723b;
 }
 
+.platform-card:hover .read-more-btn .arrow {
+  background-color: inherit;
+}
 .platform-card:hover .read-more-btn {
   background-color: #e1723b;
 }
@@ -487,17 +533,17 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: #4c5c37;
   color: white !important;
   text-decoration: none;
   padding: 10px 15px;
-  border-radius: 10px;
+  border-radius: 110px;
   margin-top: 20px;
   transition: 0.3s;
 }
 
 .read-more-btn .arrow {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: inherit;
   width: 30px;
   height: 30px;
   border-radius: 5px;
@@ -560,6 +606,17 @@ a {
 
 .content-section {
   padding: 40px;
+}
+
+.content-section .bg-icon-right {
+  top: -240px;
+  right: 0px;
+  transform: rotate(358deg);
+}
+
+.content-section .bg-icon-left {
+  bottom: -150px;
+  left: -70px;
 }
 
 .card {
@@ -632,19 +689,54 @@ a {
 
 .face {
   backface-visibility: hidden;
+  border-radius: 0px 50px 0px 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.face-back {
+  backface-visibility: hidden;
   border-radius: 50px 0px 50px 0px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+.front-face-img {
+  background: url(../images/كارد\ اخضر.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  /* border-radius: 0px 50px 0px 50px; */
+}
+
+.back-face {
+  background: url("../images/كارد\ بيج.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotateY(180deg);
+  position: relative;
+}
+.creators-carousel2 .owl-prev {
+  background-color: #000 !important;
+}
+.header-content .highlight-text {
+  background: linear-gradient(to top, #ffb181 20%, transparent 50%);
+  padding: 0 5px;
+}
+
+.creators-carousel2 .owl-next {
+  background-color: #000 !important;
+}
+
 .front-face {
   background-color: #4c5c37;
+  position: relative;
   max-width: 95%;
   border-radius: 0px 50px 0px 50px;
 }
-
 .img-circle {
-  width: 160px;
-  height: 160px;
+  width: 140px;
+  height: 140px;
   border: 2px dashed #ffffff80;
 }
 
@@ -657,50 +749,63 @@ a {
 }
 
 .name-tag {
-  width: 70%;
-  background-color: #7a8d56;
+  width: 55%;
+  background-color: #4c5c37;
   border-radius: 0px 100px 0px 100px;
   font-size: 12px;
 }
 
 .job-tag {
-  background-color: #d2c4b1;
+  background-color: #f4ebd4;
   color: #333;
-  width: 70%;
+  width: 55%;
   border-radius: 100px 0px 100px 0px;
   font-size: 12px;
 }
 
-.back-face {
-  background-color: #e6e0d4;
-  transform: rotateY(180deg);
-}
-
-.top-badge {
-  background-color: #d97e4a;
-  border-radius: 10px 10px 0 10px;
-}
-
 .back-face h4 {
-  color: #d97e4a;
+  color: #4c5c37;
+  margin-top: 20px;
 }
 
 .back-face p {
-  color: #555;
+  color: #000000;
+}
+.back-face .arrowDiv {
+  background-image: url("../images/arrow.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  position: absolute;
+  font-weight: bold;
+  top: 10px;
+  left: -10px;
+}
+
+.front-face-img .arrowDiv {
+  background-image: url("../images/arrow.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  position: absolute;
+  font-weight: bold;
+  top: 10px;
+  left: -10px;
 }
 
 .quote-box {
-  background-color: #4c5c37;
+  background-color: #687a24;
   border-radius: 0px 50px 0px 50px;
 }
 
 .profile-btn {
-  background-color: #d97e4a;
+  background-color: #4c5c37;
   border-radius: 25px;
+  width: 50%;
 }
 
 .profile-btn:hover {
-  background-color: #bf6a39;
+  background-color: #677850;
   color: white;
 }
 
@@ -1476,6 +1581,24 @@ a {
   .reel-item {
     height: 320px;
   }
+
+  .owl-carousel .item {
+    height: 500px;
+    /* width: 410px; */
+  }
+  .owl-carousel .item a .main-container {
+    height: 100%;
+    width: auto;
+  }
+
+  .platform-sections .torn-top {
+    position: absolute;
+    width: 100%;
+    height: 27%;
+    top: -200px;
+    left: 0;
+    z-index: -1;
+  }
 }
 .vid-bottom {
   background: rgba(0, 0, 0, 0.55);
@@ -1612,11 +1735,6 @@ a {
 }
 
 /* الوجهين (الأمامي والخلفي) */
-.face {
-  backface-visibility: hidden;
-  border-radius: 50px 0px 50px 0px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
 
 /* الأيقونة بين الكروت */
 .creators-carousel2 .item::after {
