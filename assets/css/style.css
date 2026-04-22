@@ -427,15 +427,11 @@ a {
 
 .platform-sections {
   background: url(../images/0ba71d0f939f6a058a2171ac625f21a40b2ba4bd.png);
-  /* background-color: rgba(0, 0, 0, 0.1); */
-  background-color: rgb(235, 235, 235);
-
+  background-color: rgba(0, 0, 0, 0.1);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: #fff;
-  position: relative;
-  z-index: -2;
 }
 
 .platform-sections .torn-top {
