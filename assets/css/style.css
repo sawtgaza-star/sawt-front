@@ -426,8 +426,9 @@ a {
 }
 
 .platform-sections {
-  background: url(../images/0ba71d0f939f6a058a2171ac625f21a40b2ba4bd.png);
-  background-color: rgba(0, 0, 0, 0.1);
+  background-image:
+    url(../images/0ba71d0f939f6a058a2171ac625f21a40b2ba4bd.png),
+    url(../images/اهرام.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
