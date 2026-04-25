@@ -480,3 +480,4 @@ progressBar.addEventListener("click", (e) => {
   const newTime = (clickX / width) * video.duration;
   video.currentTime = newTime;
 });
+
