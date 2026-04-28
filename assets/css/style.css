@@ -1,12 +1,9 @@
-@font-face {
+/* @font-face {
   src: url("../fonts/Cairo-Regular.ttf");
   font-family: "main";
-}
-
-/* @font-face {
-  src: url("../fonts/Lexend-Bold.ttf");
-  font-family: "main-bold";
 } */
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap");
 
 :root {
   --dark-green: #38422a;
@@ -24,7 +21,7 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "main", sans-serif;
+  font-family: "cairo", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -33,7 +30,7 @@ body {
   margin: 0;
   padding: 0;
   color: var(--main);
-  font-family: "main", sans-serif;
+  font-family: "cairo", sans-serif;
   background-color: var(--body);
   text-align: right;
   overflow-x: hidden;
@@ -103,16 +100,22 @@ a {
 }
 
 .navbar .container {
-  max-width: 92%;
+  max-width: 89%;
   background-color: rgba(255, 255, 255) !important;
   border-radius: 0px 0px 10px 10px;
 }
 
+.navbar-collapse {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .nav-face {
   background-color: #4c5c37;
-  max-width: 92%;
+  max-width: 89%;
   border-radius: 10px 10px 0px 0px;
-  margin-top: 16px;
+  margin-top: 10px;
 }
 
 .navbar,
@@ -121,16 +124,19 @@ a {
   z-index: 10;
 }
 
-
-
 .navbar {
   background: transparent !important;
 }
 
+.custom-placeholder::placeholder {
+  color: #acacac;
+  opacity: 1;
+}
+
 .v-divider {
-  width: 2px;
+  width: 1px;
   height: 27px;
-  background-color: #e0e0e0;
+  background-color: #d6d6d6;
   align-self: center;
 }
 
@@ -140,7 +146,7 @@ a {
   width: 40px;
   font-size: 18px !important;
 }
-.fa-language{
+.fa-language {
   margin-right: -6px;
   margin-top: 2px;
 }
@@ -150,7 +156,7 @@ a {
 }
 
 .border-start-custom {
-  border-left: 1px dashed rgba(255, 255, 255, 0.3);
+  border-left: 1px dashed #acacac;
 }
 
 .stats-bar {
@@ -160,7 +166,7 @@ a {
 }
 
 .stats-bar .box-element {
-  box-shadow: 0px 10px 0px -5px #e1723b !important;
+  box-shadow: 0px 10px 0px -1px #e1723b !important;
 }
 
 .stats-bar h3 {
@@ -176,8 +182,6 @@ a {
 .herocarousel {
   margin-top: -160px;
 }
-
-
 
 #heroCarousel .carousel-indicators {
   bottom: 100px;
@@ -236,7 +240,7 @@ a {
 }
 
 .btn-dark-orange.saport {
-  background-color: #738C52 !important;
+  background-color: #738c52 !important;
 }
 
 .carousel-caption-custom {
@@ -345,6 +349,11 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   width: 50%;
+}
+
+.count p {
+  color: white;
+  font-size: 18px;
 }
 
 .count {
@@ -1163,11 +1172,13 @@ a {
   flex-direction: column;
   justify-content: space-between;
   /* padding: 16px 12px; */
-  background: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0.1) 0%,
-      transparent 30%,
-      transparent 60%,
-      rgba(0, 0, 0, 0.7) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1) 0%,
+    transparent 30%,
+    transparent 60%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
 }
 
 .reel-actions {
@@ -1397,11 +1408,13 @@ a {
 .reel-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0.1) 0%,
-      transparent 30%,
-      transparent 60%,
-      rgba(0, 0, 0, 0.75) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1) 0%,
+    transparent 30%,
+    transparent 60%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
   pointer-events: none;
 }
 
@@ -1669,7 +1682,6 @@ a {
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
-
   .reels-container,
   .reel-item {
     height: 320px;
@@ -2031,7 +2043,7 @@ a {
   /* background: rgba(0, 0, 0, 0.45); */
 }
 
-.two-thirds>div {
+.two-thirds > div {
   position: relative;
   z-index: 2;
 }
@@ -2234,7 +2246,6 @@ a {
 
 /* footer */
 
-
 .footer-links li {
   margin-bottom: 12px;
 }
@@ -2286,20 +2297,19 @@ a {
   transform: translateY(-3px);
 }
 
-
 .partners-section {
   padding-top: 30px;
 }
 
 .partners-title {
   font-weight: 900;
-  color: #738C52;
+  color: #738c52;
   margin-bottom: 20px;
 }
 
 .partners-highlight {
   position: relative;
-  color: #738C52;
+  color: #738c52;
   display: inline-block;
 }
 
@@ -2343,7 +2353,7 @@ a {
   padding: 40px 0;
   position: relative;
   z-index: 1;
-  background-image: url('Rectangle 738.png');
+  background-image: url("Rectangle 738.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2364,7 +2374,7 @@ a {
 .box {
   width: 110%;
   height: 26px;
-  background-color: #EAD8B5;
+  background-color: #ead8b5;
   margin-top: -30px;
   margin-right: -6px;
 }
@@ -2374,7 +2384,6 @@ a {
   font-weight: 700;
   font-style: Bold;
   font-size: 28px;
-
 }
 
 .team-section::before {
@@ -2587,7 +2596,7 @@ a {
 }
 
 :root {
-  --main-green: #4C5C37;
+  --main-green: #4c5c37;
   --light-bg: #f8f9fa;
 }
 
@@ -2595,7 +2604,7 @@ a {
   padding: 40px 0;
   position: relative;
   z-index: 1;
-  background-image: url('/assets/images/Rectangle\ 738.png');
+  background-image: url("/assets/images/Rectangle\ 738.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2722,24 +2731,18 @@ a {
   background-color: #1b2614;
   /* اللون الزيتي الداكن */
   background-image:
-    url('/assets/images/غيوم.png'),
-    /* غيوم أعلى اليمين */
-    url('/assets/images/شجرة\ زيتون.png'),
-    /* شجرة زيتون أسفل اليمين */
-    url('/assets/images/غيوم.png'),
-    /* غيوم أعلى اليسار */
-    url('/assets/images/عصافير.png');
+    url("/assets/images/غيوم.png"),
+    /* غيوم أعلى اليمين */ url("/assets/images/شجرة\ زيتون.png"),
+    /* شجرة زيتون أسفل اليمين */ url("/assets/images/غيوم.png"),
+    /* غيوم أعلى اليسار */ url("/assets/images/عصافير.png");
   /* طيور مهاجرة أسفل اليسار */
 
   /* تحديد موقع كل صورة بدقة */
   background-position:
     top right,
-    /* غيوم أعلى اليمين */
-    bottom right,
-    /* شجرة زيتون أسفل اليمين */
-    top left,
-    /* غيوم أعلى اليسار */
-    bottom left 40px;
+    /* غيوم أعلى اليمين */ bottom right,
+    /* شجرة زيتون أسفل اليمين */ top left,
+    /* غيوم أعلى اليسار */ bottom left 40px;
   /* طيور مهاجرة أسفل اليسار (مرفوعة قليلاً) */
 
   background-repeat: no-repeat;
@@ -2747,12 +2750,9 @@ a {
   /* تحديد حجم الصور لتتناسب مع التوزيع */
   background-size:
     250px auto,
-    /* غيوم اليمين */
-    180px auto,
-    /* شجرة الزيتون */
-    220px auto,
-    /* غيوم اليسار */
-    130px auto;
+    /* غيوم اليمين */ 180px auto,
+    /* شجرة الزيتون */ 220px auto,
+    /* غيوم اليسار */ 130px auto;
   /* الطيور */
 
   position: relative;
@@ -2814,7 +2814,6 @@ a {
   z-index: 2;
   width: 100%;
 }
-
 
 /* ✅ تعديلات الجوال (Mobile Responsive) */
 @media (max-width: 767px) {
@@ -2882,7 +2881,6 @@ a {
     margin-bottom: 35px !important;
     /* يرفعه فوق الـ hr */
   }
-
 }
 
 @media (max-width: 768px) {
@@ -3038,5 +3036,11 @@ a {
 
   .opinions-title {
     font-size: 1.2rem;
+  }
+
+  .heroOptionsBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
