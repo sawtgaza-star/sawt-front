@@ -1,3 +1,12 @@
+function getLang() {
+  return localStorage.getItem("lang") || "ar";
+}
+
+function t(key) {
+  const lang = getLang();
+  return translations[lang][key] || key;
+}
+
 $(document).ready(function () {
   $(".creators-slider").owlCarousel({
     rtl: true,
@@ -77,34 +86,34 @@ observer.observe(cardContainer);
 
 const users = [
   {
-    name: "فرح حرز",
-    location: "فلسطين - غزة",
+    name: "user_1_name",
+    location: "user_1_location",
     avatar: "assets/images/يوسف الدوس.png",
-    text: "تجربتي مع منصة صوت كانت مميزة جداً، حسيت إنها فعلاً تعطي مساحة حقيقية لكل شخص يعبّر عن أفكاره ويوصل صوته. الأدوات سهلة والاستخدام بسيط.",
+    text: "user_1_text",
   },
   {
-    name: "محمود زعيتر",
-    location: "فلسطين - الضفة",
+    name: "user_2_name",
+    location: "user_2_location",
     avatar: "assets/images/محمود زعيتر 2.png",
-    text: "منصة صوت غيّرت طريقة تعاملي مع المحتوى الرقمي، صار عندي مكان أعبّر فيه بحرية وأتواصل مع ناس بنفس الاهتمامات. تجربة ما توقعتها بهالمستوى.",
+    text: "user_2_text",
   },
   {
-    name: "يوسف الدوس",
-    location: "فلسطين - رام الله",
+    name: "user_3_name",
+    location: "user_3_location",
     avatar: "assets/images/يوسف الدوس.png",
-    text: "استخدمت المنصة من أول إطلاقها وشفت كيف تطورت. الفريق يسمع للمستخدمين فعلاً والتحديثات بتجي على أساس احتياجاتنا. هذا الشي نادر هالأيام.",
+    text: "user_3_text",
   },
   {
-    name: "سارة العمر",
-    location: "فلسطين - نابلس",
+    name: "user_4_name",
+    location: "user_4_location",
     avatar: "assets/images/محمود زعيتر 2.png",
-    text: "بدأت أستخدم صوت للتعبير عن أفكاري الإبداعية ولقيت مجتمع داعم ومتفاعل. المنصة بتعطيك إحساس إنك محاط بناس بتفهمك وبتشجعك تكمل.",
+    text: "user_4_text",
   },
   {
-    name: "أحمد النجار",
-    location: "فلسطين - جنين",
+    name: "user_5_name",
+    location: "user_5_location",
     avatar: "assets/images/يوسف الدوس.png",
-    text: "الواجهة سهلة والتجربة سلسة من أول دقيقة. ما احتجت أي مساعدة لأفهم كيف تشتغل المنصة. هذا دليل على اهتمام الفريق بتجربة المستخدم.",
+    text: "user_5_text",
   },
 ];
 
@@ -128,10 +137,10 @@ function updateCardContent(index, carouselId) {
   const location = scope.querySelector(".text-muted.small");
   const text = scope.querySelector(".opinion-text");
 
-  if (avatar) avatar.src = user.avatar;
-  if (name) name.textContent = user.name;
-  if (location) location.textContent = user.location;
-  if (text) text.textContent = user.text;
+  if (avatar) avatar.src = t(user.avatar);
+  if (name) name.textContent = t(user.name);
+  if (location) location.textContent = t(user.location);
+  if (text) text.textContent = t(user.text);
 }
 
 function goToSlide(carouselId, type, index) {
@@ -255,7 +264,8 @@ function showMore() {
 
   setTimeout(
     () => {
-      btn.textContent = "عرض أقل ↑";
+      btn.textContent = t("show_less");
+
       btn.style.color = "#e1723b";
       btn.style.cursor = "pointer";
       showing = false;
@@ -278,7 +288,7 @@ function showLess() {
     list.scrollTop = 0;
   }, 300);
 
-  btn.textContent = "عرض المزيد ↓";
+  btn.textContent = t("show_more");
   btn.style.color = "#e1723b";
   btn.onclick = showMore;
 }

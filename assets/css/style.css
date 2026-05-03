@@ -155,8 +155,12 @@ a {
   border-radius: 50px !important;
 }
 
-.border-start-custom {
+[dir="rtl"] .border-start-custom {
   border-left: 1px dashed #acacac;
+}
+
+[dir="ltr"] .border-start-custom {
+  border-right: 1px dashed #acacac;
 }
 
 .stats-bar {
@@ -293,6 +297,13 @@ a {
   background-color: #fff;
   transition: all 0.3s ease;
   /* إضافة تأثير ناعم عند التفاعل */
+}
+
+[dir="ltr"] .news-card .card-body,
+[dir="ltr"] .news-card .card-footer {
+  text-align: start;
+  width: 100%;
+  direction: ltr;
 }
 
 /* في حال أردت إزالة الحدود الافتراضية للبوتستراب لضمان ظهور اللون الزيتي */
@@ -432,6 +443,14 @@ a {
   border: none;
 }
 
+[dir="ltr"] .btn-dark-green .fa-arrow-left {
+  transform: scaleX(-1);
+}
+
+[dir="ltr"] .btn-dark i {
+  transform: scaleX(-1);
+}
+
 .btn-dark-orange {
   background-color: #e1723b;
   color: white !important;
@@ -533,7 +552,8 @@ a {
 
 .text-light-muted {
   color: rgba(255, 255, 255, 0.7);
-  font-size: 1.1rem;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .image-container {
@@ -631,6 +651,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+[dir="ltr"] .read-more-btn .arrow {
+  transform: scaleX(-1);
 }
 
 .orange-btn {
@@ -935,6 +958,11 @@ a {
   font-weight: 500;
 }
 
+[dir="ltr"] .quote-box {
+  text-align: left;
+  direction: ltr;
+}
+
 .profile-btn {
   background-color: #4c5c37;
   border-radius: 25px;
@@ -1096,6 +1124,7 @@ a {
   background: #fcfff8;
   border-radius: 10px;
   border: 1px solid #e5e5e5;
+  text-align: start;
 }
 
 .avatar-circle {
@@ -1288,6 +1317,10 @@ a {
   margin: 0 0 4px;
   line-height: 1.5;
 }
+[dir="ltr"] .reel-info {
+  direction: ltr;
+  text-align: start;
+}
 
 .reel-views {
   font-size: 11px;
@@ -1411,6 +1444,22 @@ a {
   overflow: hidden;
 }
 
+.share-story-card a {
+  align-self: flex-start;
+}
+[dir="ltr"] .share-story-card a {
+  align-self: flex-end;
+}
+
+[dir="ltr"] .share-story-card a i {
+  transform: scaleX(-1);
+}
+
+.share-story-card a:hover {
+  background-color: #d57c51;
+  color: white !important;
+}
+
 .share-story-card .share-img {
   width: 420px;
   height: 420px;
@@ -1470,6 +1519,9 @@ a {
   position: relative;
   background: inherit;
   direction: ltr;
+}
+[dir="ltr"] .reels-container {
+  direction: rtl;
 }
 
 .reels-container::-webkit-scrollbar {
@@ -1746,16 +1798,23 @@ a {
   margin-top: auto;
   position: relative;
 }
+
 .comment-input-row textarea {
   background-color: #fcfff8;
   padding: 10px 12px;
   border-radius: 12px;
   border: 1px solid #e5e5e5;
 }
+
 .comment-input-row .send-btn {
   position: absolute;
   left: 20px;
   bottom: 8px;
+}
+
+[dir="ltr"] .comment-input-row .send-btn {
+  left: auto;
+  right: 20px;
 }
 
 .comment-input {
@@ -2138,7 +2197,14 @@ a {
 }
 
 .two-thirds {
-  background: url("../images/imagePersons.jpeg") center/cover no-repeat;
+  /* background: url("../images/imagePersons.jpeg") center/cover no-repeat; */
+  background: linear-gradient(
+    to top right,
+    #4c5c37 0%,
+    #4c5c37 35%,
+    #a5682c 70%,
+    #ff7420 100%
+  );
   min-height: 480px;
   position: relative;
 }
@@ -2304,6 +2370,14 @@ a {
   transition: background 0.2s;
 }
 
+[dir="ltr"] .share-btn {
+  direction: ltr;
+}
+
+[dir="ltr"] .share-btn i {
+  transform: scaleX(-1);
+}
+
 .share-btn:hover {
   background-color: #c9612d;
   color: white;
@@ -2325,6 +2399,22 @@ a {
   max-width: clamp(280px, 40vw, 450px);
 }
 
+[dir="ltr"] .textForOpenion {
+  text-align: end;
+}
+
+[dir="ltr"] .textForOpenion .highlight-text::before {
+  content: "";
+  position: absolute;
+  bottom: 14px;
+  left: 0px;
+  width: 33%;
+  height: 20px;
+  background-color: #4c5c37;
+  z-index: -1;
+  opacity: 0.9;
+}
+
 .textForOpenion .highlight-text {
   position: relative;
   display: block;
@@ -2334,8 +2424,8 @@ a {
   content: "";
   position: absolute;
   bottom: 14px;
-  left: 170px;
-  width: 52%;
+  left: 267px;
+  width: 40%;
   height: 20px;
   background-color: #4c5c37;
   z-index: -1;
@@ -2795,7 +2885,7 @@ a {
   /* تم تحديد عرض أقصى أصغر للانبوت */
   margin-right: 0;
   /* لضمان المحاذاة لليمين في الحاوية */
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
 /* الجزء البرتقالي انتقل لليسار (left: 0) */
@@ -2996,14 +3086,20 @@ a {
 
 /* رفع القمر فوق الخط في الشاشات الكبيرة فقط */
 @media (min-width: 768px) {
-  .control-wrapper {
+  /* .control-wrapper {
     position: absolute;
     left: 15px;
-    bottom: 5px;
-  }
+    bottom: 24px;
+  } */
+
+  /* [dir="ltr"] .control-wrapper {
+    position: absolute;
+    right: -1100px;
+    bottom: 7px;
+  } */
 
   .control-wrapper button:first-child {
-    margin-bottom: 35px !important;
+    margin-bottom: 8px !important;
     /* يرفعه فوق الـ hr */
   }
 }
@@ -3064,6 +3160,9 @@ a {
 }
 
 @media (max-width: 991px) {
+  .textForOpenion {
+    max-width: 75%;
+  }
   .textForOpenion .highlight-text {
     position: relative;
     display: block;
@@ -3073,7 +3172,19 @@ a {
     content: "";
     position: absolute;
     bottom: 14px;
-    left: 140px;
+    right: 0px;
+    width: 55%;
+    height: 20px;
+    background-color: #4c5c37;
+    z-index: -1;
+    opacity: 0.9;
+  }
+
+  [dir="ltr"] .textForOpenion .highlight-text::before {
+    content: "";
+    position: absolute;
+    bottom: 14px;
+    right: 160px;
     width: 55%;
     height: 20px;
     background-color: #4c5c37;
@@ -3171,8 +3282,20 @@ a {
     content: "";
     position: absolute;
     bottom: 14px;
-    left: 100px;
-    width: 65%;
+    right: 0px;
+    width: 43%;
+    height: 20px;
+    background-color: #4c5c37;
+    z-index: -1;
+    opacity: 0.9;
+  }
+
+  [dir="ltr"] .textForOpenion .highlight-text::before {
+    content: "";
+    position: absolute;
+    bottom: 14px;
+    right: 332px;
+    width: 43%;
     height: 20px;
     background-color: #4c5c37;
     z-index: -1;
@@ -3214,10 +3337,17 @@ a {
 }
 
 @media (max-width: 576px) {
+  .features-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
   .navbar .container {
     max-width: 90%;
   }
-
+  .textForOpenion {
+    max-width: 100%;
+  }
   .textForOpenion .highlight-text {
     position: relative;
     display: block;
@@ -3227,7 +3357,18 @@ a {
     content: "";
     position: absolute;
     bottom: 14px;
-    left: 100px;
+    right: 0px;
+    width: 40%;
+    height: 20px;
+    background-color: #4c5c37;
+    z-index: -1;
+    opacity: 0.9;
+  }
+  [dir="ltr"] .textForOpenion .highlight-text::before {
+    content: "";
+    position: absolute;
+    bottom: 14px;
+    left: 0px;
     width: 65%;
     height: 20px;
     background-color: #4c5c37;
@@ -3242,16 +3383,23 @@ a {
     display: block;
   }
 
+  .textForOpenion {
+    max-width: 100%;
+  }
   .textForOpenion .highlight-text::before {
     content: "";
     position: absolute;
     bottom: 14px;
-    left: 100px;
-    width: 65%;
+    right: 0px;
+    width: 40%;
     height: 20px;
     background-color: #4c5c37;
     z-index: -1;
     opacity: 0.9;
+  }
+
+  [dir="ltr"] .textForOpenion .highlight-text::before {
+    right: 210px;
   }
 
   .share-story-card .share-img {
@@ -3259,7 +3407,7 @@ a {
     height: 150px;
     position: absolute;
     bottom: -40px;
-    left: -18px;
+    left: 0px;
   }
 
   .share-story-card .mic-glow {
@@ -3268,12 +3416,12 @@ a {
     filter: blur(8px);
   }
   .share-story-card .mic-glow-orange {
-    bottom: 35px;
-    left: 25px;
+    bottom: 30px;
+    left: 50px;
   }
   .share-story-card .mic-glow-green {
     bottom: 28px;
-    left: 53px;
+    left: 71px;
   }
 
   .two-thirds {

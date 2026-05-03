@@ -39,7 +39,7 @@
             <div class="container  nav-face py-2 text-white border-bottom border-light border-opacity-25">
                 <div class="container d-flex justify-content-between align-items-center">
                     <div class="social-links">
-                        <span class="font-18 ms-2">تابعونا على :</span>
+                        <span class="font-18 ms-2" data-i18n="follow_us">تابعونا على :</span>
                         <a href="#" class="text-white ms-2"><i class="fab fa-facebook-f font-18"></i></a>
                         <a href="#" class="text-white ms-2"><i class="fab fa-twitter font-18"></i></a>
                         <a href="#" class="text-white ms-2"><i class="fab fa-linkedin-in font-18"></i></a>
@@ -77,26 +77,26 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
         <div class="collapse navbar-collapse flex-column flex-lg-row align-items-start align-items-lg-center" id="mainNav">    
-                                <ul class="navbar-nav  mb-2 mb-lg-0 fw-bold">
-                            <li class="nav-item ms-3"><a class="nav-link active font-16 " href="#">الرئيسية</a></li>
-                            <li class="nav-item ms-3"><a class="nav-link font-16" href="#">من نحن</a></li>
-                            <li class="nav-item ms-3"><a class="nav-link font-16" href="#">محتوانا</a></li>
-                            <li class="nav-item ms-3"><a class="nav-link font-16" href="#">الفريق</a></li>
-                            <li class="nav-item ms-3"><a class="nav-link font-16" href="#">صناع المحتوى</a></li>
+                                <ul class="navbar-nav  mb-2 mb-lg-0 fw-bold" style="text-align: start;">
+                            <li class="nav-item ms-3"><a class="nav-link active font-16 " href="#" data-i18n="nav_home">الرئيسية</a></li>
+                            <li class="nav-item ms-3"><a class="nav-link font-16" href="#" data-i18n="nav_about">من نحن</a></li>
+                            <li class="nav-item ms-3"><a class="nav-link font-16" href="#" data-i18n="nav_content">محتوانا</a></li>
+                            <li class="nav-item ms-3"><a class="nav-link font-16" href="#" data-i18n="nav_team">الفريق</a></li>
+                            <li class="nav-item ms-3"><a class="nav-link font-16" href="#" data-i18n="nav_creators">صناع المحتوى</a></li>
                             <div class="v-divider d-none d-lg-block mx-3"></div>
-                            <li class="nav-item ms-3"><a class="nav-link font-16" href="#" style="color: #E1723B !important;">حاضنة صوت</a>
+                            <li class="nav-item ms-3"><a class="nav-link font-16" href="#" style="color: #E1723B !important;" data-i18n="nav_incubator">حاضنة صوت</a>
                             </li>
-                            <li class="nav-item ms-3"><a class="nav-link font-16 font-color-green" href="#" style="color: #738C52; ">صوت
+                            <li class="nav-item ms-3"><a class="nav-link font-16 font-color-green" href="#" style="color: #738C52; " data-i18n="nav_media">صوت
                                     ميديا</a></li>
                         </ul>
 
                                         <div class="  d-flex align-items-center gap-2 mx-3">
-                            <div class="position-relative">
+                            <div class="position-relative"  >
 
                                 <i
                                     class="fa fa-search position-absolute top-50 end-0 translate-middle-y me-3 " style="color: #ACACAC;"></i>
 
-                                    <input  type="text" class="form-control rounded-pill pe-5 custom-placeholder py-2 search-input" placeholder="ابحث هنا..." dir="rtl" >
+                                    <input  type="text" class="form-control rounded-pill pe-5 custom-placeholder py-2 search-input" placeholder="ابحث هنا..."  data-i18n-placeholder="search_placeholder">
                             </div>
                         </div>
                         <div class="searchDiv d-flex align-items-center gap-2">
@@ -104,11 +104,12 @@
                                 <i class="fa-solid fa-user"></i>
 
                             </button>
-                            <button class="btn text-white rounded-pill btn-dark-orange rounded-nav" >
 
-                                <i class="fa-solid fa-language font-22"></i>
+                             <button class="btn btn-dark rounded-pill btn-dark-orange rounded-nav language-btn" >
+                                <i class="fa-solid fa-language"></i>
 
                             </button>
+
                         </div>
 
 
@@ -132,15 +133,15 @@
                             alt="منصة صوت 1">
                         <div class="carousel-caption-custom text-center">
                             <div class="container">
-                                <h1 class="display-3 fw-bold text-white">منصة صوت</h1>
-                                <p class="lead mb-4 text-white fw-bold">نروي قصص غزة بكرامة... ونبني جيلاً جديداً من صناع
+                                <h1 class="display-3 fw-bold text-white" data-i18n="hero_title">منصة صوت</h1>
+                                <p class="lead mb-4 text-white fw-bold" data-i18n="hero_subtitle">نروي قصص غزة بكرامة... ونبني جيلاً جديداً من صناع
                                     المحتوى</p>
                                 <div class="d-flex justify-content-center gap-3 heroOptionsBtn">
-                                    <button class="btn btn-dark-green rounded-pill px-4 py-2 text-white fw-bold">مشاهدة
+                                    <button class="btn btn-dark-green rounded-pill px-4 py-2 text-white fw-bold" data-i18n="hero_btn_watch">مشاهدة
                                         الأعمال</button>
-                                    <button class="btn btn-dark-orange saport text-white rounded-pill px-4 py-2 fw-bold">تعاون
+                                    <button class="btn btn-dark-orange saport text-white rounded-pill px-4 py-2 fw-bold" data-i18n="hero_btn_collab">تعاون
                                         معنا</button>
-                                    <button class="btn btn-dark-orange  text-white rounded-pill px-4 py-2 fw-bold">ادعم صوت
+                                    <button class="btn btn-dark-orange  text-white rounded-pill px-4 py-2 fw-bold" data-i18n="hero_btn_support">ادعم صوت
                                     </button>
                                 </div>
                             </div>
@@ -151,15 +152,15 @@
                         <img src="assets/images/background.PNG" class="d-block w-100 carousel-img" alt="منصة صوت 1">
                         <div class="carousel-caption-custom text-center">
                             <div class="container">
-                                <h1 class="display-3 fw-bold text-white">منصة صوت</h1>
-                                <p class="lead mb-4 text-white fw-bold">نروي قصص غزة بكرامة... ونبني جيلاً جديداً من صناع
+                                <h1 class="display-3 fw-bold text-white" data-i18n="hero_title">منصة صوت</h1>
+                                <p class="lead mb-4 text-white fw-bold" data-i18n="hero_subtitle">نروي قصص غزة بكرامة... ونبني جيلاً جديداً من صناع
                                     المحتوى</p>
                                 <div class="d-flex justify-content-center gap-3 heroOptionsBtn">
-                                    <button class="btn btn-dark-green rounded-pill px-4 py-2 text-white fw-bold">مشاهدة
+                                    <button class="btn btn-dark-green rounded-pill px-4 py-2 text-white fw-bold" data-i18n="hero_btn_watch">مشاهدة
                                         الأعمال</button>
-                                    <button class="btn btn-dark-orange saport text-white rounded-pill px-4 py-2 fw-bold">تعاون
+                                    <button class="btn btn-dark-orange saport text-white rounded-pill px-4 py-2 fw-bold" data-i18n="hero_btn_collab">تعاون
                                         معنا</button>
-                                    <button class="btn btn-dark-orange  text-white rounded-pill px-4 py-2 fw-bold">ادعم صوت
+                                    <button class="btn btn-dark-orange  text-white rounded-pill px-4 py-2 fw-bold" data-i18n="hero_btn_support">ادعم صوت
                                     </button>
                                 </div>
                             </div>
@@ -171,15 +172,15 @@
                             alt="منصة صوت 1">
                         <div class="carousel-caption-custom text-center">
                             <div class="container">
-                                <h1 class="display-3 fw-bold text-white">منصة صوت</h1>
-                                <p class="lead mb-4 text-white fw-bold">نروي قصص غزة بكرامة... ونبني جيلاً جديداً من صناع
+                                <h1 class="display-3 fw-bold text-white" data-i18n="hero_title">منصة صوت</h1>
+                                <p class="lead mb-4 text-white fw-bold" data-i18n="hero_subtitle">نروي قصص غزة بكرامة... ونبني جيلاً جديداً من صناع
                                     المحتوى</p>
                                 <div class="d-flex justify-content-center gap-3 heroOptionsBtn">
-                                    <button class="btn btn-dark-green rounded-pill px-4 py-2 text-white fw-bold">مشاهدة
+                                    <button class="btn btn-dark-green rounded-pill px-4 py-2 text-white fw-bold" data-i18n="hero_btn_watch">مشاهدة
                                         الأعمال</button>
-                                    <button class="btn btn-dark-orange saport text-white rounded-pill px-4 py-2 fw-bold">تعاون
+                                    <button class="btn btn-dark-orange saport text-white rounded-pill px-4 py-2 fw-bold" data-i18n="hero_btn_collab">تعاون
                                         معنا</button>
-                                    <button class="btn btn-dark-orange  text-white rounded-pill px-4 py-2 fw-bold">ادعم صوت
+                                    <button class="btn btn-dark-orange  text-white rounded-pill px-4 py-2 fw-bold" data-i18n="hero_btn_support">ادعم صوت
                                     </button>
                                 </div>
                             </div>
@@ -196,23 +197,23 @@
                 <div class="row d-flex justify-content-center align-items-center text-center g-0">
                     <div class="col border-start-custom count ">
                         <h3 class="counter font-mob-22">20+</h3>
-                        <p class="mb-0">أعضاء الفريق</p>
+                        <p class="mb-0" data-i18n="stat_team">أعضاء الفريق</p>
                     </div>
                     <div class="col border-start-custom count">
-                        <h3 class="counter font-mob-22">+10 ألف</h3>
-                        <p class="mb-0">متابع</p>
+                        <h3 class=" font-mob-22">+10 <span data-i18n="one_thousand"></span></h3>
+                        <p class="mb-0" data-i18n="stat_followers">متابع</p>
                     </div>
                     <div class="col border-start-custom count">
-                        <h3 class="counter font-mob-22">+30 ألف</h3>
-                        <p class="mb-0">مشاهدة</p>
+                        <h3 class=" font-mob-22">+30 <span data-i18n="one_thousand"></span></h3>
+                        <p class="mb-0" data-i18n="stat_views">مشاهدة</p>
                     </div>
                     <div class="col border-start-custom count">
                         <h3 class="counter font-mob-22">30+</h3>
-                        <p class="mb-0">فيديو</p>
+                        <p class="mb-0" data-i18n="stat_videos">فيديو</p>
                     </div>
                     <div class="col count">
                         <h3 class="counter font-mob-22">100+</h3>
-                        <p class="mb-0">قصة</p>
+                        <p class="mb-0" data-i18n="stat_stories">قصة</p>
                     </div>
                 </div>
             </div>
@@ -222,47 +223,47 @@
         <section class="sout-section py-5 mb-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 position-relative">
+                    <div class="col-lg-6 position-relative" style="text-align: start;">
                         <img class="mb-2" src="assets/images/صوت 2.png" alt="">
-                        <h6 class=" text-bold  mb-2 fw-bold font-18" style="color:#9A9A9A;">أهلاً بكم في صوت</h6>
-                        <h3 class="main-title text-bold fw-bold">كل فكرة إلها صوت... وصوت بيجمعهم</h3>
-                        <p class="mt-4  text-bold  font-18 fw-bold" style="color:#738C52;">
+                        <h6 class=" text-bold  mb-2 fw-bold font-18" style="color:#9A9A9A;" data-i18n="welcome_label">أهلاً بكم في صوت</h6>
+                        <h3 class="main-title text-bold fw-bold" data-i18n="welcome_title">كل فكرة إلها صوت... وصوت بيجمعهم</h3>
+                        <p class="mt-4  text-bold  font-18 fw-bold" style="color:#738C52;" data-i18n="welcome_lead">
                             في صوت، كل فكرة بتلاقي مكانها!
                         </p>
                         <p class="description text-secondary font-18 lh-lg ">
-                            استكشف محتوى متنوع، عبّر عن نفسك، وشارك صوتك مع العالم.
-                            
+                            <span data-i18n="welcome_desc_line1">استكشف محتوى متنوع، عبّر عن نفسك، وشارك صوتك مع العالم.</span>
                             <br>
-                            من خلال تجربة تفاعلية مليئة بالإبداع والإلهام، رح تقدر تطور أفكارك وتوصل 
+                            <span data-i18n="welcome_desc_line2">من خلال تجربة تفاعلية مليئة بالإبداع والإلهام، رح تقدر تطور أفكارك وتوصل</span>
                             <br>
-                            لجمهور أوسع.
+                            <span data-i18n="welcome_desc_line3">لجمهور أوسع.</span>
                             <br>
-                            وصوت بيكون معك خطوة بخطوة لتخلي صوتك يوصل أبعد.
+                            <span data-i18n="welcome_desc_line4">وصوت بيكون معك خطوة بخطوة لتخلي صوتك يوصل أبعد.</span>
                         </p>
 
                         <div class="features-grid d-flex gap-4 my-4">
                             <div class="feature-item d-flex align-items-center">
                                 <div class="icon-box"><i class="fa-solid fa-microphone gradient-icon"></i></div>
-                                <span class="me-3 ms-4 text-bold font-18 fw-bold">مساحة لأصواتكم</span>
+                                <span class="me-3 ms-4 text-bold font-18 fw-bold" data-i18n="feature_voice">مساحة لأصواتكم</span>
                             </div>
                             <div class="feature-item d-flex align-items-center">
                                 <div class="icon-box "><i class="fa-solid fa-user-gear gradient-icon"></i></div>
-                                <span class="me-3 text-bold font-18 fw-bold">تمكين الإبداع</span>
+                                <span class="me-3 ms-4 text-bold font-18 fw-bold" data-i18n="feature_creativity">تمكين الإبداع</span>
                             </div>
                         </div>
                         <div class="mb-4">
                             <div class="d-flex align-items-baseline mb-2">
                                 <i class="fa-solid fa-microphone-lines  ms-2 font-18  font-color-green"></i>
-                                <h6 class="font-18 text-bold fw-bold">ندعم صناع المحتوى</h6>
+                                <h6 class="ms-2 font-18 text-bold fw-bold" data-i18n="support_creators">ندعم صناع المحتوى</h6>
                             </div>
                             <div class="d-flex align-items-baseline mb-2">
                                 <i class="fa-solid fa-microphone-lines ms-2 font-18 font-color-green"></i>
-                                <h6 class="font-18 text-bold fw-bold">فريق محترف، محتوى مميز، وخدمات تساعد صوتك يوصل</h6>
+                                <h6 class="ms-2 font-18 text-bold fw-bold" data-i18n="professional_team">فريق محترف، محتوى مميز، وخدمات تساعد صوتك يوصل</h6>
                             </div>
                         </div>
                         <a href="#" class="btn btn-dark-green rounded-pill px-4 py-2 font-16 text-bold fw-bold">
-                            اكتشف المزيد
-                            <i class="fa-solid fa-arrow-left me-2 font-14 text-bold"></i>
+                            <span data-i18n="discover_more">اكتشف المزيد</span>
+                             <i class="fa-solid fa-arrow-left me-2 font-14 text-bold"></i>
+
                         </a>
                     </div>
 
@@ -278,29 +279,25 @@
             <div class="bg-icon bg-icon-left"><img src="assets/images/fa-solid_microphone-alt (1).png" alt=""></div>
             <div class="container">
                 <div class="text-center mb-2">
-                    <h2 class="fw-bold" style="font-size: 45px;">آخر <span class="highlight-text">أخبارنا</span></h2>
-                    <p class="fw-bold" style="font-size: 24px;">شاهد أحدث القصص والفيديوهات من منصة صوت</p>
+                    <h2 class="fw-bold" style="font-size: 45px;"><span data-i18n="news_title_pre">آخر</span> <span class="highlight-text" data-i18n="news_title_highlight">أخبارنا</span></h2>
+                    <p class="fw-bold" style="font-size: 24px;" data-i18n="news_subtitle">شاهد أحدث القصص والفيديوهات من منصة صوت</p>
                 </div>
                 <div class="owl-carousel creators-carousel">
                     <div class="item">
                         <div class="card h-100 news-card">
                             <img src="assets/images/Rectangle 701.png" class="card-img-top p-3" alt="صانع المحتوى">
                             <div class="card-body">
-                                <h5 class="card-title text-orange">صانع المحتوى في غزة</h5>
-                                <p class="card-text text-dark  font-18 " style="font-weight: 500;">
-                                    
-                                    
+                                <h5 class="card-title text-orange" data-i18n="news_card1_title">صانع المحتوى في غزة</h5>
+                                <p class="card-text text-dark  font-18 " style="font-weight: 500;" data-i18n="news_desc">
                                     نشارككم آخر تحديثات صانع المحتوى في غزة، حيث
                                     نعمل على إبراز قصص المبدعين وإيصال صوتهم.
-                                
-                                
                                 </p>
 
 
                             </div>
                             <div class="card-footer bg-white border-0 d-flex font-16 text-dark pb-3 fw-bold">
-                                <span><i class="fa-solid fa-calendar gradient-icon ms-1"></i> 5 مارس 2026</span>
-                                <span><i class="fa-solid fa-clock  gradient-icon me-2 ms-1"></i> 10 دقائق</span>
+                                <span><i class="fa-solid fa-calendar gradient-icon ms-1"></i> <span data-i18n="news_date">5 مارس 2026</span></span>
+                                <span><i class="fa-solid fa-clock  gradient-icon me-2 ms-1"></i> <span data-i18n="news_duration">10 دقائق</span></span>
                             </div>
                         </div>
                     </div>
@@ -308,15 +305,14 @@
                         <div class="card h-100 news-card">
                             <img src="assets/images/Rectangle 703.png" class="card-img-top p-3" alt="الأم في غزة">
                             <div class="card-body">
-                                <h5 class="card-title text-orange">الأم في غزة</h5>
-                               <p class="card-text text-dark  font-18 " style="font-weight: 500;">
-                                    
+                                <h5 class="card-title text-orange" data-i18n="news_card2_title">الأم في غزة</h5>
+                               <p class="card-text text-dark  font-18 " style="font-weight: 500;" data-i18n="news_desc">
                                     نشارككم آخر تحديثات صانع المحتوى في غزة، حيث
                                     نعمل على إبراز قصص المبدعين وإيصال صوتهم.</p>
                             </div>
                             <div class="card-footer bg-white border-0 d-flex font-16 text-dark pb-3 fw-bold">
-                                <span><i class="fa-solid fa-calendar gradient-icon ms-1"></i> 5 مارس 2026</span>
-                                <span><i class="fa-solid fa-clock  gradient-icon me-2 ms-1"></i> 10 دقائق</span>
+                                <span><i class="fa-solid fa-calendar gradient-icon ms-1"></i> <span data-i18n="news_date">5 مارس 2026</span></span>
+                                <span><i class="fa-solid fa-clock  gradient-icon me-2 ms-1"></i> <span data-i18n="news_duration">10 دقائق</span></span>
                             </div>
                         </div>
                     </div>
@@ -324,14 +320,14 @@
                         <div class="card h-100 news-card">
                             <img src="assets/images/Rectangle 705.png" class="card-img-top p-3" alt="المبتورين">
                             <div class="card-body">
-                                <h5 class="card-title text-orange">المبتورين قضية مهمشة</h5>
-                                <p class="card-text text-dark  font-18 " style="font-weight: 500;">    
+                                <h5 class="card-title text-orange" data-i18n="news_card3_title">المبتورين قضية مهمشة</h5>
+                                <p class="card-text text-dark  font-18 " style="font-weight: 500;" data-i18n="news_desc">
                                     نشارككم آخر تحديثات صانع المحتوى في غزة، حيث
                                     نعمل على إبراز قصص المبدعين وإيصال صوتهم.</p>
                             </div>
                             <div class="card-footer bg-white border-0 d-flex font-16 text-dark pb-3 fw-bold">
-                                <span><i class="fa-solid fa-calendar gradient-icon ms-1"></i> 5 مارس 2026</span>
-                                <span><i class="fa-solid fa-clock  gradient-icon me-2 ms-1"></i> 10 دقائق</span>
+                                <span><i class="fa-solid fa-calendar gradient-icon ms-1"></i> <span data-i18n="news_date">5 مارس 2026</span></span>
+                                <span><i class="fa-solid fa-clock  gradient-icon me-2 ms-1"></i> <span data-i18n="news_duration">10 دقائق</span></span>
                             </div>
                         </div>
                     </div>
@@ -339,7 +335,7 @@
 
                 <div class="text-center mt-5 fw-bold">
                     <a href="#" class="btn btn-dark-green rounded-pill px-3 py-2 fw-bold">
-                        عرض جميع الأخبار <i class="fa-solid fa-arrow-left me-2"></i>
+                        <span data-i18n="view_all_news">عرض جميع الأخبار</span> <i class="fa-solid fa-arrow-left me-2"></i>
                     </a>
                 </div>
             </div>
@@ -364,10 +360,10 @@
             <div class="container">
                 <div class="text-center mb-5">
                     <h1 class="" style="font-size: 45px; font-weight: bolder;">
-                        صُناع
-                        <span class="highlight-text-content-section">المحتوى</span>
+                        <span data-i18n="creators_title_pre">صُناع</span>
+                        <span class="highlight-text-content-section" data-i18n="creators_title_highlight">المحتوى</span>
                     </h1>
-                    <h4 class="font-22 fw-bold">تعرف على صُنّاع المحتوى في صوت، حيث كل فكرة إلها صوت، وكل مبدع إله حكاية.</h4>
+                    <h4 class="font-22 fw-bold" data-i18n="creators_subtitle">تعرف على صُنّاع المحتوى في صوت، حيث كل فكرة إلها صوت، وكل مبدع إله حكاية.</h4>
                 </div>
                 <div class="owl-carousel creators-carousel2">
                     <!-- Card 1 -->
@@ -378,10 +374,8 @@
 
                                     <div
                                         class="face front-face-img  w-100 h-100 overflow-hidden position-absolute d-flex flex-column align-items-center pt-5 text-white">
-                                        <div class="arrowDiv text-black py-1 px-3 small  mb-3">
-                                            شارك
-                                            مع
-                                            صوت</div>
+                                        <div class="arrowDiv text-black py-1 px-3 small  mb-3" data-i18n="creator_share">
+                                            شارك مع صوت</div>
 
                                         <div
                                             class="img-circle rounded-circle p-2 mb-3 d-flex justify-content-center align-items-center">
@@ -389,29 +383,25 @@
                                                 style="width: 130px; height: 130px;"
                                                 src="assets/images/محمود زعيتر 2.png" alt="محمود زعيتر">
                                         </div>
-                                        <div class="name-tag  p-2 text-center mb-1 ">محمود زعيتر</div>
-                                        <div class="job-tag p-2 text-center fw-bold">ممثل كوميدي</div>
+                                        <div class="name-tag  p-2 text-center mb-1 " data-i18n="creator_name">محمود زعيتر</div>
+                                        <div class="job-tag p-2 text-center fw-bold" data-i18n="creator_role">ممثل كوميدي</div>
                                     </div>
 
                                     <div
                                         class="back-face face-back d-flex flex-column text-center py-4 px-3 w-100 h-100 ">
-                                        <div class="arrowDiv text-black py-1 px-3 small align-self-end mb-3">
-                                            شارك
-                                            مع
-                                            صوت</div>
-                                        <h4 class="font-16">محمود زعيتر</h4>
-                                        <p class=" text-center p-2 font-14">صانع محتوى وفنان كوميدي فلسطيني من
-                                            قطاع
-                                            غزة
+                                        <div class="arrowDiv text-black py-1 px-3 small align-self-end mb-3" data-i18n="creator_share">
+                                            شارك مع صوت</div>
+                                        <h4 class="font-16" data-i18n="creator_name">محمود زعيتر</h4>
+                                        <p class=" text-center p-2 font-14" data-i18n="creator_bio">صانع محتوى وفنان كوميدي فلسطيني من قطاع غزة
                                         </p>
 
-                                        <div class="quote-box text-white p-3 small lh-base mb-3 text-center font-14">
+                                        <div class="quote-box text-white p-3 small lh-base mb-3 text-center font-14" data-i18n="creator_quote">
                                             تجربتي مع صوت كانت مختلفة، أخيراً لقيت مكان بيفهمني كمبدع ....
                                         </div>
 
                                         <div
                                             class="profile-btn d-block text-center text-white text-decoration-none py-2 rounded-pill shadow-sm font-12">
-                                            عرض المزيد <i class="fa-solid fa-chevron-left me-1"></i>
+                                            <span data-i18n="view_more">عرض المزيد</span> <i class="fa-solid fa-chevron-left me-1"></i>
                                         </div>
                                     </div>
 
@@ -428,10 +418,8 @@
 
                                     <div
                                         class="face front-face-img  w-100 h-100 overflow-hidden position-absolute d-flex flex-column align-items-center pt-5 text-white">
-                                        <div class="arrowDiv text-black py-1 px-3 small  mb-3">
-                                            شارك
-                                            مع
-                                            صوت</div>
+                                        <div class="arrowDiv text-black py-1 px-3 small  mb-3" data-i18n="creator_share">
+                                            شارك مع صوت</div>
 
                                         <div
                                             class="img-circle rounded-circle p-2 mb-3 d-flex justify-content-center align-items-center">
@@ -439,29 +427,25 @@
                                                 style="width: 130px; height: 130px;"
                                                 src="assets/images/محمود زعيتر 2.png" alt="محمود زعيتر">
                                         </div>
-                                        <div class="name-tag  p-2 text-center mb-1 ">محمود زعيتر</div>
-                                        <div class="job-tag p-2 text-center fw-bold">ممثل كوميدي</div>
+                                        <div class="name-tag  p-2 text-center mb-1 " data-i18n="creator_name">محمود زعيتر</div>
+                                        <div class="job-tag p-2 text-center fw-bold" data-i18n="creator_role">ممثل كوميدي</div>
                                     </div>
 
                                     <div
                                         class="back-face face-back d-flex flex-column text-center py-4 px-3 w-100 h-100 ">
-                                        <div class="arrowDiv text-black py-1 px-3 small align-self-end mb-3">
-                                            شارك
-                                            مع
-                                            صوت</div>
-                                        <h4 class="fw-bold font-16">محمود زعيتر</h4>
-                                        <p class=" text-center p-2 font-14">صانع محتوى وفنان كوميدي فلسطيني من
-                                            قطاع
-                                            غزة
+                                        <div class="arrowDiv text-black py-1 px-3 small align-self-end mb-3" data-i18n="creator_share">
+                                            شارك مع صوت</div>
+                                        <h4 class="fw-bold font-16" data-i18n="creator_name">محمود زعيتر</h4>
+                                        <p class=" text-center p-2 font-14" data-i18n="creator_bio">صانع محتوى وفنان كوميدي فلسطيني من قطاع غزة
                                         </p>
 
-                                        <div class="quote-box text-white p-3 small lh-base mb-3 text-center font-14">
+                                        <div class="quote-box text-white p-3 small lh-base mb-3 text-center font-14" data-i18n="creator_quote">
                                             تجربتي مع صوت كانت مختلفة، أخيراً لقيت مكان بيفهمني كمبدع ....
                                         </div>
 
                                         <div
                                             class="profile-btn d-block text-center text-white text-decoration-none py-2 rounded-pill shadow-sm font-12">
-                                            عرض المزيد <i class="fa-solid fa-chevron-left me-1"></i>
+                                            <span data-i18n="view_more">عرض المزيد</span> <i class="fa-solid fa-chevron-left me-1"></i>
                                         </div>
                                     </div>
 
@@ -479,10 +463,8 @@
 
                                     <div
                                         class="face front-face-img  w-100 h-100 overflow-hidden position-absolute d-flex flex-column align-items-center pt-5 text-white">
-                                        <div class="arrowDiv text-black py-1 px-3 small  mb-3">
-                                            شارك
-                                            مع
-                                            صوت</div>
+                                        <div class="arrowDiv text-black py-1 px-3 small  mb-3" data-i18n="creator_share">
+                                            شارك مع صوت</div>
 
                                         <div
                                             class="img-circle rounded-circle p-2 mb-3 d-flex justify-content-center align-items-center">
@@ -490,29 +472,25 @@
                                                 style="width: 130px; height: 130px;"
                                                 src="assets/images/محمود زعيتر 2.png" alt="محمود زعيتر">
                                         </div>
-                                        <div class="name-tag  p-2 text-center mb-1 ">محمود زعيتر</div>
-                                        <div class="job-tag p-2 text-center fw-bold">ممثل كوميدي</div>
+                                        <div class="name-tag  p-2 text-center mb-1 " data-i18n="creator_name">محمود زعيتر</div>
+                                        <div class="job-tag p-2 text-center fw-bold" data-i18n="creator_role">ممثل كوميدي</div>
                                     </div>
 
                                     <div
                                         class="back-face face-back d-flex flex-column text-center py-4 px-3 w-100 h-100 ">
-                                        <div class="arrowDiv text-black py-1 px-3 small align-self-end mb-3">
-                                            شارك
-                                            مع
-                                            صوت</div>
-                                        <h4 class="fw-bold font-16">محمود زعيتر</h4>
-                                        <p class=" text-center p-2 font-14">صانع محتوى وفنان كوميدي فلسطيني من
-                                            قطاع
-                                            غزة
+                                        <div class="arrowDiv text-black py-1 px-3 small align-self-end mb-3" data-i18n="creator_share">
+                                            شارك مع صوت</div>
+                                        <h4 class="fw-bold font-16" data-i18n="creator_name">محمود زعيتر</h4>
+                                        <p class=" text-center p-2 font-14" data-i18n="creator_bio">صانع محتوى وفنان كوميدي فلسطيني من قطاع غزة
                                         </p>
 
-                                        <div class="quote-box text-white p-3 small lh-base mb-3 text-center font-14">
+                                        <div class="quote-box text-white p-3 small lh-base mb-3 text-center font-14" data-i18n="creator_quote">
                                             تجربتي مع صوت كانت مختلفة، أخيراً لقيت مكان بيفهمني كمبدع ....
                                         </div>
 
                                         <div
                                             class="profile-btn d-block text-center text-white text-decoration-none py-2 rounded-pill shadow-sm font-12">
-                                            عرض المزيد <i class="fa-solid fa-chevron-left me-1"></i>
+                                            <span data-i18n="view_more">عرض المزيد</span> <i class="fa-solid fa-chevron-left me-1"></i>
                                         </div>
                                     </div>
 
@@ -530,10 +508,8 @@
 
                                     <div
                                         class="face front-face-img  w-100 h-100 overflow-hidden position-absolute d-flex flex-column align-items-center pt-5 text-white">
-                                        <div class="arrowDiv text-black py-1 px-3 small  mb-3">
-                                            شارك
-                                            مع
-                                            صوت</div>
+                                        <div class="arrowDiv text-black py-1 px-3 small  mb-3" data-i18n="creator_share">
+                                            شارك مع صوت</div>
 
                                         <div
                                             class="img-circle rounded-circle p-2 mb-3 d-flex justify-content-center align-items-center">
@@ -541,29 +517,25 @@
                                                 style="width: 130px; height: 130px;"
                                                 src="assets/images/محمود زعيتر 2.png" alt="محمود زعيتر">
                                         </div>
-                                        <div class="name-tag  p-2 text-center mb-1 ">محمود زعيتر</div>
-                                        <div class="job-tag p-2 text-center fw-bold">ممثل كوميدي</div>
+                                        <div class="name-tag  p-2 text-center mb-1 " data-i18n="creator_name">محمود زعيتر</div>
+                                        <div class="job-tag p-2 text-center fw-bold" data-i18n="creator_role">ممثل كوميدي</div>
                                     </div>
 
                                     <div
                                         class="back-face face-back d-flex flex-column text-center py-4 px-3 w-100 h-100 ">
-                                        <div class="arrowDiv text-black py-1 px-3 small align-self-end mb-3">
-                                            شارك
-                                            مع
-                                            صوت</div>
-                                        <h4 class="fw-bold font-16">محمود زعيتر</h4>
-                                        <p class=" text-center p-2 font-14">صانع محتوى وفنان كوميدي فلسطيني من
-                                            قطاع
-                                            غزة
+                                        <div class="arrowDiv text-black py-1 px-3 small align-self-end mb-3" data-i18n="creator_share">
+                                            شارك مع صوت</div>
+                                        <h4 class="fw-bold font-16" data-i18n="creator_name">محمود زعيتر</h4>
+                                        <p class=" text-center p-2 font-14" data-i18n="creator_bio">صانع محتوى وفنان كوميدي فلسطيني من قطاع غزة
                                         </p>
 
-                                        <div class="quote-box text-white p-3 small lh-base mb-3 text-center font-14">
+                                        <div class="quote-box text-white p-3 small lh-base mb-3 text-center font-14" data-i18n="creator_quote">
                                             تجربتي مع صوت كانت مختلفة، أخيراً لقيت مكان بيفهمني كمبدع ....
                                         </div>
 
                                         <div
                                             class="profile-btn d-block text-center text-white text-decoration-none py-2 rounded-pill shadow-sm font-12">
-                                            عرض المزيد <i class="fa-solid fa-chevron-left me-1"></i>
+                                            <span data-i18n="view_more">عرض المزيد</span> <i class="fa-solid fa-chevron-left me-1"></i>
                                         </div>
                                     </div>
 
@@ -577,24 +549,21 @@
 
                 <div class="text-center mt-5">
                     <a href="#" class="btn btn-dark-green rounded-pill px-4 py-2 fw-bold">
-                        عرض الكل <i class="fa-solid fa-arrow-left me-2"></i>
+                        <span data-i18n="view_all">عرض الكل</span> <i class="fa-solid fa-arrow-left me-2"></i>
                     </a>
                 </div>
             </div>
         </section>
 
         <section class="platform-sections py-5 text-center mb-2">
-            <!-- <div class="torn-top">
-    <img src="assets/images/اهرام.png" alt="">
-  </div> -->
             <div class="container">
 
 
                 <div class="header-content mb-3" >
-                    <h2 class="text-black fw-bold" style="font-size: 45px;" >أقسام
-                        <span class="highlight-text">المنصة</span>
+                    <h2 class="text-black fw-bold" style="font-size: 45px;" ><span data-i18n="platform_title_pre">أقسام</span>
+                        <span class="highlight-text" data-i18n="platform_title_highlight">المنصة</span>
                     </h2>
-                    <h6 class="text-black fw-bold font-20">كل فكرة إلها صوت... وصوت بيجمعهم</h6>
+                    <h6 class="text-black fw-bold font-20" data-i18n="platform_subtitle">كل فكرة إلها صوت... وصوت بيجمعهم</h6>
                 </div>
 
                 <div class="row g-4 mt-2 justify-content-center">
@@ -611,13 +580,13 @@
                                 </div>
                             </div>
                             <div class="card-content mt-5">
-                                <h4 class="text-black fw-bold">منصة المحتوى</h4>
-                                <p class="text-light-muted lh-lg text-black">مكتبة غنية بالفيديوهات والقصص الإنسانية
+                                <h4 class="text-black fw-bold" data-i18n="platform_card1_title">منصة المحتوى</h4>
+                                <p class="text-light-muted lh-lg text-black" data-i18n="platform_card1_desc" >مكتبة غنية بالفيديوهات والقصص الإنسانية
                                     التي تروي واقع
                                     غزة
                                     بكرامة واحترافية.</p>
                                 <a href="#" class="read-more-btn text-white">
-                                    اقرأ المزيد
+                                    <span data-i18n="read_more">اقرأ المزيد</span>
                                     <span class="arrow"><i class="fa-solid fa-arrow-left"></i></span>
 
                                 </a>
@@ -637,13 +606,13 @@
                                 </div>
                             </div>
                             <div class="card-content mt-5">
-                                <h4 class="text-black fw-bold">حاضنة صوت</h4>
-                                <p class="text-light-muted lh-lg text-black">برامج تدريبية متخصصة لتطوير مهارات صناع
+                                <h4 class="text-black fw-bold" data-i18n="platform_card2_title">حاضنة صوت</h4>
+                                <p class="text-light-muted lh-lg text-black" data-i18n="platform_card2_desc">برامج تدريبية متخصصة لتطوير مهارات صناع
                                     المحتوى
                                     وتمكينهم من
                                     الإبداع والنمو.</p>
                                 <a href="#" class="read-more-btn">
-                                    اقرأ المزيد
+                                    <span data-i18n="read_more">اقرأ المزيد</span>
                                     <span class="arrow"><i class="fa-solid fa-arrow-left"></i></span>
                                 </a>
                             </div>
@@ -661,13 +630,13 @@
                                 </div>
                             </div>
                             <div class="card-content mt-5">
-                                <h4 class="text-black fw-bold">صوت ميديا</h4>
-                                <p class="text-light-muted lh-lg text-black">شركة إنتاج إعلامي احترافية تقدم خدمات
+                                <h4 class="text-black fw-bold" data-i18n="platform_card3_title">صوت ميديا</h4>
+                                <p class="text-light-muted lh-lg text-black" data-i18n="platform_card3_desc">شركة إنتاج إعلامي احترافية تقدم خدمات
                                     متكاملة من
                                     الكتابة إلى
                                     التسويق.</p>
                                 <a href="#" class="read-more-btn">
-                                    اقرأ المزيد
+                                    <span data-i18n="read_more">اقرأ المزيد</span>
                                     <span class="arrow"><i class="fa-solid fa-arrow-left"></i></span>
 
                                 </a>
@@ -683,10 +652,10 @@
         <section class="mt-3">
             <div class="partners-section text-center mb-5">
                 <h1 class="partners-title fw-bold" style="font-size: 45px;">
-                    شركاؤنا في
-                    <span class="partners-highlight">صوت</span>
+                    <span data-i18n="partners_title_pre">شركاؤنا في</span>
+                    <span class="partners-highlight" data-i18n="partners_title_highlight">صوت</span>
                 </h1>
-                <p class="partners-description font-24">
+                <p class="partners-description font-24" data-i18n="partners_desc">
                     معًا نبني صوتًا حيًّا، مساحة تجمع الحكايات، تُشعل الأمل، وتمنح كل إنسان فرصة يُسمَع
                 </p>
             </div>
@@ -708,7 +677,7 @@
             </div>
             <div class="text-center mt-3" style="color: white;">
                 <a href="#" class="btn btn-dark rounded-pill px-4 py-2 text-white fw-bold">
-                    كن شريكاً لصوت <i class="fa-solid fa-arrow-left me-2"></i>
+                    <span data-i18n="be_partner">كن شريكاً لصوت</span> <i class="fa-solid fa-arrow-left me-2"></i>
                 </a>
             </div>
 
@@ -719,13 +688,15 @@
             <div  style="width: 90%; margin: 0 auto;">
                 <div class="row g-4">
                     <div class="col-lg-5">
-                        <div class="share-story-card h-100 flex-column p-5 ">
-                            <img width="50" src="assets/images/صوت 5.png" alt="">
-                            <h6 class="font-18 fw-bold" style="color: #FE6B38;">قصص من الواقع</h6>
-                            <h3 class="fw-bold mb-4 font-24" style="color: #8EAB67;">اكتشف تجارب حقيقية من أشخاص شاركوا قصصهم
+                        <div class="share-story-card h-100 d-flex flex-column p-5 mb-2 " >
+                            <img width="50" src="assets/images/صوت 5.png" class="align-self-start" alt="" >
+                            <h6 class="font-18 fw-bold" style="color: #FE6B38; text-align: start;" data-i18n="stories_label">قصص من الواقع</h6>
+                            <h3 class="fw-bold mb-4 font-24" style="color: #8EAB67; text-align: start;" data-i18n="stories_title">اكتشف تجارب حقيقية من أشخاص شاركوا قصصهم
                                 معنا</h3>
-                            <a href="#" class="btn btn-orange rounded-pill text-white text-end fw-bold">احكي قصتك <i
-                                    class="fa-solid fa-arrow-left me-2"></i></a>
+        <a href="#" class="btn btn-orange rounded-pill text-white fw-bold" >
+                <span data-i18n="tell_story">احكي قصتك</span>
+                <i class="fa-solid fa-arrow-left me-2"></i>
+                </a>
 
                             <img class="share-img" src="assets/images/تصميم شخصين.png" alt="">
                             <span class="mic-glow mic-glow-orange"></span>
@@ -738,7 +709,7 @@
                         <div class="stories-wrapper p-4">
                             <div class="row g-3 container">
                                 <div class="col-md-6">
-                                    <div class="reels-container" id="reelsContainer">
+                                    <div class="reels-container" id="reelsContainer">   
                                         <div style="padding: 10px; border-radius: 16px;">
 
                                   
@@ -758,8 +729,8 @@
 
                                                 </div>
                                                 <div class="reel-info">
-                                                    <p class="reel-title">قصة أمل من غزة: كيف تحدى الحصار</p>
-                                                    <span class="reel-views">20K مشاهدة</span>
+                                                    <p class="reel-title" data-i18n="reel_title">قصة أمل من غزة: كيف تحدى الحصار</p>
+                                                    <span class="reel-views" data-i18n="reel_views">20K مشاهدة</span>
                                                 </div>
                                             </div>
                                             <div class="play-overlay" onclick="togglePlay(this)">
@@ -782,8 +753,8 @@
                                                     </span>
                                                 </div>
                                                 <div class="reel-info">
-                                                    <p class="reel-title">قصة أمل من غزة: كيف تحدى الحصار</p>
-                                                    <span class="reel-views">20K مشاهدة</span>
+                                                    <p class="reel-title" data-i18n="reel_title">قصة أمل من غزة: كيف تحدى الحصار</p>
+                                                    <span class="reel-views" data-i18n="reel_views">20K مشاهدة</span>
                                                 </div>
                                             </div>
                                             <div class="play-overlay" onclick="togglePlay(this)">
@@ -806,8 +777,8 @@
                                                     </span>
                                                 </div>
                                                 <div class="reel-info">
-                                                    <p class="reel-title">قصة أمل من غزة: كيف تحدى الحصار</p>
-                                                    <span class="reel-views">20K مشاهدة</span>
+                                                    <p class="reel-title" data-i18n="reel_title">قصة أمل من غزة: كيف تحدى الحصار</p>
+                                                    <span class="reel-views" data-i18n="reel_views">20K مشاهدة</span>
                                                 </div>
                                             </div>
                                             <div class="play-overlay" onclick="togglePlay(this)">
@@ -823,37 +794,38 @@
 
                                 <div class="comments-card col-md-6" style="gap:10px">
                                     <div style="display:flex; justify-content:space-between; align-items:center">
-                                        <span class="comments-count">الكومنت (250)</span>
+                                        <span class="comments-count" data-i18n="comments_full_label">الكومنت (250)</span>
                                         <div class="tab-row">
-                                            <button class="tab" onclick="setTab(this,'الأقدم')">الأقدم</button>
-                                            <button class="tab active" onclick="setTab(this,'الأحدث')">الأحدث</button>
+                                            <button class="tab" onclick="setTab(this,'الأقدم')" data-i18n="tab_oldest">الأقدم</button>
+                                            <button class="tab active" onclick="setTab(this,'الأحدث')" data-i18n="tab_newest">الأحدث</button>
                                         </div>
 
                                     </div>
                                     <div class="comments-list" id="commentsList">
                                         <div class="comment-item">
                                             <div class="avatar-circle av-green">أ</div>
-                                            <span>قصة ملهمة رغم كل التحديات</span>
+                                            <span data-i18n="comment_1">قصة ملهمة رغم كل التحديات</span>
                                         </div>
                                         <div class="comment-item">
                                             <div class="avatar-circle av-orange">م</div>
-                                            <span>حكاية بتعطي دافع للاستمرار</span>
+                                            <span data-i18n="comment_2">حكاية بتعطي دافع للاستمرار</span>
                                         </div>
                                         <div class="comment-item">
                                             <div class="avatar-circle av-blue"
                                                 style="background:#e1723b;color:#fff;font-weight:600">F</div>
-                                            <span>إصرار يستحق الاحترام</span>
+                                            <span data-i18n="comment_3">إصرار يستحق الاحترام</span>
                                         </div>
                                     </div>
-                                    <div class="show-more" onclick="showMore()">عرض المزيد ↓</div>
-                                    <div class="comment-input-row">
-                                                                              <div class="avatar-circle av-orange">م</div>
-  
-                                        <textarea class="comment-input" id="newComment"
-                                            placeholder="اترك تعليقك هنا..."></textarea>
+                                    <div class="show-more" onclick="showMore()" data-i18n="show_more">عرض المزيد ↓</div>
 
-                                                                                                <button class="send-btn" onclick="addComment()">
-                            <i class="fas fa-paper-plane text-white" style="transform: scaleX(-1);"></i>
+
+                                    <div class="comment-input-row">
+                                         <div class="avatar-circle av-orange">م</div>
+  
+                                        <textarea class="comment-input" id="newComment" placeholder="اترك تعليقك هنا..." data-i18n-placeholder="comment_placeholder" style="text-align: start;"></textarea>
+
+                                       <button class="send-btn" onclick="addComment()">
+                                                <i class="fas fa-paper-plane text-white" style="transform: scaleX(-1);"></i>
                                         </button>
 
                                     </div>
@@ -871,21 +843,19 @@
         </section>
 
 
-        <section class="user-opinions">
+        <section class="user-opinions" >
             <div class="container-fluid px-0">
-                <div class="row g-0 align-items-stretch position-relative">
+                <div class="row g-0 align-items-stretch position-relative"  dir="rtl">
                     <!-- القسم الأيسر: النص -->
-                    <div class="col-12 col-md-6 col-lg-7 two-thirds p-4 p-md-5 d-flex align-items-center">
-                        <div class="text-white textForOpenion">
+                    <div class="col-12 col-md-6 col-lg-7 two-thirds p-4 p-md-5 d-flex align-items-center" >
+                        <div class="text-white textForOpenion" >
                             <img src="assets/images/صوت 2.png" alt="logo" class="mb-3 logo-img">
-                            <p class="mb-2 fw-semibold opinions-label font-24 highlight-text" style="color: white;">آراء المستخدمين</p>
-                            <h4 class="fw-bold lh-base opinions-title">
-                                نؤمن أن رأيك هو جزء من تطويرنا ..<br>
-                                شاركنا تجربتك وساعدنا نكون<br>
-                                أفضل
+                            <p class="mb-2 fw-semibold opinions-label font-24 highlight-text" style="color: white;" data-i18n="opinions_label">آراء المستخدمين</p>
+                            <h4 class="fw-bold lh-base opinions-title" data-i18n="opinions_title">
+                                نؤمن أن رأيك هو جزء من تطويرنا .. شاركنا تجربتك وساعدنا نكون أفضل
                             </h4>
                             <button class="btn share-btn mt-4">
-                                شاركنا رأيك <i class="fa-solid fa-arrow-left ms-2"></i>
+                                <span data-i18n="share_opinion">شاركنا رأيك</span> <i class="fa-solid fa-arrow-left ms-2"></i>
                             </button>
                         </div>
                     </div>
@@ -894,7 +864,7 @@
                     <div class="col-12 col-md-6 col-lg-5 one-third d-none d-md-block"></div>
 
                     <!-- كارد السلايدر يطفو في المنتصف -->
-                    <div class="opinion-card-wrapper d-none d-md-block">
+                    <div class="opinion-card-wrapper d-none d-md-block" dir="ltr">
                         <div class="opinion-card">
                             <!-- السلايدر -->
                             <div id="opinionsCarousel" class="carousel slide" data-bs-ride="false">
@@ -906,8 +876,8 @@
                                                 <img src="assets/images/محمود زعيتر 2.png" alt="فرح حرز"
                                                     class="user-avatar">
                                                 <div class="flex-grow-1 text-end">
-                                                    <strong>فرح حرز</strong>
-                                                    <div class="text-muted small">فلسطين - غزة</div>
+                                                    <strong data-i18n="opinion_user_name">فرح حرز</strong>
+                                                    <div class="text-muted small" data-i18n="opinion_user_location">فلسطين - غزة</div>
                                                     <div class="stars">★★★★★</div>
                                                 </div>
                                             </div>
@@ -917,7 +887,7 @@
                                             </div>
 
                                         </div>
-                                        <p class="opinion-text">
+                                        <p class="opinion-text" data-i18n="opinion_text">
                                             تجربتي مع منصة صوت كانت مميزة جداً، حسيت إنها فعلاً تعطي مساحة حقيقية لكل
                                             شخص
                                             يعبّر عن أفكاره ويوصل صوته. الأدوات سهلة والاستخدام بسيط وكمان التفاعل مع
@@ -943,14 +913,6 @@
                                             onclick="goToSlide('opinionsCarousel', 'desktop', 4)">
 
                                     </div>
-                                    <!-- <div class="d-flex gap-2">
-                <button class="carousel-nav-btn" data-bs-target="#opinionsCarousel" data-bs-slide="prev">
-                  <i class="fa-solid fa-arrow-right"></i>
-                </button>
-                <button class="carousel-nav-btn" data-bs-target="#opinionsCarousel" data-bs-slide="next">
-                  <i class="fa-solid fa-arrow-left"></i>
-                </button>
-              </div> -->
                                 </div>
 
                             </div>
@@ -983,7 +945,7 @@
                                 </div>
 
                             </div>
-                            <p class="opinion-text">
+                            <p class="opinion-text" data-i18n="opinion_text">
                                 تجربتي مع منصة صوت كانت مميزة جداً، حسيت إنها فعلاً تعطي مساحة حقيقية لكل شخص
                                 يعبّر عن أفكاره ويوصل صوته. الأدوات سهلة والاستخدام بسيط وكمان التفاعل مع المحتوى
                                 والمجتمع خلاني أكون جزء من بيئة إبداع.
@@ -1041,57 +1003,57 @@
 
             <div class="container">
                 <h1 class="title">
-                    أعضاء
+                    <span data-i18n="team_title_pre">أعضاء</span>
                     <span class="highlight">
-                        فريقنا
+                        <span data-i18n="team_title_highlight">فريقنا</span>
                         <div class="box"></div>
                     </span>
                 </h1>
-                <p class="mb-5 describ-p">تعرّف على فريق صوت، مبدعين يصنعون الفرق</p>
+                <p class="mb-5 describ-p" data-i18n="team_subtitle">تعرّف على فريق صوت، مبدعين يصنعون الفرق</p>
                 <div class="owl-carousel owl-theme team-carousel">
                     <div class="item">
                         <div class="mic-container">
                             <div class="member-photo-box"><img src="member1.jpg"></div>
                             <img src="assets/images/مايك عوض 6.png" class="mic-frame">
-                            <div class="member-name-tag">هديل طافش</div>
+                            <div class="member-name-tag" data-i18n="team_member_1">هديل طافش</div>
                         </div>
-                        <div class="btn-profile-wrapper"><a href="#" class="btn-view-profile">عرض الملف الشخصي &gt;</a>
+                        <div class="btn-profile-wrapper"><a href="#" class="btn-view-profile" data-i18n="view_profile_arrow">عرض الملف الشخصي &gt;</a>
                         </div>
                     </div>
                     <div class="item">
                         <div class="mic-container">
                             <div class="member-photo-box"><img src="member2.jpg"></div>
                             <img src="assets/images/مايك عوض 6.png" class="mic-frame">
-                            <div class="member-name-tag">محمد الأشقر</div>
+                            <div class="member-name-tag" data-i18n="team_member_2">محمد الأشقر</div>
                         </div>
-                        <div class="btn-profile-wrapper"><a href="#" class="btn-view-profile">عرض الملف الشخصي &gt;</a>
+                        <div class="btn-profile-wrapper"><a href="#" class="btn-view-profile" data-i18n="view_profile_arrow">عرض الملف الشخصي &gt;</a>
                         </div>
                     </div>
                     <div class="item">
                         <div class="mic-container">
                             <div class="member-photo-box"><img src="member3.jpg"></div>
                             <img src="assets/images/مايك عوض 6.png" class="mic-frame">
-                            <div class="member-name-tag"> محمود الصالح</div>
+                            <div class="member-name-tag" data-i18n="team_member_3"> محمود الصالح</div>
                         </div>
-                        <div class="btn-profile-wrapper"><a href="#" class="btn-view-profile">عرض الملف الشخصي &gt;</a>
+                        <div class="btn-profile-wrapper"><a href="#" class="btn-view-profile" data-i18n="view_profile_arrow">عرض الملف الشخصي &gt;</a>
                         </div>
                     </div>
                     <div class="item">
                         <div class="mic-container">
                             <div class="member-photo-box"><img src="member4.jpg"></div>
                             <img src="assets/images/مايك عوض 6.png" class="mic-frame">
-                            <div class="member-name-tag"> هديل طافش</div>
+                            <div class="member-name-tag" data-i18n="team_member_4"> هديل طافش</div>
                         </div>
-                        <div class="btn-profile-wrapper"><a href="#" class="btn-view-profile">عرض الملف الشخصي &gt;</a>
+                        <div class="btn-profile-wrapper"><a href="#" class="btn-view-profile" data-i18n="view_profile_arrow">عرض الملف الشخصي &gt;</a>
                         </div>
                     </div>
                     <div class="item">
                         <div class="mic-container">
                             <div class="member-photo-box"><img src="member5.jpg"></div>
                             <img src="assets/images/مايك عوض 6.png" class="mic-frame">
-                            <div class="member-name-tag">انس مليحة</div>
+                            <div class="member-name-tag" data-i18n="team_member_5">انس مليحة</div>
                         </div>
-                        <div class="btn-profile-wrapper"><a href="#" class="btn-view-profile">عرض الملف الشخصي &gt;</a>
+                        <div class="btn-profile-wrapper"><a href="#" class="btn-view-profile" data-i18n="view_profile_arrow">عرض الملف الشخصي &gt;</a>
                         </div>
                     </div>
                 </div>
@@ -1102,74 +1064,74 @@
     </main>
     <footer class="footer-custom-bg pt-5 pb-4">
         <div class="" style="width: 90%; margin: 0 auto;">
-            <div class="row g-4 text-end align-items-start" dir="rtl">
+            <div class="row g-4 text-end align-items-start">
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" style="text-align: start;">
                     <div class="footer-logo mb-3">
                         <img src="assets/images/صوت ابيض.png" alt="صوت" width="120">
                     </div>
-                    <p class=" lh-lg  text-white font-16 fw-bold" >
+                    <p class=" lh-lg  text-white font-16 fw-bold" data-i18n="footer_about">
                         منصة صوت، تأسست لتكون مساحة للمبدعين، تجمع الحاضنة، صوت ميديا، والصوت نفسه، لتقديم محتوى ملهم
                         وتجارب فريدة لكل من يسعى لصوته أن يُسمع.
                     </p>
                 </div>
 
-                <div class="col-lg-3 col-md-6 text-white">
-                    <h5 class="fw-bold mb-4 text-white">الأقسام الرئيسية</h5>
+                <div class="col-lg-3 col-md-6 text-white" style="text-align: start;">
+                    <h5 class="fw-bold mb-4 text-white" data-i18n="footer_main_sections">الأقسام الرئيسية</h5>
                     <div class="row">
                         <div class="col-6">
                             <ul class="list-unstyled p-0 footer-links">
                                 <li class="mb-4"><a href="#" class="text-white text-decoration-none small"><i
-                                            class="fas fa-microphone-alt text-orange ms-2"></i> الرئيسية</a></li>
+                                            class="fas fa-microphone-alt text-orange ms-2"></i> <span data-i18n="nav_home">الرئيسية</span></a></li>
                                 <li class="mb-4"><a href="#" class="text-white text-decoration-none small"><i
-                                            class="fas fa-microphone-alt text-orange ms-2"></i> من نحن</a></li>
+                                            class="fas fa-microphone-alt text-orange ms-2"></i> <span data-i18n="nav_about">من نحن</span></a></li>
                                 <li class="mb-4"><a href="#" class="text-white text-decoration-none small"><i
-                                            class="fas fa-microphone-alt text-orange ms-2"></i> محتوانا</a></li>
+                                            class="fas fa-microphone-alt text-orange ms-2"></i> <span data-i18n="nav_content">محتوانا</span></a></li>
                                 <li class="mb-4"><a href="#" class="text-white text-decoration-none small"><i
-                                            class="fas fa-microphone-alt text-orange ms-2"></i> الفريق</a></li>
+                                            class="fas fa-microphone-alt text-orange ms-2"></i> <span data-i18n="nav_team">الفريق</span></a></li>
                             </ul>
                         </div>
                         <div class="col-6">
                             <ul class="list-unstyled p-0 footer-links">
                                 <li class="mb-4"><a href="#" class="text-white text-decoration-none small"><i
-                                            class="fas fa-microphone-alt text-orange ms-2"></i> صناع المحتوى</a></li>
+                                            class="fas fa-microphone-alt text-orange ms-2"></i> <span data-i18n="nav_creators">صناع المحتوى</span></a></li>
                                 <li class="mb-4"><a href="#" class="text-white text-decoration-none small"><i
-                                            class="fas fa-microphone-alt text-orange ms-2"></i> حاضنة صوت</a></li>
+                                            class="fas fa-microphone-alt text-orange ms-2"></i> <span data-i18n="nav_incubator">حاضنة صوت</span></a></li>
                                 <li class="mb-4"><a href="#" class="text-white text-decoration-none small"><i
-                                            class="fas fa-microphone-alt text-orange ms-2"></i> صوت ميديا</a></li>
+                                            class="fas fa-microphone-alt text-orange ms-2"></i> <span data-i18n="nav_media">صوت ميديا</span></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 text-white">
-                    <h5 class="fw-bold mb-4 text-white">روابط سريعة</h5>
+                <div class="col-lg-3 col-md-6 text-white" style="text-align: start;">
+                    <h5 class="fw-bold mb-4 text-white" data-i18n="footer_quick_links">روابط سريعة</h5>
                     <ul class="list-unstyled p-0 footer-links">
                         <li class="mb-4"><a href="#" class="text-white text-decoration-none small"><i
-                                    class="fas fa-microphone-alt text-orange ms-2"></i> الكواليس</a></li>
+                                    class="fas fa-microphone-alt text-orange ms-2"></i> <span data-i18n="footer_backstage">الكواليس</span></a></li>
                         <li class="mb-4"><a href="#" class="text-white text-decoration-none small"><i
-                                    class="fas fa-microphone-alt text-orange ms-2"></i> MEDIA KIT</a></li>
+                                    class="fas fa-microphone-alt text-orange ms-2"></i> <span data-i18n="footer_media_kit">MEDIA KIT</span></a></li>
                         <li class="mb-4"><a href="#" class="text-white text-decoration-none small"><i
-                                    class="fas fa-microphone-alt text-orange ms-2"></i> المدونة</a></li>
+                                    class="fas fa-microphone-alt text-orange ms-2"></i> <span data-i18n="footer_blog">المدونة</span></a></li>
                         <li class="mb-4"><a href="#" class="text-white text-decoration-none small"><i
-                                    class="fas fa-microphone-alt text-orange ms-2"></i> الأسئلة الشائعة</a></li>
+                                    class="fas fa-microphone-alt text-orange ms-2"></i> <span data-i18n="footer_faq">الأسئلة الشائعة</span></a></li>
                     </ul>
                 </div>
 
-                <div class="col-lg-3 col-md-6 text-white">
-                    <h5 class="fw-bold mb-4 text-white">ابقَ على اطلاع</h5>
-                    <p class="mb-3 text-white font-16">اشترك في نشرتنا الإخبارية ..</p>
+                <div class="col-lg-3 col-md-6 text-white" style="text-align: start !important;">
+                    <h5 class="fw-bold mb-4 text-white" data-i18n="footer_stay_updated">ابقَ على اطلاع</h5>
+                    <p class="mb-3 text-white font-16" data-i18n="footer_subscribe">اشترك في نشرتنا الإخبارية ..</p>
                     <div class="custom-newsletter-input mb-4 shadow-sm">
                         <div class="newsletter-icon-wrapper">
                             <i class="fas fa-paper-plane" style="transform: scaleX(-1);"></i>
                         </div>
-                        <input type="email" placeholder="ادخل بريدك الالكتروني" class="font-18 fw-bold">
+                        <input type="email" placeholder="ادخل بريدك الالكتروني" class="font-18 fw-bold" data-i18n-placeholder="footer_email_placeholder">
                     </div>
                     <div class="contact-info text-white">
-                        <p class="mb-2  d-flex align-items-center justify-content-start font-16"><i
-                                class="fa-solid fa-square-phone text-orange ms-3 font-16"></i> +972567247177</p>
+                        <p class="mb-2   d-flex align-items-center justify-content-start font-16"><i
+                                class="fa-solid fa-square-phone text-orange  font-16"></i> +972567247177</p>
                         <p class="mb-0 font-16 d-flex align-items-center justify-content-start"><i
-                                class="fas fa-envelope text-orange ms-3 font-16"></i> info@sawtgaza.com</p>
+                                class="fas fa-envelope text-orange font-16"></i> info@sawtgaza.com</p>
                     </div>
                 </div>
             </div>
@@ -1178,7 +1140,7 @@
         <hr class="container text-white opacity-25 my-4">
 
         <div class="container">
-            <div class="row align-items-center gy-4" dir="rtl">
+            <div class="row align-items-center gy-4">
 
                 <div class="col-12 col-md-4 order-md-2 text-center">
                     <div class="d-flex gap-3 justify-content-center">
@@ -1192,7 +1154,7 @@
 
                 <div class="col-12 col-md-4 order-md-1 text-center text-md-end">
                     <p class="mb-0 small ">
-                        © جميع الحقوق محفوظة. 2026 <span class="text-white " style="background-color: #E1723B;">SAWTGAZA</span>
+                        <span data-i18n="footer_copyright">© جميع الحقوق محفوظة. 2026</span> <span class="text-white " style="background-color: #E1723B;" data-i18n="footer_rights_brand">SAWTGAZA</span>
                     </p>
                 </div>
 
@@ -1200,12 +1162,11 @@
                     <div
                         class="d-flex align-items-center justify-content-center justify-content-md-start gap-3 flex-wrap">
                         <a href="#"
-                            class="text-white   border-start ps-3 border-opacity-25" style="text-decoration: underline !important;">سياسة
-                            الخصوصية</a>
-                        <a href="#" class="text-white " style="text-decoration: underline !important;">شروط الاستخدام</a>
+                            class="text-white    ps-3 " style="text-decoration: underline !important;" data-i18n="footer_privacy">سياسة الخصوصية</a>
+                        <a href="#" class="text-white " style="text-decoration: underline !important;" data-i18n="footer_terms">شروط الاستخدام</a>
 
                         <div class="d-flex flex-column align-items-center control-wrapper">
-                            <button class="btn-control-custom  rounded-circle mb-2" id="theme-toggle">
+                            <button class="btn-control-custom  rounded-circle " id="theme-toggle">
                                 <i class="fas fa-moon"></i>
                             </button>
                             <button class="btn-control-custom rounded-circle" onclick="scrollToTop()">
@@ -1237,6 +1198,7 @@
         integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/translate.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
