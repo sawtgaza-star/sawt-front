@@ -481,3 +481,6 @@ progressBar.addEventListener("click", (e) => {
   video.currentTime = newTime;
 });
 
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}

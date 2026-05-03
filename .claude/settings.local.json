@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git *)",
+      "Bash(cp \"/c/Users/GL/.claude/image-cache/f893cf31-0c05-45f3-aae1-214bb0c96278/3.png\" \"D:/منصة صوت/sawt-front/assets/images/card-green.png\")",
+      "Bash(cp \"/c/Users/GL/.claude/image-cache/f893cf31-0c05-45f3-aae1-214bb0c96278/4.png\" \"D:/منصة صوت/sawt-front/assets/images/card-beige.png\")"
+    ]
+  }
+}
