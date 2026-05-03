@@ -416,6 +416,7 @@ a {
 .bg-icon-right {
   top: -170px;
   transform: rotate(358deg);
+  right: 0px;
 }
 
 .bg-icon-right img {
