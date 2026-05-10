@@ -568,11 +568,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  const storyBox = document.querySelector(".story-box");
+
   items.forEach((el) => {
     el.addEventListener("click", function (e) {
       e.preventDefault();
       const story = el.dataset.story;
       if (story) selectStory(story);
+      if (storyBox) {
+        storyBox.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
     });
   });
 
