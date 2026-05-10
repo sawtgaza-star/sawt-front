@@ -208,6 +208,37 @@ const translations = {
 
     // Aria
     toggle_lang: "تغيير اللغة",
+
+    // about page
+    about_header: "من نحن",
+    about_desc:
+      " منصة إعلامية رقمية تجمع بين المحتوى الإنساني، التدريب الاحترافي، والإنتاج الإعلامي.",
+    about_register: "سجل الآن",
+    about_collaborate: "تعاون معنا",
+    successful_members: "عضو ناجح",
+    about_platform_title: "نبذة عن منصة صوت",
+    about_platform_question: "ما الذي يدفعنا لنكون صوتك؟",
+    about_platform_desc:
+      "نؤمن أن لكل إنسان قصة تستحق أن تُروى، لذلك جاءت صوت لتكون مساحة حرة للتعبير، حيث يلتقي الأفراد لمشاركة تجاربهم وأفكارهم بصدق. نساعدك على إيصال صوتك إلى الآخرين، ونمنح المحتوى الإنساني مساحة حقيقية ليُرى، ويُسمع، ويترك أثرًا.",
+    join_our_team_title_pre: "قد تكون قصتك بداية",
+    join_our_team_title_highlight: "التغيير",
+    join_our_team_desc:
+      "كل صوت مهم، إذا كانت لديك قصة تستحق أن تُسمع فإن صوت ستدعمك من أول محادثة إلى التأثير العام.",
+    join_our_team_join: "انضم الينا",
+    join_our_team_support: "ادعم فريق صوت",
+    leaders: "قادة",
+    teams: "الفرق",
+    leaders_of_teams_subtitle: "الوجوه خلف الحكاية",
+    story_title: "قصتنا",
+    story_subtitle: "من الصمت... إلى صوت يُسمع",
+    story_values: "قيمنا",
+    story_journey: "رحلتنا",
+    story_offer: "ما نقدم",
+    story_impact: "التأثير",
+    story_paragraph_1:
+      'بدأت رحلة <span class="highlight-word">"صوت"</span> في ظل ظروفٍ صعبة، حيث كانت الكثير من القصص الحقيقية مخفية، <span class="highlight-word">والأصوات</span> الصادقة مكتومة تحت ضغوط الإعلام التقليدي والسرديات المُسيّسة. آمنّا بأن الحقيقة تستحق أن تُروى، وأن لكل إنسان الحق في أن يُسمع صوته.',
+    story_paragraph_2:
+      'واجهنا تحدياتٍ كبيرة؛ من محدودية الموارد، وصعوبة الوصول إلى المناطق المتضررة، إلى محاولات التشكيك بالمصداقية. لكننا استمررنا، مدفوعين بإيمانٍ راسخ بأن الإعلام الحقيقي <span class="highlight-word">هو حقٌ للناس، وليس أداةً للسلطة</span>.',
   },
 
   en: {
@@ -414,6 +445,37 @@ const translations = {
 
     // Aria
     toggle_lang: "Switch language",
+
+    //about page
+    about_header: "About Sawt",
+    about_desc:
+      "A digital media platform that combines humanitarian content, professional training, and media production.",
+    about_register: "Register Now",
+    about_collaborate: "Collaborate With Us",
+    successful_members: "Successful Member",
+    about_platform_title: "About Sawt Platform",
+    about_platform_question: "What drives us to be your voice?",
+    about_platform_desc:
+      "We believe every person has a story worth telling. That's why Sawt was created as a free space for expression, where individuals come together to share their experiences and ideas with sincerity. We help you reach others with your voice, giving humanitarian content a real space to be seen, heard, and leave a lasting impact.",
+    leaders: "Leaders",
+    teams: "Of Teams",
+    leaders_of_teams_subtitle: "The faces behind the story",
+    join_our_team_title_pre: "Your story could be the start of",
+    join_our_team_title_highlight: "change",
+    join_our_team_desc:
+      "Every voice matters. If you have a story worth hearing, Sawt will support you from the first conversation to public impact.",
+    join_our_team_join: "Join Us",
+    join_our_team_support: "Support Sawt Team",
+    story_title: "Our Story",
+    story_subtitle: "From silence... to a voice that is heard",
+    story_values: "Our Values",
+    story_journey: "Our Journey",
+    story_offer: "What We Offer",
+    story_impact: "Our Impact",
+    story_paragraph_1:
+      'The journey of <span class="highlight-word">"Sawt"</span> began under difficult circumstances, where many real stories were hidden and <span class="highlight-word">honest voices</span> were silenced under the pressure of traditional media and politicized narratives. We believed that truth deserves to be told, and that every person has the right to be heard.',
+    story_paragraph_2:
+      'We faced great challenges: limited resources, the difficulty of reaching affected areas, and attempts to undermine our credibility. But we continued, driven by an unshakable belief that real journalism <span class="highlight-word">is a right of the people, not a tool of authority</span>.',
   },
 };
 
@@ -432,6 +494,13 @@ function applyTranslations(lang) {
     const key = el.getAttribute("data-i18n");
     if (translations[lang][key]) {
       el.textContent = translations[lang][key];
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-html]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-html");
+    if (translations[lang][key]) {
+      el.innerHTML = translations[lang][key];
     }
   });
 

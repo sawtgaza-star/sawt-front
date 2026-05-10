@@ -82,7 +82,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-observer.observe(cardContainer);
+if (cardContainer) observer.observe(cardContainer);
 
 const users = [
   {
@@ -164,6 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   ["opinionsCarousel", "mobileCarousel"].forEach((id) => {
     const el = document.getElementById(id);
+    if (!el) return;
     const type = id === "opinionsCarousel" ? "desktop" : "mobile";
     const selector =
       type === "desktop" ? ".avatar-indicator" : ".avatar-indicator-mobile";
@@ -348,16 +349,19 @@ function addComment() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  const newComment = document.getElementById("newComment");
+  if (!newComment) return;
+
   renderComments();
 
-  document.getElementById("newComment").addEventListener("keydown", (e) => {
+  newComment.addEventListener("keydown", (e) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
       addComment();
     }
   });
 
-  document.getElementById("newComment").addEventListener("input", function () {
+  newComment.addEventListener("input", function () {
     this.style.height = "auto";
     this.style.height = this.scrollHeight + "px";
   });
@@ -476,21 +480,70 @@ if (reelsContainer) {
 const video = document.querySelector(".my-video");
 const progress = document.querySelector(".progress");
 
-video.addEventListener("timeupdate", () => {
-  const percent = (video.currentTime / video.duration) * 100;
-  progress.style.width = percent + "%";
-});
+if (video && progress) {
+  video.addEventListener("timeupdate", () => {
+    const percent = (video.currentTime / video.duration) * 100;
+    progress.style.width = percent + "%";
+  });
+}
 
 const progressBar = document.querySelector(".progress-bar");
 
-progressBar.addEventListener("click", (e) => {
-  const rect = progressBar.getBoundingClientRect();
-  const clickX = e.clientX - rect.left;
-  const width = rect.width;
-  const newTime = (clickX / width) * video.duration;
-  video.currentTime = newTime;
-});
+if (progressBar && video) {
+  progressBar.addEventListener("click", (e) => {
+    const rect = progressBar.getBoundingClientRect();
+    const clickX = e.clientX - rect.left;
+    const width = rect.width;
+    const newTime = (clickX / width) * video.duration;
+    video.currentTime = newTime;
+  });
+}
 
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const path = (window.location.pathname.split("/").pop() || "index.html").toLowerCase();
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  let matched = false;
+
+  navLinks.forEach((link) => {
+    const href = (link.getAttribute("href") || "").split("/").pop().toLowerCase();
+    link.classList.remove("active");
+    if (href && href !== "#" && href === path) {
+      link.classList.add("active");
+      matched = true;
+    }
+  });
+
+  if (!matched && (path === "" || path === "index.html")) {
+    const home = document.querySelector('.navbar-nav .nav-link[data-i18n="nav_home"]');
+    if (home) home.classList.add("active");
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navCollapse = document.getElementById("mainNav");
+  const navToggler = document.querySelector('.navbar-toggler[data-bs-target="#mainNav"]');
+  if (!navCollapse || !navToggler) return;
+
+  function closeNav() {
+    if (!navCollapse.classList.contains("show")) return;
+    if (window.bootstrap && bootstrap.Collapse) {
+      bootstrap.Collapse.getOrCreateInstance(navCollapse).hide();
+    } else {
+      navCollapse.classList.remove("show");
+    }
+  }
+
+  document.addEventListener("click", function (e) {
+    if (!navCollapse.classList.contains("show")) return;
+    if (navCollapse.contains(e.target) || navToggler.contains(e.target)) return;
+    closeNav();
+  });
+
+  navCollapse.querySelectorAll(".nav-link").forEach((link) => {
+    link.addEventListener("click", closeNav);
+  });
+});
