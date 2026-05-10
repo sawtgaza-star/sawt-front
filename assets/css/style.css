@@ -59,6 +59,10 @@ a {
   font-size: 12px;
 }
 
+.font-13 {
+  font-size: 13px;
+}
+
 .font-14 {
   font-size: 14px;
 }
@@ -146,6 +150,7 @@ a {
   width: 40px;
   font-size: 18px !important;
 }
+
 .fa-language {
   margin-right: -6px;
   margin-top: 2px;
@@ -316,9 +321,11 @@ a {
   border-radius: 35px;
   /* زيادة التدوير للصورة لتعطي مظهر الـ Padding */
 }
+
 .card-footer {
   width: 100%;
 }
+
 .icon-box {
   width: 60px;
   height: 60px;
@@ -653,6 +660,7 @@ a {
   align-items: center;
   justify-content: center;
 }
+
 [dir="ltr"] .read-more-btn .arrow {
   transform: scaleX(-1);
 }
@@ -853,6 +861,7 @@ a {
   position: relative;
   display: inline-block;
 }
+
 .highlight-text-content-section::before {
   content: "";
   position: absolute;
@@ -864,6 +873,7 @@ a {
   z-index: -1;
   opacity: 0.9;
 }
+
 .creators-carousel2 .owl-next {
   background-color: #000 !important;
 }
@@ -1258,13 +1268,11 @@ a {
   flex-direction: column;
   justify-content: space-between;
   /* padding: 16px 12px; */
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.1) 0%,
-    transparent 30%,
-    transparent 60%,
-    rgba(0, 0, 0, 0.7) 100%
-  );
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      transparent 30%,
+      transparent 60%,
+      rgba(0, 0, 0, 0.7) 100%);
 }
 
 .reel-actions {
@@ -1318,6 +1326,7 @@ a {
   margin: 0 0 4px;
   line-height: 1.5;
 }
+
 [dir="ltr"] .reel-info {
   direction: ltr;
   text-align: start;
@@ -1367,17 +1376,6 @@ a {
 
 .reel-item:not(.playing) .play-overlay {
   opacity: 1;
-}
-
-.video-card {
-  border-radius: 14px;
-  overflow: hidden;
-  position: relative;
-  background: #111;
-  height: 100%;
-  min-height: 280px;
-  cursor: pointer;
-  flex: 1;
 }
 
 .video-thumb {
@@ -1448,6 +1446,7 @@ a {
 .share-story-card a {
   align-self: flex-start;
 }
+
 [dir="ltr"] .share-story-card a {
   align-self: flex-end;
 }
@@ -1483,21 +1482,17 @@ a {
 .share-story-card .mic-glow-orange {
   bottom: 90px;
   left: 75px;
-  background: radial-gradient(
-    circle,
-    rgb(241, 104, 0) 0%,
-    rgba(255, 140, 50, 0) 70%
-  );
+  background: radial-gradient(circle,
+      rgb(241, 104, 0) 0%,
+      rgba(255, 140, 50, 0) 70%);
 }
 
 .share-story-card .mic-glow-green {
   bottom: 75px;
   left: 140px;
-  background: radial-gradient(
-    circle,
-    rgb(113, 235, 7) 0%,
-    rgba(150, 220, 90, 0) 70%
-  );
+  background: radial-gradient(circle,
+      rgb(113, 235, 7) 0%,
+      rgba(150, 220, 90, 0) 70%);
 }
 
 .share-story-card a {
@@ -1521,6 +1516,7 @@ a {
   background: inherit;
   direction: ltr;
 }
+
 [dir="ltr"] .reels-container {
   direction: rtl;
 }
@@ -1531,17 +1527,20 @@ a {
 }
 
 .reels-container::-webkit-scrollbar-track {
-  background: #e6e1e1; /* لون الخلفية */
+  background: #e6e1e1;
+  /* لون الخلفية */
   border-radius: 10px;
 }
 
 .reels-container::-webkit-scrollbar-thumb {
-  background: #afafaf; /* لون السكرول */
+  background: #afafaf;
+  /* لون السكرول */
   border-radius: 10px;
 }
 
 .reels-container::-webkit-scrollbar-thumb:hover {
-  background: #9a9a9a; /* (اختياري) عند hover */
+  background: #9a9a9a;
+  /* (اختياري) عند hover */
 }
 
 .reels-container::-webkit-scrollbar-button:single-button {
@@ -1579,13 +1578,11 @@ a {
 .reel-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.1) 0%,
-    transparent 30%,
-    transparent 60%,
-    rgba(0, 0, 0, 0.75) 100%
-  );
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      transparent 30%,
+      transparent 60%,
+      rgba(0, 0, 0, 0.75) 100%);
   pointer-events: none;
 }
 
@@ -1860,6 +1857,7 @@ a {
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
+
   .reels-container,
   .reel-item {
     height: 320px;
@@ -2163,11 +2161,6 @@ a {
   font-size: 11px;
 }
 
-/* تأثيرات التمرير */
-.video-card:hover .play-overlay {
-  background: var(--sout-orange);
-  transition: 0.3s;
-}
 
 /*  */
 
@@ -2199,13 +2192,11 @@ a {
 
 .two-thirds {
   /* background: url("../images/imagePersons.jpeg") center/cover no-repeat; */
-  background: linear-gradient(
-    to top right,
-    #4c5c37 0%,
-    #4c5c37 35%,
-    #a5682c 70%,
-    #ff7420 100%
-  );
+  background: linear-gradient(to top right,
+      #4c5c37 0%,
+      #4c5c37 35%,
+      #a5682c 70%,
+      #ff7420 100%);
   min-height: 480px;
   position: relative;
 }
@@ -2217,7 +2208,7 @@ a {
   /* background: rgba(0, 0, 0, 0.45); */
 }
 
-.two-thirds > div {
+.two-thirds>div {
   position: relative;
   z-index: 2;
 }
@@ -2948,17 +2939,23 @@ a {
   /* اللون الزيتي الداكن */
   background-image:
     url("/assets/images/غيوم.png"),
-    /* غيوم أعلى اليمين */ url("/assets/images/شجرة\ زيتون.png"),
-    /* شجرة زيتون أسفل اليمين */ url("/assets/images/غيوم.png"),
-    /* غيوم أعلى اليسار */ url("/assets/images/عصافير.png");
+    /* غيوم أعلى اليمين */
+    url("/assets/images/شجرة\ زيتون.png"),
+    /* شجرة زيتون أسفل اليمين */
+    url("/assets/images/غيوم.png"),
+    /* غيوم أعلى اليسار */
+    url("/assets/images/عصافير.png");
   /* طيور مهاجرة أسفل اليسار */
 
   /* تحديد موقع كل صورة بدقة */
   background-position:
     top right,
-    /* غيوم أعلى اليمين */ bottom right,
-    /* شجرة زيتون أسفل اليمين */ top left,
-    /* غيوم أعلى اليسار */ bottom left 40px;
+    /* غيوم أعلى اليمين */
+    bottom right,
+    /* شجرة زيتون أسفل اليمين */
+    top left,
+    /* غيوم أعلى اليسار */
+    bottom left 40px;
   /* طيور مهاجرة أسفل اليسار (مرفوعة قليلاً) */
 
   background-repeat: no-repeat;
@@ -2966,9 +2963,12 @@ a {
   /* تحديد حجم الصور لتتناسب مع التوزيع */
   background-size:
     250px auto,
-    /* غيوم اليمين */ 180px auto,
-    /* شجرة الزيتون */ 220px auto,
-    /* غيوم اليسار */ 130px auto;
+    /* غيوم اليمين */
+    180px auto,
+    /* شجرة الزيتون */
+    220px auto,
+    /* غيوم اليسار */
+    130px auto;
   /* الطيور */
 
   position: relative;
@@ -3029,6 +3029,92 @@ a {
   position: relative;
   z-index: 2;
   width: 100%;
+}
+
+
+/* content page */
+
+.nav-pills .nav-link.active {
+  background-color: #f37021 !important;
+}
+
+.nav-pills .nav-link {
+  color: #333;
+  border: 1px solid #f37021;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.reel-item-size {
+  width: 100%;
+  height: 380px;
+}
+
+.time-video {
+  background-color: rgba(0, 0, 0, 0.28);
+}
+
+.form-select {
+  border: 1px solid #f37021;
+  white-space: nowrap;
+  border-radius: 15px;
+}
+.form-select:focus{
+border-color: #f37021;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem white;
+}
+
+
+@media (min-width: 992px) {
+  .col-lg-2-4 {
+    width: 20%;
+  }
+}
+
+/* -------------------------------------- */
+/* تنسيق القسم */
+.dir-rtl { direction: rtl; }
+
+.section-title {
+    border-bottom: 4px solid #d4e157; /* اللون الأخضر الفاتح تحت العنوان */
+    display: inline-block;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+/* زر التشغيل */
+.play-btn {
+    width: 50px;
+    height: 50px;
+    background: rgba(255,255,255,0.3);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+    backdrop-filter: blur(5px);
+}
+
+/* النصوص الملونة */
+.video-desc {
+    background-color: #ff5722; /* اللون البرتقالي */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.carousel-wrapper {
+    /* المسافة من اليمين بتمثل بداية الكونتينر */
+    padding-right: calc((100% - 1320px) / 2); /* رقم 1320 هو عرض كونتينر بوتستراب XXL */
+    direction: ltr;
+}
+
+/* عشان الصورة اللي عالطرف تضل طالعة لبرا الشاشة */
+.owl-stage-outer {
+    overflow: visible !important;
 }
 
 /* ✅ تعديلات الجوال (Mobile Responsive) */
@@ -3164,6 +3250,7 @@ a {
   .textForOpenion {
     max-width: 75%;
   }
+
   .textForOpenion .highlight-text {
     position: relative;
     display: block;
@@ -3205,15 +3292,18 @@ a {
     bottom: -70px;
     left: -27px;
   }
+
   .share-story-card .mic-glow {
     width: 40px;
     height: 40px;
     filter: blur(8px);
   }
+
   .share-story-card .mic-glow-orange {
     bottom: 30px;
     left: 33px;
   }
+
   .share-story-card .mic-glow-green {
     bottom: 20px;
     left: 70px;
@@ -3268,6 +3358,7 @@ a {
   .userOpenionNav {
     padding-bottom: 5px;
   }
+
   .searchDiv {
     margin-top: 20px;
   }
@@ -3310,15 +3401,18 @@ a {
     bottom: -57px;
     left: -26px;
   }
+
   .share-story-card .mic-glow {
     width: 32px;
     height: 32px;
     filter: blur(8px);
   }
+
   .share-story-card .mic-glow-orange {
     bottom: 40px;
     left: 40px;
   }
+
   .share-story-card .mic-glow-green {
     bottom: 30px;
     left: 70px;
@@ -3343,12 +3437,15 @@ a {
     flex-direction: column;
     gap: 20px;
   }
+
   .navbar .container {
     max-width: 90%;
   }
+
   .textForOpenion {
     max-width: 100%;
   }
+
   .textForOpenion .highlight-text {
     position: relative;
     display: block;
@@ -3365,6 +3462,7 @@ a {
     z-index: -1;
     opacity: 0.9;
   }
+
   [dir="ltr"] .textForOpenion .highlight-text::before {
     content: "";
     position: absolute;
@@ -3387,6 +3485,7 @@ a {
   .textForOpenion {
     max-width: 100%;
   }
+
   .textForOpenion .highlight-text::before {
     content: "";
     position: absolute;
@@ -3416,10 +3515,12 @@ a {
     height: 28px;
     filter: blur(8px);
   }
+
   .share-story-card .mic-glow-orange {
     bottom: 30px;
     left: 50px;
   }
+
   .share-story-card .mic-glow-green {
     bottom: 28px;
     left: 71px;
