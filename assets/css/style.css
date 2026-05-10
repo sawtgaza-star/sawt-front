@@ -178,8 +178,20 @@ a {
   font-size: 18px !important;
 }
 .fa-language {
-  margin-right: -6px;
+  margin-right: -3px;
   margin-top: 2px;
+}
+
+[dir="ltr"] .theme-toggle-and-up {
+  position: fixed;
+  bottom: 23px;
+  right: 50px !important;
+}
+
+[dir="rtl"] .theme-toggle-and-up {
+  position: fixed;
+  bottom: 23px;
+  left: 50px;
 }
 
 [dir="ltr"] .fa-language {
@@ -3193,11 +3205,22 @@ a {
 @media (max-width: 767.98px) {
   .control-wrapper {
     margin-top: 15px;
-    width: 100%;
-    flex-direction: row !important;
-    /* جعل الأزرار بجانب بعض في الجوال لسهولة الضغط */
+    /* width: 100%; */
     justify-content: center;
-    gap: 15px;
+    gap: 8px;
+    flex-direction: column;
+  }
+
+  [dir="ltr"] .theme-toggle-and-up {
+    position: fixed;
+    bottom: 23px;
+    right: 20px !important;
+  }
+
+  [dir="rtl"] .theme-toggle-and-up {
+    position: fixed;
+    bottom: 23px;
+    left: 20px !important;
   }
 
   .control-wrapper .mb-2 {
