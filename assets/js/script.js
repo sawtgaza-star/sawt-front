@@ -547,3 +547,35 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", closeNav);
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const items = document.querySelectorAll(".timeline-item[data-story]");
+  const paragraphs = document.querySelectorAll(".story-content .story-text");
+  if (!items.length || paragraphs.length < 2) return;
+
+  function selectStory(story) {
+    items.forEach((el) => {
+      el.classList.toggle("active", el.dataset.story === story);
+    });
+    paragraphs[0].setAttribute("data-i18n-html", `story_paragraph_${story}_1`);
+    paragraphs[1].setAttribute("data-i18n-html", `story_paragraph_${story}_2`);
+
+    if (typeof applyTranslations === "function") {
+      const lang = typeof getCurrentLang === "function"
+        ? getCurrentLang()
+        : (localStorage.getItem("lang") || "ar");
+      applyTranslations(lang);
+    }
+  }
+
+  items.forEach((el) => {
+    el.addEventListener("click", function (e) {
+      e.preventDefault();
+      const story = el.dataset.story;
+      if (story) selectStory(story);
+    });
+  });
+
+  const initial = document.querySelector(".timeline-item.active[data-story]");
+  selectStory(initial ? initial.dataset.story : "journey");
+});

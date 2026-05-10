@@ -353,13 +353,13 @@
         <!-- TIMELINE -->
         <div class="timeline-wrapper">
           <div class="timeline">
-            <div class="timeline-item">
+            <button class="timeline-item" data-story="values">
               <i class="fa-solid fa-up-long timeline-item-arrow-1"></i>
               <div class="circle">
                 <i class="fa-solid fa-wand-magic-sparkles"></i>
               </div>
               <div class="timeline-title" data-i18n="story_values">قيمنا</div>
-            </div>
+            </button>
 
             <span class="timeline-arrow" aria-hidden="true">
               <svg
@@ -380,14 +380,17 @@
               </svg>
             </span>
 
-            <div class="timeline-item timeline-item-center">
+            <button
+              class="timeline-item timeline-item-center active"
+              data-story="journey"
+            >
               <i class="fa-solid fa-up-long timeline-item-arrow-2"></i>
 
               <div class="circle">
                 <i class="fa-solid fa-bolt"></i>
               </div>
               <div class="timeline-title" data-i18n="story_journey">رحلتنا</div>
-            </div>
+            </button>
 
             <span
               class="timeline-arrow timeline-arrow-center"
@@ -411,13 +414,16 @@
               </svg>
             </span>
 
-            <div class="timeline-item timeline-item-center">
+            <button
+              class="timeline-item timeline-item-center"
+              data-story="offer"
+            >
               <i class="fa-solid fa-up-long timeline-item-arrow-3"></i>
               <div class="circle">
                 <i class="fa-solid fa-arrow-trend-up"></i>
               </div>
               <div class="timeline-title" data-i18n="story_offer">ما نقدم</div>
-            </div>
+            </button>
 
             <span class="timeline-arrow" aria-hidden="true">
               <svg
@@ -438,14 +444,14 @@
               </svg>
             </span>
 
-            <div class="timeline-item">
+            <button class="timeline-item" data-story="impact">
               <i class="fa-solid fa-up-long timeline-item-arrow-4"></i>
 
               <div class="circle">
                 <i class="fa-solid fa-user-group"></i>
               </div>
               <div class="timeline-title" data-i18n="story_impact">التأثير</div>
-            </div>
+            </button>
           </div>
         </div>
 
@@ -456,24 +462,14 @@
           </div>
 
           <div class="story-content">
-            <p class="story-text" data-i18n-html="story_paragraph_1">
-              بدأت رحلة
-              <span class="highlight-word">"صوت"</span>
-              في ظل ظروفٍ صعبة، حيث كانت الكثير من القصص الحقيقية مخفية،
-              <span class="highlight-word"> والأصوات </span>
-              الصادقة مكتومة تحت ضغوط الإعلام التقليدي والسرديات المُسيّسة.
-              آمنّا بأن الحقيقة تستحق أن تُروى، وأن لكل إنسان الحق في أن يُسمع
-              صوته.
-            </p>
-
-            <p class="story-text mt-4" data-i18n-html="story_paragraph_2">
-              واجهنا تحدياتٍ كبيرة؛ من محدودية الموارد، وصعوبة الوصول إلى
-              المناطق المتضررة، إلى محاولات التشكيك بالمصداقية. لكننا استمررنا،
-              مدفوعين بإيمانٍ راسخ بأن الإعلام الحقيقي
-              <span class="highlight-word">
-                هو حقٌ للناس، وليس أداةً للسلطة </span
-              >.
-            </p>
+            <p
+              class="story-text"
+              data-i18n-html="story_paragraph_journey_1"
+            ></p>
+            <p
+              class="story-text mt-4"
+              data-i18n-html="story_paragraph_journey_2"
+            ></p>
           </div>
 
           <div class="quote-bottom">
@@ -713,7 +709,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-lg-6" style="margin-top: -10px">
+              <div class="col-lg-6 main-links">
                 <ul class="list-unstyled p-0 footer-links">
                   <li class="mb-4">
                     <a href="#" class="text-white text-decoration-none small"
