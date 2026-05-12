@@ -3059,10 +3059,11 @@ a {
   white-space: nowrap;
   border-radius: 15px;
 }
-.form-select:focus{
-border-color: #f37021;
-    outline: 0;
-    box-shadow: 0 0 0 .25rem white;
+
+.form-select:focus {
+  border-color: #f37021;
+  outline: 0;
+  box-shadow: 0 0 0 .25rem white;
 }
 
 
@@ -3073,48 +3074,168 @@ border-color: #f37021;
 }
 
 /* -------------------------------------- */
-/* تنسيق القسم */
-.dir-rtl { direction: rtl; }
+
+.content {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/5771698600399277852.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
 
 .section-title {
-    border-bottom: 4px solid #d4e157; /* اللون الأخضر الفاتح تحت العنوان */
-    display: inline-block;
-    padding-bottom: 5px;
-    font-weight: bold;
+  border-bottom: 4px solid #d4e157;
+  /* اللون الأخضر الفاتح تحت العنوان */
+  display: inline-block;
+  padding-bottom: 5px;
+  font-weight: bold;
 }
 
 /* زر التشغيل */
 .play-btn {
-    width: 50px;
-    height: 50px;
-    background: rgba(255,255,255,0.3);
-    border: none;
-    border-radius: 50%;
-    color: white;
-    font-size: 24px;
-    margin-bottom: 10px;
-    backdrop-filter: blur(5px);
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+  backdrop-filter: blur(5px);
 }
 
 /* النصوص الملونة */
 .video-desc {
-    background-color: #ff5722; /* اللون البرتقالي */
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    font-weight: bold;
+  background-color: #ff5722;
+  /* اللون البرتقالي */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 
-.carousel-wrapper {
-    /* المسافة من اليمين بتمثل بداية الكونتينر */
-    padding-right: calc((100% - 1320px) / 2); /* رقم 1320 هو عرض كونتينر بوتستراب XXL */
-    direction: ltr;
+/* secrion 2 */
+
+.most-watched-section {
+  padding: 60px 0;
+  background-color: #fff;
 }
 
-/* عشان الصورة اللي عالطرف تضل طالعة لبرا الشاشة */
-.owl-stage-outer {
-    overflow: visible !important;
+/* تنسيق العنوان */
+.section-header {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-weight: 800;
+  font-size: 1.8rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  height: 6px;
+  background-color: var(--primary-green);
+  border-radius: 2px;
+}
+
+/* سر الخروج عن الشاشة: المحاذاة مع الـ Container */
+.swiper-outer-container {
+  /* نحسب الهامش الأيمن للكونتينر ليتم تطبيقه كبادينج */
+  padding-right: calc((100% - var(--bs-breakpoint-xl, 1320px)) / 2 + 12px);
+  overflow: visible !important;
+}
+
+@media (max-width: 1400px) {
+  .swiper-outer-container {
+    padding-right: calc((100% - 1140px) / 2 + 12px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .swiper-outer-container {
+    padding-right: calc((100% - 960px) / 2 + 12px);
+  }
+}
+
+@media (max-width: 992px) {
+  .swiper-outer-container {
+    padding-right: calc((100% - 720px) / 2 + 12px);
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-outer-container {
+    padding-right: 20px;
+  }
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 20px !important;
+  padding-bottom: 50px;
+}
+
+
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 100px;
+  /* عرض الكرت */
+  height: 300px;
+  /* طول الكرت */
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+/* الصورة الأساسية في المنتصف */
+.swiper-slide-active {
+  border: 3px solid var(--primary-color);
+  box-shadow: 0 0 30px rgba(255, 106, 0, 0.89);
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* تنسيق أزرار التنقل */
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--primary-color);
+  background: rgba(255, 255, 255, 0.1);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  backdrop-filter: blur(5px);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #fff;
 }
 
 /* ✅ تعديلات الجوال (Mobile Responsive) */

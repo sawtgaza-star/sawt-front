@@ -26,26 +26,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <style>
-        .owl-theme .owl-nav [class*=owl-] {
-            color: #FFF;
-            font-size: 60px !important;
-            margin: 5px;
-            padding: 4px 7px;
-            background: #0000000f !important;
-            display: inline-block;
-            cursor: pointer;
-            border-radius: 50% !important;
-        }
-    </style>
-
-</head>
 
 <body>
 
-    <header>
+    <header class="content">
         <div class="main-header-wrapper py-1">
             <div class="container  nav-face py-2 text-white border-bottom border-light border-opacity-25">
                 <div class="container d-flex justify-content-between align-items-center">
@@ -130,126 +116,59 @@
                                 <i class="fa-solid fa-language"></i>
 
                             </button>
-
                         </div>
-
-
                     </div>
-
-
                 </div>
             </nav>
-
-            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="text-center">
+                <h1 class="text-white text-bold">محتوانا</h1>
+                <p class="text-white font-24">كل فكرة إلها صوت… وصوت بيجمعهم</p>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/images/1.png" alt="Image 1">
                 </div>
-
-                <div class="carousel-inner">
-                    <div class="carousel-item position-relative active">
-                        <div class="overlay"></div>
-                        <img src="assets/images/heroSectionImg.jpeg" class="d-block w-100 carousel-img"
-                            alt="منصة صوت 1">
-                        <div class="carousel-caption-custom text-center">
-                            <div class="container">
-                                <h1 class="display-3 fw-bold text-white" data-i18n="hero_title">منصة صوت</h1>
-                                <p class="lead mb-4 text-white fw-bold" data-i18n="hero_subtitle">نروي قصص غزة بكرامة...
-                                    ونبني جيلاً جديداً من صناع
-                                    المحتوى</p>
-                                <div class="d-flex justify-content-center gap-3 heroOptionsBtn">
-                                    <button class="btn btn-dark-green rounded-pill px-4 py-2 text-white fw-bold"
-                                        data-i18n="hero_btn_watch">مشاهدة
-                                        الأعمال</button>
-                                    <button class="btn btn-dark-orange saport text-white rounded-pill px-4 py-2 fw-bold"
-                                        data-i18n="hero_btn_collab">تعاون
-                                        معنا</button>
-                                    <button class="btn btn-dark-orange  text-white rounded-pill px-4 py-2 fw-bold"
-                                        data-i18n="hero_btn_support">ادعم صوت
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item position-relative">
-                        <div class="overlay"></div>
-                        <img src="assets/images/background.PNG" class="d-block w-100 carousel-img" alt="منصة صوت 1">
-                        <div class="carousel-caption-custom text-center">
-                            <div class="container">
-                                <h1 class="display-3 fw-bold text-white" data-i18n="hero_title">منصة صوت</h1>
-                                <p class="lead mb-4 text-white fw-bold" data-i18n="hero_subtitle">نروي قصص غزة بكرامة...
-                                    ونبني جيلاً جديداً من صناع
-                                    المحتوى</p>
-                                <div class="d-flex justify-content-center gap-3 heroOptionsBtn">
-                                    <button class="btn btn-dark-green rounded-pill px-4 py-2 text-white fw-bold"
-                                        data-i18n="hero_btn_watch">مشاهدة
-                                        الأعمال</button>
-                                    <button class="btn btn-dark-orange saport text-white rounded-pill px-4 py-2 fw-bold"
-                                        data-i18n="hero_btn_collab">تعاون
-                                        معنا</button>
-                                    <button class="btn btn-dark-orange  text-white rounded-pill px-4 py-2 fw-bold"
-                                        data-i18n="hero_btn_support">ادعم صوت
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item position-relative">
-                        <div class="overlay"></div>
-                        <img src="assets/images/heroSectionImg.jpeg" class="d-block w-100 carousel-img"
-                            alt="منصة صوت 1">
-                        <div class="carousel-caption-custom text-center">
-                            <div class="container">
-                                <h1 class="display-3 fw-bold text-white" data-i18n="hero_title">منصة صوت</h1>
-                                <p class="lead mb-4 text-white fw-bold" data-i18n="hero_subtitle">نروي قصص غزة بكرامة...
-                                    ونبني جيلاً جديداً من صناع
-                                    المحتوى</p>
-                                <div class="d-flex justify-content-center gap-3 heroOptionsBtn">
-                                    <button class="btn btn-dark-green rounded-pill px-4 py-2 text-white fw-bold"
-                                        data-i18n="hero_btn_watch">مشاهدة
-                                        الأعمال</button>
-                                    <button class="btn btn-dark-orange saport text-white rounded-pill px-4 py-2 fw-bold"
-                                        data-i18n="hero_btn_collab">تعاون
-                                        معنا</button>
-                                    <button class="btn btn-dark-orange  text-white rounded-pill px-4 py-2 fw-bold"
-                                        data-i18n="hero_btn_support">ادعم صوت
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/2.png" alt="Image 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/3.png" alt="Image 3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/4.png" alt="Image 4">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/1.png" alt="Image 5">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/2.png" alt="Image 6">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/1.png" alt="Image 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/2.png" alt="Image 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/3.png" alt="Image 3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/4.png" alt="Image 4">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/1.png" alt="Image 5">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/2.png" alt="Image 6">
                 </div>
             </div>
 
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
 
-        </div>
-        </div>
-        <div class="stats-bar">
-            <div class="box-element container front-face text-white rounded-4 shadow py-4">
-                <div class="row d-flex justify-content-center align-items-center text-center g-0">
-                    <div class="col border-start-custom count ">
-                        <h3 class="counter font-mob-22">20+</h3>
-                        <p class="mb-0" data-i18n="stat_team">أعضاء الفريق</p>
-                    </div>
-                    <div class="col border-start-custom count">
-                        <h3 class=" font-mob-22">+10 <span data-i18n="one_thousand"></span></h3>
-                        <p class="mb-0" data-i18n="stat_followers">متابع</p>
-                    </div>
-                    <div class="col border-start-custom count">
-                        <h3 class=" font-mob-22">+30 <span data-i18n="one_thousand"></span></h3>
-                        <p class="mb-0" data-i18n="stat_views">مشاهدة</p>
-                    </div>
-                    <div class="col border-start-custom count">
-                        <h3 class="counter font-mob-22">30+</h3>
-                        <p class="mb-0" data-i18n="stat_videos">فيديو</p>
-                    </div>
-                    <div class="col count">
-                        <h3 class="counter font-mob-22">100+</h3>
-                        <p class="mb-0" data-i18n="stat_stories">قصة</p>
-                    </div>
-                </div>
-            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </header>
     <main class="my-5">
@@ -758,85 +677,6 @@
             </div>
         </section>
 
-
-        <section class="overflow-hidden py-5">
-            <div class="container">
-                <h2 class="section-title mb-4">الأكثر مشاهدة</h2>
-                <div class="carousel-wrapper">
-                <div class="owl-carousel owl-theme custom-carousel">
-                    <div class="item">
-                        <div class="video-card">
-                            <div class="reel-item reel-item-size rounded " data-index="0">
-                                <video src="assets/videos/WhatsApp Video 2026-03-23 at 11.59.11 AM.mp4" loop playsinline
-                                    onclick="toggleVideoPlay(this)"></video>
-                                <div class="reel-overlay">
-                                    <div class="reel-actions">
-                                    </div>
-                                </div>
-                                <div class="play-overlay" onclick="togglePlay(this)">
-                                    <i class="fa-solid fa-play"></i>
-                                    <span
-                                        class="time-video position-absolute top-0 start-0 m-2 px-2 py-0 text-white rounded-3 small font-12">2:19</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="video-card">
-                            <div class="reel-item reel-item-size rounded " data-index="0">
-                                <video src="assets/videos/WhatsApp Video 2026-03-23 at 11.59.11 AM.mp4" loop playsinline
-                                    onclick="toggleVideoPlay(this)"></video>
-                                <div class="reel-overlay">
-                                    <div class="reel-actions">
-                                    </div>
-                                </div>
-                                <div class="play-overlay" onclick="togglePlay(this)">
-                                    <i class="fa-solid fa-play"></i>
-                                    <span
-                                        class="time-video position-absolute top-0 start-0 m-2 px-2 py-0 text-white rounded-3 small font-12">2:19</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="video-card">
-                            <div class="reel-item reel-item-size rounded " data-index="0">
-                                <video src="assets/videos/WhatsApp Video 2026-03-23 at 11.59.11 AM.mp4" loop playsinline
-                                    onclick="toggleVideoPlay(this)"></video>
-                                <div class="reel-overlay">
-                                    <div class="reel-actions">
-                                    </div>
-                                </div>
-                                <div class="play-overlay" onclick="togglePlay(this)">
-                                    <i class="fa-solid fa-play"></i>
-                                    <span
-                                        class="time-video position-absolute top-0 start-0 m-2 px-2 py-0 text-white rounded-3 small font-12">2:19</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="video-card">
-                            <div class="reel-item reel-item-size rounded " data-index="0">
-                                <video src="assets/videos/WhatsApp Video 2026-03-23 at 11.59.11 AM.mp4" loop playsinline
-                                    onclick="toggleVideoPlay(this)"></video>
-                                <div class="reel-overlay">
-                                    <div class="reel-actions">
-                                    </div>
-                                </div>
-                                <div class="play-overlay" onclick="togglePlay(this)">
-                                    <i class="fa-solid fa-play"></i>
-                                    <span
-                                        class="time-video position-absolute top-0 start-0 m-2 px-2 py-0 text-white rounded-3 small font-12">2:19</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-            
-        </section>
     </main>
     <footer class="footer-custom-bg pt-5 pb-4">
         <div class="" style="width: 90%; margin: 0 auto;">
@@ -991,6 +831,8 @@
     <script src="assets/js/translate.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
         $(document).ready(function () {
             $('.owl-carousel').owlCarousel({
@@ -1006,6 +848,57 @@
             });
         });
     </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            loop: true,
+            // الإعدادات الافتراضية (للشاشات الكبيرة)
+            slidesPerView: 6,
+
+            // التغيير حسب حجم الشاشة
+            breakpoints: {
+                // لما تكون الشاشة أصغر من 768px (جوال)
+                320: {
+                    slidesPerView: 3,
+                    coverflowEffect: {
+                        depth: 100, // تقليل العمق ليتناسب مع شاشة الجوال الصغيرة
+                        rotate: 15,
+                    }
+                },
+                // لما تكون الشاشة أكبر من 992px (كمبيوتر)
+                992: {
+                    slidesPerView: 6,
+                }
+            },
+
+            coverflowEffect: {
+                rotate: 20,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+
+
+        
+    </script>
+
 </body>
 
 </html>
