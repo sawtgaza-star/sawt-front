@@ -3071,6 +3071,7 @@ a {
   .col-lg-2-4 {
     width: 20%;
   }
+ 
 }
 
 /* -------------------------------------- */
@@ -3185,15 +3186,11 @@ a {
   padding-bottom: 50px;
 }
 
-
-
 .swiper-slide {
   background-position: center;
   background-size: cover;
   width: 100px;
-  /* عرض الكرت */
-  height: 300px;
-  /* طول الكرت */
+  height: 350px;
   border-radius: 20px;
   overflow: hidden;
   transition: all 0.4s ease;
@@ -3203,7 +3200,11 @@ a {
 /* الصورة الأساسية في المنتصف */
 .swiper-slide-active {
   border: 3px solid var(--primary-color);
-  box-shadow: 0 0 30px rgba(255, 106, 0, 0.89);
+  transform: translateY(-10px);
+  box-shadow:
+    0 0 0 2px #FE712B,
+    0 0 30px 5px #FF7420;
+  border-color: transparent;
   transform: scale(1.05);
   z-index: 10;
 }
@@ -3238,6 +3239,147 @@ a {
   color: #fff;
 }
 
+/* ----- */
+.most-watched-section {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.most-watched-section {
+  padding: 80px 0;
+  position: relative;
+}
+
+.section-title {
+  font-weight: 800;
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  width: 70%;
+  height: 6px;
+  background-color: var(--main-lime);
+  z-index: -1;
+  opacity: 0.6;
+}
+
+/* حاوية السويبر - تبدأ مع محاذاة الكونتينر وتخرج من أقصى اليسار */
+.swiper-outer-wrapper {
+  padding-right: calc((100vw - 1320px) / 2);
+  position: relative;
+}
+
+@media (max-width: 1400px) {
+  .swiper-outer-wrapper {
+    padding-right: calc((100vw - 1140px) / 2);
+  }
+}
+
+@media (max-width: 1200px) {
+  .swiper-outer-wrapper {
+    padding-right: calc((100vw - 960px) / 2);
+  }
+}
+
+@media (max-width: 992px) {
+  .swiper-outer-wrapper {
+    padding-right: 20px;
+  }
+}
+
+.swiper {
+  width: 100%;
+  overflow: visible !important;
+}
+
+/* تنسيق كارد الفيديو */
+.video-card {
+  position: relative;
+  border-radius: 20px  !important;
+  overflow: hidden;
+  aspect-ratio: 9 / 16;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+}
+.reel-item-size{
+  border-radius: 20px !important;
+}
+
+.video-card video {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* تنسيق الأسهم (خاصة بالسويبر الثاني) */
+.nav-btn {
+  width: 40px;
+  height: 40px;
+  background:  rgba(0,0,0,0.4);
+  border-radius: 50%;
+  color: #FFF !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  /* background: var(--main-lime); */
+  color: #fff !important;
+}
+
+/* السهم السابق (في RTL هو الذي على اليسار) */
+.btn-prev-2 {
+  left: 20px;
+}
+
+/* السهم التالي (في RTL هو الذي على اليمين) */
+.btn-next-2 {
+  right: 55px;;
+}
+/* السهم السابق (في RTL هو الذي على اليسار) */
+.btn-prev-3 {
+  left: 20px;
+}
+
+/* السهم التالي (في RTL هو الذي على اليمين) */
+.btn-next-3 {
+  right: 55px;
+}
+
+/* إخفاء الأسهم الافتراضية لـ Swiper لعدم التداخل */
+.swiper-button-lock {
+  display: none !important;
+}
+
+.most-watched-swiper .swiper-slide-active {
+    box-shadow: 
+        0 0 0 4px rgba(255, 106, 0, 0), 
+        0 0 35px 8px rgba(255, 106, 0, 0);
+}
+@media (min-width: 1200px) {
+    .most-watched-swiper .swiper-slide {
+        width: 17% !important; /* سيطبق فقط هنا */
+        height: 10%;
+        border-radius: 0px !important;
+    }
+}
+
+/* ----- */
 /* ✅ تعديلات الجوال (Mobile Responsive) */
 @media (max-width: 767px) {
   .title {
@@ -3661,4 +3803,21 @@ a {
     flex-direction: column;
     justify-content: center;
   }
+}
+
+
+.swiper { width: 100%; padding: 40px 0; }
+.swiper-slide {
+  width: 220px;
+  height: 350px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mySwiper3 .swiper-slide{
+  border-radius: 0.375rem;
 }
