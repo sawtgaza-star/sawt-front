@@ -208,6 +208,49 @@ const translations = {
 
     // Aria
     toggle_lang: "تغيير اللغة",
+
+    // about page
+    about_header: "من نحن",
+    about_desc:
+      " منصة إعلامية رقمية تجمع بين المحتوى الإنساني، التدريب الاحترافي، والإنتاج الإعلامي.",
+    about_register: "سجل الآن",
+    about_collaborate: "تعاون معنا",
+    successful_members: "عضو ناجح",
+    about_platform_title: "نبذة عن منصة صوت",
+    about_platform_question: "ما الذي يدفعنا لنكون صوتك؟",
+    about_platform_desc:
+      "نؤمن أن لكل إنسان قصة تستحق أن تُروى، لذلك جاءت صوت لتكون مساحة حرة للتعبير، حيث يلتقي الأفراد لمشاركة تجاربهم وأفكارهم بصدق. نساعدك على إيصال صوتك إلى الآخرين، ونمنح المحتوى الإنساني مساحة حقيقية ليُرى، ويُسمع، ويترك أثرًا.",
+    join_our_team_title_pre: "قد تكون قصتك بداية",
+    join_our_team_title_highlight: "التغيير",
+    join_our_team_desc:
+      "كل صوت مهم، إذا كانت لديك قصة تستحق أن تُسمع فإن صوت ستدعمك من أول محادثة إلى التأثير العام.",
+    join_our_team_join: "انضم الينا",
+    join_our_team_support: "ادعم فريق صوت",
+    leaders: "قادة",
+    teams: "الفرق",
+    leaders_of_teams_subtitle: "الوجوه خلف الحكاية",
+    story_title: "قصتنا",
+    story_subtitle: "من الصمت... إلى صوت يُسمع",
+    story_values: "قيمنا",
+    story_journey: "رحلتنا",
+    story_offer: "ما نقدم",
+    story_impact: "التأثير",
+    story_paragraph_values_1:
+      'نؤمن أن <span class="highlight-word">المصداقية</span> هي الأساس، وأن كل قصة تُروى يجب أن تنطلق من احترام الإنسان وكرامته. قيمنا تنبع من إيماننا بأن الإعلام رسالة، وأن <span class="highlight-word">الصدق والشفافية</span> ليسا خيارًا، بل التزامًا.',
+    story_paragraph_values_2:
+      'نلتزم بحياد المعلومة، وعدالة التمثيل، وحماية الأصوات المهمشة. نعمل بروح الفريق، ونرفض أي تنازل عن <span class="highlight-word">المبادئ الإنسانية</span> التي قامت عليها منصة صوت.',
+    story_paragraph_journey_1:
+      'بدأت رحلة <span class="highlight-word">"صوت"</span> في ظل ظروفٍ صعبة، حيث كانت الكثير من القصص الحقيقية مخفية، <span class="highlight-word">والأصوات</span> الصادقة مكتومة تحت ضغوط الإعلام التقليدي والسرديات المُسيّسة. آمنّا بأن الحقيقة تستحق أن تُروى، وأن لكل إنسان الحق في أن يُسمع صوته.',
+    story_paragraph_journey_2:
+      'واجهنا تحدياتٍ كبيرة؛ من محدودية الموارد، وصعوبة الوصول إلى المناطق المتضررة، إلى محاولات التشكيك بالمصداقية. لكننا استمررنا، مدفوعين بإيمانٍ راسخ بأن الإعلام الحقيقي <span class="highlight-word">هو حقٌ للناس، وليس أداةً للسلطة</span>.',
+    story_paragraph_offer_1:
+      'نقدم <span class="highlight-word">محتوى إنسانيًا</span> يلامس القلب، ومنصةً للتدريب الإعلامي تُمكّن صناع المحتوى من امتلاك أدواتهم، إلى جانب إنتاج إعلامي يُترجم القصص إلى أعمال بصرية مؤثرة.',
+    story_paragraph_offer_2:
+      'من خلال <span class="highlight-word">حاضنة صوت</span> وذراعها الإنتاجية صوت ميديا، نوفر بيئةً متكاملة من الموارد والإرشاد والمنصات، حتى تصل كل قصة إلى جمهورها بأفضل صورة ممكنة.',
+    story_paragraph_impact_1:
+      'تجاوزت قصص صوت حدود المنصة لتصل إلى <span class="highlight-word">ملايين المشاهدات</span>، وتحوّلت إلى نقاشات عامة، وحملات مناصرة، ومبادرات ميدانية أحدثت فرقًا حقيقيًا.',
+    story_paragraph_impact_2:
+      'نقيس أثرنا بعدد <span class="highlight-word">الأصوات التي مكّنّاها</span>، لا بأرقام المتابعين فقط. كل تجربة نجاح تؤكد أن الإعلام الإنساني قادر على صناعة التغيير.',
   },
 
   en: {
@@ -414,6 +457,49 @@ const translations = {
 
     // Aria
     toggle_lang: "Switch language",
+
+    //about page
+    about_header: "About Sawt",
+    about_desc:
+      "A digital media platform that combines humanitarian content, professional training, and media production.",
+    about_register: "Register Now",
+    about_collaborate: "Collaborate With Us",
+    successful_members: "Successful Member",
+    about_platform_title: "About Sawt Platform",
+    about_platform_question: "What drives us to be your voice?",
+    about_platform_desc:
+      "We believe every person has a story worth telling. That's why Sawt was created as a free space for expression, where individuals come together to share their experiences and ideas with sincerity. We help you reach others with your voice, giving humanitarian content a real space to be seen, heard, and leave a lasting impact.",
+    leaders: "Leaders",
+    teams: "Of Teams",
+    leaders_of_teams_subtitle: "The faces behind the story",
+    join_our_team_title_pre: "Your story could be the start of",
+    join_our_team_title_highlight: "change",
+    join_our_team_desc:
+      "Every voice matters. If you have a story worth hearing, Sawt will support you from the first conversation to public impact.",
+    join_our_team_join: "Join Us",
+    join_our_team_support: "Support Sawt Team",
+    story_title: "Our Story",
+    story_subtitle: "From silence... to a voice that is heard",
+    story_values: "Our Values",
+    story_journey: "Our Journey",
+    story_offer: "What We Offer",
+    story_impact: "Our Impact",
+    story_paragraph_values_1:
+      'We believe <span class="highlight-word">credibility</span> is the foundation, and that every story we tell must spring from respect for the human being. Our values come from the conviction that journalism is a mission, and that <span class="highlight-word">honesty and transparency</span> are not options — they are commitments.',
+    story_paragraph_values_2:
+      'We commit to neutrality of information, fairness of representation, and protection of marginalized voices. We work as a team and refuse any compromise on the <span class="highlight-word">human principles</span> Sawt was built on.',
+    story_paragraph_journey_1:
+      'The journey of <span class="highlight-word">"Sawt"</span> began under difficult circumstances, where many real stories were hidden and <span class="highlight-word">honest voices</span> were silenced under the pressure of traditional media and politicized narratives. We believed that truth deserves to be told, and that every person has the right to be heard.',
+    story_paragraph_journey_2:
+      'We faced great challenges: limited resources, the difficulty of reaching affected areas, and attempts to undermine our credibility. But we continued, driven by an unshakable belief that real journalism <span class="highlight-word">is a right of the people, not a tool of authority</span>.',
+    story_paragraph_offer_1:
+      'We deliver <span class="highlight-word">human-centered content</span> that touches the heart, a media training platform that empowers content creators with the tools they need, and media production that turns stories into impactful visual work.',
+    story_paragraph_offer_2:
+      'Through the <span class="highlight-word">Sawt Incubator</span> and its production arm Sawt Media, we provide an integrated environment of resources, mentorship, and platforms — so every story reaches its audience in the best form possible.',
+    story_paragraph_impact_1:
+      'Sawt\'s stories have reached <span class="highlight-word">millions of views</span> and turned into public conversations, advocacy campaigns, and on-the-ground initiatives that have made a real difference.',
+    story_paragraph_impact_2:
+      'We measure impact by the number of <span class="highlight-word">voices we have empowered</span>, not by follower counts alone. Every success story confirms that human-centered media can shape change.',
   },
 };
 
@@ -432,6 +518,13 @@ function applyTranslations(lang) {
     const key = el.getAttribute("data-i18n");
     if (translations[lang][key]) {
       el.textContent = translations[lang][key];
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-html]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-html");
+    if (translations[lang][key]) {
+      el.innerHTML = translations[lang][key];
     }
   });
 
