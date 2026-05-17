@@ -251,6 +251,18 @@ const translations = {
       'تجاوزت قصص صوت حدود المنصة لتصل إلى <span class="highlight-word">ملايين المشاهدات</span>، وتحوّلت إلى نقاشات عامة، وحملات مناصرة، ومبادرات ميدانية أحدثت فرقًا حقيقيًا.',
     story_paragraph_impact_2:
       'نقيس أثرنا بعدد <span class="highlight-word">الأصوات التي مكّنّاها</span>، لا بأرقام المتابعين فقط. كل تجربة نجاح تؤكد أن الإعلام الإنساني قادر على صناعة التغيير.',
+
+    // Content page
+    tab_money_business: "المال والأعمال",
+    tab_economy: "الاقتصاد",
+    tab_economy_philosophy: "الاقتصاد والفلسفة",
+    sort_label: "الترتيب:",
+    sort_most_viewed: "الأكثر مشاهدة",
+    sort_option_one: "واحد",
+    sort_option_two: "اثنان",
+    sort_option_three: "ثلاثة",
+    most_watched_pre: "الأكثر",
+    most_watched_highlight: "مشاهدة",
   },
 
   en: {
@@ -500,6 +512,18 @@ const translations = {
       'Sawt\'s stories have reached <span class="highlight-word">millions of views</span> and turned into public conversations, advocacy campaigns, and on-the-ground initiatives that have made a real difference.',
     story_paragraph_impact_2:
       'We measure impact by the number of <span class="highlight-word">voices we have empowered</span>, not by follower counts alone. Every success story confirms that human-centered media can shape change.',
+
+    // Content page
+    tab_money_business: "Money & Business",
+    tab_economy: "Economy",
+    tab_economy_philosophy: "Economy & Philosophy",
+    sort_label: " Sort by: ",
+    sort_most_viewed: " Most Viewed",
+    sort_option_one: "One",
+    sort_option_two: "Two",
+    sort_option_three: "Three",
+    most_watched_pre: "Most",
+    most_watched_highlight: "Watched",
   },
 };
 
