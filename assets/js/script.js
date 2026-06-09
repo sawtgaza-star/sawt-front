@@ -589,3 +589,5 @@ document.addEventListener("DOMContentLoaded", function () {
   const initial = document.querySelector(".timeline-item.active[data-story]");
   selectStory(initial ? initial.dataset.story : "journey");
 });
+
+
