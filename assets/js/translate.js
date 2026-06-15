@@ -12,9 +12,11 @@
 const translations = {
   ar: {
     // Top bar
-    follow_us: "تابعونا على :",
+    follow_us: "وسائل التواصل الاجتماعي :",
     email: "info@sawtgaza.com",
     phone: "+972567247177",
+    register_account: "أنشئ حساب",
+    sign_in: "تسجيل الدخول",
 
     // Nav
     nav_home: "الرئيسية",
@@ -29,6 +31,7 @@ const translations = {
     // Hero
     hero_title: "منصة صوت",
     hero_subtitle: "نروي قصص غزة بكرامة... ونبني جيلاً جديداً من صناع المحتوى",
+    hero_trust: "ثقة آلاف المتابعين في منصة صوت غزة بصدق وتأثير",
     hero_btn_watch: "مشاهدة الأعمال",
     hero_btn_collab: "تعاون معنا",
     hero_btn_support: "ادعم صوت",
@@ -42,12 +45,18 @@ const translations = {
     one_thousand: "ألف",
 
     // Sout section
+    who_we_are: "من نحن",
     welcome_label: "أهلاً بكم في صوت",
     welcome_title: "كل فكرة إلها صوت... وصوت بيجمعهم",
     welcome_lead: "في صوت، كل فكرة بتلاقي مكانها!",
-    welcome_desc: "استكشف محتوى متنوع، عبّر عن نفسك، وشارك صوتك مع العالم.",
+    welcome_desc:
+      "استكشف محتوى متنوع، عبّر عن نفسك، وشارك صوتك مع العالم، من خلال تجربة تفاعلية مليئة بالإبداع والإلهام، رح تقدر تطوّر أفكارك وتوصل لجمهور أوسع، وصوت بيكون معك خطوة بخطوة لتخلي صوتك يوصل أبعد.",
     feature_voice: "مساحة لأصواتكم",
     feature_creativity: "تمكين الإبداع",
+    feature_publish: "خدمات تُسهّل النشر.",
+    feature_empower_creativity: "مساحة لتمكين الإبداع",
+    feature_expert_team: "فريق خبراء يدعمك",
+    feature_express_voice: "محتوى يعبّر عن صوتك",
     support_creators: "ندعم صناع المحتوى",
     professional_team: "فريق محترف، محتوى مميز، وخدمات تساعد صوتك يوصل",
     discover_more: "اكتشف المزيد",
@@ -61,6 +70,9 @@ const translations = {
     // Creators section
     creators_title_pre: "صُناع",
     creators_title_highlight: "المحتوى",
+    creators_title_full: "صُناع المحتوى في صوت",
+    creators_title_main: "صُناع المحتوى",
+    at_sawt: "في صوت",
     creators_subtitle:
       "تعرف على صُنّاع المحتوى في صوت، حيث كل فكرة إلها صوت، وكل مبدع إله حكاية.",
     view_all: "عرض الكل",
@@ -74,6 +86,7 @@ const translations = {
     // Partners
     partners_title_pre: "شركاؤنا في",
     partners_title_highlight: "صوت",
+    partners_title_main: "شركاؤنا",
     partners_desc:
       "معًا نبني صوتًا حيًّا، مساحة تجمع الحكايات، تُشعل الأمل، وتمنح كل إنسان فرصة يُسمَع",
     be_partner: "كن شريكاً لصوت",
@@ -82,6 +95,17 @@ const translations = {
     stories_label: "قصص من الواقع",
     stories_title: "اكتشف تجارب حقيقية من أشخاص شاركوا قصصهم معنا",
     tell_story: "احكي قصتك",
+    reviews_title_pre: "أرائكم في",
+    reviews_title_highlight: "المحتوى",
+    reviews_desc:
+      "نؤمن أن رأيك جزء أساسي من تطويرنا وتحسين خدماتنا. شاركنا تجربتك واقتراحاتك وساعدنا على تقديم تجربة أفضل تلبي احتياجاتك وتوقعاتك.",
+    reviews_desc_html:
+      'نؤمن أن <span class="hl">رأيك</span> جزء أساسي من تطويرنا وتحسين خدماتنا. شاركنا تجربتك واقتراحاتك وساعدنا على تقديم تجربة أفضل تلبي احتياجاتك وتوقعاتك.',
+    comments_word: "التعليقات",
+    you_label: "أنت",
+    now_label: "الآن",
+    reply_label: "رد",
+    reply_placeholder: "اكتب رداً...",
     comments_count_label: "الكومنت",
     tab_oldest: "الأقدم",
     tab_newest: "الأحدث",
@@ -136,8 +160,9 @@ const translations = {
 
     // Creators cards
     creator_share: "شارك مع صوت",
-    creator_name: "محمود زعيتر",
-    creator_role: "ممثل كوميدي",
+    creator_name: "محمود عبدالله زعيتر",
+    creator_role: "ممثل مسرحية",
+    creator_followers: "31.4K متابع",
     creator_bio: "صانع محتوى وفنان كوميدي فلسطيني من قطاع غزة",
     creator_quote:
       "تجربتي مع صوت كانت مختلفة، أخيراً لقيت مكان بيفهمني كمبدع ....",
@@ -153,13 +178,17 @@ const translations = {
     platform_card3_title: "صوت ميديا",
     platform_card3_desc:
       "شركة إنتاج إعلامي احترافية تقدم خدمات متكاملة من الكتابة إلى التسويق.",
+    stat_views_30m: "+30 مليون مشاهدة",
+    stat_clips_100: "+100 مقطع",
+    stat_clients_100: "+100 عميل راض",
+    stat_projects_done: "مشاريع المنجزة",
 
     // Reels
     reel_title: "قصة أمل من غزة: كيف تحدى الحصار",
-    reel_views: "20K مشاهدة",
+    reel_views: "200k مشاهدة",
 
     // Comments
-    comments_full_label: "الكومنت (250)",
+    comments_full_label: "التعليقات (341)",
     comment_1: "قصة ملهمة رغم كل التحديات",
     comment_2: "حكاية بتعطي دافع للاستمرار",
     comment_3: "إصرار يستحق الاحترام",
@@ -226,6 +255,9 @@ const translations = {
       "كل صوت مهم، إذا كانت لديك قصة تستحق أن تُسمع فإن صوت ستدعمك من أول محادثة إلى التأثير العام.",
     join_our_team_join: "انضم الينا",
     join_our_team_support: "ادعم فريق صوت",
+    join_creator_title: "انضم إلينا كصانع محتوى",
+    join_creator_desc: "صوت تجمع صناع المحتوى يلتقي فيها المبدعون لمشاركة قصصهم وإيصال صوتهم إلى العالم.",
+    join_creator_btn: "طلب الانضمام",
     leaders: "قادة",
     teams: "الفرق",
     leaders_of_teams_subtitle: "الوجوه خلف الحكاية",
@@ -263,6 +295,19 @@ const translations = {
     sort_option_three: "ثلاثة",
     most_watched_pre: "الأكثر",
     most_watched_highlight: "مشاهدة",
+
+    // Real stories (قصص من الواقع)
+    realstories_title_pre: "قصص من",
+    realstories_title_word: "الواقع",
+    realstories_desc:
+      "كلنا نملك قصة تستحق أن تُروى. في هذا القسم، نضع مساحة لك لتشارك قصتك الحقيقية. سواء كانت قصة نجاح، تحدي، إبداع، أو تجربة حياتية مؤثرة.",
+    realstories_count: "+100 قصة واقعية نقلتها صوت الى العالم",
+    realstories_input_placeholder: "شاركنا قصتك",
+    rs_view_story: "عرض القصة",
+    rs_badge: "قصة نجاح",
+    rs_card_desc: "من غزة الى الأردن وأمل لايمشي مجددا",
+    rs_card1_title: "أغلي كاسة شاي",
+    rs_card2_title: "سمير البطل",
   },
 
   en: {
@@ -270,6 +315,8 @@ const translations = {
     follow_us: "Follow us :",
     email: "info@sawtgaza.com",
     phone: "+972567247177",
+    register_account: "Create Account",
+    sign_in: "Sign In",
 
     // Nav
     nav_home: "Home",
@@ -285,6 +332,8 @@ const translations = {
     hero_title: "Sawt Platform",
     hero_subtitle:
       "Telling Gaza's stories with dignity, building a new generation of content creators.",
+    hero_trust:
+      "Trusted by thousands of followers on Sawt Gaza with honesty and impact",
     hero_btn_watch: "Watch Works",
     hero_btn_collab: "Collaborate With Us",
     hero_btn_support: "Support Sawt",
@@ -297,13 +346,18 @@ const translations = {
     stat_stories: "Stories",
 
     // Sout section
+    who_we_are: "Who We Are",
     welcome_label: "Welcome to Sawt",
     welcome_title: "Every idea has a voice... and Sawt brings them together",
     welcome_lead: "At Sawt, every idea finds its place!",
     welcome_desc:
-      "Explore diverse content, express yourself, and share your voice with the world.",
+      "Explore diverse content, express yourself, and share your voice with the world. Through an interactive experience full of creativity and inspiration, you can develop your ideas and reach a wider audience — and Sawt is with you step by step to make your voice reach further.",
     feature_voice: "A space for your voices",
     feature_creativity: "Empowering creativity",
+    feature_publish: "Services that make publishing easier.",
+    feature_empower_creativity: "A space to empower creativity",
+    feature_expert_team: "An expert team supporting you",
+    feature_express_voice: "Content that expresses your voice",
     support_creators: "We support content creators",
     professional_team:
       "A professional team, distinguished content, and services that help your voice reach further",
@@ -318,6 +372,9 @@ const translations = {
     // Creators section
     creators_title_pre: "Content",
     creators_title_highlight: "Creators",
+    creators_title_full: "Content Creators at Sawt",
+    creators_title_main: "Content Creators",
+    at_sawt: "at Sawt",
     creators_subtitle:
       "Meet the content creators at Sawt, where every idea has a voice, and every creator has a story.",
     view_all: "View All",
@@ -332,6 +389,7 @@ const translations = {
     // Partners
     partners_title_pre: "Our Partners in",
     partners_title_highlight: "Sawt",
+    partners_title_main: "Our Partners",
     partners_desc:
       "Together we build a living voice — a space that gathers stories, ignites hope, and gives every person a chance to be heard.",
     be_partner: "Become a Sawt Partner",
@@ -341,6 +399,17 @@ const translations = {
     stories_title:
       "Discover real experiences from people who shared their stories with us",
     tell_story: "Tell Your Story",
+    reviews_title_pre: "Your feedback on",
+    reviews_title_highlight: "the content",
+    reviews_desc:
+      "We believe your feedback is an essential part of our growth and service improvement. Share your experience and suggestions and help us deliver a better experience that meets your needs and expectations.",
+    reviews_desc_html:
+      'We believe <span class="hl">your feedback</span> is an essential part of our growth and service improvement. Share your experience and suggestions and help us deliver a better experience that meets your needs and expectations.',
+    comments_word: "Comments",
+    you_label: "You",
+    now_label: "now",
+    reply_label: "Reply",
+    reply_placeholder: "Write a reply...",
     comments_count_label: "Comments",
     tab_oldest: "Oldest",
     tab_newest: "Newest",
@@ -421,8 +490,9 @@ const translations = {
 
     // Creators cards
     creator_share: "Share with Sawt",
-    creator_name: "Mahmoud Zeiter",
-    creator_role: "Comedian",
+    creator_name: "Mahmoud Abdullah Zeiter",
+    creator_role: "Stage Actor",
+    creator_followers: "31.4K followers",
     creator_bio: "Palestinian content creator and comedian from the Gaza Strip",
     creator_quote:
       "My experience with Sawt was different — finally, a place that understands me as a creator....",
@@ -438,13 +508,17 @@ const translations = {
     platform_card3_title: "Sawt Media",
     platform_card3_desc:
       "A professional media production company offering full services from writing to marketing.",
+    stat_views_30m: "+30M views",
+    stat_clips_100: "+100 clips",
+    stat_clients_100: "+100 satisfied clients",
+    stat_projects_done: "Completed projects",
 
     // Reels
     reel_title: "A story of hope from Gaza: defying the siege",
-    reel_views: "20K views",
+    reel_views: "200k views",
 
     // Comments
-    comments_full_label: "Comments (250)",
+    comments_full_label: "Comments (341)",
     comment_1: "An inspiring story despite all challenges",
     comment_2: "A story that gives motivation to keep going",
     comment_3: "Determination that deserves respect",
@@ -490,6 +564,9 @@ const translations = {
       "Every voice matters. If you have a story worth hearing, Sawt will support you from the first conversation to public impact.",
     join_our_team_join: "Join Us",
     join_our_team_support: "Support Sawt Team",
+    join_creator_title: "Join us as a content creator",
+    join_creator_desc: "Sawt brings content creators together, a space where creatives meet to share their stories and bring their voices to the world.",
+    join_creator_btn: "Request to Join",
     story_title: "Our Story",
     story_subtitle: "From silence... to a voice that is heard",
     story_values: "Our Values",
@@ -524,6 +601,19 @@ const translations = {
     sort_option_three: "Three",
     most_watched_pre: "Most",
     most_watched_highlight: "Watched",
+
+    // Real stories
+    realstories_title_pre: "Stories from",
+    realstories_title_word: "Reality",
+    realstories_desc:
+      "We all have a story worth telling. In this section, we give you space to share your real story — whether it's a story of success, challenge, creativity, or an impactful life experience.",
+    realstories_count: "+100 real stories Sawt shared with the world",
+    realstories_input_placeholder: "Share your story",
+    rs_view_story: "View story",
+    rs_badge: "Success story",
+    rs_card_desc: "From Gaza to Jordan, and a hope to walk again",
+    rs_card1_title: "The most expensive cup of tea",
+    rs_card2_title: "Samir the hero",
   },
 };
 
