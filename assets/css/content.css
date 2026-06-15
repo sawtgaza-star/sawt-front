@@ -157,7 +157,7 @@ a {
 }
 
 .nav-content {
-  font-size: calc(1.525rem + 3.3vw);
+  font-size: 30px;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -168,7 +168,7 @@ a {
 }
 
 .rounded-pill {
-  border-radius: 50px !important;
+  border-radius: 10px !important;
 }
 
 [dir="rtl"] .border-start-custom {
@@ -198,20 +198,14 @@ a {
 
 
 .highlight-text {
-  position: relative;
-  display: inline-block;
-}
+  background-image: url(../images/stroke_peach_top_transparent.png);
+  background-size: 100% 30%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  color: rgb(0, 0, 0);
+  width: fit-content;
+  margin: 0 auto;
 
-.highlight-text::before {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 15px;
-  background-color: #d1e095;
-  z-index: -1;
-  opacity: 0.9;
 }
 
 .btn-dark-orange.saport {
@@ -774,7 +768,7 @@ a {
 }
 
 .font-color-olive {
-  color: #4c5c37;
+  color: #4c5c37 !important;
 }
 
 
@@ -991,15 +985,15 @@ a {
 /* content page */
 
 .nav-pills .nav-link.active {
-  background-color: #f37021 !important;
+  background-color: #4C5C37 !important;
 }
 
 .nav-pills .nav-link {
-  color: #333;
-  border: 2px solid #f37021;
+  color: #a7a6a6;
+  background-color: #a7a6a61f !important;
   white-space: nowrap;
   font-size: 15px;
-  font-weight: 600;
+
 }
 
 .reel-item-size {
@@ -1012,14 +1006,14 @@ a {
 }
 
 .form-select {
-  border: 2px solid #f37021;
+  color: #a7a6a6;
+  background-color: #a7a6a61f !important;
   white-space: nowrap;
-  border-radius: 15px;
-  font-weight: 600;
+  font-size: 15px;
 }
 
 .form-select:focus {
-  border-color: #f37021;
+  border-color: #4C5C37;
   outline: 0;
   box-shadow: 0 0 0 0.25rem white;
 }
@@ -1145,28 +1139,12 @@ a {
 
 /* حاوية السويبر - تبدأ مع محاذاة الكونتينر وتخرج من أقصى اليسار */
 .swiper-outer-wrapper {
-  padding-right: calc((100vw - 1320px) / 2);
-  position: relative;
+ position: relative;
 }
-
-@media (max-width: 1400px) {
-  .swiper-outer-wrapper {
-    padding-right: calc((100vw - 1140px) / 2);
-  }
+.swiper-outer-wrapper .swiper {
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
 }
-
-@media (max-width: 1200px) {
-  .swiper-outer-wrapper {
-    padding-right: calc((100vw - 960px) / 2);
-  }
-}
-
-@media (max-width: 992px) {
-  .swiper-outer-wrapper {
-    padding-right: 20px;
-  }
-}
-
 .swiper {
   width: 100%;
   overflow: visible !important;
@@ -1195,12 +1173,12 @@ a {
 .nav-btn {
   width: 40px;
   height: 40px;
-  background: rgba(0, 0, 0, 0.4);
+  background: #4C5C37;
   border-radius: 50%;
   color: #fff !important;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   position: absolute;
-  top: 50%;
+  top: 44%;
   transform: translateY(-50%);
   z-index: 50;
   display: flex;
@@ -1215,6 +1193,10 @@ a {
   color: #fff !important;
 }
 
+.wasila {
+  padding: 0px 185px !important;
+}
+
 /* السهم السابق (في RTL هو الذي على اليسار) */
 .btn-prev-2 {
   left: 20px;
@@ -1222,7 +1204,7 @@ a {
 
 /* السهم التالي (في RTL هو الذي على اليمين) */
 .btn-next-2 {
-  right: 55px;
+  right: 20px;
 }
 
 /* السهم السابق (في RTL هو الذي على اليسار) */
@@ -1232,7 +1214,7 @@ a {
 
 /* السهم التالي (في RTL هو الذي على اليمين) */
 .btn-next-3 {
-  right: 55px;
+  right: 20px;
 }
 
 /* إخفاء الأسهم الافتراضية لـ Swiper لعدم التداخل */
@@ -1358,6 +1340,9 @@ a {
     font-size: 22px !important;
   }
 
+  .wasila {
+    padding: 0px 15px !important;
+  }
 }
 
 @media (max-width: 991px) {
@@ -1376,12 +1361,20 @@ a {
   .searchDiv {
     margin-top: 20px;
   }
+
+  .wasila {
+    padding: 0px 15px !important;
+  }
 }
 
 @media (max-width: 767px) {
   .textForOpenion .highlight-text {
     position: relative;
     display: block;
+  }
+
+  .wasila {
+    padding: 0px 15px !important;
   }
 
   .textForOpenion .highlight-text::before {
@@ -1518,9 +1511,7 @@ a {
   transform: translateX(-50%);
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg,
-      rgba(225, 114, 59, 1),
-      rgba(115, 140, 82, 1));
+  background: #4C5C37;
   border-radius: 2px;
 }
 
@@ -1635,13 +1626,83 @@ a {
   .swiper-slide {
     height: 380px !important;
   }
+
 }
 
 .navbar-nav .nav-link.active {
-  background: linear-gradient(90deg,
-      rgba(225, 114, 59, 1),
-      rgba(115, 140, 82, 1));
+  background: #4C5C37;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
+}
+
+.breadcrumb-item.active {
+  color: #4C5C37 !important;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  float: right;
+  color: black;
+  padding-left: var(--bs-breadcrumb-item-padding-x);
+}
+
+.text-nowrap {
+  color: #5A5A5A;
+}
+
+
+
+
+/* الخلفية الداكنة الشاملة */
+.video-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  /* درجة تباين داكنة ومريحة */
+  z-index: 9999;
+  /* للتأكد من ظهوره فوق كل عناصر الصفحة */
+  display: none;
+  /* مخفي افتراضياً */
+  justify-content: center;
+  align-items: center;
+}
+
+/* حاوية الفيديو المبرز */
+.video-popup-content {
+  position: relative;
+  width: 90%;
+  max-width: 270px;
+  /* ليأخذ أبعاد الهواتف الذكية (Reels/Shorts) كما بالتصميم */
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* تنسيق الفيديو الداخلي */
+.video-popup-content video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* زر إغلاق الـ Popup */
+.close-popup-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+  border: none;
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 10000;
+  transition: background 0.3s;
+}
+
+.close-popup-btn:hover {
+  color: #4C5C37;
 }

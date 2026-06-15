@@ -851,3 +851,34 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
+function openVideoPopup(videoSrc) {
+    const popup = document.getElementById('videoPopup');
+    const video = document.getElementById('popupVideo');
+    
+    // إسناد مسار الفيديو وتشغيله
+    video.src = videoSrc;
+    
+    // إظهار النافذة وعرضها بمرونة (Flex) للتوسيط
+    popup.style.display = 'flex';
+    video.play();
+}
+
+function closeVideoPopup() {
+    const popup = document.getElementById('videoPopup');
+    const video = document.getElementById('popupVideo');
+    
+    // إخفاء النافذة وإيقاف الفيديو وتفريغ المسار لمنع استمرار الصوت
+    popup.style.display = 'none';
+    video.pause();
+    video.src = '';
+}
+
+// ميزة إضافية: إغلاق النافذة عند الضغط في أي مكان خارج الفيديو الداخلي
+window.onclick = function(event) {
+    const popup = document.getElementById('videoPopup');
+    if (event.target === popup) {
+        closeVideoPopup();
+    }
+}

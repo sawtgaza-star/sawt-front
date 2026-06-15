@@ -21,7 +21,8 @@ const translations = {
     // Nav
     nav_home: "الرئيسية",
     nav_about: "من نحن",
-    nav_content: "محتوانا",
+    nav_content: "كل فكرة إلها صوت… وصوت بيجمعهم",
+    nav_content_2: "محتوانا",
     nav_team: "الفريق",
     nav_creators: "صناع المحتوى",
     nav_incubator: "حاضنة صوت",
@@ -47,7 +48,7 @@ const translations = {
     // Sout section
     who_we_are: "من نحن",
     welcome_label: "أهلاً بكم في صوت",
-    welcome_title: "كل فكرة إلها صوت... وصوت بيجمعهم",
+    welcome_title: "كل فكرة إلها صوت... وصوت بيجمعهمخلف كل محتوى تشاهده ومنصة تتفاعل معها، فريق من المختصين في تكنولوجيا المعلومات والإنتاج الإعلامي، نؤمن بأن التكنولوجيا هي وسيلتنا لنقل الحقيقة، وأن إبداعنا هو الصوت الذي يصل بصدى غزة إلى آفاق العالم",
     welcome_lead: "في صوت، كل فكرة بتلاقي مكانها!",
     welcome_desc:
       "استكشف محتوى متنوع، عبّر عن نفسك، وشارك صوتك مع العالم، من خلال تجربة تفاعلية مليئة بالإبداع والإلهام، رح تقدر تطوّر أفكارك وتوصل لجمهور أوسع، وصوت بيكون معك خطوة بخطوة لتخلي صوتك يوصل أبعد.",
@@ -285,11 +286,11 @@ const translations = {
       'نقيس أثرنا بعدد <span class="highlight-word">الأصوات التي مكّنّاها</span>، لا بأرقام المتابعين فقط. كل تجربة نجاح تؤكد أن الإعلام الإنساني قادر على صناعة التغيير.',
 
     // Content page
-    tab_money_business: "المال والأعمال",
+    tab_money_business: "الكل",
     tab_economy: "الاقتصاد",
     tab_economy_philosophy: "الاقتصاد والفلسفة",
     sort_label: "الترتيب:",
-    sort_most_viewed: "الأكثر مشاهدة",
+    sort_most_viewed: "من الأحدث إلى الأقدم",
     sort_option_one: "واحد",
     sort_option_two: "اثنان",
     sort_option_three: "ثلاثة",
@@ -321,7 +322,8 @@ const translations = {
     // Nav
     nav_home: "Home",
     nav_about: "About",
-    nav_content: "Our Content",
+    nav_content: "Every idea has a voice… and a voice unites them",
+    nav_content_2: "Our Content",
     nav_team: "Team",
     nav_creators: "Content Creators",
     nav_incubator: "Sawt Incubator",
@@ -348,7 +350,7 @@ const translations = {
     // Sout section
     who_we_are: "Who We Are",
     welcome_label: "Welcome to Sawt",
-    welcome_title: "Every idea has a voice... and Sawt brings them together",
+    welcome_title: "Behind every piece of content you watch and every platform you interact with is a team of IT and media production specialists. We believe that technology is our means of conveying the truth, and that our creativity is the voice that carries the echo of Gaza to the world",
     welcome_lead: "At Sawt, every idea finds its place!",
     welcome_desc:
       "Explore diverse content, express yourself, and share your voice with the world. Through an interactive experience full of creativity and inspiration, you can develop your ideas and reach a wider audience — and Sawt is with you step by step to make your voice reach further.",
@@ -591,11 +593,11 @@ const translations = {
       'We measure impact by the number of <span class="highlight-word">voices we have empowered</span>, not by follower counts alone. Every success story confirms that human-centered media can shape change.',
 
     // Content page
-    tab_money_business: "Money & Business",
+    tab_money_business: "All",
     tab_economy: "Economy",
     tab_economy_philosophy: "Economy & Philosophy",
     sort_label: " Sort by: ",
-    sort_most_viewed: " Most Viewed",
+    sort_most_viewed: "From newest to oldest",
     sort_option_one: "One",
     sort_option_two: "Two",
     sort_option_three: "Three",
