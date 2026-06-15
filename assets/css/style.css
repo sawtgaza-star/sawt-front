@@ -1349,7 +1349,13 @@ a {
   flex: 1;
   padding: 0px 1.5rem 1.5rem 1.5rem !important;
 }
-
+.contact-info-nav {
+  display: none !important;
+  justify-content: space-between;
+  align-items: center;
+  width: 100% !important;
+  margin-top: 30px;
+}
 .comments-list::-webkit-scrollbar {
   width: 4px;
 }
@@ -2598,6 +2604,9 @@ a {
 
 /* Keep the reviews reels consistent on mobile (override legacy reels rules) */
 @media (max-width: 768px) {
+  .contact-info-nav {
+    display: flex !important  ;
+  }
   .review-reels.reels-container,
   .review-reels .reel-item {
     height: 460px !important;
