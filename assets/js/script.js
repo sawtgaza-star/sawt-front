@@ -181,27 +181,208 @@ document.addEventListener("DOMContentLoaded", () => {
 // ====== البيانات ======
 
 let commentsData = [
-  { av: "av-green", letter: "أ", text: "قصة ملهمة رغم كل التحديات", time: 1 },
-  { av: "av-orange", letter: "م", text: "حكاية بتعطي دافع للاستمرار", time: 2 },
   {
+    id: 1,
+    av: "av-green",
+    letter: "ر",
+    name: "رنا الصالح",
+    text: "قصة ملهمة رغم كل التحديات 💚",
+    time: "منذ ساعة",
+    likes: 13,
+    liked: false,
+    replies: [
+      {
+        av: "av-orange",
+        letter: "م",
+        name: "مها العبد",
+        text: "فعلاً، كلامك صح 🌷",
+      },
+    ],
+  },
+  {
+    id: 2,
+    av: "av-orange",
+    letter: "م",
+    name: "مها العبد",
+    text: "إصرار بيستحق الاحترام 👏",
+    time: "منذ ساعتين",
+    likes: 13,
+    liked: true,
+    replies: [],
+  },
+  {
+    id: 3,
     av: "av-blue",
-    letter: "F",
-    text: "إصرار يستحق الاحترام",
-    time: 3,
-    style: "background:#e1723b;color:#fff;font-weight:600",
+    letter: "أ",
+    name: "أحمد باسم",
+    text: "حكاية بتعطي دافع للاستمرار",
+    time: "22 فبراير",
+    likes: 5,
+    liked: false,
+    replies: [],
   },
 ];
 
 const extraComments = [
-  { av: "av-gray", letter: "ي", text: "ما توقعت أشوف قصة بهالمستوى" },
-  { av: "av-green", letter: "ن", text: "شكراً على هالمحتوى الرائع" },
-  { av: "av-orange", letter: "ر", text: "بتمنى أشوف المزيد من هيك قصص" },
-  { av: "av-blue", letter: "س", text: "قصة مؤثرة جداً ما نسيتها" },
-  { av: "av-gray", letter: "خ", text: "والله استفدت كثير من هالتجربة" },
+  {
+    id: 4,
+    av: "av-gray",
+    letter: "ي",
+    name: "يوسف خالد",
+    text: "ما توقعت أشوف قصة بهالمستوى",
+    time: "3 مارس",
+    likes: 4,
+    liked: false,
+    replies: [],
+  },
+  {
+    id: 5,
+    av: "av-green",
+    letter: "ن",
+    name: "نور حسن",
+    text: "شكراً على هالمحتوى الرائع 🌿",
+    time: "5 مارس",
+    likes: 7,
+    liked: false,
+    replies: [],
+  },
+  {
+    id: 6,
+    av: "av-orange",
+    letter: "ر",
+    name: "رامي سمير",
+    text: "بتمنى أشوف المزيد من هيك قصص",
+    time: "8 مارس",
+    likes: 2,
+    liked: false,
+    replies: [],
+  },
 ];
 
+let commentIdSeq = 7;
 let showing = false;
 let currentOrder = "newest";
+
+function findComment(id) {
+  return (
+    commentsData.find((c) => c.id === id) ||
+    extraComments.find((c) => c.id === id)
+  );
+}
+
+function replyMarkup(r) {
+  const styleAttr = r.style ? ` style="${r.style}"` : "";
+  return `
+    <div class="rv-reply">
+      <div class="avatar-circle ${r.av} rv-avatar-sm"${styleAttr}>${r.letter}</div>
+      <div class="rv-reply-body">
+        <span class="rv-name">${r.name || ""}</span>
+        <p class="rv-text">${r.text}</p>
+      </div>
+    </div>`;
+}
+
+function repliesMarkup(replies) {
+  if (!replies || !replies.length) return "";
+  return replies.map(replyMarkup).join("");
+}
+
+function commentMarkup(c) {
+  const styleAttr = c.style ? ` style="${c.style}"` : "";
+  const likes = c.likes != null ? c.likes : 0;
+  return `
+    <div class="rv-comment-head">
+      <div class="rv-user">
+        <div class="avatar-circle ${c.av}"${styleAttr}>${c.letter}</div>
+        <span class="rv-name">${c.name || ""}</span>
+      </div>
+      <span class="rv-time">${c.time || ""}</span>
+    </div>
+    <p class="rv-text">${c.text}</p>
+    <div class="rv-actions">
+      <div class="rv-like ${c.liked ? "liked" : ""}" onclick="toggleCommentLike(this)">
+        <i class="fa-${c.liked ? "solid" : "regular"} fa-heart"></i>
+        <span>${likes}</span>
+      </div>
+      <button type="button" class="rv-reply-btn" onclick="toggleReplyBox(this)">
+        <i class="fa-solid fa-reply"></i>
+        <span>${t("reply_label")}</span>
+      </button>
+    </div>
+    <div class="rv-replies">${repliesMarkup(c.replies)}</div>
+    <div class="rv-reply-box">
+      <input
+        type="text"
+        class="rv-reply-input"
+        placeholder="${t("reply_placeholder")}"
+        onkeydown="replyKeydown(event, this)"
+      />
+      <button type="button" class="rv-reply-send" onclick="addReply(this)">
+        <i class="fas fa-paper-plane" style="transform: scaleX(-1)"></i>
+      </button>
+    </div>`;
+}
+
+function toggleCommentLike(el) {
+  const icon = el.querySelector("i");
+  const count = el.querySelector("span");
+  const liked = el.classList.toggle("liked");
+  icon.classList.toggle("fa-solid", liked);
+  icon.classList.toggle("fa-regular", !liked);
+  count.textContent = parseInt(count.textContent || "0") + (liked ? 1 : -1);
+}
+
+function toggleReplyBox(btn) {
+  const box = btn.closest(".rv-comment").querySelector(".rv-reply-box");
+  const open = box.classList.toggle("open");
+  if (open) {
+    const input = box.querySelector(".rv-reply-input");
+    setTimeout(() => input.focus(), 50);
+  }
+}
+
+function replyKeydown(e, input) {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    addReply(input);
+  }
+}
+
+function addReply(el) {
+  const commentEl = el.closest(".rv-comment");
+  const box = commentEl.querySelector(".rv-reply-box");
+  const input = box.querySelector(".rv-reply-input");
+  const text = input.value.trim();
+  if (!text) return;
+
+  const colors = ["av-green", "av-orange", "av-blue", "av-gray"];
+  const reply = {
+    av: colors[Math.floor(Math.random() * colors.length)],
+    letter: text[0],
+    name: t("you_label"),
+    text,
+  };
+
+  const comment = findComment(parseInt(commentEl.dataset.id));
+  if (comment) {
+    comment.replies = comment.replies || [];
+    comment.replies.push(reply);
+  }
+
+  const repliesEl = commentEl.querySelector(".rv-replies");
+  const d = document.createElement("div");
+  d.innerHTML = replyMarkup(reply).trim();
+  const node = d.firstChild;
+  node.style.opacity = "0";
+  node.style.transition = "opacity 0.3s";
+  repliesEl.appendChild(node);
+  requestAnimationFrame(() =>
+    requestAnimationFrame(() => (node.style.opacity = "1")),
+  );
+
+  input.value = "";
+  box.classList.remove("open");
+}
 
 function renderComments() {
   const list = document.getElementById("commentsList");
@@ -214,13 +395,14 @@ function renderComments() {
 
   setTimeout(() => {
     list
-      .querySelectorAll(".comment-item:not(.extra-comment)")
+      .querySelectorAll(".rv-comment:not(.extra-comment)")
       .forEach((el) => el.remove());
 
     sorted.forEach((c) => {
       const d = document.createElement("div");
-      d.className = "comment-item";
-      d.innerHTML = `<div class="avatar-circle ${c.av}" ${c.style ? `style="${c.style}"` : ""}>${c.letter}</div><span>${c.text}</span>`;
+      d.className = "rv-comment";
+      d.dataset.id = c.id;
+      d.innerHTML = commentMarkup(c);
       list.appendChild(d);
     });
 
@@ -248,10 +430,11 @@ function showMore() {
   extraComments.forEach((c, i) => {
     setTimeout(() => {
       const d = document.createElement("div");
-      d.className = "comment-item extra-comment";
+      d.className = "rv-comment extra-comment";
+      d.dataset.id = c.id;
       d.style.opacity = "0";
       d.style.transition = "opacity 0.3s";
-      d.innerHTML = `<div class="avatar-circle ${c.av}">${c.letter}</div><span>${c.text}</span>`;
+      d.innerHTML = commentMarkup(c);
       list.appendChild(d);
 
       requestAnimationFrame(() => {
@@ -304,21 +487,28 @@ function addComment() {
   const firstLetter = text[0];
 
   // أضفه للـ data
-  commentsData.push({
+  const newC = {
+    id: commentIdSeq++,
     av: randomColor,
     letter: firstLetter,
+    name: t("you_label"),
     text,
-    time: commentsData.length + 1,
-  });
+    time: t("now_label"),
+    likes: 0,
+    liked: false,
+    replies: [],
+  };
+  commentsData.push(newC);
 
   // ارسمه مباشرة
   const list = document.getElementById("commentsList");
   const d = document.createElement("div");
-  d.className = "comment-item";
+  d.className = "rv-comment";
+  d.dataset.id = newC.id;
   d.style.opacity = "0";
   d.style.transform = "translateY(10px)";
   d.style.transition = "opacity 0.3s, transform 0.3s";
-  d.innerHTML = `<div class="avatar-circle ${randomColor}">${firstLetter}</div><span>${text}</span>`;
+  d.innerHTML = commentMarkup(newC);
 
   if (currentOrder === "newest") {
     list.insertBefore(d, list.firstChild);
@@ -342,7 +532,7 @@ function addComment() {
   // حدّث العداد
   const counter = document.querySelector(".comments-count");
   const num = parseInt(counter.textContent.match(/\d+/)[0]) + 1;
-  counter.textContent = `الكومنت (${num})`;
+  counter.textContent = `${t("comments_word")} (${num})`;
 
   input.value = "";
   input.style.height = "auto";
@@ -426,7 +616,7 @@ function toggleLike(button) {
   } else {
     icon.classList.remove("fa-solid");
     icon.classList.add("fa-regular");
-    icon.style.color = "white";
+    icon.style.color = "";
   }
 }
 
@@ -444,6 +634,76 @@ function toggleSave(button) {
 function shareVideo() {
   alert("مشاركة الفيديو");
 }
+
+// ===== تقديم / ترجيع الريلز =====
+function skipReel(btn, delta) {
+  const video = btn.closest(".reel-item").querySelector("video");
+  if (!video || !video.duration) return;
+  video.currentTime = Math.min(
+    Math.max(video.currentTime + delta, 0),
+    video.duration,
+  );
+}
+
+function formatTime(seconds) {
+  if (!seconds || isNaN(seconds)) seconds = 0;
+  const m = Math.floor(seconds / 60);
+  const s = Math.floor(seconds % 60);
+  return m + ":" + (s < 10 ? "0" + s : s);
+}
+
+function initReelSeek() {
+  document.querySelectorAll(".reel-item").forEach((item) => {
+    const video = item.querySelector("video");
+    const bar = item.querySelector(".reel-progress");
+    const fill = item.querySelector(".reel-progress-fill");
+    const timeEl = item.querySelector(".reel-time");
+    if (!video || !bar || !fill) return;
+
+    const updateTime = () => {
+      if (timeEl) {
+        timeEl.textContent = formatTime(video.currentTime);
+      }
+    };
+
+    video.addEventListener("loadedmetadata", updateTime);
+    video.addEventListener("timeupdate", () => {
+      if (video.duration) {
+        fill.style.width = (video.currentTime / video.duration) * 100 + "%";
+      }
+      updateTime();
+    });
+    updateTime();
+
+    let dragging = false;
+    const seek = (clientX) => {
+      const rect = bar.getBoundingClientRect();
+      let ratio = (clientX - rect.left) / rect.width;
+      ratio = Math.min(Math.max(ratio, 0), 1);
+      if (video.duration) {
+        video.currentTime = ratio * video.duration;
+        fill.style.width = ratio * 100 + "%";
+        updateTime();
+      }
+    };
+
+    bar.addEventListener("pointerdown", (e) => {
+      e.stopPropagation();
+      dragging = true;
+      try {
+        bar.setPointerCapture(e.pointerId);
+      } catch (err) {}
+      seek(e.clientX);
+    });
+    bar.addEventListener("pointermove", (e) => {
+      if (dragging) seek(e.clientX);
+    });
+    bar.addEventListener("pointerup", () => (dragging = false));
+    bar.addEventListener("pointercancel", () => (dragging = false));
+  });
+}
+
+document.addEventListener("DOMContentLoaded", initReelSeek);
 
 // إضافة مراقبة للتمرير
 const reelsContainer = document.getElementById("reelsContainer");

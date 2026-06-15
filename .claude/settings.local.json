@@ -3,7 +3,32 @@
     "allow": [
       "Bash(git *)",
       "Bash(cp \"/c/Users/GL/.claude/image-cache/f893cf31-0c05-45f3-aae1-214bb0c96278/3.png\" \"D:/منصة صوت/sawt-front/assets/images/card-green.png\")",
-      "Bash(cp \"/c/Users/GL/.claude/image-cache/f893cf31-0c05-45f3-aae1-214bb0c96278/4.png\" \"D:/منصة صوت/sawt-front/assets/images/card-beige.png\")"
+      "Bash(cp \"/c/Users/GL/.claude/image-cache/f893cf31-0c05-45f3-aae1-214bb0c96278/4.png\" \"D:/منصة صوت/sawt-front/assets/images/card-beige.png\")",
+      "Bash(node -e ' *)",
+      "Bash(node -c assets/js/translate.js)",
+      "Bash(grep -oiE \"#\\(2d|3a|4|5|6\\)[0-9a-f]{5}|#[0-9a-f]{3,6}\" \"D:/منصة صوت/sawt-front/assets/css/style.css\")",
+      "Bash(xxd)",
+      "Bash(head -n 1539 index.html)",
+      "Bash(tail -n +1776 index.html)",
+      "Bash(cat _p1 tmp_newsection.html _p3)",
+      "Bash(mv index.html.new index.html)",
+      "Bash(rm _p1 _p3 tmp_newsection.html)",
+      "Bash(node --check assets/js/script.js)",
+      "Bash(node --check assets/js/translate.js)",
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless=new --disable-gpu --hide-scrollbars --window-size=1200,1600 --screenshot=\"D:/منصة صوت/sawt-front/_shot.png\" --virtual-time-budget=3000 \"file:///D:/منصة صوت/sawt-front/index.html\")",
+      "Bash(ls -la _shot.png)",
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless=new --disable-gpu --hide-scrollbars --window-size=1280,6200 --screenshot=\"D:/منصة صوت/sawt-front/_shot.png\" --virtual-time-budget=4000 \"file:///D:/منصة صوت/sawt-front/index.html\")",
+      "Bash(python -c \"from PIL import Image; im=Image.open\\('_shot.png'\\); print\\(im.size\\)\")",
+      "Bash(node -e \"const fs=require\\('fs'\\);const b=fs.readFileSync\\('_shot.png'\\);console.log\\('width',b.readUInt32BE\\(16\\),'height',b.readUInt32BE\\(20\\)\\);\")",
+      "Read(//c/Program Files/**)",
+      "Bash(python3 -c \"import PIL; print\\('pil ok'\\)\")",
+      "Bash(node _crop.js 4700 5460)",
+      "Bash(node -e \"const fs=require\\('fs'\\);const b=fs.readFileSync\\('_crop.png'\\);console.log\\('ok'\\)\")",
+      "Bash(rm -f _shot.png _crop.png _crop.js _scan.js _scan2.js _preview.html _prev.png)",
+      "Bash(ls _*.*)",
+      "Bash(node -e \"require\\('./assets/js/translate.js'\\)\")",
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless=new --disable-gpu --hide-scrollbars --window-size=1300,900 --screenshot=\"d:/منصة صوت/sawt-front/_rs_shot.png\" --default-background-color=FFFFFFFF \"file:///d:/%D9%85%D9%86%D8%B5%D8%A9%20%D8%B5%D9%88%D8%AA/sawt-front/index.html\")",
+      "Bash(echo \"exit: $?\")"
     ]
   }
 }
