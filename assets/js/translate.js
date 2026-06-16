@@ -240,7 +240,12 @@ const translations = {
     toggle_lang: "تغيير اللغة",
 
     // about page
+    about_hero_title: "صناع الأثر.. الفريق خلف منصة صوت",
+    about_hero_desc:
+      "في هذه الصفحة، نشارككم قصة فريق من الناس إلى الناس، رؤيتنا، رسالتنا، وكيف بدأنا لنكون صوتًا حيًّا ومعينًا لمن لا صوت لهم، وكيف منحنا الناس الأمل.",
     about_header: "من نحن",
+    about_intro:
+      "فريق منصة صوت حاضنة لأصوات غزة. لم نبدأ من فكرةٍ خارقة أو خطةٍ مُحكمة، بل من قرارٍ بسيط: أن نكون حاضرِين، نستمع، ونُعلِن صوت غزة للعالم. نحن من الناس ونعيش معاناتهم عن قرب، فرأينا أن الحاجة واضحة فقررنا ألا نصمت. نعمل بدون أن نتكلم نيابةً عن أحد، وبدون وعودٍ تفوق قدراتنا. وظيفتنا توصيل صوت أهل غزة وإيصاله إلى العالم، مع الحفاظ على كرامة الناس وصوتهم. هدفنا أن نكون جسرًا صادقًا بين من يقدّم الانتباه والدعم لصوت غزة ومن ينتظر من يسمعهم حقًا. اليوم نحن أكثر من فكرة آمن بها شخص واحد؛ نحن حاضنة لأصوات غزة، فريق عمل متكامل.",
     about_desc:
       " منصة إعلامية رقمية تجمع بين المحتوى الإنساني، التدريب الاحترافي، والإنتاج الإعلامي.",
     about_register: "سجل الآن",
@@ -250,6 +255,41 @@ const translations = {
     about_platform_question: "ما الذي يدفعنا لنكون صوتك؟",
     about_platform_desc:
       "نؤمن أن لكل إنسان قصة تستحق أن تُروى، لذلك جاءت صوت لتكون مساحة حرة للتعبير، حيث يلتقي الأفراد لمشاركة تجاربهم وأفكارهم بصدق. نساعدك على إيصال صوتك إلى الآخرين، ونمنح المحتوى الإنساني مساحة حقيقية ليُرى، ويُسمع، ويترك أثرًا.",
+    core_values_title:
+      'أهم القيم التي <span class="core-values-highlight">نركز عليها</span>',
+    core_values_subtitle:
+      "قيمنا هي الأساس الذي نبني عليه صوت، وهي ما يقود طريقة عملنا وتطويرنا المستمر",
+    core_value_1_title: "التمكين",
+    core_value_1_desc:
+      "نسعى لأن نكون منبرًا يُمكّن الإنسان، ويصنع تأثيرًا إيجابيًا حقيقيًا يساهم في إيصال صوتنا وصوت المجتمع إلى العالم.",
+    core_value_2_title: "الموثوقية",
+    core_value_2_desc:
+      "نحرص على صون الأمانة الإعلامية وحماية الرواية وتوثيقها، معتمدين على معايير أخلاقية راسخة في كل ما ننشر.",
+    core_value_3_title: "الشراكة",
+    core_value_3_desc:
+      'نؤمن أن قوة "صوت غزة" نبع من تلاحم المجتمع، ونعمل كجسر يصل بين الأصوات المختلفة لتعزيز الدعم المتبادل.',
+    core_value_4_title: "الابتكار",
+    core_value_4_desc:
+      "نلتزم بنقل الأخبار والقصص بمهنية عالية وأمانة صحفية، لنكون المصدر الموثوق الذي يعبّر عن الواقع بدقة.",
+    sawt_story_title: "قصة صوت",
+    sawt_story_title_html: 'قصة <span class="sawt-story-highlight">صوت</span>',
+    about_platform_question_html:
+      'ما الذي يدفعنا لنكون <span class="platform-highlight">صوتك؟</span>',
+    join_us_title: "قد تكون قصتك بداية التغيير",
+    join_us_desc:
+      "كل صوت مهم، إذا كانت لديك قصة تستحق أن تُسمع فإن صوت ستدعمك من أول محادثة إلى التأثير العام.",
+    join_us_support: "ادعم منصة صوت",
+    sawt_story_subtitle:
+      "قيمنا هي الأساس الذي نبني عليه صوت، وهي ما يقود طريقة عملنا وتطويرنا المستمر",
+    sawt_story_1_title: "التأثير",
+    sawt_story_1_desc:
+      "منذ انطلاقنا، استطعنا إيصال أصوات الآلاف من الأشخاص الذين كانوا صامتين، وكشفنا حقائق عديدة تم إخفاؤها عن الرأي العام. قصصنا وصلت لملايين المتابعين، وساهمت في لفت انتباه العالم إلى قضايا مهمشة.",
+    sawt_story_2_title: "ما نقدم",
+    sawt_story_2_desc:
+      "نحن نقدم إعلامًا حقيقيًا يعتمد على القصص الحقيقية والأصوات الصادقة، بعيدًا عن ضغوط الإعلام التقليدي والسرديات الرسمية. منصاتنا تتيح لأي إنسان أن يُسمع صوته ويُسرد قصته بحرية ومصداقية، حيث نوثّق القصص الحقيقية من المناطق المتضررة.",
+    sawt_story_3_title: "رحلتنا",
+    sawt_story_3_desc:
+      'بدأت رحلة "صوت" في ظل ظروف صعبة، حيث كانت الكثير من القصص الحقيقية مخفية والأصوات الصادقة مكتومة تحت ضغوط الإعلام التقليدي والسرديات الرسمية. آمنّا بأن الحقيقة تستحق أن تُروى، وكل إنسان يستحق أن يُسمع صوته.',
     join_our_team_title_pre: "قد تكون قصتك بداية",
     join_our_team_title_highlight: "التغيير",
     join_our_team_desc:
@@ -547,7 +587,12 @@ const translations = {
     toggle_lang: "Switch language",
 
     //about page
+    about_hero_title: "Impact Makers.. The Team Behind Sawt Platform",
+    about_hero_desc:
+      "On this page, we share with you the story of a team from the people to the people — our vision, our message, and how we began to be a living, supportive voice for the voiceless, and how we gave people hope.",
     about_header: "About Sawt",
+    about_intro:
+      "The Sawt platform team is an incubator for the voices of Gaza. We did not start from an extraordinary idea or a tight plan, but from a simple decision: to be present, to listen, and to announce the voice of Gaza to the world. We are from the people and live their suffering up close, so we saw that the need was clear and decided not to stay silent. We work without speaking on anyone's behalf, and without promises beyond our abilities. Our job is to convey the voice of the people of Gaza to the world, while preserving the dignity of the people and their voice. Our goal is to be an honest bridge between those who offer attention and support to the voice of Gaza and those waiting to be truly heard. Today we are more than an idea believed in by one person; we are an incubator for the voices of Gaza, an integrated team.",
     about_desc:
       "A digital media platform that combines humanitarian content, professional training, and media production.",
     about_register: "Register Now",
@@ -557,6 +602,42 @@ const translations = {
     about_platform_question: "What drives us to be your voice?",
     about_platform_desc:
       "We believe every person has a story worth telling. That's why Sawt was created as a free space for expression, where individuals come together to share their experiences and ideas with sincerity. We help you reach others with your voice, giving humanitarian content a real space to be seen, heard, and leave a lasting impact.",
+    core_values_title:
+      'The Core Values We <span class="core-values-highlight">Focus On</span>',
+    core_values_subtitle:
+      "Our values are the foundation on which we build Sawt, and they guide the way we work and continuously improve.",
+    core_value_1_title: "Empowerment",
+    core_value_1_desc:
+      "We strive to be a platform that empowers people and creates a real positive impact, helping carry our voice and our community's voice to the world.",
+    core_value_2_title: "Reliability",
+    core_value_2_desc:
+      "We are committed to preserving media integrity, protecting and documenting the narrative, relying on firm ethical standards in everything we publish.",
+    core_value_3_title: "Partnership",
+    core_value_3_desc:
+      'We believe the strength of "Sawt Gaza" springs from the cohesion of the community, and we act as a bridge connecting different voices to foster mutual support.',
+    core_value_4_title: "Innovation",
+    core_value_4_desc:
+      "We commit to delivering news and stories with high professionalism and journalistic integrity, to be the trusted source that reflects reality accurately.",
+    sawt_story_title: "The Story of Sawt",
+    sawt_story_title_html:
+      'The Story of <span class="sawt-story-highlight">Sawt</span>',
+    about_platform_question_html:
+      'What drives us to be <span class="platform-highlight">your voice?</span>',
+    join_us_title: "Your story could be the start of change",
+    join_us_desc:
+      "Every voice matters. If you have a story worth hearing, Sawt will support you from the first conversation to public impact.",
+    join_us_support: "Support Sawt Platform",
+    sawt_story_subtitle:
+      "Our values are the foundation on which we build Sawt, and they guide the way we work and continuously improve.",
+    sawt_story_1_title: "Impact",
+    sawt_story_1_desc:
+      "Since we began, we have managed to carry the voices of thousands of people who were silenced, and uncovered many facts that were hidden from public opinion. Our stories have reached millions of followers and helped draw the world's attention to marginalized issues.",
+    sawt_story_2_title: "What We Offer",
+    sawt_story_2_desc:
+      "We provide genuine media built on real stories and honest voices, away from the pressures of traditional media and official narratives. Our platforms allow anyone to have their voice heard and their story told freely and credibly, as we document real stories from affected areas.",
+    sawt_story_3_title: "Our Journey",
+    sawt_story_3_desc:
+      'The journey of "Sawt" began under difficult circumstances, when many real stories were hidden and honest voices were muted under the pressures of traditional media and official narratives. We believed that the truth deserves to be told, and that every person deserves to have their voice heard.',
     leaders: "Leaders",
     teams: "Of Teams",
     leaders_of_teams_subtitle: "The faces behind the story",
