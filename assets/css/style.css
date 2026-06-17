@@ -131,6 +131,47 @@ a {
   color: rgba(127, 127, 127, 1) !important;
   font-weight: 600 !important;
 }
+.nav-link:hover {
+  color: rgba(76, 92, 55, 1) !important;
+}
+
+.nav-bttn {
+  border-radius: 50%;
+}
+
+.nav-bttn:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 2px 10px;
+  border-radius: 50%;
+}
+
+.nav-link-back {
+  border-radius: 15px;
+}
+.readmore {
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+.readmore:hover {
+  background-color: rgb(243, 243, 239);
+  border-radius: 15px;
+}
+
+.show-more-news {
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: rgba(76, 92, 55, 1) !important;
+  transition: all 0.2s ease-in-out;
+}
+.show-more-news:hover {
+  background-color: rgb(50, 59, 38);
+  color: white !important;
+}
+
+.nav-link-back:hover {
+  background-color: rgb(243, 243, 239);
+  border-radius: 15px;
+}
 
 .navbar-nav .nav-link.active {
   background: rgba(76, 92, 55, 1);
@@ -164,6 +205,26 @@ a {
   z-index: 1030;
 }
 
+/* Top bar (nav-face + navbar) pinned to the top while scrolling */
+.header-bar.is-fixed {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1030;
+  animation: navSlideDown 0.3s ease;
+}
+
+@keyframes navSlideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 .hero-btn-support {
   background-color: inherit !important;
   border: 1px solid rgba(255, 255, 255, 1) !important;
@@ -177,7 +238,7 @@ a {
   color: white !important;
 }
 .hero-btn-watch:hover {
-  background-color: rgba(76, 92, 55, 0.8) !important;
+  background-color: rgb(50, 59, 38) !important;
   color: white !important;
 }
 
@@ -254,6 +315,10 @@ a {
 .stats-bar p {
   font-size: 0.9rem;
   opacity: 0.8;
+}
+.box-element {
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(218, 218, 218, 1);
 }
 
 .herocarousel {
@@ -439,18 +504,18 @@ a {
   overflow: hidden;
 }
 
-/* .news-card {
+.news-card {
   border: 1px solid #eee;
   border-radius: 15px;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
-} */
+}
 
-/* .news-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-} */
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+}
 
 .count i {
   background-image: url("../images/stroke_gray_top.png");
@@ -460,6 +525,7 @@ a {
   width: 50%;
   color: rgba(255, 116, 32, 1);
   font-size: 2rem;
+  margin-bottom: 15px;
 }
 
 .who-us {
@@ -638,7 +704,7 @@ a {
 }
 
 .join-us-btn:hover {
-  background-color: #5f7544 !important;
+  background-color: rgb(50, 59, 38) !important;
 }
 
 .marquee {
@@ -801,8 +867,12 @@ a {
   color: rgba(109, 109, 109, 1) !important;
 }
 
-.platform-card:hover {
-  transform: scale(1.01);
+.platform-card .read-more-btn span {
+  transition: all 0.2s ease-in-out;
+}
+
+.platform-card .read-more-btn:hover span {
+  transform: scale(0.8);
 }
 
 /* .platform-card:hover .up-center-icon {
@@ -813,13 +883,16 @@ a {
 .platform-card:hover .center-icon {
   background-color: #e1723b;
 } */
+.platform-card:hover {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.09);
+}
 
 .platform-card:hover .read-more-btn .arrow {
   background-color: inherit;
 }
 
-.platform-card:hover .read-more-btn {
-  background-color: #e1723b;
+.platform-card .read-more-btn:hover {
+  background-color: rgb(50, 59, 38);
 }
 
 .read-more-btn {
@@ -1243,7 +1316,16 @@ a {
   font-weight: 600;
   padding: 6px 20px;
   font-size: 15px;
+  transition: all 0.2s ease-in-out;
 }
+
+.register-btn a:hover {
+  background-color: rgb(50, 59, 38);
+}
+.sign-in-btn a:hover {
+  background-color: rgb(229, 233, 223);
+}
+
 .sign-in-btn a {
   border-radius: 25px;
   border: 1px solid rgba(76, 92, 55, 1);
@@ -1254,6 +1336,7 @@ a {
   padding: 6px 20px;
   font-weight: 600;
   font-size: 15px;
+  transition: all 0.2s ease-in-out;
 }
 
 .creators-carousel2 .item {
@@ -2847,12 +2930,6 @@ a {
   transition: 0.3s;
 }
 
-.footer-links a:hover {
-  color: var(--text-orange);
-  padding-right: 5px;
-  /* حركة خفيفة عند الوقوف على الرابط */
-}
-
 /* تنسيق أزرار التواصل الاجتماعي */
 .social-circle {
   width: 40px;
@@ -3272,16 +3349,15 @@ a {
   margin-bottom: 12px;
 }
 
+.footer-links li a:hover {
+  color: rgb(232, 227, 227) !important;
+}
+
 .footer-links a {
   text-decoration: none;
   color: #ffffff;
   font-size: 12rem;
   transition: 0.3s;
-}
-
-.footer-links a:hover {
-  color: var(--text-orange);
-  padding-right: 5px;
 }
 
 .footer-links li {
@@ -3293,11 +3369,6 @@ a {
   color: #ffffff;
   font-size: 1rem;
   transition: 0.3s;
-}
-
-.footer-links a:hover {
-  color: var(--text-orange);
-  padding-right: 5px;
 }
 
 .social-circle {
@@ -3588,8 +3659,7 @@ a {
 }
 
 .btn-view-profile:hover {
-  background-color: rgba(76, 92, 55, 1) !important;
-  color: white !important;
+  background-color: rgb(229, 233, 223) !important;
 }
 
 .team-carousel .owl-nav {
@@ -4752,6 +4822,7 @@ a {
 @media (max-width: 768px) {
   .about-hero {
     padding: 40px 15px 60px;
+    z-index: -1;
   }
   .about-hero-title {
     font-size: 28px;
@@ -4928,6 +4999,7 @@ a {
 .core-values-section {
   padding: 90px 0 30px;
   position: relative;
+  z-index: 1;
 }
 
 .core-values-head {
@@ -5031,6 +5103,7 @@ a {
 /* Sawt Story Cards Section */
 .sawt-story-section {
   padding: 30px 0 30px;
+  z-index: 1;
 }
 
 .sawt-story-head {
@@ -5550,6 +5623,15 @@ a {
 .social-links a i {
   color: rgba(76, 92, 55, 1);
 }
+.social-links a {
+  transition: all 0.2s ease-in-out;
+}
+
+.social-links a:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  padding: 5px 10px;
+  border-radius: 50%;
+}
 
 @media (max-width: 992px) {
   .nav-search-div {
@@ -5783,6 +5865,13 @@ a {
 }
 
 @media (max-width: 576px) {
+  #heroCarousel .carousel-control-next.hero-arrow {
+    display: none !important;
+  }
+  #heroCarousel .carousel-control-prev.hero-arrow {
+    display: none !important;
+  }
+
   .about-sec-leaf {
     right: 0 !important;
   }
@@ -5986,8 +6075,8 @@ a {
 }
 
 .rs-send:hover {
-  background: rgba(56, 70, 40, 1);
-  transform: translateY(-2px);
+  background-color: rgb(50, 59, 38);
+  /* transform: translateY(-2px); */
 }
 
 /* --- Story cards (full poster + overlay) --- */
@@ -6128,4 +6217,224 @@ a {
   .rs-count {
     justify-content: center;
   }
+}
+
+/* ===== Creator card slide-up hover overlay ===== */
+.content-section .front-face-img {
+  position: absolute;
+}
+
+/* dim the photo while hovering */
+.content-section .front-face-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(120, 120, 120, 0.35);
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.content-section .main-container:hover .front-face-img::after {
+  opacity: 1;
+}
+
+.hover-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 24px 26px 28px;
+  background: #f3f4ef;
+  border-radius: 24px 24px 20px 20px;
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.08);
+  text-align: right;
+  transform: translateY(101%);
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  z-index: 3;
+}
+
+.content-section .main-container:hover .hover-overlay {
+  transform: translateY(0);
+}
+
+.hover-title {
+  color: #1e1e1e;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.hover-desc {
+  color: black;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+  padding-left: 56px;
+}
+
+.hover-arrow {
+  position: absolute;
+  bottom: 24px;
+  left: 26px;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(50, 59, 38);
+  border-radius: 50%;
+  color: #4c5c37;
+  background: inherit;
+}
+
+.hover-arrow:hover {
+  background-color: rgb(229, 233, 223);
+}
+
+.hover-arrow i {
+  font-size: 16px;
+  transform: rotate(-45deg);
+}
+[dir="ltr"] .hover-arrow i {
+  transform: rotate(45deg);
+}
+
+[dir="ltr"] .hover-overlay {
+  text-align: left;
+}
+
+[dir="ltr"] .hover-desc {
+  padding-left: 0;
+  padding-right: 56px;
+}
+
+[dir="ltr"] .hover-arrow {
+  left: auto;
+  right: 26px;
+}
+
+/* ===== Real-stories card: slide-up story on hover ===== */
+/* full-card dark veil revealed while hovering */
+.rs-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(18, 26, 14, 0.92);
+  opacity: 0;
+  transition: opacity 0.45s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.rs-card:hover::before {
+  opacity: 1;
+}
+
+/* short teaser collapses on hover */
+.rs-card-desc {
+  overflow: hidden;
+  max-height: 60px;
+  transition:
+    max-height 0.4s ease,
+    opacity 0.4s ease,
+    margin 0.4s ease;
+}
+
+.rs-card:hover .rs-card-desc {
+  max-height: 0;
+  opacity: 0;
+  margin: 0;
+}
+
+/* full story slides up from under */
+.rs-card-full {
+  font-size: 14px;
+  line-height: 1.9;
+  margin: 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.5s ease,
+    opacity 0.45s ease,
+    margin 0.45s ease;
+}
+
+.rs-card:hover .rs-card-full {
+  max-height: 360px;
+  opacity: 0.95;
+  margin-top: 8px;
+}
+
+/* ===== Hero carousel prev/next round arrows ===== */
+#heroCarousel .hero-arrow {
+  width: 48px;
+  height: 48px;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  z-index: 5;
+}
+
+#heroCarousel .carousel-control-prev.hero-arrow {
+  left: 24px;
+  right: auto;
+}
+
+#heroCarousel .carousel-control-next.hero-arrow {
+  right: 24px;
+  left: auto;
+}
+
+.hero-arrow-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(76, 92, 55, 0.85);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.hero-arrow:hover .hero-arrow-icon {
+  background-color: rgb(50, 59, 38);
+}
+
+/* ===== Latest-news carousel arrow hover ===== */
+.latest-news .owl-nav button {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.latest-news .owl-nav button:hover {
+  background-color: rgb(229, 233, 223) !important;
+}
+
+/* ===== Content-section & team-section carousel arrow hover ===== */
+.creators-carousel2 .owl-prev,
+.creators-carousel2 .owl-next,
+.team-carousel .owl-nav button {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.creators-carousel2 .owl-prev:hover,
+.creators-carousel2 .owl-next:hover,
+.team-carousel .owl-nav button:hover {
+  background-color: rgb(229, 233, 223) !important;
 }
