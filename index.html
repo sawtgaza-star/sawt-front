@@ -56,6 +56,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
@@ -80,20 +84,24 @@
                 >وسائل التواصل الاجتماعي</span
               >
               <a href="#" class="text-white ms-2"
-                ><i class="fab fa-facebook-f font-18"></i
-              ></a>
-              <a href="#" class="text-white ms-2"
-                ><i class="fab fa-twitter font-18"></i
-              ></a>
-              <a href="#" class="text-white ms-2"
                 ><i class="fab fa-linkedin-in font-18"></i
               ></a>
+
               <a href="#" class="text-white ms-2"
-                ><i class="fab fa-telegram-plane font-18"></i
+                ><i class="fab fa-facebook-f font-18"></i
               ></a>
+
               <a href="#" class="text-white ms-2"
-                ><i class="fab fa-instagram font-18"></i
+                ><i class="fa-solid fa-paper-plane"></i
               ></a>
+
+              <a href="#" class="text-white ms-2">
+                <i class="ri-instagram-fill font-18"></i>
+              </a>
+
+              <a href="#" class="text-white ms-2"
+                ><i class="ri-twitter-x-fill font-18"></i>
+              </a>
             </div>
 
             <div
@@ -170,7 +178,7 @@
                 <div class="v-divider d-none d-lg-block mx-3"></div>
                 <li class="nav-item ms-lg-3">
                   <a
-                    class="nav-link font-16"
+                    class="nav-link nav-link-back font-16"
                     href="#"
                     style="color: rgba(76, 92, 55, 1) !important"
                     data-i18n="nav_incubator"
@@ -179,7 +187,7 @@
                 </li>
                 <li class="nav-item ms-lg-3">
                   <a
-                    class="nav-link font-16 font-color-green"
+                    class="nav-link nav-link-back font-16 font-color-green"
                     href="#"
                     style="color: rgba(76, 92, 55, 1) !important"
                     data-i18n="nav_media"
@@ -215,12 +223,12 @@
                 </div>
               </div>
               <div class="searchDiv d-flex align-items-center gap-2">
-                <button class="btn rounded-nav">
-                  <i class="fa-regular fa-moon"></i>
+                <button class="btn rounded-nav nav-bttn">
+                  <i class="ri-moon-line"></i>
                 </button>
 
-                <button class="btn rounded-nav language-btn">
-                  <i class="fa-solid fa-globe"></i>
+                <button class="btn rounded-nav language-btn nav-bttn">
+                  <i class="ri-global-line"></i>
                 </button>
               </div>
             </div>
@@ -438,13 +446,34 @@
               </div>
             </div>
           </div>
+
+          <button
+            class="carousel-control-prev hero-arrow"
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="hero-arrow-icon" aria-hidden="true">
+              <i class="fa-solid fa-chevron-left"></i>
+            </span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next hero-arrow"
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide="next"
+          >
+            <span class="hero-arrow-icon" aria-hidden="true">
+              <i class="fa-solid fa-chevron-right"></i>
+            </span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
 
       <div class="stats-bar">
-        <div
-          class="box-element container front-face text-white rounded-4 shadow py-4"
-        >
+        <div class="box-element container front-face text-white rounded-4 py-4">
           <div
             class="row d-flex justify-content-center align-items-center text-center g-0"
           >
@@ -454,12 +483,14 @@
               <p class="mb-0" data-i18n="stat_team">أعضاء الفريق</p>
             </div>
             <div class="col count">
-              <i class="fa-solid fa-book-open"></i>
+              <!-- <i class="fa-solid fa-book-open"></i> -->
+              <i class="ri-book-open-line"></i>
               <h3 class="font-mob-22 counter">100+</h3>
               <p class="mb-0" data-i18n="stat_stories">قصة</p>
             </div>
             <div class="col count">
               <i class="fa-regular fa-eye"></i>
+
               <h3 class="font-mob-22">
                 +30 <span data-i18n="one_thousand"></span>
               </h3>
@@ -467,6 +498,7 @@
             </div>
             <div class="col count">
               <i class="fa-regular fa-circle-play"></i>
+
               <h3 class="counter font-mob-22">30+</h3>
               <p class="mb-0" data-i18n="stat_videos">فيديو</p>
             </div>
@@ -529,7 +561,7 @@
               <div class="features-grid row gap-4 my-4">
                 <div class="col-6 feature-item d-flex align-items-center">
                   <div class="icon-box">
-                    <i class="fa-solid fa-share-nodes"></i>
+                    <i class="ri-share-line"></i>
                   </div>
 
                   <span
@@ -654,7 +686,7 @@
                       >5 مارس 2026</span
                     >
                   </span>
-                  <span>
+                  <span class="readmore">
                     <a href="#">
                       <span
                         style="color: rgba(76, 92, 55, 1)"
@@ -705,7 +737,7 @@
                       >5 مارس 2026</span
                     >
                   </span>
-                  <span>
+                  <span class="readmore">
                     <a href="#">
                       <span
                         style="color: rgba(76, 92, 55, 1)"
@@ -755,7 +787,7 @@
                       >5 مارس 2026</span
                     >
                   </span>
-                  <span>
+                  <span class="readmore">
                     <a href="#">
                       <span
                         style="color: rgba(76, 92, 55, 1)"
@@ -774,15 +806,13 @@
           </div>
 
           <div class="text-center mt-5 fw-bold">
-            <a href="#" class="px-3 py-2 fw-bold">
-              <span
-                data-i18n="view_all_news"
-                style="color: rgba(76, 92, 55, 1); font-size: 18px"
+            <a href="#" class="px-3 py-2 fw-bold show-more-news">
+              <span data-i18n="view_all_news" style="font-size: 18px"
                 >عرض جميع الأخبار</span
               >
               <i
                 class="fa-solid fa-angle-left me-2 arrow"
-                style="color: rgba(76, 92, 55, 1); font-size: 18px"
+                style="font-size: 18px"
               ></i>
             </a>
           </div>
@@ -857,6 +887,22 @@
                         >
                           ممثل مسرحية
                         </div>
+                      </div>
+
+                      <div class="hover-overlay">
+                        <h4
+                          class="hover-title"
+                          data-i18n="creator_overlay_title"
+                        >
+                          تجربتي مع صوت
+                        </h4>
+                        <p class="hover-desc" data-i18n="creator_quote">
+                          تجربتي مع صوت كانت مختلفة، أخيراً لقيت مكان بيفهمني
+                          كمبدع ....
+                        </p>
+                        <span class="hover-arrow">
+                          <i class="fa-solid fa-arrow-up"></i>
+                        </span>
                       </div>
                     </div>
 
@@ -937,6 +983,22 @@
                           ممثل مسرحية
                         </div>
                       </div>
+
+                      <div class="hover-overlay">
+                        <h4
+                          class="hover-title"
+                          data-i18n="creator_overlay_title"
+                        >
+                          تجربتي مع صوت
+                        </h4>
+                        <p class="hover-desc" data-i18n="creator_quote">
+                          تجربتي مع صوت كانت مختلفة، أخيراً لقيت مكان بيفهمني
+                          كمبدع ....
+                        </p>
+                        <span class="hover-arrow">
+                          <i class="fa-solid fa-arrow-up"></i>
+                        </span>
+                      </div>
                     </div>
 
                     <!-- <div
@@ -1015,6 +1077,22 @@
                         >
                           ممثل مسرحية
                         </div>
+                      </div>
+
+                      <div class="hover-overlay">
+                        <h4
+                          class="hover-title"
+                          data-i18n="creator_overlay_title"
+                        >
+                          تجربتي مع صوت
+                        </h4>
+                        <p class="hover-desc" data-i18n="creator_quote">
+                          تجربتي مع صوت كانت مختلفة، أخيراً لقيت مكان بيفهمني
+                          كمبدع ....
+                        </p>
+                        <span class="hover-arrow">
+                          <i class="fa-solid fa-arrow-up"></i>
+                        </span>
                       </div>
                     </div>
 
@@ -1095,6 +1173,22 @@
                           ممثل مسرحية
                         </div>
                       </div>
+
+                      <div class="hover-overlay">
+                        <h4
+                          class="hover-title"
+                          data-i18n="creator_overlay_title"
+                        >
+                          تجربتي مع صوت
+                        </h4>
+                        <p class="hover-desc" data-i18n="creator_quote">
+                          تجربتي مع صوت كانت مختلفة، أخيراً لقيت مكان بيفهمني
+                          كمبدع ....
+                        </p>
+                        <span class="hover-arrow">
+                          <i class="fa-solid fa-arrow-up"></i>
+                        </span>
+                      </div>
                     </div>
 
                     <!-- <div
@@ -1138,11 +1232,7 @@
           </div>
 
           <div class="text-center">
-            <a
-              href="#"
-              class="px-4 py-2 fw-bold"
-              style="color: rgba(76, 92, 55, 1) !important"
-            >
+            <a href="#" class="px-4 py-2 fw-bold show-more-news">
               <span data-i18n="view_all">عرض الكل</span>
               <i class="fa-solid fa-angle-left me-2 arrow"></i>
             </a>
@@ -1415,6 +1505,12 @@
                         <p class="rs-card-desc" data-i18n="rs_card_desc">
                           من غزة الى الأردن وأمل لايمشي مجددا
                         </p>
+                        <p class="rs-card-full" data-i18n="rs_card1_full">
+                          من قلب غزة المحاصرة، حوّل صانع المحتوى كوب الشاي
+                          البسيط إلى رمزٍ للصمود وسط الحصار. التقطت منصة صوت
+                          حكايته وأوصلتها إلى العالم، لتتحوّل كاسة شاي إلى رسالة
+                          أملٍ وإصرار.
+                        </p>
                       </div>
                       <a
                         href="#"
@@ -1446,6 +1542,12 @@
                         </h5>
                         <p class="rs-card-desc" data-i18n="rs_card_desc">
                           من غزة الى الأردن وأمل لايمشي مجددا
+                        </p>
+                        <p class="rs-card-full" data-i18n="rs_card2_full">
+                          في وسط دمار غزة، اختُطف صانع المحتوى سمير وأُصيبت يده
+                          بوحشية، واضطر إلى الهجرة إلى الأردن بحثاً عن الأمان.
+                          منصة صوت التقطت صورته ونقلت قصته للعالم، فصار صوته
+                          أعلى من القنابل وحمل رسالة الأمل لآلاف الفلسطينيين.
                         </p>
                       </div>
                       <a
@@ -1479,6 +1581,12 @@
                         <p class="rs-card-desc" data-i18n="rs_card_desc">
                           من غزة الى الأردن وأمل لايمشي مجددا
                         </p>
+                        <p class="rs-card-full" data-i18n="rs_card1_full">
+                          من قلب غزة المحاصرة، حوّل صانع المحتوى كوب الشاي
+                          البسيط إلى رمزٍ للصمود وسط الحصار. التقطت منصة صوت
+                          حكايته وأوصلتها إلى العالم، لتتحوّل كاسة شاي إلى رسالة
+                          أملٍ وإصرار.
+                        </p>
                       </div>
                       <a
                         href="#"
@@ -1509,6 +1617,12 @@
                         </h5>
                         <p class="rs-card-desc" data-i18n="rs_card_desc">
                           من غزة الى الأردن وأمل لايمشي مجددا
+                        </p>
+                        <p class="rs-card-full" data-i18n="rs_card2_full">
+                          في وسط دمار غزة، اختُطف صانع المحتوى سمير وأُصيبت يده
+                          بوحشية، واضطر إلى الهجرة إلى الأردن بحثاً عن الأمان.
+                          منصة صوت التقطت صورته ونقلت قصته للعالم، فصار صوته
+                          أعلى من القنابل وحمل رسالة الأمل لآلاف الفلسطينيين.
                         </p>
                       </div>
                       <a
@@ -1541,6 +1655,12 @@
                         <p class="rs-card-desc" data-i18n="rs_card_desc">
                           من غزة الى الأردن وأمل لايمشي مجددا
                         </p>
+                        <p class="rs-card-full" data-i18n="rs_card1_full">
+                          من قلب غزة المحاصرة، حوّل صانع المحتوى كوب الشاي
+                          البسيط إلى رمزٍ للصمود وسط الحصار. التقطت منصة صوت
+                          حكايته وأوصلتها إلى العالم، لتتحوّل كاسة شاي إلى رسالة
+                          أملٍ وإصرار.
+                        </p>
                       </div>
                       <a
                         href="#"
@@ -1571,6 +1691,12 @@
                         </h5>
                         <p class="rs-card-desc" data-i18n="rs_card_desc">
                           من غزة الى الأردن وأمل لايمشي مجددا
+                        </p>
+                        <p class="rs-card-full" data-i18n="rs_card2_full">
+                          في وسط دمار غزة، اختُطف صانع المحتوى سمير وأُصيبت يده
+                          بوحشية، واضطر إلى الهجرة إلى الأردن بحثاً عن الأمان.
+                          منصة صوت التقطت صورته ونقلت قصته للعالم، فصار صوته
+                          أعلى من القنابل وحمل رسالة الأمل لآلاف الفلسطينيين.
                         </p>
                       </div>
                       <a
@@ -1937,13 +2063,6 @@
                   </div>
                 </div>
                 <div class="comments-list" id="commentsList"></div>
-                <div
-                  class="show-more"
-                  onclick="showMore()"
-                  data-i18n="show_more"
-                >
-                  عرض المزيد ↓
-                </div>
 
                 <div class="comment-input-row p-4">
                   <textarea
@@ -1954,7 +2073,7 @@
                     data-i18n-placeholder="comment_placeholder"
                     style="text-align: start"
                   ></textarea>
-                  <button class="send-btn" onclick="addComment()">
+                  <button class="rs-send" onclick="addComment()">
                     <i
                       class="fas fa-paper-plane text-white"
                       style="transform: scaleX(-1)"
@@ -2095,7 +2214,7 @@
                   data-i18n-placeholder="footer_email_placeholder"
                 />
               </div>
-              <button class="newsletter-icon-wrapper">
+              <button class="rs-send">
                 <i class="fas fa-paper-plane"></i>
               </button>
             </div>

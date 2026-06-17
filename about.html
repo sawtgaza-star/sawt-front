@@ -38,7 +38,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
@@ -66,20 +69,24 @@
                 >وسائل التواصل الاجتماعي</span
               >
               <a href="#" class="text-white ms-2"
-                ><i class="fab fa-facebook-f font-18"></i
-              ></a>
-              <a href="#" class="text-white ms-2"
-                ><i class="fab fa-twitter font-18"></i
-              ></a>
-              <a href="#" class="text-white ms-2"
                 ><i class="fab fa-linkedin-in font-18"></i
               ></a>
+
               <a href="#" class="text-white ms-2"
-                ><i class="fab fa-telegram-plane font-18"></i
+                ><i class="fab fa-facebook-f font-18"></i
               ></a>
+
               <a href="#" class="text-white ms-2"
-                ><i class="fab fa-instagram font-18"></i
+                ><i class="fa-solid fa-paper-plane"></i
               ></a>
+
+              <a href="#" class="text-white ms-2">
+                <i class="ri-instagram-fill font-18"></i>
+              </a>
+
+              <a href="#" class="text-white ms-2"
+                ><i class="ri-twitter-x-fill font-18"></i>
+              </a>
             </div>
 
             <div
@@ -156,7 +163,7 @@
                 <div class="v-divider d-none d-lg-block mx-3"></div>
                 <li class="nav-item ms-lg-3">
                   <a
-                    class="nav-link font-16"
+                    class="nav-link nav-link-back font-16"
                     href="#"
                     style="color: rgba(76, 92, 55, 1) !important"
                     data-i18n="nav_incubator"
@@ -165,7 +172,7 @@
                 </li>
                 <li class="nav-item ms-lg-3">
                   <a
-                    class="nav-link font-16 font-color-green"
+                    class="nav-link nav-link-back font-16 font-color-green"
                     href="#"
                     style="color: rgba(76, 92, 55, 1) !important"
                     data-i18n="nav_media"
@@ -201,12 +208,12 @@
                 </div>
               </div>
               <div class="searchDiv d-flex align-items-center gap-2">
-                <button class="btn rounded-nav">
-                  <i class="fa-regular fa-moon"></i>
+                <button class="btn rounded-nav nav-bttn">
+                  <i class="ri-moon-line"></i>
                 </button>
 
-                <button class="btn rounded-nav language-btn">
-                  <i class="fa-solid fa-globe"></i>
+                <button class="btn rounded-nav language-btn nav-bttn">
+                  <i class="ri-global-line"></i>
                 </button>
               </div>
             </div>
@@ -236,7 +243,7 @@
     </header>
 
     <section>
-      <div class="about-sec container" style="margin-top: 50px">
+      <div class="about-sec container" style="margin-top: 50px; z-index: 1">
         <div class="row align-items-center">
           <div class="col-12 col-lg-6 about-sec-content" dir="rtl">
             <h2 class="about-sec-title" data-i18n="about_header">من نحن</h2>
@@ -607,7 +614,7 @@
                   data-i18n-placeholder="footer_email_placeholder"
                 />
               </div>
-              <button class="newsletter-icon-wrapper">
+              <button class="rs-send">
                 <i class="fas fa-paper-plane"></i>
               </button>
             </div>
