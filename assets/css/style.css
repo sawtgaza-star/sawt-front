@@ -444,6 +444,10 @@ a {
   margin-top: -15px;
 }
 
+svg {
+  vertical-align: sub;
+}
+
 .card-body .card-title {
   padding-bottom: 10px;
   padding-top: 10px;
@@ -524,7 +528,7 @@ a {
   background-position: center;
   width: 50%;
   color: rgba(255, 116, 32, 1);
-  font-size: 2rem;
+  /* font-size: 2rem; */
   margin-bottom: 15px;
 }
 
@@ -642,11 +646,21 @@ a {
 
 /* Join us as a content creator section */
 .join-us-section {
-  width: 95%;
+  width: 90%;
   margin: 60px auto;
 }
 
 .join-us-banner {
+  position: relative;
+  /* border-radius: 16px; */
+  overflow: hidden;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.join-us-banner-about {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
@@ -656,7 +670,15 @@ a {
   justify-content: center;
 }
 
-.join-us-bg {
+.join-us-banner-about::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.join-us-bg-about {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -665,11 +687,20 @@ a {
   z-index: 0;
 }
 
+.join-us-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  z-index: 0;
+}
+
 .join-us-banner::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.15);
   z-index: 1;
 }
 
@@ -2063,7 +2094,7 @@ a {
 }
 
 .comments-list {
-  max-height: 200px;
+  max-height: 288px;
   overflow-y: auto;
   scroll-behavior: smooth;
   display: flex;
@@ -2200,12 +2231,12 @@ a {
 /* ===== Reviews / "آراؤكم في المحتوى" section ===== */
 .reviews-section {
   position: relative;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 248, 240, 1) 0%,
-    rgba(255, 248, 240, 0) 100%
-  );
+  background: rgba(237, 239, 235, 0.33);
   overflow: hidden;
+  padding: 15px 35px !important;
+  width: 90%;
+  margin: auto;
+  border-radius: 20px;
 }
 
 .reviews-section::before {
@@ -2213,8 +2244,8 @@ a {
   position: absolute;
   inset: 0;
   background-image: url("../images/pattern.png");
-  background-repeat: repeat;
-  background-size: 320px auto;
+  background-repeat: no-repeat;
+  background-size: cover;
   opacity: 0.35;
   z-index: 0;
   pointer-events: none;
@@ -2433,6 +2464,7 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+  padding: 1rem !important;
 }
 
 .comments-count-group {
@@ -4767,7 +4799,7 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  /* background-color: rgba(0, 0, 0, 0.4); */
   z-index: 0;
   pointer-events: none;
 }
@@ -4788,7 +4820,7 @@ a {
 }
 
 .about-breadcrumb a {
-  color: rgba(34, 34, 34, 1) !important;
+  color: rgba(255, 255, 255, 1) !important;
   text-decoration: none;
   opacity: 0.9;
   transition: opacity 0.2s ease;
@@ -4797,7 +4829,7 @@ a {
 .about-breadcrumb-sep {
   font-size: 12px;
   opacity: 0.8;
-  color: rgba(34, 34, 34, 1) !important;
+  color: rgba(255, 255, 255, 1) !important;
 }
 
 .about-breadcrumb-active {
@@ -4910,9 +4942,13 @@ a {
 }
 
 .about-the-platform-card {
-  background: rgba(237, 239, 235, 1);
-  border-radius: 24px;
-  padding: 30px 45px;
+  background: url(/assets/images/pattern.png);
+  background-color: rgba(237, 239, 235, 0.5);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  padding: 20px;
   max-width: 1320px;
   margin: 0 auto;
   overflow: hidden;
@@ -4936,7 +4972,7 @@ a {
   width: 100px;
   height: 100px;
   top: 0;
-  left: 0;
+  left: 17px;
 }
 
 .about-the-platform-visual {
@@ -5000,6 +5036,12 @@ a {
   padding: 90px 0 30px;
   position: relative;
   z-index: 1;
+}
+
+.core-values-section .branch-left-bottom-about {
+  top: 14%;
+  left: 1px;
+  transform: rotate(180deg) scaleY(-1);
 }
 
 .core-values-head {
@@ -5633,6 +5675,13 @@ a {
   border-radius: 50%;
 }
 
+.search-input {
+  padding-right: 35px !important;
+}
+.form-control {
+  border-radius: 8px !important;
+}
+
 @media (max-width: 992px) {
   .nav-search-div {
     width: 100%;
@@ -5688,6 +5737,7 @@ a {
 
   .search-input {
     width: 100%;
+    padding-right: 35px !important;
   }
 
   .searchDiv {
