@@ -39,7 +39,7 @@ body {
 
 a {
   text-decoration: none;
-  color: black !important;
+  color: white !important;
 }
 
 .text-dark {
@@ -1139,12 +1139,9 @@ a {
 
 /* حاوية السويبر - تبدأ مع محاذاة الكونتينر وتخرج من أقصى اليسار */
 .swiper-outer-wrapper {
- position: relative;
+  position: relative;
 }
-.swiper-outer-wrapper .swiper {
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-    mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-}
+
 .swiper {
   width: 100%;
   overflow: visible !important;
@@ -1637,7 +1634,7 @@ a {
 }
 
 .breadcrumb-item.active {
-  color: #4C5C37 !important;
+  color: #FFB181 !important;
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
@@ -1705,4 +1702,8 @@ a {
 
 .close-popup-btn:hover {
   color: #4C5C37;
+}
+
+.breadcrumb-item + .breadcrumb-item::before{
+  color: white !important;
 }

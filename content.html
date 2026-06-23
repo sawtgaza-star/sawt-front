@@ -128,7 +128,7 @@
     <div class="swiper mySwiper">
       <div class="text-center" style="padding: 40px 0px">
         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="mb-3">
-          <ol class="breadcrumb d-flex justify-content-center text-bold">
+          <ol class="breadcrumb d-flex justify-content-center">
             <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
             <li class="breadcrumb-item active" aria-current="page">محتوانا</li>
           </ol>
@@ -1232,51 +1232,53 @@
   <script src="assets/js/script.js"></script>
 
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      loop: true,
-      // الإعدادات الافتراضية (للشاشات الكبيرة)
-      slidesPerView: 6,
+   var swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  loop: true,
+  slidesPerView: 6,
+  
+  coverflowEffect: {
+    depth: 200, 
+    rotate: 10,
+    stretch: -30, // 👈 قيمة سالبة لعمل مسافة بين الكروت على الشاشات الكبيرة
+    modifier: 1,
+    slideShadows: true,
+  },
 
-      autoplay: { delay: 3000 },
+  breakpoints: {
+    // لما تكون الشاشة أكبر أو تساوي 320px (جوال)
+    320: {
+      slidesPerView: 3,
       coverflowEffect: {
-        depth: 200, // تقليل العمق ليتناسب مع شاشة الجوال الصغيرة
-        rotate: 10,
-        stretch: 0,
-        modifier: 1,
-        slideShadows: true,
+        depth: 100, 
+        rotate: 15,
+        stretch: -15, // 👈 قيمة سالبة أقل لتتناسب مع شاشات الجوال ولا تخرج الكروت عن الشاشة
       },
-
-      // التغيير حسب حجم الشاشة
-      breakpoints: {
-        // لما تكون الشاشة أصغر من 768px (جوال)
-        320: {
-          slidesPerView: 3,
-          coverflowEffect: {
-            depth: 100, // تقليل العمق ليتناسب مع شاشة الجوال الصغيرة
-            rotate: 15,
-          },
-        },
-        // لما تكون الشاشة أكبر من 992px (كمبيوتر)
-        992: {
-          slidesPerView: 6,
-        },
+    },
+    // لما تكون الشاشة أكبر أو تساوي 992px (كمبيوتر)
+    992: {
+      slidesPerView: 6,
+      coverflowEffect: {
+        stretch: -70, // 👈 المسافة الافتراضية للشاشات الكبيرة
       },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-    });
+    },
+  },
+  
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+});
   </script>
 
   <script>
