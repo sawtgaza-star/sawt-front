@@ -79,6 +79,10 @@ a {
   font-size: 20px;
 }
 
+.font-60 {
+  font-size: 60px;
+}
+
 .font-22 {
   font-size: 22px;
 }
@@ -97,6 +101,13 @@ a {
 
 .font-30 {
   font-size: 30px;
+}
+.font-36 {
+  font-size: 36px;
+}
+
+.font-42 {
+  font-size: 42px;
 }
 
 .font-color-green {
@@ -263,9 +274,11 @@ a {
 }
 .yellow-stars {
   color: rgba(255, 204, 0, 1) !important;
+  font-size: 20px;
 }
 .gray-star {
   color: rgba(167, 169, 177, 1) !important;
+  font-size: 20px;
 }
 .fa-language {
   margin-right: -3px;
@@ -428,7 +441,7 @@ a {
 
 .news-card {
   border: 1px solid rgba(200, 200, 200, 1) !important;
-  border-radius: 20px !important;
+  border-radius: 16px !important;
   overflow: hidden;
   background-color: #fff;
   transition: all 0.3s ease;
@@ -516,8 +529,12 @@ svg {
     box-shadow 0.3s ease;
 }
 
+.owl-carousel .owl-stage-outer {
+  padding: 3px 0px;
+}
+
 .news-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-2px);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -544,12 +561,12 @@ svg {
 
 .count h3 {
   color: rgb(0, 0, 0);
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .count p {
   color: rgb(0, 0, 0);
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .count {
@@ -652,9 +669,9 @@ svg {
 
 .join-us-banner {
   position: relative;
-  /* border-radius: 16px; */
+  border-radius: 24px;
   overflow: hidden;
-  min-height: 260px;
+  min-height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -664,7 +681,7 @@ svg {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
-  min-height: 260px;
+  min-height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -708,7 +725,7 @@ svg {
   position: relative;
   z-index: 2;
   padding: 40px 20px;
-  max-width: 660px;
+  /* max-width: 660px; */
 }
 
 .join-us-title {
@@ -719,7 +736,7 @@ svg {
 
 .join-us-desc {
   color: rgba(255, 255, 255, 1);
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.8;
   margin-bottom: 22px;
 }
@@ -731,7 +748,7 @@ svg {
   gap: 10px;
   background-color: rgba(76, 92, 55, 1) !important;
   padding: 10px 60px;
-  border-radius: 20px;
+  border-radius: 24px;
 }
 
 .join-us-btn:hover {
@@ -836,7 +853,7 @@ svg {
   transform: translateX(-50%);
   width: 80px;
   height: 80px;
-  background-color: #e8f0df;
+  background-color: rgba(237, 239, 235, 1);
   border: 1px solid rgba(76, 92, 55, 1);
   border-radius: 50%;
   display: flex;
@@ -854,7 +871,7 @@ svg {
   transform: translateX(-50%);
   width: 80px;
   height: 80px;
-  background-color: #e8f0df;
+  background-color: rgb(237, 239, 235);
   border: 1px solid rgba(76, 92, 55, 1);
   border-radius: 50%;
   display: flex;
@@ -881,7 +898,7 @@ svg {
 .platform-card {
   background: white;
   /* padding: 20px; */
-  border-radius: 20px;
+  border-radius: 16px;
   border: 1px solid rgba(218, 218, 218, 1);
   transition: 0.3s;
   height: 100%;
@@ -895,15 +912,7 @@ svg {
   text-align: start;
 }
 .platform-card .card-content p {
-  color: rgba(109, 109, 109, 1) !important;
-}
-
-.platform-card .read-more-btn span {
-  transition: all 0.2s ease-in-out;
-}
-
-.platform-card .read-more-btn:hover span {
-  transform: scale(0.8);
+  color: rgba(72, 72, 72, 1) !important;
 }
 
 /* .platform-card:hover .up-center-icon {
@@ -934,7 +943,7 @@ svg {
   color: white !important;
   text-decoration: none;
   padding: 6px 15px;
-  border-radius: 110px;
+  border-radius: 24px;
   margin-top: 20px;
   transition: 0.3s;
 }
@@ -1012,10 +1021,12 @@ svg {
 
 .owl-nav .owl-prev {
   right: -50px;
+  top: -10px;
 }
 
 .owl-nav .owl-next {
   left: -50px;
+  top: -10px;
 }
 
 .content-section {
@@ -1119,7 +1130,7 @@ svg {
 
 .front-face-img {
   background-color: rgba(237, 239, 235, 1);
-  border-radius: 20px;
+  border-radius: 24px;
   border: 1px solid rgba(218, 218, 218, 1);
   position: absolute;
   top: 0;
@@ -1141,6 +1152,11 @@ svg {
 .content-section .main-container:hover .the-card,
 .content-section .main-container.is-flipped .the-card {
   transform: none;
+}
+
+/* card fills its container so the hover overlay reaches the bottom edge */
+.content-section .the-card {
+  height: 80%;
 }
 
 .content-section .back-face {
@@ -1201,18 +1217,18 @@ svg {
 }
 
 .img-circle {
-  width: 160px;
-  height: 160px;
+  width: 120px;
+  height: 120px;
   border: 4px dashed transparent;
   border-radius: 50%;
 
   background:
     linear-gradient(rgba(244, 247, 233, 1), rgba(244, 247, 233, 1)) padding-box,
     linear-gradient(
-        90deg,
-        rgba(115, 140, 82, 1),
+        230deg,
+        rgba(225, 114, 59, 1),
         rgba(115, 140, 82, 0),
-        rgba(225, 114, 59, 1)
+        rgba(115, 140, 82, 1)
       )
       border-box;
 }
@@ -1222,15 +1238,15 @@ svg {
 }
 
 .name-tag {
-  font-size: 22px;
+  font-size: 18px;
   color: black;
   font-weight: 600;
 }
 
 .job-tag {
   color: rgba(72, 72, 72, 1);
-  width: 55%;
-  font-size: 18px;
+  width: auto;
+  font-size: 15px;
 }
 
 .back-face h4 {
@@ -1267,12 +1283,16 @@ svg {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  position: relative;
+  z-index: 3;
 }
 .front-face-img .arrowDiv .followers {
   background-color: rgba(76, 92, 55, 1);
-  padding: 5px 20px;
+  padding: 3px 12px;
+  color: rgba(255, 255, 255, 1) !important;
   border-radius: 20px;
-  margin: 20px;
+  margin: 12px;
+  font-size: 11px;
 }
 
 .quote-box {
@@ -1504,6 +1524,9 @@ svg {
   text-align: start;
 }
 
+.main-title {
+  margin-bottom: 20px;
+}
 .avatar-circle {
   width: 32px;
   height: 32px;
@@ -2262,7 +2285,7 @@ svg {
 }
 
 .reviews-title {
-  font-size: 35px;
+  font-size: 30px;
   color: rgba(30, 30, 30, 1);
   margin-bottom: 18px;
 }
@@ -2749,10 +2772,6 @@ svg {
 }
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
-  .front-face-img {
-    height: 85% !important;
-  }
-
   .footer-custom-width {
     width: 90% !important;
     margin: 0 auto !important;
@@ -2789,7 +2808,7 @@ svg {
   }
 
   .owl-carousel .item {
-    /* height: 500px; */
+    height: 320px;
     margin: 0 auto;
   }
 
@@ -2798,8 +2817,16 @@ svg {
     margin-right: 0.5rem !important;
   }
   .owl-carousel .item a .main-container {
-    height: 100%;
+    /* height: 100%; */
     width: auto;
+  }
+
+  /* content-section cards need an explicit size on mobile, otherwise the
+     absolutely-positioned photo leaves the card with 0 height and it vanishes */
+  .content-section .main-container {
+    height: 350px !important;
+    width: 240px !important;
+    margin: 0 auto;
   }
 
   .platform-sections .torn-top {
@@ -2855,6 +2882,10 @@ svg {
 }
 
 @media (max-width: 700px) {
+  .reviews-comments-head {
+    display: flex;
+    flex-direction: column;
+  }
   .card-footer {
     width: 100%;
     display: flex;
@@ -2934,7 +2965,8 @@ svg {
 
 /* حاوية البطاقة الأساسية */
 .main-container {
-  width: 280px;
+  width: 240px;
+  height: 350px;
   cursor: pointer;
 }
 
@@ -3462,7 +3494,7 @@ svg {
 }
 
 .title {
-  font-size: 45px;
+  font-size: 42px;
   text-align: center;
   font-weight: bold;
 }
@@ -3492,7 +3524,7 @@ svg {
   /* font-family: Cairo; */
   font-weight: 700;
   font-style: Bold;
-  font-size: 25px;
+  font-size: 24px;
   color: rgba(72, 72, 72, 1);
 }
 
@@ -3571,8 +3603,20 @@ svg {
 
 .branch-left-top-content-section {
   top: 78%;
-  left: -105px;
-  transform: rotate(170deg) scaleY(-1);
+  left: -165px;
+  transform: rotate(216deg) scaleY(-1);
+}
+
+.team-section .branch-left-top {
+  top: 75% !important;
+  left: -66px !important;
+  transform: rotate(222deg) scaleY(-1) !important;
+}
+
+.team-section .branch-right-bottom {
+  top: -3% !important;
+  right: -73px !important;
+  transform: rotate(22deg) scaleY(-1) !important;
 }
 
 /* اليمين - غصن علوي */
@@ -3590,9 +3634,9 @@ svg {
 }
 
 .branch-right-bottom-content-section {
-  top: -12%;
-  right: -117px;
-  transform: scaleX(-1) rotate(189deg);
+  top: -17%;
+  right: -157px;
+  transform: scaleX(-1) rotate(163deg);
 }
 
 .branch-right-bottom-about {
@@ -4222,7 +4266,7 @@ svg {
 
 /* ----- */
 .hero-subtitle {
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
 [dir="ltr"] .text-md-end {
@@ -4833,7 +4877,7 @@ svg {
 }
 
 .about-breadcrumb-active {
-  color: rgba(76, 92, 55, 1);
+  color: rgba(255, 116, 32, 1);
   font-weight: 700;
 }
 
@@ -4874,13 +4918,13 @@ svg {
 /* About section (من نحن) */
 .about-sec-img-wrapper {
   width: 100%;
-  height: 100%;
   position: relative;
 }
 
 .about-sec-img {
   width: 100%;
   height: 100%;
+  min-height: 350px !important;
   border-radius: 150px 0px 150px 0px;
   border: 5px solid rgba(135, 146, 121, 1);
   box-shadow: rgba(0, 0, 0, 0.32) 5px 5px 5px;
@@ -4894,7 +4938,7 @@ svg {
   border: 4px solid rgba(135, 146, 121, 1);
   border-radius: 150px 0px 150px 0px;
   position: absolute;
-  top: 50%;
+  top: 55%;
   right: -4%;
   display: flex;
   align-items: center;
@@ -4912,7 +4956,8 @@ svg {
 .about-sec-title {
   position: relative;
   display: inline-block;
-  font-size: 30px;
+
+  font-size: 42px;
   font-weight: 800;
   color: rgba(30, 30, 30, 1);
   margin-bottom: 26px;
@@ -4928,9 +4973,9 @@ svg {
 
 .about-sec-desc {
   color: rgba(72, 72, 72, 1);
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.7;
-  font-weight: 600;
+  /* font-weight: 600; */
   margin-bottom: 0;
 }
 
@@ -5007,7 +5052,7 @@ svg {
 
 .about-the-platform-question {
   color: #000000;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 900;
   line-height: 1.4;
   margin-bottom: 22px;
@@ -5024,10 +5069,10 @@ svg {
 }
 
 .about-the-platform-desc {
-  color: rgba(82, 82, 82, 1);
-  font-size: 18px;
-  line-height: 2.1;
-  font-weight: 600;
+  color: rgba(72, 72, 72, 1);
+  font-size: 20px;
+  line-height: 1.7;
+  /* font-weight: 600; */
   margin-bottom: 0;
 }
 
@@ -5038,10 +5083,16 @@ svg {
   z-index: 1;
 }
 
-.core-values-section .branch-left-bottom-about {
+.core-values-section .branch-right-bottom-about {
   top: 14%;
   left: 1px;
   transform: rotate(180deg) scaleY(-1);
+}
+
+.core-values-section .branch-left-bottom-about {
+  top: 14%;
+  left: -56px;
+  transform: rotate(219deg) scaleY(-1);
 }
 
 .core-values-head {
@@ -5051,7 +5102,7 @@ svg {
 
 .core-values-title {
   color: #000000;
-  font-size: 30px;
+  font-size: 42px;
   font-weight: 900;
   margin-bottom: 18px;
 }
@@ -5065,10 +5116,16 @@ svg {
   width: fit-content;
 }
 
+.core-values-section .branch-right-bottom-about {
+  top: 0%;
+  right: -66px;
+  transform: scaleX(-1) rotate(166deg);
+}
+
 .core-values-subtitle {
   color: rgba(72, 72, 72, 1);
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 22px;
+  /* font-weight: 600; */
   line-height: 1.9;
   margin-bottom: 0;
 }
@@ -5087,11 +5144,6 @@ svg {
 }
 [dir="ltr"] .value-card {
   text-align: end !important;
-}
-
-.value-card:hover {
-  border-color: var(--sout-orange);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
 }
 
 .value-card-icon {
@@ -5124,6 +5176,12 @@ svg {
   margin-bottom: 0;
 }
 
+.sawt-story-section .branch-right-bottom-sawt-story {
+  top: -10%;
+  right: -80px;
+  transform: scaleX(-1) rotate(52deg);
+}
+
 @media (max-width: 991px) {
   .birds-img {
     display: none;
@@ -5149,12 +5207,12 @@ svg {
 }
 
 .sawt-story-head {
-  max-width: 760px;
+  max-width: 100%;
   margin: 0 auto 70px;
 }
 
 .sawt-story-title {
-  font-size: 30px;
+  font-size: 42px;
   font-weight: 900;
   margin-bottom: 18px;
 }
@@ -5173,8 +5231,8 @@ svg {
 
 .sawt-story-subtitle {
   color: rgba(72, 72, 72, 1);
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 24px;
+  width: 100%;
   line-height: 1.9;
   margin-bottom: 0;
 }
@@ -5949,7 +6007,8 @@ svg {
   .member-card {
     width: 100%;
     max-width: 200px;
-    height: auto;
+    /* height: auto; */
+    bottom: 0;
   }
 
   .about-sec {
@@ -5976,7 +6035,7 @@ svg {
 
   .about-the-platform-desc {
     font-size: 18px;
-    font-weight: 600;
+    /* font-weight: 600; */
     line-height: 1.9;
   }
 
@@ -6132,7 +6191,7 @@ svg {
 /* --- Story cards (full poster + overlay) --- */
 .rs-card {
   position: relative;
-  border-radius: 22px;
+  border-radius: 32px;
   overflow: hidden;
   box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
 }
@@ -6296,9 +6355,9 @@ svg {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 24px 26px 28px;
+  padding: 16px 18px 18px;
   background: #f3f4ef;
-  border-radius: 24px 24px 20px 20px;
+  /* border-radius: 20px 20px 18px 18px; */
   box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.08);
   text-align: right;
   transform: translateY(101%);
@@ -6313,24 +6372,24 @@ svg {
 .hover-title {
   color: #1e1e1e;
   font-weight: 700;
-  font-size: 22px;
-  margin-bottom: 12px;
+  font-size: 19px;
+  margin-bottom: 8px;
 }
 
 .hover-desc {
   color: black;
   font-size: 15px;
-  line-height: 1.7;
+  line-height: 1.6;
   margin: 0;
-  padding-left: 56px;
+  padding-left: 42px;
 }
 
 .hover-arrow {
   position: absolute;
-  bottom: 24px;
-  left: 26px;
-  width: 46px;
-  height: 46px;
+  bottom: 16px;
+  left: 18px;
+  width: 38px;
+  height: 38px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6345,7 +6404,7 @@ svg {
 }
 
 .hover-arrow i {
-  font-size: 16px;
+  font-size: 14px;
   transform: rotate(-45deg);
 }
 [dir="ltr"] .hover-arrow i {
@@ -6434,12 +6493,12 @@ svg {
 }
 
 #heroCarousel .carousel-control-prev.hero-arrow {
-  left: 24px;
+  left: 90px;
   right: auto;
 }
 
 #heroCarousel .carousel-control-next.hero-arrow {
-  right: 24px;
+  right: 90px;
   left: auto;
 }
 
