@@ -32,7 +32,7 @@ const translations = {
     hero_title: "منصة صوت",
     hero_subtitle: "نروي قصص غزة بكرامة... ونبني جيلاً جديداً من صناع المحتوى",
     hero_trust: "ثقة آلاف المتابعين في منصة صوت غزة بصدق وتأثير",
-    hero_btn_watch: "مشاهدة الأعمال",
+    hero_btn_watch: "ادعم صوت",
     hero_btn_collab: "تعاون معنا",
     hero_btn_support: "ادعم صوت",
 
@@ -297,7 +297,8 @@ const translations = {
     join_our_team_join: "انضم الينا",
     join_our_team_support: "ادعم فريق صوت",
     join_creator_title: "انضم إلينا كصانع محتوى",
-    join_creator_desc: "صوت تجمع صناع المحتوى يلتقي فيها المبدعون لمشاركة قصصهم وإيصال صوتهم إلى العالم.",
+    join_creator_desc:
+      "صوت تجمع صناع المحتوى , كن صوت من لاصوت له",
     join_creator_btn: "طلب الانضمام",
     leaders: "قادة",
     teams: "الفرق",
@@ -379,7 +380,7 @@ const translations = {
       "Telling Gaza's stories with dignity, building a new generation of content creators.",
     hero_trust:
       "Trusted by thousands of followers on Sawt Gaza with honesty and impact",
-    hero_btn_watch: "Watch Works",
+    hero_btn_watch: "Support Sawt",
     hero_btn_collab: "Collaborate With Us",
     hero_btn_support: "Support Sawt",
 
@@ -652,7 +653,8 @@ const translations = {
     join_our_team_join: "Join Us",
     join_our_team_support: "Support Sawt Team",
     join_creator_title: "Join us as a content creator",
-    join_creator_desc: "Sawt brings content creators together, a space where creatives meet to share their stories and bring their voices to the world.",
+    join_creator_desc:
+      "Voice of the Content Creators Association, be the voice of the voiceless",
     join_creator_btn: "Request to Join",
     story_title: "Our Story",
     story_subtitle: "From silence... to a voice that is heard",
