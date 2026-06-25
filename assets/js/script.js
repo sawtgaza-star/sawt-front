@@ -420,45 +420,6 @@ function setTab(el, type) {
   renderComments();
 }
 
-function showMore() {
-  if (showing) return;
-  showing = true;
-
-  const list = document.getElementById("commentsList");
-  const btn = document.querySelector(".show-more");
-
-  extraComments.forEach((c, i) => {
-    setTimeout(() => {
-      const d = document.createElement("div");
-      d.className = "rv-comment extra-comment";
-      d.dataset.id = c.id;
-      d.style.opacity = "0";
-      d.style.transition = "opacity 0.3s";
-      d.innerHTML = commentMarkup(c);
-      list.appendChild(d);
-
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          d.style.opacity = "1";
-          list.scrollTop = list.scrollHeight;
-        });
-      });
-    }, i * 150);
-  });
-
-  setTimeout(
-    () => {
-      btn.textContent = t("show_less");
-
-      btn.style.color = "#e1723b";
-      btn.style.cursor = "pointer";
-      showing = false;
-      btn.onclick = showLess;
-    },
-    extraComments.length * 150 + 100,
-  );
-}
-
 function showLess() {
   const list = document.getElementById("commentsList");
   const btn = document.querySelector(".show-more");
@@ -474,7 +435,6 @@ function showLess() {
 
   btn.textContent = t("show_more");
   btn.style.color = "#e1723b";
-  btn.onclick = showMore;
 }
 
 function addComment() {
@@ -764,12 +724,17 @@ function scrollToTop() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const path = (window.location.pathname.split("/").pop() || "index.html").toLowerCase();
+  const path = (
+    window.location.pathname.split("/").pop() || "index.html"
+  ).toLowerCase();
   const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
   let matched = false;
 
   navLinks.forEach((link) => {
-    const href = (link.getAttribute("href") || "").split("/").pop().toLowerCase();
+    const href = (link.getAttribute("href") || "")
+      .split("/")
+      .pop()
+      .toLowerCase();
     link.classList.remove("active");
     if (href && href !== "#" && href === path) {
       link.classList.add("active");
@@ -778,19 +743,24 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   if (!matched && (path === "" || path === "index.html")) {
-    const home = document.querySelector('.navbar-nav .nav-link[data-i18n="nav_home"]');
+    const home = document.querySelector(
+      '.navbar-nav .nav-link[data-i18n="nav_home"]',
+    );
     if (home) home.classList.add("active");
   }
-    if (!matched && (path === "" || path === "content.html")) {
-    const contact = document.querySelector('.navbar-nav .nav-link[data-i18n="nav_content"]');
+  if (!matched && (path === "" || path === "content.html")) {
+    const contact = document.querySelector(
+      '.navbar-nav .nav-link[data-i18n="nav_content"]',
+    );
     if (contact) contact.classList.add("active");
   }
 });
 
-
 document.addEventListener("DOMContentLoaded", function () {
   const navCollapse = document.getElementById("mainNav");
-  const navToggler = document.querySelector('.navbar-toggler[data-bs-target="#mainNav"]');
+  const navToggler = document.querySelector(
+    '.navbar-toggler[data-bs-target="#mainNav"]',
+  );
   if (!navCollapse || !navToggler) return;
 
   function closeNav() {
@@ -826,9 +796,10 @@ document.addEventListener("DOMContentLoaded", function () {
     paragraphs[1].setAttribute("data-i18n-html", `story_paragraph_${story}_2`);
 
     if (typeof applyTranslations === "function") {
-      const lang = typeof getCurrentLang === "function"
-        ? getCurrentLang()
-        : (localStorage.getItem("lang") || "ar");
+      const lang =
+        typeof getCurrentLang === "function"
+          ? getCurrentLang()
+          : localStorage.getItem("lang") || "ar";
       applyTranslations(lang);
     }
   }
@@ -850,6 +821,39 @@ document.addEventListener("DOMContentLoaded", function () {
   selectStory(initial ? initial.dataset.story : "journey");
 });
 
+// Pin the top contact bar (nav-face) and the navbar to the top while scrolling
+document.addEventListener("DOMContentLoaded", function () {
+  // guard against double-init (some pages include script.js twice)
+  if (document.querySelector(".header-bar")) return;
+
+  const navFace = document.querySelector("header .nav-face");
+  const navbar = document.querySelector("header .navbar");
+  if (!navbar) return;
+
+  // Wrap nav-face + navbar so they pin together as one bar while keeping
+  // their own centered layout (and the hero's negative-margin overlap).
+  const bar = document.createElement("div");
+  bar.className = "header-bar";
+  const firstNode = navFace || navbar;
+  firstNode.parentNode.insertBefore(bar, firstNode);
+  if (navFace) bar.appendChild(navFace);
+  bar.appendChild(navbar);
+
+  // Spacer preserves the bar's height in the flow once it goes fixed
+  const spacer = document.createElement("div");
+  let triggerPoint = bar.offsetTop;
+
+  function onScroll() {
+    const shouldFix = window.scrollY > triggerPoint;
+    if (shouldFix && !bar.classList.contains("is-fixed")) {
+      spacer.style.height = bar.offsetHeight + "px";
+      bar.parentNode.insertBefore(spacer, bar);
+      bar.classList.add("is-fixed");
+    } else if (!shouldFix && bar.classList.contains("is-fixed")) {
+      bar.classList.remove("is-fixed");
+      if (spacer.parentNode) spacer.parentNode.removeChild(spacer);
+    }
+  }
 
 
 

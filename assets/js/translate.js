@@ -33,7 +33,7 @@ const translations = {
     hero_title: "منصة صوت",
     hero_subtitle: "نروي قصص غزة بكرامة... ونبني جيلاً جديداً من صناع المحتوى",
     hero_trust: "ثقة آلاف المتابعين في منصة صوت غزة بصدق وتأثير",
-    hero_btn_watch: "مشاهدة الأعمال",
+    hero_btn_watch: "ادعم صوت",
     hero_btn_collab: "تعاون معنا",
     hero_btn_support: "ادعم صوت",
 
@@ -167,6 +167,7 @@ const translations = {
     creator_bio: "صانع محتوى وفنان كوميدي فلسطيني من قطاع غزة",
     creator_quote:
       "تجربتي مع صوت كانت مختلفة، أخيراً لقيت مكان بيفهمني كمبدع ....",
+    creator_overlay_title: "تجربتي مع صوت",
     view_more: "عرض المزيد",
 
     // Platform cards
@@ -297,7 +298,8 @@ const translations = {
     join_our_team_join: "انضم الينا",
     join_our_team_support: "ادعم فريق صوت",
     join_creator_title: "انضم إلينا كصانع محتوى",
-    join_creator_desc: "صوت تجمع صناع المحتوى يلتقي فيها المبدعون لمشاركة قصصهم وإيصال صوتهم إلى العالم.",
+    join_creator_desc:
+      "صوت تجمع صناع المحتوى , كن صوت من لاصوت له",
     join_creator_btn: "طلب الانضمام",
     leaders: "قادة",
     teams: "الفرق",
@@ -349,6 +351,10 @@ const translations = {
     rs_card_desc: "من غزة الى الأردن وأمل لايمشي مجددا",
     rs_card1_title: "أغلي كاسة شاي",
     rs_card2_title: "سمير البطل",
+    rs_card1_full:
+      "من قلب غزة المحاصرة، حوّل صانع المحتوى كوب الشاي البسيط إلى رمزٍ للصمود وسط الحصار. التقطت منصة صوت حكايته وأوصلتها إلى العالم، لتتحوّل كاسة شاي إلى رسالة أملٍ وإصرار.",
+    rs_card2_full:
+      "في وسط دمار غزة، اختُطف صانع المحتوى سمير وأُصيبت يده بوحشية، واضطر إلى الهجرة إلى الأردن بحثاً عن الأمان. منصة صوت التقطت صورته ونقلت قصته للعالم، فصار صوته أعلى من القنابل وحمل رسالة الأمل لآلاف الفلسطينيين.",
   },
 
   en: {
@@ -376,7 +382,7 @@ const translations = {
       "Telling Gaza's stories with dignity, building a new generation of content creators.",
     hero_trust:
       "Trusted by thousands of followers on Sawt Gaza with honesty and impact",
-    hero_btn_watch: "Watch Works",
+    hero_btn_watch: "Support Sawt",
     hero_btn_collab: "Collaborate With Us",
     hero_btn_support: "Support Sawt",
 
@@ -538,6 +544,7 @@ const translations = {
     creator_bio: "Palestinian content creator and comedian from the Gaza Strip",
     creator_quote:
       "My experience with Sawt was different — finally, a place that understands me as a creator....",
+    creator_overlay_title: "My Experience with Sawt",
     view_more: "View More",
 
     // Platform cards
@@ -648,7 +655,8 @@ const translations = {
     join_our_team_join: "Join Us",
     join_our_team_support: "Support Sawt Team",
     join_creator_title: "Join us as a content creator",
-    join_creator_desc: "Sawt brings content creators together, a space where creatives meet to share their stories and bring their voices to the world.",
+    join_creator_desc:
+      "Voice of the Content Creators Association, be the voice of the voiceless",
     join_creator_btn: "Request to Join",
     story_title: "Our Story",
     story_subtitle: "From silence... to a voice that is heard",
@@ -697,6 +705,10 @@ const translations = {
     rs_card_desc: "From Gaza to Jordan, and a hope to walk again",
     rs_card1_title: "The most expensive cup of tea",
     rs_card2_title: "Samir the hero",
+    rs_card1_full:
+      "From the heart of besieged Gaza, a content creator turned a simple cup of tea into a symbol of resilience under siege. Sawt captured his story and carried it to the world, turning a cup of tea into a message of hope and determination.",
+    rs_card2_full:
+      "Amid the destruction of Gaza, content creator Samir was abducted and his hand brutally injured, forcing him to flee to Jordan in search of safety. Sawt captured his image and carried his story to the world, making his voice louder than the bombs and a message of hope for thousands of Palestinians.",
   },
 };
 

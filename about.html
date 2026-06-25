@@ -38,7 +38,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
@@ -46,7 +49,7 @@
     <header>
       <div
         class="about-header py-1"
-        style="background: url(&quot;/assets/images/heroSectionImg.jpeg&quot;)"
+        style="background: url(&quot;/assets/images/WhoUs.jpg&quot;)"
       >
         <div
           class="container nav-face py-2 text-white border-bottom border-light border-opacity-25"
@@ -65,21 +68,48 @@
                 "
                 >وسائل التواصل الاجتماعي</span
               >
+              <a href="#" class="text-white ms-2">
+                <i class="fab fa-linkedin-in font-18"></i>
+              </a>
+
               <a href="#" class="text-white ms-2"
                 ><i class="fab fa-facebook-f font-18"></i
               ></a>
+
               <a href="#" class="text-white ms-2"
-                ><i class="fab fa-twitter font-18"></i
+                ><i class="fa-solid fa-paper-plane"></i
               ></a>
+
               <a href="#" class="text-white ms-2"
-                ><i class="fab fa-linkedin-in font-18"></i
-              ></a>
-              <a href="#" class="text-white ms-2"
-                ><i class="fab fa-telegram-plane font-18"></i
-              ></a>
-              <a href="#" class="text-white ms-2"
-                ><i class="fab fa-instagram font-18"></i
-              ></a>
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1.3em"
+                  height="1.3em"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    fill="rgba(76, 92, 55, 1)"
+                    d="M19.57 4.488a.75.75 0 0 0-1.14-.976l-5.368 6.274l-5.224-5.938a1.8 1.8 0 0 0-1.357-.598H5.007c-.68 0-1.264.352-1.56.885a1.55 1.55 0 0 0 .204 1.795l6.286 7.147l-5.507 6.435a.75.75 0 1 0 1.14.976l5.368-6.274l5.224 5.938c.345.392.85.598 1.357.598h1.474c.681 0 1.264-.352 1.56-.885a1.55 1.55 0 0 0-.203-1.795l-6.287-7.146z"
+                  />
+                </svg>
+              </a>
+
+              <a href="#" class="text-white ms-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1.2em"
+                  height="1.2em"
+                  viewBox="0 0 24 24"
+                  class="icon"
+                >
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    fill="rgba(76, 92, 55, 1)"
+                    d="M9.367 2.25c-1.092 0-1.958 0-2.655.057c-.714.058-1.317.18-1.868.46a4.75 4.75 0 0 0-2.076 2.077c-.281.55-.403 1.154-.461 1.868c-.057.697-.057 1.563-.057 2.655v5.266c0 1.092 0 1.958.057 2.655c.058.714.18 1.317.46 1.869a4.75 4.75 0 0 0 2.077 2.075c.55.281 1.154.403 1.868.461c.697.057 1.563.057 2.655.057h5.266c1.092 0 1.958 0 2.655-.057c.714-.058 1.317-.18 1.869-.46a4.75 4.75 0 0 0 2.075-2.076c.281-.552.403-1.155.461-1.869c.057-.697.057-1.563.057-2.655V9.367c0-1.092 0-1.958-.057-2.655c-.058-.714-.18-1.317-.46-1.868a4.75 4.75 0 0 0-2.076-2.076c-.552-.281-1.155-.403-1.869-.461c-.697-.057-1.563-.057-2.655-.057zM16.25 6.5a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5H17a.75.75 0 0 1-.75-.75m-6.207 1.728a4.25 4.25 0 1 1 3.914 7.544a4.25 4.25 0 0 1-3.914-7.544"
+                  />
+                </svg>
+              </a>
             </div>
 
             <div
@@ -120,7 +150,7 @@
               >
                 <li class="nav-item ms-lg-3">
                   <a
-                    class="nav-link font-16"
+                    class="nav-link active font-16"
                     href="index.html"
                     data-i18n="nav_home"
                     >الرئيسية</a
@@ -128,8 +158,8 @@
                 </li>
                 <li class="nav-item ms-lg-3">
                   <a
-                    class="nav-link active font-16"
-                    href="about.html"
+                    class="nav-link font-16"
+                    href="/about.html"
                     target="_self"
                     data-i18n="nav_about"
                     >من نحن</a
@@ -156,7 +186,7 @@
                 <div class="v-divider d-none d-lg-block mx-3"></div>
                 <li class="nav-item ms-lg-3">
                   <a
-                    class="nav-link font-16"
+                    class="nav-link nav-link-back font-16"
                     href="#"
                     style="color: rgba(76, 92, 55, 1) !important"
                     data-i18n="nav_incubator"
@@ -165,7 +195,7 @@
                 </li>
                 <li class="nav-item ms-lg-3">
                   <a
-                    class="nav-link font-16 font-color-green"
+                    class="nav-link nav-link-back font-16 font-color-green"
                     href="#"
                     style="color: rgba(76, 92, 55, 1) !important"
                     data-i18n="nav_media"
@@ -176,14 +206,27 @@
 
               <div class="d-flex gap-2 nav-search-div">
                 <div class="position-relative nav-search-div">
-                  <i
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
                     class="fa fa-search position-absolute top-50 end-0 translate-middle-y me-3"
-                    style="color: #acacac"
-                  ></i>
+                  >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      fill="none"
+                      stroke="rgba(145, 145, 145, 1)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="m17 17l4 4m-2-10a8 8 0 1 0-16 0a8 8 0 0 0 16 0"
+                    />
+                  </svg>
 
                   <input
                     type="text"
-                    class="form-control pe-5 custom-placeholder py-2 search-input"
+                    class="form-control custom-placeholder py-2 search-input"
                     placeholder="ابحث هنا..."
                     data-i18n-placeholder="search_placeholder"
                   />
@@ -201,12 +244,31 @@
                 </div>
               </div>
               <div class="searchDiv d-flex align-items-center gap-2">
-                <button class="btn rounded-nav">
-                  <i class="fa-regular fa-moon"></i>
+                <button class="btn rounded-nav nav-bttn">
+                  <i class="ri-moon-line"></i>
                 </button>
 
-                <button class="btn rounded-nav language-btn">
-                  <i class="fa-solid fa-globe"></i>
+                <button class="btn rounded-nav language-btn nav-bttn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="2em"
+                    height="3em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                      <circle cx="12" cy="12" r="10" />
+                      <path
+                        stroke-linejoin="round"
+                        d="M8 12c0 6 4 10 4 10s4-4 4-10s-4-10-4-10s-4 4-4 10Z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 15H3m18-6H3"
+                      />
+                    </g>
+                  </svg>
                 </button>
               </div>
             </div>
@@ -236,7 +298,7 @@
     </header>
 
     <section>
-      <div class="about-sec container" style="margin-top: 50px">
+      <div class="about-sec container" style="margin-top: 50px; z-index: 1">
         <div class="row align-items-center">
           <div class="col-12 col-lg-6 about-sec-content" dir="rtl">
             <h2 class="about-sec-title" data-i18n="about_header">من نحن</h2>
@@ -276,6 +338,12 @@
         alt="Olive Branch"
       />
 
+      <img
+        src="assets/images/leaf_cutout.png"
+        class="olive-branch branch-left-bottom-about"
+        alt="Olive Branch"
+      />
+
       <div class="container" dir="rtl">
         <div class="text-center core-values-head">
           <h2 class="core-values-title" data-i18n-html="core_values_title">
@@ -292,14 +360,37 @@
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="value-card">
               <div class="value-card-icon">
-                <i class="fa-solid fa-hands-holding-circle"></i>
+                <i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.5em"
+                    height="1.5em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-width="1.5"
+                    >
+                      <path
+                        d="M6.09 15a6.9 6.9 0 0 1-.59-2.795C5.5 8.502 8.41 5.5 12 5.5s6.5 3.003 6.5 6.706A6.9 6.9 0 0 1 17.91 15"
+                      />
+                      <path
+                        stroke-linejoin="round"
+                        d="M12 2v1m10 9h-1M3 12H2m17.07-7.072l-.707.707m-12.726.001l-.707-.707m9.587 14.377c1.01-.327 1.416-1.252 1.53-2.182c.034-.278-.195-.509-.475-.509H8.477a.483.483 0 0 0-.488.534c.112.928.394 1.607 1.464 2.157m5.064 0H9.453m5.064 0c-.121 1.945-.683 2.715-2.51 2.693c-1.954.036-2.404-.916-2.554-2.693"
+                      />
+                    </g>
+                  </svg>
+                </i>
               </div>
-              <h3 class="value-card-title" data-i18n="core_value_1_title">
-                التمكين
+              <h3 class="value-card-title" data-i18n="core_value_4_title">
+                الابتكار
               </h3>
-              <p class="value-card-desc" data-i18n="core_value_1_desc">
-                نسعى لأن نكون منبرًا يُمكّن الإنسان، ويصنع تأثيرًا إيجابيًا
-                حقيقيًا يساهم في إيصال صوتنا وصوت المجتمع إلى العالم.
+              <p class="value-card-desc" data-i18n="core_value_4_desc">
+                نلتزم بنقل الأخبار والقصص بمهنية عالية وأمانة صحفية، لنكون
+                المصدر الموثوق الذي يعبّر عن الواقع بدقة.
               </p>
             </div>
           </div>
@@ -307,22 +398,24 @@
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="value-card">
               <div class="value-card-icon">
-                <i class="fa-solid fa-shield-halved"></i>
-              </div>
-              <h3 class="value-card-title" data-i18n="core_value_2_title">
-                الموثوقية
-              </h3>
-              <p class="value-card-desc" data-i18n="core_value_2_desc">
-                نحرص على صون الأمانة الإعلامية وحماية الرواية وتوثيقها، معتمدين
-                على معايير أخلاقية راسخة في كل ما ننشر.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-lg-3">
-            <div class="value-card">
-              <div class="value-card-icon">
-                <i class="fa-solid fa-people-group"></i>
+                <i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.5em"
+                    height="1.5em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M15 8a3 3 0 1 1-6 0a3 3 0 0 1 6 0m1-4a3 3 0 0 1 1.218 5.742M13.714 14h-3.428A4.286 4.286 0 0 0 6 18.286C6 19.233 6.767 20 7.714 20h8.572c.947 0 1.714-.767 1.714-1.714A4.286 4.286 0 0 0 13.714 14m4-1A4.286 4.286 0 0 1 22 17.286c0 .947-.767 1.714-1.714 1.714M8 4a3 3 0 0 0-1.218 5.742M3.714 19A1.714 1.714 0 0 1 2 17.286A4.286 4.286 0 0 1 6.286 13"
+                    />
+                  </svg>
+                </i>
               </div>
               <h3 class="value-card-title" data-i18n="core_value_3_title">
                 الشراكة
@@ -337,52 +430,108 @@
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="value-card">
               <div class="value-card-icon">
-                <i class="fa-solid fa-lightbulb"></i>
+                <i
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.5em"
+                    height="1.5em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                    >
+                      <path
+                        d="M18.709 3.495C16.817 2.554 14.5 2 12 2s-4.816.554-6.709 1.495c-.928.462-1.392.693-1.841 1.419S3 6.342 3 7.748v3.49c0 5.683 4.542 8.842 7.173 10.196c.734.377 1.1.566 1.827.566s1.093-.189 1.827-.566C16.457 20.08 21 16.92 21 11.237V7.748c0-1.406 0-2.108-.45-2.834s-.913-.957-1.841-1.419"
+                      />
+                      <path d="M9 11.5s1.408.252 2 2c0 0 1.5-3 4-4" />
+                    </g>
+                  </svg>
+                </i>
               </div>
-              <h3 class="value-card-title" data-i18n="core_value_4_title">
-                الابتكار
+              <h3 class="value-card-title" data-i18n="core_value_2_title">
+                الموثوقية
               </h3>
-              <p class="value-card-desc" data-i18n="core_value_4_desc">
-                نلتزم بنقل الأخبار والقصص بمهنية عالية وأمانة صحفية، لنكون
-                المصدر الموثوق الذي يعبّر عن الواقع بدقة.
+              <p class="value-card-desc" data-i18n="core_value_2_desc">
+                نحرص على صون الأمانة الإعلامية وحماية الرواية وتوثيقها، معتمدين
+                على معايير أخلاقية راسخة في كل ما ننشر.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="value-card">
+              <div class="value-card-icon">
+                <i
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.5em"
+                    height="1.5em"
+                    viewBox="0 0 14 14"
+                  >
+                    <path d="M0 0h14v14H0z" fill="none" />
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9.568 1.255a.466.466 0 0 1 .864 0l.587 1.433l1.593.14c.416.036.578.56.255.824l-.947.778a.47.47 0 0 0-.16.46l.314 1.452a.466.466 0 0 1-.715.486L10 5.92l-1.359.91a.466.466 0 0 1-.715-.487L8.24 4.89a.47.47 0 0 0-.16-.459l-.947-.778a.466.466 0 0 1 .255-.825l1.593-.14zM.983 6.37l.692-.043a8 8 0 0 1 2.448.227l1.16.292a1.32 1.32 0 0 1 .99 1.416v0c-.078.765-.79 1.3-1.546 1.166L3.622 9.23l3.897.699l4.037-.958a1.24 1.24 0 0 1 1.482.887v0c.16.603-.153 1.23-.73 1.465l-3.23 1.311a6.93 6.93 0 0 1-4.918.113L.813 11.562"
+                    />
+                  </svg>
+                </i>
+              </div>
+              <h3 class="value-card-title" data-i18n="core_value_1_title">
+                التمكين
+              </h3>
+              <p class="value-card-desc" data-i18n="core_value_1_desc">
+                نسعى لأن نكون منبرًا يُمكّن الإنسان، ويصنع تأثيرًا إيجابيًا
+                حقيقيًا يساهم في إيصال صوتنا وصوت المجتمع إلى العالم.
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <section class="about-the-platform">
-      <img
-        src="assets/images/leaf_cutout.png"
-        class="olive-branch branch-left-bottom-about"
-        alt="Olive Branch"
-      />
-
       <div class="about-the-platform-card">
-        <img class="birds-img" src="/assets/images/birds.png" alt="" />
+        <div
+          style="
+            border-radius: 20px !important;
+            background-color: rgba(237, 239, 235, 1) !important;
+          "
+        >
+          <img class="birds-img" src="/assets/images/birds.png" alt="" />
 
-        <div class="row align-items-center g-0" dir="ltr">
-          <div class="col-12 col-lg-5 about-the-platform-content">
-            <h2
-              class="about-the-platform-question"
-              data-i18n-html="about_platform_question_html"
-            >
-              ما الذي يدفعنا لنكون
-              <span class="platform-highlight">صوتك؟</span>
-            </h2>
-            <p class="about-the-platform-desc" data-i18n="about_platform_desc">
-              نؤمن أن لكل إنسان قصة تستحق أن تُروى، لذلك جاءت صوت لتكون مساحة
-              حرة للتعبير، حيث يلتقي الأفراد لمشاركة تجاربهم وأفكارهم
-              بصدق. نساعدك على إيصال صوتك إلى الآخرين، ونمنح المحتوى الإنساني
-              مساحة حقيقية ليُرى، ويُسمع، ويترك أثرًا.
-            </p>
-          </div>
-          <div class="col-12 col-lg-7 about-the-platform-visual">
-            <img
-              src="assets/images/backgrounf_sawt.jpg"
-              alt="صوت"
-              class="about-platform-img"
-            />
+          <div class="row align-items-center g-0" dir="ltr">
+            <div class="col-12 col-lg-5 about-the-platform-content">
+              <h2
+                class="about-the-platform-question"
+                data-i18n-html="about_platform_question_html"
+              >
+                ما الذي يدفعنا لنكون
+                <span class="platform-highlight">صوتك؟</span>
+              </h2>
+              <p
+                class="about-the-platform-desc"
+                data-i18n="about_platform_desc"
+              >
+                نؤمن أن لكل إنسان قصة تستحق أن تُروى، لذلك جاءت صوت لتكون مساحة
+                حرة للتعبير، حيث يلتقي الأفراد لمشاركة تجاربهم وأفكارهم
+                بصدق. نساعدك على إيصال صوتك إلى الآخرين، ونمنح المحتوى الإنساني
+                مساحة حقيقية ليُرى، ويُسمع، ويترك أثرًا.
+              </p>
+            </div>
+            <div class="col-12 col-lg-7 about-the-platform-visual">
+              <img
+                src="assets/images/backgrounf_sawt.jpg"
+                alt="صوت"
+                class="about-platform-img"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -410,7 +559,23 @@
           <div class="col-12 col-md-6 col-lg-4 sawt-story-grid-col">
             <div class="sawt-story-card">
               <div class="sawt-story-icon">
-                <i class="fa-solid fa-seedling"></i>
+                <i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.3em"
+                    height="1.3em"
+                    viewBox="0 0 14 14"
+                  >
+                    <path d="M0 0h14v14H0z" fill="none" />
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9.568 1.255a.466.466 0 0 1 .864 0l.587 1.433l1.593.14c.416.036.578.56.255.824l-.947.778a.47.47 0 0 0-.16.46l.314 1.452a.466.466 0 0 1-.715.486L10 5.92l-1.359.91a.466.466 0 0 1-.715-.487L8.24 4.89a.47.47 0 0 0-.16-.459l-.947-.778a.466.466 0 0 1 .255-.825l1.593-.14zM.983 6.37l.692-.043a8 8 0 0 1 2.448.227l1.16.292a1.32 1.32 0 0 1 .99 1.416v0c-.078.765-.79 1.3-1.546 1.166L3.622 9.23l3.897.699l4.037-.958a1.24 1.24 0 0 1 1.482.887v0c.16.603-.153 1.23-.73 1.465l-3.23 1.311a6.93 6.93 0 0 1-4.918.113L.813 11.562"
+                    />
+                  </svg>
+                </i>
               </div>
               <h3 class="sawt-story-card-title" data-i18n="sawt_story_1_title">
                 التأثير
@@ -426,7 +591,24 @@
           <div class="col-12 col-md-6 col-lg-4 sawt-story-grid-col">
             <div class="sawt-story-card">
               <div class="sawt-story-icon">
-                <i class="fa-solid fa-book-open"></i>
+                <i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.3em"
+                    height="1.3em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M5.333 3c2.46-.003 4.836.887 6.667 2.5V21a10.07 10.07 0 0 0-6.667-2.5c-1.562 0-2.343 0-2.688-.22a1.16 1.16 0 0 1-.424-.425C2 17.51 2 16.895 2 15.663v-9.26c0-1.428 0-2.141.549-2.72c.548-.579 1.11-.609 2.234-.668Q5.056 3 5.333 3m13.334 0A10.07 10.07 0 0 0 12 5.5V21a10.07 10.07 0 0 1 6.667-2.5c1.562 0 2.343 0 2.688-.22c.207-.133.291-.218.424-.425c.221-.345.221-.96.221-2.192v-9.26c0-1.428 0-2.141-.549-2.72s-1.11-.609-2.234-.668Q18.944 3 18.667 3"
+                    />
+                  </svg>
+                </i>
               </div>
               <h3 class="sawt-story-card-title" data-i18n="sawt_story_2_title">
                 ما نقدم
@@ -443,7 +625,38 @@
           <div class="col-12 col-md-6 col-lg-4 sawt-story-grid-col">
             <div class="sawt-story-card">
               <div class="sawt-story-icon">
-                <i class="fa-solid fa-route"></i>
+                <i
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.3em"
+                    height="1.3em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path
+                        d="M18.719 10.715a1.044 1.044 0 0 1-1.437 0c-1.765-1.683-4.13-3.564-2.977-6.294C14.929 2.945 16.425 2 18 2s3.072.945 3.695 2.42c1.152 2.728-1.207 4.617-2.977 6.295Z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M18.135 6h-.125m.25 0a.25.25 0 1 1-.5 0a.25.25 0 0 1 .5 0"
+                      />
+                      <circle
+                        cx="5"
+                        cy="19"
+                        r="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M11 7H9.5C7.567 7 6 8.343 6 10s1.567 3 3.5 3h3c1.933 0 3.5 1.343 3.5 3s-1.567 3-3.5 3H11m7.135-13h-.125m.25 0a.25.25 0 1 1-.5 0a.25.25 0 0 1 .5 0"
+                      />
+                    </g>
+                  </svg>
+                </i>
               </div>
               <h3 class="sawt-story-card-title" data-i18n="sawt_story_3_title">
                 رحلتنا
@@ -461,8 +674,8 @@
     </section>
 
     <section class="join-us-section">
-      <div class="join-us-banner">
-        <img src="assets/images/Yamal.png" alt="" class="join-us-bg" />
+      <div class="join-us-banner-about">
+        <img src="assets/images/Yamal.png" alt="" class="join-us-bg-about" />
         <div class="join-us-content text-center">
           <h2 class="join-us-title" data-i18n="join_us_title">
             قد تكون قصتك بداية التغيير
@@ -599,7 +812,7 @@
             </p>
             <div class="custom-newsletter-input mb-4">
               <div class="newsletter-input-wrapper">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-magnifying-glass"> </i>
                 <input
                   type="email"
                   placeholder="ادخل بريدك الالكتروني"
@@ -607,8 +820,24 @@
                   data-i18n-placeholder="footer_email_placeholder"
                 />
               </div>
-              <button class="newsletter-icon-wrapper">
-                <i class="fas fa-paper-plane"></i>
+              <button class="rs-send">
+                <i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.4em"
+                    height="1.2em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="m9.498 15l7.5-7.5m-8.992.179l7.321-3.46c3.042-1.438 4.563-2.157 5.533-1.436s.693 2.365.138 5.652l-.954 5.662c-.363 2.149-.544 3.223-1.345 3.692s-1.842.109-3.923-.611l-6.365-2.202c-3.892-1.346-5.838-2.019-5.91-3.34c-.074-1.32 1.786-2.2 5.505-3.957M9.498 15.5v2.227c0 2.374 0 3.56.71 3.75s1.458-.798 2.954-2.773l.836-1.204"
+                    /></svg
+                ></i>
               </button>
             </div>
 
@@ -616,19 +845,49 @@
               <p
                 class="mb-2 d-flex align-items-center justify-content-start font-16"
               >
-                <i
-                  class="fa-solid fa-phone font-16"
-                  style="color: rgba(225, 114, 59, 1)"
-                ></i>
+                <i style="color: rgba(225, 114, 59, 1)">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.5em"
+                    height="1.5em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      fill="currentColor"
+                      d="M19.2 20q-2.702 0-5.418-1.244t-5.005-3.533q-2.27-2.289-3.523-5.021Q4 7.469 4 4.8V4h4.439l.848 4.083l-2.696 2.51q.684 1.186 1.417 2.167t1.527 1.769q.802.84 1.808 1.57t2.296 1.44l2.611-2.708l3.75.756V20zM6.121 9.654l2.092-1.92L7.635 5h-2.63q.03 1.144.309 2.305q.278 1.16.807 2.349m8.45 8.335q.923.463 2.09.723t2.339.277v-2.605l-2.388-.475zm0 0"
+                    />
+                  </svg>
+                </i>
                 +972567247177
               </p>
               <p
                 class="mb-0 font-16 d-flex align-items-center justify-content-start"
               >
-                <i
-                  class="fas fa-envelope font-16"
-                  style="color: rgba(225, 114, 59, 1)"
-                ></i>
+                <i style="color: rgba(225, 114, 59, 1)">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.5em"
+                    height="1.5em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        d="m7 8.5l2.942 1.74c1.715 1.014 2.4 1.014 4.116 0L17 8.5"
+                      />
+                      <path
+                        d="M2.016 13.476c.065 3.065.098 4.598 1.229 5.733c1.131 1.136 2.705 1.175 5.854 1.254c1.94.05 3.862.05 5.802 0c3.149-.079 4.723-.118 5.854-1.254c1.131-1.135 1.164-2.668 1.23-5.733c.02-.986.02-1.966 0-2.952c-.066-3.065-.099-4.598-1.23-5.733c-1.131-1.136-2.705-1.175-5.854-1.254a115 115 0 0 0-5.802 0c-3.149.079-4.723.118-5.854 1.254c-1.131 1.135-1.164 2.668-1.23 5.733a69 69 0 0 0 0 2.952Z"
+                      />
+                    </g>
+                  </svg>
+                </i>
                 info@sawtgaza.com
               </p>
             </div>
@@ -675,6 +934,44 @@
               >
             </p>
           </div>
+
+          <!-- <div class="col-12 col-md-4 order-md-3">
+            <div
+              class="d-flex align-items-center justify-content-center justify-content-md-start gap-3 flex-wrap"
+            >
+              <a
+                href="#"
+                class="text-white ps-3"
+                style="text-decoration: underline !important"
+                data-i18n="footer_privacy"
+                >سياسة الخصوصية</a
+              >
+              <a
+                href="#"
+                class="text-white"
+                style="text-decoration: underline !important"
+                data-i18n="footer_terms"
+                >شروط الاستخدام</a
+              >
+
+              <div
+                class="d-flex flex-column align-items-center control-wrapper theme-toggle-and-up"
+              >
+                <button
+                  class="btn-control-custom rounded-circle"
+                  id="theme-toggle"
+                >
+                  <i class="fas fa-moon"></i>
+                </button>
+                <button
+                  class="btn-control-custom rounded-circle"
+                  onclick="scrollToTop()"
+                >
+                  <i class="fas fa-angles-up"></i>
+                </button>
+              </div>
+            </div>
+          </div> -->
         </div>
       </div>
     </footer>
