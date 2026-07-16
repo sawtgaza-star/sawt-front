@@ -46,6 +46,14 @@ const translations = {
 
     // Sout section
     who_we_are: "من نحن",
+    sout_intro_subtitle: "إعلام هادف، قصص حقيقية، وأثر مستدام",
+    sout_main_title: "نؤمن أن لكل إنسان قصة تستحق أن تُري",
+    sout_description:
+      "ننقل قصص الناس وقضايا المجتمع من منظور إنساني ومهني نعمل على توثيق الواقع، وإبراز الحكايات التي قد لا تجد طريقها إلى الإعلام التقليدي، إيماناً منا بأن لكل إنسان صوتاً يستحق أن يُسمع وقصة تستحق أن تُروى من خلال :",
+    sout_feature_1: "محتوى يُعبر عن صوتك",
+    sout_feature_2: "تمكين المواهب الشابة",
+    sout_feature_3: "الإنتاج والتغطيات الإعلامية",
+    sout_feature_4: "صناعة أثر حقيقي ومستدام",
     welcome_label: "أهلاً بكم في صوت",
     welcome_title: "كل فكرة إلها صوت... وصوت بيجمعهم",
     welcome_lead: "في صوت، كل فكرة بتلاقي مكانها!",
@@ -75,12 +83,16 @@ const translations = {
     at_sawt: "في صوت",
     creators_subtitle:
       "تعرف على صُنّاع المحتوى في صوت، حيث كل فكرة إلها صوت، وكل مبدع إله حكاية.",
+    creators_desc_main:
+      "مجموعة من صُنّاع المحتوى المبدعين الذين يوظفون مهاراتهم لإنتاج محتوى هادف ومؤثر.",
     view_all: "عرض الكل",
 
     // Platform sections
     platform_title_pre: "أقسام",
     platform_title_highlight: "المنصة",
     platform_subtitle: "كل فكرة إلها صوت... وصوت بيجمعهم",
+    platform_sections_subtitle:
+      "أقسام متخصصة تتكامل لتحقيق رسالتنا في الإعلام والتنمية وصناعة التأثير",
     read_more: "اقرأ المزيد",
 
     // Partners
@@ -89,6 +101,7 @@ const translations = {
     partners_title_main: "شركاؤنا",
     partners_desc:
       "معًا نبني صوتًا حيًّا، مساحة تجمع الحكايات، تُشعل الأمل، وتمنح كل إنسان فرصة يُسمَع",
+    partners_subtitle2: "شركاء يشاركوننا رحلة التأثير وصناعة التغيير.",
     be_partner: "كن شريكاً لصوت",
 
     // Stories
@@ -96,7 +109,10 @@ const translations = {
     stories_title: "اكتشف تجارب حقيقية من أشخاص شاركوا قصصهم معنا",
     tell_story: "احكي قصتك",
     reviews_title_pre: "أرائكم في",
+    reviews_title_pre2: "آراؤكم في",
     reviews_title_highlight: "المحتوى",
+    reviews_trust_html:
+      'نفخر <span class="hl">بثقة</span> جمهورنا، ونعتز بكل رأي يساهم في تطوير رسالتنا الإعلامية.',
     reviews_desc:
       "نؤمن أن رأيك جزء أساسي من تطويرنا وتحسين خدماتنا. شاركنا تجربتك واقتراحاتك وساعدنا على تقديم تجربة أفضل تلبي احتياجاتك وتوقعاتك.",
     reviews_desc_html:
@@ -171,18 +187,29 @@ const translations = {
 
     // Platform cards
     platform_card1_title: "منصة المحتوى",
+    platform_card1_name: "منصة صوت",
     platform_card1_desc:
       "مكتبة غنية بالفيديوهات والقصص الإنسانية التي تروي واقع غزة بكرامة واحترافية.",
+    platform_card1_desc_alt:
+      "مكتبة غنية بالمحتوى الهادف الذي يسلّط الضوء على الواقع، ويمنح مساحة وصوت لمن لا صوت له .",
     platform_card2_title: "حاضنة صوت",
     platform_card2_desc:
       "برامج تدريبية متخصصة لتطوير مهارات صناع المحتوى وتمكينهم من الإبداع والنمو.",
+    platform_card2_desc_alt:
+      "برامج تدريبية متخصصة لتطوير مهارات صناع المحتوى وتمكينهم من الإبداع والتميز.",
     platform_card3_title: "صوت ميديا",
     platform_card3_desc:
       "شركة إنتاج إعلامي احترافية تقدم خدمات متكاملة من الكتابة إلى التسويق.",
+    platform_card3_desc_alt:
+      "حلول إعلامية متكاملة تجمع بين الإبداع، الإنتاج، والتسويق الرقمي.",
     stat_views_30m: "+30 مليون مشاهدة",
     stat_clips_100: "+100 مقطع",
     stat_clients_100: "+100 عميل راض",
     stat_projects_done: "مشاريع المنجزة",
+    platform_stat_trainees: "+100 متدرب",
+    platform_stat_projects: "+10 مشاريع منطلقة",
+    platform_stat_creative: "+500 محتوى ابداعي",
+    platform_stat_clients: "+100 عميل راضي",
 
     // Reels
     reel_title: "قصة أمل من غزة: كيف تحدى الحصار",
@@ -242,10 +269,10 @@ const translations = {
     // about page
     about_hero_title: "صناع الأثر.. الفريق خلف منصة صوت",
     about_hero_desc:
-      "في هذه الصفحة، نشارككم قصة فريق من الناس إلى الناس، رؤيتنا، رسالتنا، وكيف بدأنا لنكون صوتًا حيًّا ومعينًا لمن لا صوت لهم، وكيف منحنا الناس الأمل.",
+      "صوت منصة إعلامية مستقلة تُوثّق الواقع وتحكي قصص الناس، لتكون صوتاً لمن لا صوت له.",
     about_header: "من نحن",
     about_intro:
-      "فريق منصة صوت حاضنة لأصوات غزة. لم نبدأ من فكرةٍ خارقة أو خطةٍ مُحكمة، بل من قرارٍ بسيط: أن نكون حاضرِين، نستمع، ونُعلِن صوت غزة للعالم. نحن من الناس ونعيش معاناتهم عن قرب، فرأينا أن الحاجة واضحة فقررنا ألا نصمت. نعمل بدون أن نتكلم نيابةً عن أحد، وبدون وعودٍ تفوق قدراتنا. وظيفتنا توصيل صوت أهل غزة وإيصاله إلى العالم، مع الحفاظ على كرامة الناس وصوتهم. هدفنا أن نكون جسرًا صادقًا بين من يقدّم الانتباه والدعم لصوت غزة ومن ينتظر من يسمعهم حقًا. اليوم نحن أكثر من فكرة آمن بها شخص واحد؛ نحن حاضنة لأصوات غزة، فريق عمل متكامل.",
+      "منصة صوت انطلقت من غزة، تؤمن بأن لكل إنسان قصة تستحق أن تُروى وصوتاً يستحق أن يُسمع ، نعمل على إنتاج محتوى إنساني وإعلامي هادف يوثّق الواقع وينقل قصص الناس وقضايا المجتمع بمهنية ومسؤولية ، نسعى إلى تسليط الضوء على الأصوات المهمّشة والحكايات التي قد لا تجد مكاناً في الإعلام التقليدي، إيماناً منا بأن الإعلام رسالة وأثر قبل أن يكون خبراً ، نروي القصص بصدق، وننقل الواقع كما هو، لنكون جسراً بين الإنسان وقضيته.",
     about_desc:
       " منصة إعلامية رقمية تجمع بين المحتوى الإنساني، التدريب الاحترافي، والإنتاج الإعلامي.",
     about_register: "سجل الآن",
@@ -259,28 +286,27 @@ const translations = {
       'أهم القيم التي <span class="core-values-highlight">نركز عليها</span>',
     core_values_subtitle:
       "قيمنا هي الأساس الذي نبني عليه صوت، وهي ما يقود طريقة عملنا وتطويرنا المستمر",
-    core_value_1_title: "التمكين",
+    core_value_1_title: "المصداقية",
     core_value_1_desc:
-      "نسعى لأن نكون منبرًا يُمكّن الإنسان، ويصنع تأثيرًا إيجابيًا حقيقيًا يساهم في إيصال صوتنا وصوت المجتمع إلى العالم.",
-    core_value_2_title: "الموثوقية",
+      "ننقل القصص والحقائق بدقة وموضوعية، ملتزمين بالتحقق من المعلومات واحترام ثقة جمهورنا.",
+    core_value_2_title: "الإنسانية",
     core_value_2_desc:
-      "نحرص على صون الأمانة الإعلامية وحماية الرواية وتوثيقها، معتمدين على معايير أخلاقية راسخة في كل ما ننشر.",
-    core_value_3_title: "الشراكة",
+      "نضع الإنسان في قلب كل قصة، ونؤمن بأن لكل فرد حقاً في أن يُسمع ويُمثَّل بكرامة واحترام.",
+    core_value_3_title: "التأثير",
     core_value_3_desc:
-      'نؤمن أن قوة "صوت غزة" نبع من تلاحم المجتمع، ونعمل كجسر يصل بين الأصوات المختلفة لتعزيز الدعم المتبادل.',
-    core_value_4_title: "الابتكار",
+      "نسعى لصناعة محتوى يرفع الوعي، ويُحدث أثراً إيجابياً في المجتمع، ويُحفّز التغيير نحو الأفضل.",
+    core_value_4_title: "الاستقلالية",
     core_value_4_desc:
-      "نلتزم بنقل الأخبار والقصص بمهنية عالية وأمانة صحفية، لنكون المصدر الموثوق الذي يعبّر عن الواقع بدقة.",
+      "نلتزم بإعلام مستقل يعكس الواقع بصدق، بعيداً عن أي تحيزات أو أجندات تؤثر على رسالتنا",
     sawt_story_title: "قصة صوت",
     sawt_story_title_html: 'قصة <span class="sawt-story-highlight">صوت</span>',
     about_platform_question_html:
       'ما الذي يدفعنا لنكون <span class="platform-highlight">صوتك؟</span>',
-    join_us_title: "قد تكون قصتك بداية التغيير",
+    join_us_title: "لأن بعض الأصوات لا يجب أن تُنسى",
     join_us_desc:
-      "كل صوت مهم، إذا كانت لديك قصة تستحق أن تُسمع فإن صوت ستدعمك من أول محادثة إلى التأثير العام.",
-    join_us_support: "ادعم منصة صوت",
-    sawt_story_subtitle:
-      "قيمنا هي الأساس الذي نبني عليه صوت، وهي ما يقود طريقة عملنا وتطويرنا المستمر",
+      "مساهمتك ليست دعماً لمنصة إعلامية فحسب، بل دعماً لأصوات وقصص تنتظر من ينقلها",
+    join_us_support: "مساهمة بإيصال صوت",
+    sawt_story_subtitle: "من فكرة بسيطة إلى منصة تحمل قصص الناس وتنقل أصواتهم.",
     sawt_story_1_title: "التأثير",
     sawt_story_1_desc:
       "منذ انطلاقنا، استطعنا إيصال أصوات الآلاف من الأشخاص الذين كانوا صامتين، وكشفنا حقائق عديدة تم إخفاؤها عن الرأي العام. قصصنا وصلت لملايين المتابعين، وساهمت في لفت انتباه العالم إلى قضايا مهمشة.",
@@ -300,6 +326,54 @@ const translations = {
     join_creator_desc:
       "صوت تجمع صناع المحتوى , كن صوت من لاصوت له",
     join_creator_btn: "طلب الانضمام",
+
+    // Join creator modal
+    jm_title: "انضم إلينا كصانع محتوى",
+    jm_subtitle: "أخبرنا عن نفسك وسنتواصل معك قريباً",
+    jm_step1: "المعلومات الشخصية",
+    jm_step2: "تفاصيل المحتوى",
+    jm_step3: "مواقع التواصل",
+    jm_fullname: "الاسم الكامل",
+    jm_fullname_ph: "محمد احمد",
+    jm_phone: "رقم الهاتف",
+    jm_phone_ph: "59999999",
+    jm_email: "البريد الإلكتروني",
+    jm_email_ph: "Mohamed@Gmail.Com",
+    jm_content_type: "نوع المحتوى الذي تنتجه",
+    jm_multi_hint: "*بإمكانك اختيار أكثر من خيار",
+    jm_cat_other: "أخرى",
+    jm_cat_culture: "ثقافة وفنون",
+    jm_cat_politics: "سياسة",
+    jm_cat_art: "فن وإبداع",
+    jm_cat_tech: "تقنية وتكنولوجيا",
+    jm_cat_social: "اجتماعية",
+    jm_cat_comedy: "كوميدي وترفيهي",
+    jm_cat_news: "إخبارية وتوعوية",
+    jm_cat_health: "صحة ولياقة",
+    jm_cat_sport: "رياضة وترفيه",
+    jm_followers: "عدد المتابعين التقريبي في المنصة الواحدة (الأعلى شهرة)",
+    jm_followers_ph: "5000",
+    jm_about: "نبذة عن محتواك",
+    jm_about_ph: "تحدث عن المحتوى الذي تقدمه وما الذي يميزك",
+    jm_social_links: "روابط مواقع التواصل الاجتماعي",
+    jm_add_platform: "اضافة منصة",
+    jm_country_search: "ابحث عن دولة أو رمز…",
+    jm_err_name: "الاسم مطلوب",
+    jm_err_phone: "رقم الهاتف مطلوب",
+    jm_err_email: "البريد الإلكتروني مطلوب",
+    jm_err_email_invalid: "البريد الإلكتروني غير صحيح",
+    jm_err_content: "اختر نوع المحتوى",
+    jm_err_followers: "عدد المتابعين مطلوب",
+    jm_err_about: "نبذة عن محتواك مطلوبة",
+    jm_err_social: "أضف رابطاً واحداً على الأقل",
+    jm_notes: "ملاحظات إضافية",
+    jm_notes_ph: "أي معلومات إضافية تريد إضافتها إلينا",
+    jm_next: "التالي",
+    jm_prev: "السابق",
+    jm_cancel: "الغاء",
+    jm_submit: "تسليم الطلب",
+    jm_success_title: "تم إرسال طلبك بنجاح",
+    jm_success_text: "شكراً لك! سنراجع طلبك ونتواصل معك قريباً.",
     leaders: "قادة",
     teams: "الفرق",
     leaders_of_teams_subtitle: "الوجوه خلف الحكاية",
@@ -345,6 +419,10 @@ const translations = {
       "كلنا نملك قصة تستحق أن تُروى. في هذا القسم، نضع مساحة لك لتشارك قصتك الحقيقية. سواء كانت قصة نجاح، تحدي، إبداع، أو تجربة حياتية مؤثرة.",
     realstories_count: "+100 قصة واقعية نقلتها صوت الى العالم",
     realstories_input_placeholder: "شاركنا قصتك",
+    rs_intro_title_pre: "هل لديك صوت يستحق أن",
+    rs_intro_title_word: "يُسمع ؟",
+    rs_intro_desc:
+      "شاركنا قصتك أو قضيتك، وقد تكون القصة القادمة التي نسلّط الضوء عليها ليصل صوتها إلى العالم",
     rs_view_story: "عرض القصة",
     rs_badge: "قصة نجاح",
     rs_card_desc: "من غزة الى الأردن وأمل لايمشي مجددا",
@@ -393,6 +471,14 @@ const translations = {
 
     // Sout section
     who_we_are: "Who We Are",
+    sout_intro_subtitle: "Purposeful media, real stories, and lasting impact",
+    sout_main_title: "We believe every person has a story worth telling",
+    sout_description:
+      "We carry people's stories and the causes of their community from a human and professional perspective. We work to document reality and bring forward the stories that may never find their way to traditional media — believing that every person has a voice that deserves to be heard, and a story that deserves to be told, through:",
+    sout_feature_1: "Content that expresses your voice",
+    sout_feature_2: "Empowering young talent",
+    sout_feature_3: "Media production and coverage",
+    sout_feature_4: "Creating real and lasting impact",
     welcome_label: "Welcome to Sawt",
     welcome_title: "Every idea has a voice... and Sawt brings them together",
     welcome_lead: "At Sawt, every idea finds its place!",
@@ -423,6 +509,8 @@ const translations = {
     at_sawt: "at Sawt",
     creators_subtitle:
       "Meet the content creators at Sawt, where every idea has a voice, and every creator has a story.",
+    creators_desc_main:
+      "A group of creative content makers who use their skills to produce purposeful, impactful content.",
     view_all: "View All",
 
     // Platform sections
@@ -430,6 +518,8 @@ const translations = {
     platform_title_highlight: "Sections",
     platform_subtitle:
       "Every idea has a voice... and Sawt brings them together",
+    platform_sections_subtitle:
+      "Specialized sections that come together to fulfil our mission in media, development, and creating impact",
     read_more: "Read More",
 
     // Partners
@@ -438,6 +528,8 @@ const translations = {
     partners_title_main: "Our Partners",
     partners_desc:
       "Together we build a living voice — a space that gathers stories, ignites hope, and gives every person a chance to be heard.",
+    partners_subtitle2:
+      "Partners who share with us the journey of impact and change.",
     be_partner: "Become a Sawt Partner",
 
     // Stories
@@ -446,7 +538,10 @@ const translations = {
       "Discover real experiences from people who shared their stories with us",
     tell_story: "Tell Your Story",
     reviews_title_pre: "Your feedback on",
+    reviews_title_pre2: "Your views on",
     reviews_title_highlight: "the content",
+    reviews_trust_html:
+      'We take pride in <span class="hl">the trust</span> of our audience, and we value every opinion that helps shape our media mission.',
     reviews_desc:
       "We believe your feedback is an essential part of our growth and service improvement. Share your experience and suggestions and help us deliver a better experience that meets your needs and expectations.",
     reviews_desc_html:
@@ -547,18 +642,29 @@ const translations = {
 
     // Platform cards
     platform_card1_title: "Content Platform",
+    platform_card1_name: "Sawt Platform",
     platform_card1_desc:
       "A rich library of videos and human stories that tell the reality of Gaza with dignity and professionalism.",
+    platform_card1_desc_alt:
+      "A rich library of purposeful content that shines a light on reality, and gives space and a voice to the voiceless.",
     platform_card2_title: "Sawt Incubator",
     platform_card2_desc:
       "Specialized training programs to develop content creators' skills and enable them to create and grow.",
+    platform_card2_desc_alt:
+      "Specialized training programs to develop content creators' skills and enable them to create and excel.",
     platform_card3_title: "Sawt Media",
     platform_card3_desc:
       "A professional media production company offering full services from writing to marketing.",
+    platform_card3_desc_alt:
+      "Integrated media solutions combining creativity, production, and digital marketing.",
     stat_views_30m: "+30M views",
     stat_clips_100: "+100 clips",
     stat_clients_100: "+100 satisfied clients",
     stat_projects_done: "Completed projects",
+    platform_stat_trainees: "+100 trainees",
+    platform_stat_projects: "+10 launched projects",
+    platform_stat_creative: "+500 creative works",
+    platform_stat_clients: "+100 satisfied clients",
 
     // Reels
     reel_title: "A story of hope from Gaza: defying the siege",
@@ -594,10 +700,10 @@ const translations = {
     //about page
     about_hero_title: "Impact Makers.. The Team Behind Sawt Platform",
     about_hero_desc:
-      "On this page, we share with you the story of a team from the people to the people — our vision, our message, and how we began to be a living, supportive voice for the voiceless, and how we gave people hope.",
+      "Sawt is an independent media platform that documents reality and tells people's stories, to be a voice for those who have none.",
     about_header: "About Sawt",
     about_intro:
-      "The Sawt platform team is an incubator for the voices of Gaza. We did not start from an extraordinary idea or a tight plan, but from a simple decision: to be present, to listen, and to announce the voice of Gaza to the world. We are from the people and live their suffering up close, so we saw that the need was clear and decided not to stay silent. We work without speaking on anyone's behalf, and without promises beyond our abilities. Our job is to convey the voice of the people of Gaza to the world, while preserving the dignity of the people and their voice. Our goal is to be an honest bridge between those who offer attention and support to the voice of Gaza and those waiting to be truly heard. Today we are more than an idea believed in by one person; we are an incubator for the voices of Gaza, an integrated team.",
+      "Sawt was launched from Gaza, believing that every person has a story worth telling and a voice that deserves to be heard. We produce purposeful human and media content that documents reality and carries people's stories and the causes of their community with professionalism and responsibility. We seek to shine a light on marginalized voices and the stories that may find no place in traditional media — believing that media is a message and an impact before it is a news item. We tell stories honestly and convey reality as it is, to be a bridge between a person and their cause.",
     about_desc:
       "A digital media platform that combines humanitarian content, professional training, and media production.",
     about_register: "Register Now",
@@ -611,29 +717,29 @@ const translations = {
       'The Core Values We <span class="core-values-highlight">Focus On</span>',
     core_values_subtitle:
       "Our values are the foundation on which we build Sawt, and they guide the way we work and continuously improve.",
-    core_value_1_title: "Empowerment",
+    core_value_1_title: "Credibility",
     core_value_1_desc:
-      "We strive to be a platform that empowers people and creates a real positive impact, helping carry our voice and our community's voice to the world.",
-    core_value_2_title: "Reliability",
+      "We convey stories and facts accurately and objectively, committed to verifying information and honoring the trust of our audience.",
+    core_value_2_title: "Humanity",
     core_value_2_desc:
-      "We are committed to preserving media integrity, protecting and documenting the narrative, relying on firm ethical standards in everything we publish.",
-    core_value_3_title: "Partnership",
+      "We put the human being at the heart of every story, and believe every individual has the right to be heard and represented with dignity and respect.",
+    core_value_3_title: "Impact",
     core_value_3_desc:
-      'We believe the strength of "Sawt Gaza" springs from the cohesion of the community, and we act as a bridge connecting different voices to foster mutual support.',
-    core_value_4_title: "Innovation",
+      "We strive to create content that raises awareness, makes a positive difference in the community, and drives change for the better.",
+    core_value_4_title: "Independence",
     core_value_4_desc:
-      "We commit to delivering news and stories with high professionalism and journalistic integrity, to be the trusted source that reflects reality accurately.",
+      "We are committed to independent media that reflects reality honestly, free from any bias or agenda that could affect our mission.",
     sawt_story_title: "The Story of Sawt",
     sawt_story_title_html:
       'The Story of <span class="sawt-story-highlight">Sawt</span>',
     about_platform_question_html:
       'What drives us to be <span class="platform-highlight">your voice?</span>',
-    join_us_title: "Your story could be the start of change",
+    join_us_title: "Because some voices must never be forgotten",
     join_us_desc:
-      "Every voice matters. If you have a story worth hearing, Sawt will support you from the first conversation to public impact.",
-    join_us_support: "Support Sawt Platform",
+      "Your contribution is not only support for a media platform — it is support for voices and stories waiting for someone to carry them.",
+    join_us_support: "Contribute to Carrying a Voice",
     sawt_story_subtitle:
-      "Our values are the foundation on which we build Sawt, and they guide the way we work and continuously improve.",
+      "From a simple idea to a platform that carries people's stories and conveys their voices.",
     sawt_story_1_title: "Impact",
     sawt_story_1_desc:
       "Since we began, we have managed to carry the voices of thousands of people who were silenced, and uncovered many facts that were hidden from public opinion. Our stories have reached millions of followers and helped draw the world's attention to marginalized issues.",
@@ -656,6 +762,54 @@ const translations = {
     join_creator_desc:
       "Voice of the Content Creators Association, be the voice of the voiceless",
     join_creator_btn: "Request to Join",
+
+    // Join creator modal
+    jm_title: "Join us as a content creator",
+    jm_subtitle: "Tell us about yourself and we'll get in touch soon",
+    jm_step1: "Personal Information",
+    jm_step2: "Content Details",
+    jm_step3: "Social Media",
+    jm_fullname: "Full Name",
+    jm_fullname_ph: "Mohamed Ahmed",
+    jm_phone: "Phone Number",
+    jm_phone_ph: "59999999",
+    jm_email: "Email Address",
+    jm_email_ph: "Mohamed@Gmail.Com",
+    jm_content_type: "Type of content you produce",
+    jm_multi_hint: "*You can choose more than one option",
+    jm_cat_other: "Other",
+    jm_cat_culture: "Culture & Arts",
+    jm_cat_politics: "Politics",
+    jm_cat_art: "Art & Creativity",
+    jm_cat_tech: "Tech & Technology",
+    jm_cat_social: "Social",
+    jm_cat_comedy: "Comedy & Entertainment",
+    jm_cat_news: "News & Awareness",
+    jm_cat_health: "Health & Fitness",
+    jm_cat_sport: "Sports & Leisure",
+    jm_followers: "Approximate followers on your top platform",
+    jm_followers_ph: "5000",
+    jm_about: "About your content",
+    jm_about_ph: "Tell us about the content you create and what makes you unique",
+    jm_social_links: "Social media links",
+    jm_add_platform: "Add platform",
+    jm_country_search: "Search country or code…",
+    jm_err_name: "Name is required",
+    jm_err_phone: "Phone number is required",
+    jm_err_email: "Email is required",
+    jm_err_email_invalid: "Invalid email address",
+    jm_err_content: "Select a content type",
+    jm_err_followers: "Number of followers is required",
+    jm_err_about: "A short bio about your content is required",
+    jm_err_social: "Add at least one link",
+    jm_notes: "Additional notes",
+    jm_notes_ph: "Any additional information you'd like to share with us",
+    jm_next: "Next",
+    jm_prev: "Previous",
+    jm_cancel: "Cancel",
+    jm_submit: "Submit request",
+    jm_success_title: "Your request has been sent successfully",
+    jm_success_text: "Thank you! We'll review your request and contact you soon.",
     story_title: "Our Story",
     story_subtitle: "From silence... to a voice that is heard",
     story_values: "Our Values",
@@ -698,6 +852,10 @@ const translations = {
       "We all have a story worth telling. In this section, we give you space to share your real story — whether it's a story of success, challenge, creativity, or an impactful life experience.",
     realstories_count: "+100 real stories Sawt shared with the world",
     realstories_input_placeholder: "Share your story",
+    rs_intro_title_pre: "Do you have a voice that deserves",
+    rs_intro_title_word: "to be heard?",
+    rs_intro_desc:
+      "Share your story or your cause with us — it could be the next story we spotlight, so its voice reaches the world.",
     rs_view_story: "View story",
     rs_badge: "Success story",
     rs_card_desc: "From Gaza to Jordan, and a hope to walk again",
@@ -766,6 +924,11 @@ function toggleLanguage() {
   setLang(newLang);
   applyTranslations(newLang);
   applyDirection(newLang);
+
+  // Notify JS-generated widgets (e.g. modal dropdowns) to re-render
+  document.dispatchEvent(
+    new CustomEvent("langchange", { detail: { lang: newLang } }),
+  );
 }
 
 // تشغيل عند تحميل الصفحة

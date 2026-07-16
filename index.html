@@ -60,6 +60,10 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
@@ -143,7 +147,29 @@
         </div>
 
         <nav class="navbar navbar-expand-lg py-1">
-          <div class="container bg-white shadow-sm py-1">
+          <div class="container bg-white py-1">
+            <button
+              class="btn mobile-nav-search d-lg-none p-0"
+              type="button"
+              aria-label="بحث"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.5em"
+                height="1.5em"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  fill="none"
+                  stroke="rgba(76, 92, 55, 1)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="m17 17l4 4m-2-10a8 8 0 1 0-16 0a8 8 0 0 0 16 0"
+                />
+              </svg>
+            </button>
             <a class="navbar-brand" href="#" style="margin-right: 0 !important">
               <img src="assets/images/صوت 1.png" alt="Sawt Logo" height="60" />
             </a>
@@ -153,7 +179,24 @@
               data-bs-toggle="collapse"
               data-bs-target="#mainNav"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon d-none d-lg-inline-block"></span>
+              <svg
+                class="navbar-toggler-svg d-lg-none"
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M10 5h10M4 12h16M4 19h10"
+                />
+              </svg>
             </button>
             <div
               class="collapse navbar-collapse flex-column flex-lg-row align-items-start align-items-lg-center"
@@ -667,34 +710,193 @@
               من نحن
             </h1>
             <p
-              class="mt-2 font-24"
+              class="mt-2 font-24 d-none d-md-block"
+              style="color: rgba(72, 72, 72, 1)"
+              data-i18n="sout_intro_subtitle"
+            >
+              إعلام هادف، قصص حقيقية، وأثر مستدام
+            </p>
+            <p
+              class="mt-2 sout-mobile-lead d-md-none"
               style="color: rgba(72, 72, 72, 1)"
               data-i18n="welcome_lead"
             >
               في صوت، كل فكرة بتلاقي مكانها!
             </p>
           </div>
-          <div class="row">
+
+          <!-- نسخة الجوال: الصورة أولاً ثم النص وشبكة مزايا 2×2 -->
+          <div class="sout-mobile d-md-none">
+            <img class="image-swat" src="assets/images/swat.png" alt="" />
+
+            <h3
+              class="sout-mobile-title fw-bold text-center"
+              data-i18n="welcome_title"
+            >
+              كل فكرة إلها صوت... وصوت بيجمعهم
+            </h3>
+
+            <p class="sout-mobile-desc text-center" data-i18n="welcome_desc">
+              استكشف محتوى متنوع، عبّر عن نفسك، وشارك صوتك مع العالم، من خلال
+              تجربة تفاعلية مليئة بالإبداع والإلهام، رح تقدر تطوّر أفكارك وتوصل
+              لجمهور أوسع، وصوت بيكون معك خطوة بخطوة لتخلي صوتك يوصل أبعد.
+            </p>
+
+            <div class="row sout-mobile-features">
+              <div class="col-6 feature-item d-flex align-items-center">
+                <div class="icon-box">
+                  <i>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1.2em"
+                      height="1.2em"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M0 0h24v24H0z" fill="none" />
+                      <g fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M17 7v4a5 5 0 0 1-10 0V7a5 5 0 0 1 10 0Z" />
+                        <path
+                          stroke-linecap="round"
+                          d="M17 7h-3m3 4h-3m6 0a8 8 0 0 1-8 8m0 0a8 8 0 0 1-8-8m8 8v3m0 0h3m-3 0H9"
+                        />
+                      </g>
+                    </svg>
+                  </i>
+                </div>
+                <span
+                  class="ms-2 text-bold fw-bold"
+                  data-i18n="feature_express_voice"
+                  >محتوى يعبّر عن صوتك</span
+                >
+              </div>
+
+              <div class="col-6 feature-item d-flex align-items-center">
+                <div class="icon-box">
+                  <i>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1.2em"
+                      height="1.2em"
+                      viewBox="0 0 14 14"
+                    >
+                      <path d="M0 0h14v14H0z" fill="none" />
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M9.568 1.255a.466.466 0 0 1 .864 0l.587 1.433l1.593.14c.416.036.578.56.255.824l-.947.778a.47.47 0 0 0-.16.46l.314 1.452a.466.466 0 0 1-.715.486L10 5.92l-1.359.91a.466.466 0 0 1-.715-.487L8.24 4.89a.47.47 0 0 0-.16-.459l-.947-.778a.466.466 0 0 1 .255-.825l1.593-.14zM.983 6.37l.692-.043a8 8 0 0 1 2.448.227l1.16.292a1.32 1.32 0 0 1 .99 1.416v0c-.078.765-.79 1.3-1.546 1.166L3.622 9.23l3.897.699l4.037-.958a1.24 1.24 0 0 1 1.482.887v0c.16.603-.153 1.23-.73 1.465l-3.23 1.311a6.93 6.93 0 0 1-4.918.113L.813 11.562"
+                      />
+                    </svg>
+                  </i>
+                </div>
+                <span
+                  class="ms-2 text-bold fw-bold"
+                  data-i18n="feature_empower_creativity"
+                  >مساحة لتمكين الإبداع</span
+                >
+              </div>
+
+              <div class="col-6 feature-item d-flex align-items-center">
+                <div class="icon-box">
+                  <i>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1.2em"
+                      height="1.2em"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M0 0h24v24H0z" fill="none" />
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                      >
+                        <path
+                          d="M16.5 20v-2.03c0-1.242-.56-2.46-1.69-2.975C13.431 14.366 11.778 14 10 14s-3.431.366-4.81.995c-1.13.515-1.69 1.733-1.69 2.975V20m17 .001v-2.03c0-1.242-.56-2.46-1.69-2.975q-.39-.18-.81-.328"
+                        />
+                        <circle cx="10" cy="7.5" r="3.5" />
+                        <path d="M15 4.145a3.502 3.502 0 0 1 0 6.71" />
+                      </g>
+                    </svg>
+                  </i>
+                </div>
+                <span
+                  class="ms-2 text-bold fw-bold"
+                  data-i18n="feature_expert_team"
+                  >فريق خبراء يدعمك</span
+                >
+              </div>
+
+              <div class="col-6 feature-item d-flex align-items-center">
+                <div class="icon-box">
+                  <i>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1.2em"
+                      height="1.2em"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M0 0h24v24H0z" fill="none" />
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                      >
+                        <circle cx="18" cy="5" r="3" />
+                        <circle cx="6" cy="12" r="3" />
+                        <circle cx="18" cy="19" r="3" />
+                        <path d="m8.59 13.51l6.83 3.98m-.01-10.98l-6.82 3.98" />
+                      </g>
+                    </svg>
+                  </i>
+                </div>
+                <span class="ms-2 text-bold fw-bold" data-i18n="feature_publish"
+                  >خدمات تُسهّل النشر.</span
+                >
+              </div>
+            </div>
+
+            <a
+              href="#"
+              class="btn btn-dark-green rounded-pill w-100 text-bold fw-bold sout-mobile-btn"
+            >
+              <span data-i18n="discover_more">اكتشف المزيد</span>
+              <i
+                class="fa-solid fa-angle-left me-2 font-14 text-bold arrow"
+              ></i>
+            </a>
+          </div>
+
+          <div class="row d-none d-md-flex">
+            <div class="col-lg-6 mt-2 order-lg-2">
+              <img class="image-swat" src="assets/images/swat.png" alt="" />
+            </div>
+
             <div
-              class="col-lg-6 position-relative mt-5"
+              class="col-lg-6 position-relative mt-5 order-lg-1"
               style="text-align: start"
             >
               <h3
                 class="main-title text-bold fw-bold"
-                data-i18n="welcome_title"
+                data-i18n="sout_main_title"
               >
-                كل فكرة إلها صوت... وصوت بيجمعهم
+                نؤمن أن لكل إنسان قصة تستحق أن تُري
               </h3>
 
               <p
                 class="description text-secondary font-18 lh-lg"
                 style="color: rgba(90, 90, 90, 1) !important"
-                data-i18n="welcome_desc"
+                data-i18n="sout_description"
               >
-                استكشف محتوى متنوع، عبّر عن نفسك، وشارك صوتك مع العالم، من خلال
-                تجربة تفاعلية مليئة بالإبداع والإلهام، رح تقدر تطوّر أفكارك
-                وتوصل لجمهور أوسع، وصوت بيكون معك خطوة بخطوة لتخلي صوتك يوصل
-                أبعد.
+                ننقل قصص الناس وقضايا المجتمع من منظور إنساني ومهني نعمل على
+                توثيق الواقع، وإبراز الحكايات التي قد لا تجد طريقها إلى الإعلام
+                التقليدي، إيماناً منا بأن لكل إنسان صوتاً يستحق أن يُسمع وقصة
+                تستحق أن تُروى من خلال :
               </p>
 
               <div class="features-grid row gap-2 my-4">
@@ -708,20 +910,28 @@
                         viewBox="0 0 24 24"
                       >
                         <path d="M0 0h24v24H0z" fill="none" />
-                        <path
+                        <g
                           fill="none"
                           stroke="currentColor"
+                          stroke-linejoin="round"
                           stroke-width="1.5"
-                          d="M21 6.5a3 3 0 1 1-6 0a3 3 0 0 1 6 0ZM9 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0Zm12 5.5a3 3 0 1 1-6 0a3 3 0 0 1 6 0ZM8.729 10.75l6.5-3m-6.5 5.5l6.5 3"
-                        />
+                        >
+                          <path
+                            stroke-linecap="round"
+                            d="M17.7 21.335c-1.172.165-2.7.165-4.75.165h-1.9c-4.03 0-6.046 0-7.298-1.252S2.5 16.98 2.5 12.95v-1.9c0-4.03 0-6.046 1.252-7.298S7.02 2.5 11.05 2.5h1.9c4.03 0 6.046 0 7.298 1.252S21.5 7.019 21.5 11.05v1.9c0 1.208 0 2.235-.034 3.115c-.027.705-.04 1.057-.307 1.19c-.267.13-.566-.08-1.163-.503L18.65 15.8"
+                          />
+                          <path
+                            d="M14.945 12.395c-.176.627-1.012 1.07-2.682 1.955c-1.615.856-2.422 1.285-3.073 1.113a1.66 1.66 0 0 1-.712-.393C8 14.62 8 13.746 8 12s0-2.62.478-3.07c.198-.186.443-.321.712-.392c.65-.173 1.458.256 3.073 1.112c1.67.886 2.506 1.329 2.682 1.955c.073.259.073.531 0 .79Z"
+                          />
+                        </g>
                       </svg>
                     </i>
                   </div>
 
                   <span
                     class="me-md-1 ms-2 text-bold font-18 fw-bold"
-                    data-i18n="feature_publish"
-                    >خدمات تُسهّل النشر.</span
+                    data-i18n="sout_feature_1"
+                    >محتوى يُعبر عن صوتك</span
                   >
                 </div>
                 <div class="col feature-item d-flex align-items-center">
@@ -747,8 +957,9 @@
 
                   <span
                     class="me-md-1 ms-2 text-bold font-18 fw-bold"
-                    data-i18n="feature_empower_creativity"
-                    >مساحة لتمكين الإبداع</span
+                    data-i18n="sout_feature_2"
+                  >
+                    تمكين المواهب الشابة</span
                   >
                 </div>
 
@@ -781,8 +992,8 @@
 
                   <span
                     class="me-md-1 ms-2 text-bold font-18 fw-bold"
-                    data-i18n="feature_expert_team"
-                    >فريق خبراء يدعمك
+                    data-i18n="sout_feature_3"
+                    >الإنتاج والتغطيات الإعلامية
                   </span>
                 </div>
                 <div class="col feature-item d-flex align-items-center">
@@ -807,9 +1018,9 @@
 
                   <span
                     class="me-md-1 ms-2 text-bold font-18 fw-bold"
-                    data-i18n="feature_express_voice"
+                    data-i18n="sout_feature_4"
                   >
-                    محتوى يعبّر عن صوتك
+                    صناعة أثر حقيقي ومستدام
                   </span>
                 </div>
               </div>
@@ -824,10 +1035,6 @@
                   class="fa-solid fa-angle-left me-2 font-14 text-bold arrow"
                 ></i>
               </a>
-            </div>
-
-            <div class="col-lg-6 mt-2">
-              <img class="image-swat" src="assets/images/swat.png" alt="" />
             </div>
           </div>
         </div>
@@ -1092,10 +1299,10 @@
             <h4
               class="font-24 creators-subtitle"
               style="color: rgba(72, 72, 72, 1); margin-top: 20px"
-              data-i18n="creators_subtitle"
+              data-i18n="creators_desc_main"
             >
-              تعرف على صُنّاع المحتوى في صوت، حيث كل فكرة إلها صوت، وكل مبدع إله
-              حكاية.
+              مجموعة من صُنّاع المحتوى المبدعين الذين يوظفون مهاراتهم لإنتاج
+              محتوى هادف ومؤثر.
             </h4>
           </div>
           <div class="owl-carousel creators-carousel2">
@@ -1154,7 +1361,6 @@
                         </span>
                       </div>
                     </div>
-
                   </div>
                 </div>
               </a>
@@ -1215,8 +1421,6 @@
                         </span>
                       </div>
                     </div>
-
-
                   </div>
                 </div>
               </a>
@@ -1277,8 +1481,6 @@
                         </span>
                       </div>
                     </div>
-
-
                   </div>
                 </div>
               </a>
@@ -1339,7 +1541,6 @@
                         </span>
                       </div>
                     </div>
-
                   </div>
                 </div>
               </a>
@@ -1400,7 +1601,6 @@
                         </span>
                       </div>
                     </div>
-
                   </div>
                 </div>
               </a>
@@ -1419,22 +1619,19 @@
       <section class="platform-sections py-5 text-center mb-2">
         <div class="container">
           <div class="header-content mb-3">
-            <h2 class="text-black fw-bold" style="font-size: 42px !important">
+            <h2 class="text-black fw-bold platform-title">
               <span data-i18n="platform_title_pre">أقسام</span>
-              <span
-                class="who-us"
-                style="font-size: 45px !important"
-                data-i18n="platform_title_highlight"
+              <span class="who-us" data-i18n="platform_title_highlight"
                 >المنصة</span
               >
             </h2>
             <p
               class="font-24"
               style="color: rgba(72, 72, 72, 1)"
-              data-i18n="creators_subtitle"
+              data-i18n="platform_sections_subtitle"
             >
-              تعرف على صُنّاع المحتوى في صوت، حيث كل فكرة إلها صوت، وكل مبدع إله
-              حكاية.
+              أقسام متخصصة تتكامل لتحقيق رسالتنا في الإعلام والتنمية وصناعة
+              التأثير
             </p>
           </div>
 
@@ -1460,13 +1657,13 @@
                 <div class="card-content mt-4">
                   <h4
                     class="text-black fw-bold"
-                    data-i18n="platform_card1_title"
+                    data-i18n="platform_card1_name"
                   >
-                    منصة المحتوى
+                    منصة صوت
                   </h4>
-                  <p data-i18n="platform_card1_desc">
-                    مكتبة غنية بالفيديوهات والقصص الإنسانية التي تروي واقع غزة
-                    بكرامة واحترافية.
+                  <p data-i18n="platform_card1_desc_alt">
+                    مكتبة غنية بالمحتوى الهادف الذي يسلّط الضوء على الواقع،
+                    ويمنح مساحة وصوت لمن لا صوت له .
                   </p>
 
                   <div class="stats d-flex justify-content-start gap-3 mb-2">
@@ -1564,7 +1761,7 @@
                   >
                     حاضنة صوت
                   </h4>
-                  <p data-i18n="platform_card2_desc">
+                  <p data-i18n="platform_card2_desc_alt">
                     برامج تدريبية متخصصة لتطوير مهارات صناع المحتوى وتمكينهم من
                     الإبداع والتميز.
                   </p>
@@ -1585,24 +1782,27 @@
                           <g
                             fill="none"
                             stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
                             stroke-width="1.5"
                           >
                             <path
-                              d="M21.544 11.045c.304.426.456.64.456.955c0 .316-.152.529-.456.955C20.178 14.871 16.689 19 12 19c-4.69 0-8.178-4.13-9.544-6.045C2.152 12.529 2 12.315 2 12c0-.316.152-.529.456-.955C3.822 9.129 7.311 5 12 5c4.69 0 8.178 4.13 9.544 6.045Z"
+                              d="M16.5 20v-2.03c0-1.242-.56-2.46-1.69-2.975C13.431 14.366 11.778 14 10 14s-3.431.366-4.81.995c-1.13.515-1.69 1.733-1.69 2.975V20m17 .001v-2.03c0-1.242-.56-2.46-1.69-2.975q-.39-.18-.81-.328"
                             />
-                            <path d="M15 12a3 3 0 1 0-6 0a3 3 0 0 0 6 0Z" />
+                            <circle cx="10" cy="7.5" r="3.5" />
+                            <path d="M15 4.145a3.502 3.502 0 0 1 0 6.71" />
                           </g>
                         </svg>
                       </i>
-                      <span data-i18n="stat_views_30m">+30 مليون مشاهدة</span>
+                      <span data-i18n="platform_stat_trainees">+100 متدرب</span>
                     </span>
 
                     <span
                       class="text-light-muted lh-lg"
                       style="color: rgba(127, 127, 127, 1)"
                     >
-                      <i
-                        ><svg
+                      <i>
+                        <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="1.2em"
                           height="1.2em"
@@ -1625,7 +1825,9 @@
                           </g>
                         </svg>
                       </i>
-                      <span data-i18n="stat_clips_100">+100 مقطع</span>
+                      <span data-i18n="platform_stat_projects"
+                        >+10 مشاريع منطلقة</span
+                      >
                     </span>
                   </div>
 
@@ -1663,12 +1865,39 @@
                   >
                     صوت ميديا
                   </h4>
-                  <p data-i18n="platform_card3_desc">
-                    شركة إنتاج إعلامي احترافية تقدم خدمات متكاملة من الكتابة إلى
-                    التسويق.
+                  <p data-i18n="platform_card3_desc_alt">
+                    حلول إعلامية متكاملة تجمع بين الإبداع، الإنتاج، والتسويق
+                    الرقمي.
                   </p>
 
                   <div class="stats d-flex justify-content-start gap-3 mb-2">
+                    <span
+                      class="text-light-muted lh-lg"
+                      style="color: rgba(127, 127, 127, 1)"
+                    >
+                      <i>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="1.2em"
+                          height="1.2em"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M5.333 3c2.46-.003 4.836.887 6.667 2.5V21a10.07 10.07 0 0 0-6.667-2.5c-1.562 0-2.343 0-2.688-.22a1.16 1.16 0 0 1-.424-.425C2 17.51 2 16.895 2 15.663v-9.26c0-1.428 0-2.141.549-2.72c.548-.579 1.11-.609 2.234-.668Q5.056 3 5.333 3m13.334 0A10.07 10.07 0 0 0 12 5.5V21a10.07 10.07 0 0 1 6.667-2.5c1.562 0 2.343 0 2.688-.22c.207-.133.291-.218.424-.425c.221-.345.221-.96.221-2.192v-9.26c0-1.428 0-2.141-.549-2.72s-1.11-.609-2.234-.668Q18.944 3 18.667 3"
+                          />
+                        </svg>
+                      </i>
+                      <span data-i18n="platform_stat_creative"
+                        >+500 محتوى ابداعي</span
+                      >
+                    </span>
+
                     <span
                       class="text-light-muted lh-lg"
                       style="color: rgba(127, 127, 127, 1)"
@@ -1696,32 +1925,9 @@
                           </g>
                         </svg>
                       </i>
-                      <span data-i18n="stat_clients_100">+100 عميل راض</span>
-                    </span>
-
-                    <span
-                      class="text-light-muted lh-lg"
-                      style="color: rgba(127, 127, 127, 1)"
-                    >
-                      <i>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="1.2em"
-                          height="1.2em"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M0 0h24v24H0z" fill="none" />
-                          <path
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            d="M5.333 3c2.46-.003 4.836.887 6.667 2.5V21a10.07 10.07 0 0 0-6.667-2.5c-1.562 0-2.343 0-2.688-.22a1.16 1.16 0 0 1-.424-.425C2 17.51 2 16.895 2 15.663v-9.26c0-1.428 0-2.141.549-2.72c.548-.579 1.11-.609 2.234-.668Q5.056 3 5.333 3m13.334 0A10.07 10.07 0 0 0 12 5.5V21a10.07 10.07 0 0 1 6.667-2.5c1.562 0 2.343 0 2.688-.22c.207-.133.291-.218.424-.425c.221-.345.221-.96.221-2.192v-9.26c0-1.428 0-2.141-.549-2.72s-1.11-.609-2.234-.668Q18.944 3 18.667 3"
-                          />
-                        </svg>
-                      </i>
-                      <span data-i18n="stat_projects_done">مشاريع المنجزة</span>
+                      <span data-i18n="platform_stat_clients"
+                        >+100 عميل راضي</span
+                      >
                     </span>
                   </div>
 
@@ -1739,16 +1945,18 @@
       </section>
 
       <section class="mt-3">
-        <div class="partners-section text-center mb-5">
+        <div class="partners-section text-center mb-4">
           <h1 class="partners-title fw-bold" style="font-size: 42px">
             <span data-i18n="partners_title_main">شركاؤنا</span>
             <span class="partners-highlight who-us" data-i18n="at_sawt"
               >في صوت</span
             >
           </h1>
-          <p class="partners-description font-24" data-i18n="creators_subtitle">
-            تعرف على صُنّاع المحتوى في صوت، حيث كل فكرة إلها صوت، وكل مبدع إله
-            حكاية.
+          <p
+            class="partners-description font-24"
+            data-i18n="partners_subtitle2"
+          >
+            شركاء يشاركوننا رحلة التأثير وصناعة التغيير.
           </p>
         </div>
         <div class="marquee">
@@ -2016,13 +2224,16 @@
             <div class="col-lg-5 order-1 order-lg-1">
               <div class="rs-intro">
                 <h2 class="rs-title fw-bold">
-                  <span>قصص</span>
-                  <span class="rs-title-word">من الواقع</span>
+                  <span data-i18n="rs_intro_title_pre"
+                    >هل لديك صوت يستحق أن</span
+                  >
+                  <span class="rs-title-word" data-i18n="rs_intro_title_word"
+                    >يُسمع ؟</span
+                  >
                 </h2>
-                <p class="rs-desc" data-i18n="realstories_desc">
-                  كلنا نملك قصة تستحق أن تُروى. في هذا القسم، نضع مساحة لك
-                  لتشارك قصتك الحقيقية. سواء كانت قصة نجاح، تحدي، إبداع، أو
-                  تجربة حياتية مؤثرة.
+                <p class="rs-desc" data-i18n="rs_intro_desc">
+                  شاركنا قصتك أو قضيتك، وقد تكون القصة القادمة التي نسلّط الضوء
+                  عليها ليصل صوتها إلى العالم
                 </p>
                 <div class="rs-count">
                   <span class="rs-count-icon">
@@ -2200,9 +2411,13 @@
               انضم إلينا كصانع محتوى
             </h2>
             <p class="join-us-desc" data-i18n="join_creator_desc">
-صوت تجمع صناع المحتوى , كن صوت من لاصوت له  
+              صوت تجمع صناع المحتوى , كن صوت من لاصوت له
             </p>
-            <a href="#" class="btn btn-dark-green join-us-btn">
+            <a
+              href="#"
+              class="btn btn-dark-green join-us-btn"
+              id="openJoinModal"
+            >
               <span data-i18n="join_creator_btn">طلب الانضمام</span>
               <i class="fa-solid fa-angle-left arrow"></i>
             </a>
@@ -2224,17 +2439,16 @@
             <div class="col-lg-3 col-md-12">
               <div class="reviews-intro">
                 <h2 class="reviews-title fw-bold">
-                  <span data-i18n="reviews_title_pre">أرائكم في</span>
+                  <span data-i18n="reviews_title_pre2">آراؤكم في</span>
                   <span
                     class="reviews-highlight"
                     data-i18n="reviews_title_highlight"
                     >المحتوى</span
                   >
                 </h2>
-                <p class="reviews-desc" data-i18n-html="reviews_desc_html">
-                  نؤمن أن <span class="hl">رأيك</span> جزء أساسي من تطويرنا
-                  وتحسين خدماتنا. شاركنا تجربتك واقتراحاتك وساعدنا على تقديم
-                  تجربة أفضل تلبي احتياجاتك وتوقعاتك.
+                <p class="reviews-desc" data-i18n-html="reviews_trust_html">
+                  نفخر <span class="hl">بثقة</span>
+                  جمهورنا، ونعتز بكل رأي يساهم في تطوير رسالتنا الإعلامية.
                 </p>
               </div>
             </div>
@@ -2588,250 +2802,387 @@
         </div>
       </section>
     </main>
-    <footer class="footer-custom-bg pt-5 pb-4">
-      <div class="footer-custom-width" style="width: 95%; margin: 0 auto">
-        <div class="row g-4 text-end align-items-start">
-          <div class="col-lg-3 col-md-6" style="text-align: start">
-            <div class="footer-logo mb-3">
-              <img src="assets/images/صوت ابيض.png" alt="صوت" width="100" />
-            </div>
-            <p class="lh-lg text-white font-16" data-i18n="footer_about">
-              منصة صوت، تأسست لتكون مساحة للمبدعين، تجمع الحاضنة، صوت ميديا،
-              والصوت نفسه، لتقديم محتوى ملهم وتجارب فريدة لكل من يسعى لصوته أن
-              يُسمع.
-            </p>
+    <footer class="footer-shell pb-4">
+      <!-- بطاقة النشرة البريدية — تظهر فقط على الجوال أعلى الفوتر الداكن -->
+      <div class="footer-newsletter-mobile">
+        <h5 class="footer-nl-title" data-i18n="footer_stay_updated">
+          ابقَ على اطلاع
+        </h5>
+        <p class="footer-nl-sub" data-i18n="footer_subscribe">
+          اشترك في نشرتنا الإخبارية ..
+        </p>
+        <div class="custom-newsletter-input">
+          <div class="newsletter-input-wrapper">
+            <i class="fa-solid fa-magnifying-glass"> </i>
+            <input
+              type="email"
+              placeholder="ادخل بريدك الالكتروني"
+              class="font-18 fw-bold"
+              data-i18n-placeholder="footer_email_placeholder"
+            />
           </div>
-
-          <div
-            class="col col-lg-3 col-md-6 text-white"
-            style="text-align: start"
-          >
-            <h5
-              class="fw-bold mb-4 text-white"
-              data-i18n="footer_main_sections"
-            >
-              الأقسام الرئيسية
-            </h5>
-            <div class="row">
-              <div class="col col-lg-6">
-                <ul class="list-unstyled footer-links">
-                  <li class="mb-4">
-                    <a href="#" class="text-white text-decoration-none small">
-                      <span data-i18n="nav_home">الرئيسية</span></a
-                    >
-                  </li>
-                  <li class="mb-4">
-                    <a href="#" class="text-white text-decoration-none small">
-                      <span data-i18n="nav_about">من نحن</span></a
-                    >
-                  </li>
-                  <li class="mb-4">
-                    <a href="#" class="text-white text-decoration-none small">
-                      <span data-i18n="nav_content">محتوانا</span></a
-                    >
-                  </li>
-                  <li class="mb-4">
-                    <a href="#" class="text-white text-decoration-none small">
-                      <span data-i18n="nav_team">الفريق</span></a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-6 main-links">
-                <ul class="list-unstyled p-0 footer-links">
-                  <li class="mb-4">
-                    <a href="#" class="text-white text-decoration-none small">
-                      <span data-i18n="nav_creators">صناع المحتوى</span></a
-                    >
-                  </li>
-                  <li class="mb-4">
-                    <a href="#" class="text-white text-decoration-none small">
-                      <span data-i18n="nav_incubator">حاضنة صوت</span></a
-                    >
-                  </li>
-                  <li class="mb-4">
-                    <a href="#" class="text-white text-decoration-none small">
-                      <span data-i18n="nav_media">صوت ميديا</span></a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="col col-lg-3 col-md-6 text-white"
-            style="text-align: start"
-          >
-            <h5 class="fw-bold mb-4 text-white" data-i18n="footer_quick_links">
-              روابط سريعة
-            </h5>
-            <ul class="list-unstyled p-0 footer-links">
-              <li class="mb-4">
-                <a href="#" class="text-white text-decoration-none small">
-                  <span data-i18n="footer_backstage">الكواليس</span></a
-                >
-              </li>
-              <li class="mb-4">
-                <a href="#" class="text-white text-decoration-none small">
-                  <span data-i18n="footer_media_kit">MEDIA KIT</span></a
-                >
-              </li>
-              <li class="mb-4">
-                <a href="#" class="text-white text-decoration-none small">
-                  <span data-i18n="footer_blog">المدونة</span></a
-                >
-              </li>
-              <li class="mb-4">
-                <a href="#" class="text-white text-decoration-none small">
-                  <span data-i18n="footer_faq">الأسئلة الشائعة</span></a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div
-            class="col-lg-3 col-md-6 text-white"
-            style="text-align: start !important"
-          >
-            <h5
-              class="fw-bold mb-4 text-white footer-stay-updated"
-              data-i18n="footer_stay_updated"
-            >
-              ابقَ على اطلاع
-            </h5>
-            <p
-              class="mb-3 text-white font-16 footer-subscribe"
-              data-i18n="footer_subscribe"
-            >
-              اشترك في نشرتنا الإخبارية ..
-            </p>
-            <div class="custom-newsletter-input mb-4">
-              <div class="newsletter-input-wrapper">
-                <i class="fa-solid fa-magnifying-glass"> </i>
-                <input
-                  type="email"
-                  placeholder="ادخل بريدك الالكتروني"
-                  class="font-18 fw-bold"
-                  data-i18n-placeholder="footer_email_placeholder"
-                />
-              </div>
-              <button class="rs-send">
-                <i>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="1.4em"
-                    height="1.2em"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M0 0h24v24H0z" fill="none" />
-                    <path
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
-                      d="m9.498 15l7.5-7.5m-8.992.179l7.321-3.46c3.042-1.438 4.563-2.157 5.533-1.436s.693 2.365.138 5.652l-.954 5.662c-.363 2.149-.544 3.223-1.345 3.692s-1.842.109-3.923-.611l-6.365-2.202c-3.892-1.346-5.838-2.019-5.91-3.34c-.074-1.32 1.786-2.2 5.505-3.957M9.498 15.5v2.227c0 2.374 0 3.56.71 3.75s1.458-.798 2.954-2.773l.836-1.204"
-                    /></svg
-                ></i>
-              </button>
-            </div>
-
-            <div class="contact-info-footer text-white">
-              <p
-                class="mb-2 d-flex align-items-center justify-content-start font-16"
+          <button class="rs-send">
+            <i>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.4em"
+                height="1.2em"
+                viewBox="0 0 24 24"
               >
-                <i style="color: rgba(225, 114, 59, 1)">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="1.5em"
-                    height="1.5em"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M0 0h24v24H0z" fill="none" />
-                    <path
-                      fill="currentColor"
-                      d="M19.2 20q-2.702 0-5.418-1.244t-5.005-3.533q-2.27-2.289-3.523-5.021Q4 7.469 4 4.8V4h4.439l.848 4.083l-2.696 2.51q.684 1.186 1.417 2.167t1.527 1.769q.802.84 1.808 1.57t2.296 1.44l2.611-2.708l3.75.756V20zM6.121 9.654l2.092-1.92L7.635 5h-2.63q.03 1.144.309 2.305q.278 1.16.807 2.349m8.45 8.335q.923.463 2.09.723t2.339.277v-2.605l-2.388-.475zm0 0"
-                    />
-                  </svg>
-                </i>
-                +972567247177
-              </p>
-              <p
-                class="mb-0 font-16 d-flex align-items-center justify-content-start"
-              >
-                <i style="color: rgba(225, 114, 59, 1)">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="1.5em"
-                    height="1.5em"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M0 0h24v24H0z" fill="none" />
-                    <g
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        d="m7 8.5l2.942 1.74c1.715 1.014 2.4 1.014 4.116 0L17 8.5"
-                      />
-                      <path
-                        d="M2.016 13.476c.065 3.065.098 4.598 1.229 5.733c1.131 1.136 2.705 1.175 5.854 1.254c1.94.05 3.862.05 5.802 0c3.149-.079 4.723-.118 5.854-1.254c1.131-1.135 1.164-2.668 1.23-5.733c.02-.986.02-1.966 0-2.952c-.066-3.065-.099-4.598-1.23-5.733c-1.131-1.136-2.705-1.175-5.854-1.254a115 115 0 0 0-5.802 0c-3.149.079-4.723.118-5.854 1.254c-1.131 1.135-1.164 2.668-1.23 5.733a69 69 0 0 0 0 2.952Z"
-                      />
-                    </g>
-                  </svg>
-                </i>
-                info@sawtgaza.com
-              </p>
-            </div>
-          </div>
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="m9.498 15l7.5-7.5m-8.992.179l7.321-3.46c3.042-1.438 4.563-2.157 5.533-1.436s.693 2.365.138 5.652l-.954 5.662c-.363 2.149-.544 3.223-1.345 3.692s-1.842.109-3.923-.611l-6.365-2.202c-3.892-1.346-5.838-2.019-5.91-3.34c-.074-1.32 1.786-2.2 5.505-3.957M9.498 15.5v2.227c0 2.374 0 3.56.71 3.75s1.458-.798 2.954-2.773l.836-1.204"
+                /></svg
+            ></i>
+          </button>
         </div>
       </div>
 
-      <hr class="text-white opacity-25" style="width: 95%; margin: 20px auto" />
+      <div class="footer-custom-bg pt-5">
+        <div class="footer-custom-width" style="width: 95%; margin: 0 auto">
+          <div class="row g-4 text-end align-items-start">
+            <div class="col-lg-3 col-md-6" style="text-align: start">
+              <div class="footer-logo mb-3">
+                <img src="assets/images/صوت ابيض.png" alt="صوت" width="100" />
+              </div>
+              <p class="lh-lg text-white font-16" data-i18n="footer_about">
+                منصة صوت، تأسست لتكون مساحة للمبدعين، تجمع الحاضنة، صوت ميديا،
+                والصوت نفسه، لتقديم محتوى ملهم وتجارب فريدة لكل من يسعى لصوته أن
+                يُسمع.
+              </p>
+            </div>
 
-      <div style="width: 95%; margin: 0 auto">
-        <div class="row align-items-center gy-4">
-          <div class="col-12 col-md-6 order-md-2 text-center">
+            <!-- روابط الفوتر للجوال — قسمان بعنوانين منفصلين جنبًا إلى جنب -->
+            <div class="col-12 footer-links-mobile">
+              <!-- القسم الأول: روابط سريعة (عمود واحد) -->
+              <div class="footer-links-section footer-links-section-quick">
+                <h5
+                  class="footer-links-mobile-title"
+                  data-i18n="footer_quick_links"
+                >
+                  روابط سريعة
+                </h5>
+                <ul
+                  class="list-unstyled footer-links footer-links-mobile-single"
+                >
+                  <li>
+                    <a href="#" class="text-white text-decoration-none">
+                      <span data-i18n="footer_backstage">الكواليس</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-white text-decoration-none">
+                      <span data-i18n="footer_media_kit">MEDIA KIT</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-white text-decoration-none">
+                      <span data-i18n="footer_blog">المدونة</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-white text-decoration-none">
+                      <span data-i18n="footer_faq">الأسئلة الشائعة</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- القسم الثاني: الأقسام الرئيسية (عمودان) -->
+              <div class="footer-links-section footer-links-section-main">
+                <h5
+                  class="footer-links-mobile-title"
+                  data-i18n="footer_main_sections"
+                >
+                  الأقسام الرئيسية
+                </h5>
+                <div class="footer-links-mobile-grid footer-links-mobile-two">
+                  <ul class="list-unstyled footer-links">
+                    <li>
+                      <a href="#" class="text-white text-decoration-none">
+                        <span data-i18n="nav_home">الرئيسية</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-white text-decoration-none">
+                        <span data-i18n="nav_about">من نحن</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-white text-decoration-none">
+                        <span data-i18n="nav_content">محتوانا</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-white text-decoration-none">
+                        <span data-i18n="nav_team">الفريق</span></a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="list-unstyled footer-links">
+                    <li>
+                      <a href="#" class="text-white text-decoration-none">
+                        <span data-i18n="nav_creators">صناع المحتوى</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-white text-decoration-none">
+                        <span data-i18n="nav_incubator">حاضنة صوت</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-white text-decoration-none">
+                        <span data-i18n="nav_media">صوت ميديا</span></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
             <div
-              class="d-flex gap-3 justify-content-md-end justify-content-center"
+              class="col col-lg-3 col-md-6 text-white"
+              style="text-align: start"
             >
-              <a href="#" class="text-white footer-social-icon"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" class="text-white footer-social-icon"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a href="#" class="text-white footer-social-icon"
-                ><i class="fab fa-telegram-plane"></i
-              ></a>
-              <a href="#" class="text-white footer-social-icon"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="#" class="text-white footer-social-icon"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
+              <h5
+                class="fw-bold mb-4 text-white"
+                data-i18n="footer_main_sections"
+              >
+                الأقسام الرئيسية
+              </h5>
+              <div class="row">
+                <div class="col col-lg-6">
+                  <ul class="list-unstyled footer-links">
+                    <li class="mb-4">
+                      <a href="#" class="text-white text-decoration-none small">
+                        <span data-i18n="nav_home">الرئيسية</span></a
+                      >
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="text-white text-decoration-none small">
+                        <span data-i18n="nav_about">من نحن</span></a
+                      >
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="text-white text-decoration-none small">
+                        <span data-i18n="nav_content">محتوانا</span></a
+                      >
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="text-white text-decoration-none small">
+                        <span data-i18n="nav_team">الفريق</span></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 main-links">
+                  <ul class="list-unstyled p-0 footer-links">
+                    <li class="mb-4">
+                      <a href="#" class="text-white text-decoration-none small">
+                        <span data-i18n="nav_creators">صناع المحتوى</span></a
+                      >
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="text-white text-decoration-none small">
+                        <span data-i18n="nav_incubator">حاضنة صوت</span></a
+                      >
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="text-white text-decoration-none small">
+                        <span data-i18n="nav_media">صوت ميديا</span></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col col-lg-3 col-md-6 text-white"
+              style="text-align: start"
+            >
+              <h5
+                class="fw-bold mb-4 text-white"
+                data-i18n="footer_quick_links"
+              >
+                روابط سريعة
+              </h5>
+              <ul class="list-unstyled p-0 footer-links">
+                <li class="mb-4">
+                  <a href="#" class="text-white text-decoration-none small">
+                    <span data-i18n="footer_backstage">الكواليس</span></a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="text-white text-decoration-none small">
+                    <span data-i18n="footer_media_kit">MEDIA KIT</span></a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="text-white text-decoration-none small">
+                    <span data-i18n="footer_blog">المدونة</span></a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a href="#" class="text-white text-decoration-none small">
+                    <span data-i18n="footer_faq">الأسئلة الشائعة</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6 text-white"
+              style="text-align: start !important"
+            >
+              <div class="footer-newsletter-desktop">
+                <h5
+                  class="fw-bold mb-4 text-white footer-stay-updated"
+                  data-i18n="footer_stay_updated"
+                >
+                  ابقَ على اطلاع
+                </h5>
+                <p
+                  class="mb-3 text-white font-16 footer-subscribe"
+                  data-i18n="footer_subscribe"
+                >
+                  اشترك في نشرتنا الإخبارية ..
+                </p>
+                <div class="custom-newsletter-input mb-4">
+                  <div class="newsletter-input-wrapper">
+                    <i class="fa-solid fa-magnifying-glass"> </i>
+                    <input
+                      type="email"
+                      placeholder="ادخل بريدك الالكتروني"
+                      class="font-18 fw-bold"
+                      data-i18n-placeholder="footer_email_placeholder"
+                    />
+                  </div>
+                  <button class="rs-send">
+                    <i>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1.4em"
+                        height="1.2em"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                          d="m9.498 15l7.5-7.5m-8.992.179l7.321-3.46c3.042-1.438 4.563-2.157 5.533-1.436s.693 2.365.138 5.652l-.954 5.662c-.363 2.149-.544 3.223-1.345 3.692s-1.842.109-3.923-.611l-6.365-2.202c-3.892-1.346-5.838-2.019-5.91-3.34c-.074-1.32 1.786-2.2 5.505-3.957M9.498 15.5v2.227c0 2.374 0 3.56.71 3.75s1.458-.798 2.954-2.773l.836-1.204"
+                        /></svg
+                    ></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="contact-info-footer text-white">
+                <p
+                  class="mb-2 d-flex align-items-center justify-content-start font-16"
+                >
+                  <i style="color: rgba(225, 114, 59, 1)">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1.5em"
+                      height="1.5em"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        fill="currentColor"
+                        d="M19.2 20q-2.702 0-5.418-1.244t-5.005-3.533q-2.27-2.289-3.523-5.021Q4 7.469 4 4.8V4h4.439l.848 4.083l-2.696 2.51q.684 1.186 1.417 2.167t1.527 1.769q.802.84 1.808 1.57t2.296 1.44l2.611-2.708l3.75.756V20zM6.121 9.654l2.092-1.92L7.635 5h-2.63q.03 1.144.309 2.305q.278 1.16.807 2.349m8.45 8.335q.923.463 2.09.723t2.339.277v-2.605l-2.388-.475zm0 0"
+                      />
+                    </svg>
+                  </i>
+                  +972567247177
+                </p>
+                <p
+                  class="mb-0 font-16 d-flex align-items-center justify-content-start"
+                >
+                  <i style="color: rgba(225, 114, 59, 1)">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1.5em"
+                      height="1.5em"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M0 0h24v24H0z" fill="none" />
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          d="m7 8.5l2.942 1.74c1.715 1.014 2.4 1.014 4.116 0L17 8.5"
+                        />
+                        <path
+                          d="M2.016 13.476c.065 3.065.098 4.598 1.229 5.733c1.131 1.136 2.705 1.175 5.854 1.254c1.94.05 3.862.05 5.802 0c3.149-.079 4.723-.118 5.854-1.254c1.131-1.135 1.164-2.668 1.23-5.733c.02-.986.02-1.966 0-2.952c-.066-3.065-.099-4.598-1.23-5.733c-1.131-1.136-2.705-1.175-5.854-1.254a115 115 0 0 0-5.802 0c-3.149.079-4.723.118-5.854 1.254c-1.131 1.135-1.164 2.668-1.23 5.733a69 69 0 0 0 0 2.952Z"
+                        />
+                      </g>
+                    </svg>
+                  </i>
+                  info@sawtgaza.com
+                </p>
+              </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-12 col-md-6 order-md-1 text-center text-md-end">
-            <p class="mb-0 small">
-              <span data-i18n="footer_copyright">
-                © جميع الحقوق محفوظة. 2026</span
-              >
-              <span
-                class="text-white"
-                style="background-color: #e1723b"
-                data-i18n="footer_rights_brand"
-                >SAWTGAZA</span
-              >
-            </p>
-          </div>
+        <hr
+          class="text-white opacity-25"
+          style="width: 95%; margin: 20px auto"
+        />
 
-          <!-- <div class="col-12 col-md-4 order-md-3">
+        <div class="mb-2" style="width: 95%; margin: 0 auto">
+          <div class="row align-items-center gy-4">
+            <div class="col-12 col-md-6 order-md-2 text-center">
+              <div
+                class="d-flex gap-3 justify-content-md-end justify-content-center"
+              >
+                <a href="#" class="text-white footer-social-icon"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="text-white footer-social-icon"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="text-white footer-social-icon"
+                  ><i class="fab fa-telegram-plane"></i
+                ></a>
+                <a href="#" class="text-white footer-social-icon"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="text-white footer-social-icon"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 order-md-1 text-center text-md-end">
+              <p class="mb-4 small footer-opyright">
+                <span data-i18n="footer_copyright">
+                  © جميع الحقوق محفوظة. 2026</span
+                >
+                <span
+                  class="text-white"
+                  style="background-color: #e1723b"
+                  data-i18n="footer_rights_brand"
+                  >SAWTGAZA</span
+                >
+              </p>
+            </div>
+
+            <!-- <div class="col-12 col-md-4 order-md-3">
             <div
               class="d-flex align-items-center justify-content-center justify-content-md-start gap-3 flex-wrap"
             >
@@ -2868,10 +3219,569 @@
               </div>
             </div>
           </div> -->
+          </div>
         </div>
       </div>
     </footer>
-    <!-- Modal -->
+    <!-- ============ Join Creator Modal ============ -->
+    <div class="join-modal-overlay" id="joinModal" aria-hidden="true">
+      <div
+        class="join-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="joinModalTitle"
+      >
+        <!-- Header -->
+        <div class="join-modal-head">
+          <button
+            type="button"
+            class="join-modal-close"
+            id="joinModalClose"
+            aria-label="إغلاق"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <h3 class="join-modal-title" id="joinModalTitle" data-i18n="jm_title">
+            انضم إلينا كصانع محتوى
+          </h3>
+          <p class="join-modal-subtitle" data-i18n="jm_subtitle">
+            أخبرنا عن نفسك وسنتواصل معك قريباً
+          </p>
+        </div>
+
+        <!-- Stepper -->
+        <div class="join-stepper">
+          <div class="join-step is-active" data-step="1">
+            <span class="join-step-circle"
+              ><span class="join-step-num">1</span>
+              <i class="join-step-check">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1.2em"
+                  height="1.2em"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                  >
+                    <path d="m9 10l3.258 2.444a1 1 0 0 0 1.353-.142L20 5" />
+                    <path d="M21 12a9 9 0 1 1-6.67-8.693" />
+                  </g>
+                </svg>
+              </i>
+            </span>
+            <span class="join-step-label" data-i18n="jm_step1"
+              >المعلومات الشخصية</span
+            >
+          </div>
+          <span class="join-step-line"></span>
+          <div class="join-step" data-step="2">
+            <span class="join-step-circle"
+              ><span class="join-step-num">2</span>
+              <i class="join-step-check">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1.2em"
+                  height="1.2em"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                  >
+                    <path d="m9 10l3.258 2.444a1 1 0 0 0 1.353-.142L20 5" />
+                    <path d="M21 12a9 9 0 1 1-6.67-8.693" />
+                  </g>
+                </svg>
+              </i>
+            </span>
+            <span class="join-step-label" data-i18n="jm_step2"
+              >تفاصيل المحتوى</span
+            >
+          </div>
+          <span class="join-step-line"></span>
+          <div class="join-step" data-step="3">
+            <span class="join-step-circle"
+              ><span class="join-step-num">3</span>
+              <i class="join-step-check">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1.2em"
+                  height="1.2em"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                  >
+                    <path d="m9 10l3.258 2.444a1 1 0 0 0 1.353-.142L20 5" />
+                    <path d="M21 12a9 9 0 1 1-6.67-8.693" />
+                  </g>
+                </svg>
+              </i>
+            </span>
+            <span class="join-step-label" data-i18n="jm_step3"
+              >مواقع التواصل</span
+            >
+          </div>
+        </div>
+
+        <!-- Body -->
+        <form class="join-modal-body" id="joinForm" novalidate>
+          <!-- Step 1: Personal info -->
+          <div class="join-pane is-active" data-pane="1">
+            <div class="join-field">
+              <label class="join-label" data-i18n="jm_fullname"
+                >الاسم الكامل</label
+              >
+              <div class="join-input-wrap">
+                <i class="fa-regular fa-user join-input-icon"></i>
+                <input
+                  type="text"
+                  class="join-input"
+                  name="fullname"
+                  placeholder="محمد احمد"
+                  data-i18n-placeholder="jm_fullname_ph"
+                />
+              </div>
+            </div>
+
+            <div class="join-field">
+              <label class="join-label" data-i18n="jm_phone">رقم الهاتف</label>
+              <div class="join-phone-wrap">
+                <div class="join-country-box">
+                  <i class="fa-solid fa-chevron-down join-country-caret"></i>
+                  <select
+                    class="join-country-select"
+                    name="dial_code"
+                    dir="ltr"
+                  >
+                    <option value="+970" data-flag="ps">+970</option>
+                  </select>
+                  <span class="join-country-code" data-country-code>+970</span>
+                  <span
+                    class="fi fi-ps join-country-flag"
+                    data-country-flag
+                  ></span>
+                </div>
+
+                <div class="join-input-wrap join-phone-num">
+                  <i class="join-input-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1.5em"
+                      height="1.5em"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        fill="currentColor"
+                        d="M18.93 20q-2.528 0-5.184-1.266t-4.935-3.555t-3.545-4.935T4 5.07q0-.458.3-.763T5.05 4h2.473q.408 0 .712.257t.411.659L9.142 7.3q.07.42-.025.733t-.333.513L6.59 10.592q.616 1.117 1.361 2.076t1.59 1.817q.87.87 1.874 1.62q1.004.749 2.204 1.414l2.139-2.177q.244-.263.549-.347q.304-.083.674-.033l2.103.43q.408.1.662.411t.254.712v2.435q0 .45-.306.75t-.763.3M6.12 9.654l1.92-1.765q.095-.077.124-.212q.03-.135-.01-.25l-.443-2.12q-.039-.153-.135-.23T7.327 5H5.275q-.115 0-.192.077t-.077.192q.029 1.025.321 2.14t.794 2.245m8.45 8.334q1.014.502 2.16.743q1.148.24 2 .257q.115 0 .192-.077T19 18.72v-2.008q0-.153-.077-.25q-.077-.096-.23-.134l-1.85-.379q-.116-.039-.203-.01q-.086.03-.182.125zm0 0"
+                      />
+                    </svg>
+                  </i>
+                  <input
+                    type="tel"
+                    class="join-input"
+                    name="phone"
+                    placeholder="59999999"
+                    data-i18n-placeholder="jm_phone_ph"
+                    dir="rtl"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="join-field">
+              <label class="join-label" data-i18n="jm_email"
+                >البريد الإلكتروني</label
+              >
+              <div class="join-input-wrap">
+                <i class="join-input-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.2em"
+                    height="1.2em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        d="m7 8.5l2.942 1.74c1.715 1.014 2.4 1.014 4.116 0L17 8.5"
+                      />
+                      <path
+                        d="M2.016 13.476c.065 3.065.098 4.598 1.229 5.733c1.131 1.136 2.705 1.175 5.854 1.254c1.94.05 3.862.05 5.802 0c3.149-.079 4.723-.118 5.854-1.254c1.131-1.135 1.164-2.668 1.23-5.733c.02-.986.02-1.966 0-2.952c-.066-3.065-.099-4.598-1.23-5.733c-1.131-1.136-2.705-1.175-5.854-1.254a115 115 0 0 0-5.802 0c-3.149.079-4.723.118-5.854 1.254c-1.131 1.135-1.164 2.668-1.23 5.733a69 69 0 0 0 0 2.952Z"
+                      />
+                    </g>
+                  </svg>
+                </i>
+                <input
+                  type="email"
+                  class="join-input"
+                  name="email"
+                  placeholder="Mohamed@Gmail.Com"
+                  data-i18n-placeholder="jm_email_ph"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Content details -->
+          <div class="join-pane" data-pane="2">
+            <div class="join-field">
+              <label class="join-label" data-i18n="jm_content_type"
+                >نوع المحتوى الذي تنتجه</label
+              >
+              <div class="join-chips">
+                <button
+                  type="button"
+                  class="join-chip"
+                  data-i18n="jm_cat_other"
+                >
+                  أخرى
+                </button>
+                <button
+                  type="button"
+                  class="join-chip"
+                  data-i18n="jm_cat_culture"
+                >
+                  ثقافة وفنون
+                </button>
+                <button
+                  type="button"
+                  class="join-chip"
+                  data-i18n="jm_cat_politics"
+                >
+                  سياسة
+                </button>
+                <button
+                  type="button"
+                  class="join-chip is-selected"
+                  data-i18n="jm_cat_art"
+                >
+                  فن وإبداع
+                </button>
+                <button type="button" class="join-chip" data-i18n="jm_cat_tech">
+                  تقنية وتكنولوجيا
+                </button>
+                <button
+                  type="button"
+                  class="join-chip"
+                  data-i18n="jm_cat_social"
+                >
+                  اجتماعية
+                </button>
+                <button
+                  type="button"
+                  class="join-chip is-selected"
+                  data-i18n="jm_cat_comedy"
+                >
+                  كوميدي وترفيهي
+                </button>
+                <button type="button" class="join-chip" data-i18n="jm_cat_news">
+                  إخبارية وتوعوية
+                </button>
+                <button
+                  type="button"
+                  class="join-chip"
+                  data-i18n="jm_cat_health"
+                >
+                  صحة ولياقة
+                </button>
+                <button
+                  type="button"
+                  class="join-chip"
+                  data-i18n="jm_cat_sport"
+                >
+                  رياضة وترفيه
+                </button>
+              </div>
+              <span class="join-hint" data-i18n="jm_multi_hint"
+                >*بإمكانك اختيار أكثر من خيار</span
+              >
+            </div>
+
+            <div class="join-field">
+              <label class="join-label" data-i18n="jm_followers"
+                >عدد المتابعين التقريبي في المنصة الواحدة (الأعلى شهرة)</label
+              >
+              <div class="join-input-wrap">
+                <i class="fa-regular fa-user join-input-icon"></i>
+                <input
+                  type="number"
+                  class="join-input"
+                  name="followers"
+                  placeholder="5000"
+                  data-i18n-placeholder="jm_followers_ph"
+                />
+              </div>
+            </div>
+
+            <div class="join-field">
+              <label class="join-label" data-i18n="jm_about"
+                >نبذة عن محتواك</label
+              >
+              <textarea
+                class="join-textarea"
+                name="about"
+                rows="3"
+                placeholder="تحدث عن المحتوى الذي تقدمه وما الذي يميزك"
+                data-i18n-placeholder="jm_about_ph"
+              ></textarea>
+            </div>
+          </div>
+
+          <!-- Step 3: Social links -->
+          <div class="join-pane" data-pane="3">
+            <div class="join-field">
+              <label class="join-label" data-i18n="jm_social_links"
+                >روابط مواقع التواصل الاجتماعي</label
+              >
+              <div class="join-social-list" id="joinSocialList">
+                <div class="join-social-row">
+                  <span class="join-platform">
+                    <i
+                      class="fa-brands fa-instagram join-platform-icon"
+                      data-platform-icon
+                    ></i>
+                    <select class="join-platform-select">
+                      <option value="instagram" data-icon="fa-instagram">
+                        انستقرام
+                      </option>
+                      <option value="facebook" data-icon="fa-facebook-f">
+                        فيسبوك
+                      </option>
+                      <option value="x" data-icon="fa-x-twitter">
+                        اكس (تويتر)
+                      </option>
+                      <option value="tiktok" data-icon="fa-tiktok">
+                        تيك توك
+                      </option>
+                      <option value="youtube" data-icon="fa-youtube">
+                        يوتيوب
+                      </option>
+                      <option value="linkedin" data-icon="fa-linkedin-in">
+                        لينكدإن
+                      </option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down join-platform-caret"></i>
+                  </span>
+                  <div class="join-input-wrap join-link-wrap">
+                    <i class="fa-solid fa-link join-input-icon"></i>
+                    <input
+                      type="url"
+                      class="join-input"
+                      placeholder="رابط انستقرام"
+                    />
+                  </div>
+                  <button type="button" class="join-row-del" aria-label="حذف">
+                    <i class="">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1.2em"
+                        height="1.2em"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-width="1.5"
+                          d="m19.5 5.5l-.62 10.025c-.158 2.561-.237 3.842-.88 4.763a4 4 0 0 1-1.2 1.128c-.957.584-2.24.584-4.806.584c-2.57 0-3.855 0-4.814-.585a4 4 0 0 1-1.2-1.13c-.642-.922-.72-2.205-.874-4.77L4.5 5.5M9 11.735h6m-4.5 3.919h3M3 5.5h18m-4.945 0l-.682-1.408c-.454-.936-.68-1.403-1.071-1.695a2 2 0 0 0-.275-.172C13.594 2 13.074 2 12.034 2c-1.065 0-1.598 0-2.039.234a2 2 0 0 0-.278.18c-.396.303-.617.788-1.059 1.757L8.053 5.5"
+                        />
+                      </svg>
+                    </i>
+                  </button>
+                </div>
+
+                <div class="join-social-row">
+                  <span class="join-platform">
+                    <i
+                      class="fa-brands fa-instagram join-platform-icon"
+                      data-platform-icon
+                    ></i>
+                    <select class="join-platform-select">
+                      <option value="instagram" data-icon="fa-instagram">
+                        انستقرام
+                      </option>
+                      <option value="facebook" data-icon="fa-facebook-f">
+                        فيسبوك
+                      </option>
+                      <option value="x" data-icon="fa-x-twitter">
+                        اكس (تويتر)
+                      </option>
+                      <option value="tiktok" data-icon="fa-tiktok">
+                        تيك توك
+                      </option>
+                      <option value="youtube" data-icon="fa-youtube">
+                        يوتيوب
+                      </option>
+                      <option value="linkedin" data-icon="fa-linkedin-in">
+                        لينكدإن
+                      </option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down join-platform-caret"></i>
+                  </span>
+                  <div class="join-input-wrap join-link-wrap">
+                    <i class="fa-solid fa-link join-input-icon"></i>
+                    <input
+                      type="url"
+                      class="join-input"
+                      placeholder="رابط انستقرام"
+                    />
+                  </div>
+                  <button type="button" class="join-row-del" aria-label="حذف">
+                    <i class="">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1.2em"
+                        height="1.2em"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-width="1.5"
+                          d="m19.5 5.5l-.62 10.025c-.158 2.561-.237 3.842-.88 4.763a4 4 0 0 1-1.2 1.128c-.957.584-2.24.584-4.806.584c-2.57 0-3.855 0-4.814-.585a4 4 0 0 1-1.2-1.13c-.642-.922-.72-2.205-.874-4.77L4.5 5.5M9 11.735h6m-4.5 3.919h3M3 5.5h18m-4.945 0l-.682-1.408c-.454-.936-.68-1.403-1.071-1.695a2 2 0 0 0-.275-.172C13.594 2 13.074 2 12.034 2c-1.065 0-1.598 0-2.039.234a2 2 0 0 0-.278.18c-.396.303-.617.788-1.059 1.757L8.053 5.5"
+                        />
+                      </svg>
+                    </i>
+                  </button>
+                </div>
+
+                                <div class="join-social-row">
+                  <span class="join-platform">
+                    <i
+                      class="fa-brands fa-instagram join-platform-icon"
+                      data-platform-icon
+                    ></i>
+                    <select class="join-platform-select">
+                      <option value="instagram" data-icon="fa-instagram">
+                        انستقرام
+                      </option>
+                      <option value="facebook" data-icon="fa-facebook-f">
+                        فيسبوك
+                      </option>
+                      <option value="x" data-icon="fa-x-twitter">
+                        اكس (تويتر)
+                      </option>
+                      <option value="tiktok" data-icon="fa-tiktok">
+                        تيك توك
+                      </option>
+                      <option value="youtube" data-icon="fa-youtube">
+                        يوتيوب
+                      </option>
+                      <option value="linkedin" data-icon="fa-linkedin-in">
+                        لينكدإن
+                      </option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down join-platform-caret"></i>
+                  </span>
+                  <div class="join-input-wrap join-link-wrap">
+                    <i class="fa-solid fa-link join-input-icon"></i>
+                    <input
+                      type="url"
+                      class="join-input"
+                      placeholder="رابط انستقرام"
+                    />
+                  </div>
+                  <button type="button" class="join-row-del" aria-label="حذف">
+                    <i class="">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1.2em"
+                        height="1.2em"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-width="1.5"
+                          d="m19.5 5.5l-.62 10.025c-.158 2.561-.237 3.842-.88 4.763a4 4 0 0 1-1.2 1.128c-.957.584-2.24.584-4.806.584c-2.57 0-3.855 0-4.814-.585a4 4 0 0 1-1.2-1.13c-.642-.922-.72-2.205-.874-4.77L4.5 5.5M9 11.735h6m-4.5 3.919h3M3 5.5h18m-4.945 0l-.682-1.408c-.454-.936-.68-1.403-1.071-1.695a2 2 0 0 0-.275-.172C13.594 2 13.074 2 12.034 2c-1.065 0-1.598 0-2.039.234a2 2 0 0 0-.278.18c-.396.303-.617.788-1.059 1.757L8.053 5.5"
+                        />
+                      </svg>
+                    </i>
+                  </button>
+                </div>
+              </div>
+
+              <button
+                type="button"
+                class="join-add-platform"
+                id="joinAddPlatform"
+              >
+                <span data-i18n="jm_add_platform">اضافة منصة</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+
+            <div class="join-field">
+              <label class="join-label" data-i18n="jm_notes"
+                >ملاحظات إضافية</label
+              >
+              <textarea
+                class="join-textarea"
+                name="notes"
+                rows="3"
+                placeholder="أي معلومات إضافية تريد إضافتها إلينا"
+                data-i18n-placeholder="jm_notes_ph"
+              ></textarea>
+            </div>
+          </div>
+
+          <!-- Success view -->
+          <div class="join-pane join-success" data-pane="done">
+            <span class="join-success-icon"
+              ><i class="fa-solid fa-check"></i
+            ></span>
+            <h4 class="join-success-title" data-i18n="jm_success_title">
+              تم إرسال طلبك بنجاح
+            </h4>
+            <p class="join-success-text" data-i18n="jm_success_text">
+              شكراً لك! سنراجع طلبك ونتواصل معك قريباً.
+            </p>
+          </div>
+        </form>
+
+        <!-- Footer -->
+        <div class="join-modal-foot">
+          <button type="button" class="join-btn-ghost" id="joinPrev">
+            <span data-i18n="jm_cancel">الغاء</span>
+          </button>
+
+          <div class="join-dots" id="joinDots">
+            <span class="join-dot is-active"></span>
+            <span class="join-dot"></span>
+            <span class="join-dot"></span>
+          </div>
+
+          <button type="button" class="join-btn join-btn-next" id="joinNext">
+            <span data-i18n="jm_next">التالي</span>
+          </button>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -2952,8 +3862,14 @@
           ],
 
           responsive: {
+            // الجوال: بطاقة في المنتصف مع ظهور طرف البطاقتين المجاورتين، والتنقّل بالنقاط
             0: {
               items: 1,
+              center: true,
+              stagePadding: 58,
+              margin: 12,
+              nav: false,
+              dots: true,
             },
             600: {
               items: 2,
@@ -3018,6 +3934,736 @@
           }
         }
       });
+    </script>
+
+    <!-- ============ Join Creator Modal logic ============ -->
+    <script>
+      (function () {
+        const overlay = document.getElementById("joinModal");
+        if (!overlay) return;
+
+        const openBtn = document.getElementById("openJoinModal");
+        const closeBtn = document.getElementById("joinModalClose");
+        const nextBtn = document.getElementById("joinNext");
+        const prevBtn = document.getElementById("joinPrev");
+        const nextLabel = nextBtn.querySelector("span");
+        const prevLabel = prevBtn.querySelector("span");
+        const steps = Array.from(overlay.querySelectorAll(".join-step"));
+        const lines = Array.from(overlay.querySelectorAll(".join-step-line"));
+        const panes = Array.from(overlay.querySelectorAll(".join-pane"));
+        const dots = Array.from(overlay.querySelectorAll(".join-dot"));
+        const form = document.getElementById("joinForm");
+
+        const TOTAL = 3;
+        let current = 1;
+
+        // Translated labels (fall back to Arabic defaults)
+        function t(key, fallback) {
+          try {
+            const lang =
+              (window.localStorage && localStorage.getItem("lang")) ||
+              document.documentElement.getAttribute("lang") ||
+              "ar";
+            if (
+              typeof translations !== "undefined" &&
+              translations[lang] &&
+              translations[lang][key]
+            ) {
+              return translations[lang][key];
+            }
+          } catch (e) {}
+          return fallback;
+        }
+
+        function showPane(name) {
+          panes.forEach((p) =>
+            p.classList.toggle("is-active", p.dataset.pane === name),
+          );
+        }
+
+        function render() {
+          // stepper state
+          steps.forEach((s) => {
+            const n = Number(s.dataset.step);
+            s.classList.toggle("is-active", n === current);
+            s.classList.toggle("is-done", n < current);
+          });
+          // connector lines: line[i] fills once we reach step i+2
+          lines.forEach((l, i) =>
+            l.classList.toggle("is-active", current >= i + 2),
+          );
+          // dots
+          dots.forEach((d, i) =>
+            d.classList.toggle("is-active", i === current - 1),
+          );
+          // panes
+          showPane(String(current));
+
+          // footer buttons
+          if (current === 1) {
+            prevLabel.textContent = t("jm_cancel", "الغاء");
+          } else {
+            prevLabel.textContent = t("jm_prev", "السابق");
+          }
+          if (current === TOTAL) {
+            nextLabel.textContent = t("jm_submit", "تسليم الطلب");
+          } else {
+            nextLabel.textContent = t("jm_next", "التالي");
+          }
+        }
+
+        function openModal() {
+          overlay.classList.add("is-open");
+          overlay.setAttribute("aria-hidden", "false");
+          document.body.style.overflow = "hidden";
+          overlay.querySelectorAll(".join-field").forEach(clearError);
+          current = 1;
+          render();
+        }
+
+        function closeModal() {
+          overlay.classList.remove("is-open");
+          overlay.setAttribute("aria-hidden", "true");
+          document.body.style.overflow = "";
+        }
+
+        // ---------- Step validation ----------
+        const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        function fieldOf(el) {
+          return el ? el.closest(".join-field") : null;
+        }
+        function setError(field, msg) {
+          if (!field) return;
+          field.classList.add("has-error");
+          let e = field.querySelector(".join-field-error");
+          if (!e) {
+            e = document.createElement("span");
+            e.className = "join-field-error";
+            field.appendChild(e);
+          }
+          e.textContent = msg;
+        }
+        function clearError(field) {
+          if (!field) return;
+          field.classList.remove("has-error");
+          const e = field.querySelector(".join-field-error");
+          if (e) e.remove();
+        }
+
+        function validateStep(step) {
+          const pane = overlay.querySelector(
+            '.join-pane[data-pane="' + step + '"]',
+          );
+          if (!pane) return true;
+          pane.querySelectorAll(".join-field").forEach(clearError);
+          let ok = true;
+
+          const requireField = function (name, msg) {
+            const input = pane.querySelector('[name="' + name + '"]');
+            if (input && !input.value.trim()) {
+              setError(fieldOf(input), msg);
+              ok = false;
+              return false;
+            }
+            return true;
+          };
+
+          if (step === 1) {
+            requireField("fullname", t("jm_err_name", "الاسم مطلوب"));
+            requireField("phone", t("jm_err_phone", "رقم الهاتف مطلوب"));
+            const email = pane.querySelector('[name="email"]');
+            if (email && !email.value.trim()) {
+              setError(fieldOf(email), t("jm_err_email", "البريد الإلكتروني مطلوب"));
+              ok = false;
+            } else if (email && !EMAIL_RE.test(email.value.trim())) {
+              setError(
+                fieldOf(email),
+                t("jm_err_email_invalid", "البريد الإلكتروني غير صحيح"),
+              );
+              ok = false;
+            }
+          } else if (step === 2) {
+            const chips = pane.querySelector(".join-chips");
+            if (!pane.querySelectorAll(".join-chip.is-selected").length) {
+              setError(fieldOf(chips), t("jm_err_content", "اختر نوع المحتوى"));
+              ok = false;
+            }
+            requireField("followers", t("jm_err_followers", "عدد المتابعين مطلوب"));
+            requireField("about", t("jm_err_about", "نبذة عن محتواك مطلوبة"));
+          } else if (step === 3) {
+            const urls = Array.from(
+              pane.querySelectorAll(".join-link-wrap input"),
+            );
+            if (!urls.some((u) => u.value.trim())) {
+              setError(
+                pane.querySelector(".join-field"),
+                t("jm_err_social", "أضف رابطاً واحداً على الأقل"),
+              );
+              ok = false;
+            }
+            // "ملاحظات إضافية" (notes) is optional — no validation
+          }
+
+          if (!ok) {
+            const firstErr = pane.querySelector(".join-field.has-error");
+            if (firstErr)
+              firstErr.scrollIntoView({ block: "nearest", behavior: "smooth" });
+          }
+          return ok;
+        }
+
+        function goNext() {
+          if (!validateStep(current)) return;
+          if (current < TOTAL) {
+            current += 1;
+            render();
+          } else {
+            // submit
+            showPane("done");
+            steps.forEach((s) => s.classList.add("is-done"));
+            document.querySelector(".join-modal-foot").style.display = "none";
+          }
+        }
+
+        function goPrev() {
+          if (current > 1) {
+            current -= 1;
+            render();
+          } else {
+            closeModal();
+          }
+        }
+
+        if (openBtn) {
+          openBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            document.querySelector(".join-modal-foot").style.display = "";
+            openModal();
+          });
+        }
+        closeBtn.addEventListener("click", closeModal);
+        nextBtn.addEventListener("click", goNext);
+        prevBtn.addEventListener("click", goPrev);
+
+        overlay.addEventListener("click", function (e) {
+          if (e.target === overlay) closeModal();
+        });
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && overlay.classList.contains("is-open"))
+            closeModal();
+        });
+
+        // Country dial-code custom dropdown (flag + name + code, searchable)
+        const countrySelect = overlay.querySelector(".join-country-select");
+        const countryFlag = overlay.querySelector("[data-country-flag]");
+        const countryCode = overlay.querySelector("[data-country-code]");
+        const countryBox = overlay.querySelector(".join-country-box");
+        if (countrySelect && countryFlag && countryCode && countryBox) {
+          // n: Arabic name, d: dial code, c: ISO2 flag code
+          const COUNTRIES = [
+            { n: "فلسطين", e: "Palestine", d: "+970", c: "ps" },
+            { n: "مصر", e: "Egypt", d: "+20", c: "eg" },
+            { n: "الأردن", e: "Jordan", d: "+962", c: "jo" },
+            { n: "السعودية", e: "Saudi Arabia", d: "+966", c: "sa" },
+            { n: "الإمارات", e: "United Arab Emirates", d: "+971", c: "ae" },
+            { n: "قطر", e: "Qatar", d: "+974", c: "qa" },
+            { n: "الكويت", e: "Kuwait", d: "+965", c: "kw" },
+            { n: "البحرين", e: "Bahrain", d: "+973", c: "bh" },
+            { n: "عُمان", e: "Oman", d: "+968", c: "om" },
+            { n: "اليمن", e: "Yemen", d: "+967", c: "ye" },
+            { n: "العراق", e: "Iraq", d: "+964", c: "iq" },
+            { n: "سوريا", e: "Syria", d: "+963", c: "sy" },
+            { n: "لبنان", e: "Lebanon", d: "+961", c: "lb" },
+            { n: "ليبيا", e: "Libya", d: "+218", c: "ly" },
+            { n: "تونس", e: "Tunisia", d: "+216", c: "tn" },
+            { n: "الجزائر", e: "Algeria", d: "+213", c: "dz" },
+            { n: "المغرب", e: "Morocco", d: "+212", c: "ma" },
+            { n: "السودان", e: "Sudan", d: "+249", c: "sd" },
+            { n: "موريتانيا", e: "Mauritania", d: "+222", c: "mr" },
+            { n: "الصومال", e: "Somalia", d: "+252", c: "so" },
+            { n: "جيبوتي", e: "Djibouti", d: "+253", c: "dj" },
+            { n: "جزر القمر", e: "Comoros", d: "+269", c: "km" },
+            { n: "تركيا", e: "Turkey", d: "+90", c: "tr" },
+            { n: "أفغانستان", e: "Afghanistan", d: "+93", c: "af" },
+            { n: "ألبانيا", e: "Albania", d: "+355", c: "al" },
+            { n: "أندورا", e: "Andorra", d: "+376", c: "ad" },
+            { n: "أنغولا", e: "Angola", d: "+244", c: "ao" },
+            { n: "أنتيغوا وباربودا", e: "Antigua and Barbuda", d: "+1268", c: "ag" },
+            { n: "الأرجنتين", e: "Argentina", d: "+54", c: "ar" },
+            { n: "أرمينيا", e: "Armenia", d: "+374", c: "am" },
+            { n: "أستراليا", e: "Australia", d: "+61", c: "au" },
+            { n: "النمسا", e: "Austria", d: "+43", c: "at" },
+            { n: "أذربيجان", e: "Azerbaijan", d: "+994", c: "az" },
+            { n: "الباهاما", e: "Bahamas", d: "+1242", c: "bs" },
+            { n: "بنغلاديش", e: "Bangladesh", d: "+880", c: "bd" },
+            { n: "بربادوس", e: "Barbados", d: "+1246", c: "bb" },
+            { n: "بيلاروسيا", e: "Belarus", d: "+375", c: "by" },
+            { n: "بلجيكا", e: "Belgium", d: "+32", c: "be" },
+            { n: "بليز", e: "Belize", d: "+501", c: "bz" },
+            { n: "بنين", e: "Benin", d: "+229", c: "bj" },
+            { n: "بوتان", e: "Bhutan", d: "+975", c: "bt" },
+            { n: "بوليفيا", e: "Bolivia", d: "+591", c: "bo" },
+            { n: "البوسنة والهرسك", e: "Bosnia and Herzegovina", d: "+387", c: "ba" },
+            { n: "بوتسوانا", e: "Botswana", d: "+267", c: "bw" },
+            { n: "البرازيل", e: "Brazil", d: "+55", c: "br" },
+            { n: "بروناي", e: "Brunei", d: "+673", c: "bn" },
+            { n: "بلغاريا", e: "Bulgaria", d: "+359", c: "bg" },
+            { n: "بوركينا فاسو", e: "Burkina Faso", d: "+226", c: "bf" },
+            { n: "بوروندي", e: "Burundi", d: "+257", c: "bi" },
+            { n: "كمبوديا", e: "Cambodia", d: "+855", c: "kh" },
+            { n: "الكاميرون", e: "Cameroon", d: "+237", c: "cm" },
+            { n: "كندا", e: "Canada", d: "+1", c: "ca" },
+            { n: "الرأس الأخضر", e: "Cape Verde", d: "+238", c: "cv" },
+            { n: "أفريقيا الوسطى", e: "Central African Republic", d: "+236", c: "cf" },
+            { n: "تشاد", e: "Chad", d: "+235", c: "td" },
+            { n: "تشيلي", e: "Chile", d: "+56", c: "cl" },
+            { n: "الصين", e: "China", d: "+86", c: "cn" },
+            { n: "كولومبيا", e: "Colombia", d: "+57", c: "co" },
+            { n: "الكونغو الديمقراطية", e: "DR Congo", d: "+243", c: "cd" },
+            { n: "الكونغو", e: "Congo", d: "+242", c: "cg" },
+            { n: "كوستاريكا", e: "Costa Rica", d: "+506", c: "cr" },
+            { n: "ساحل العاج", e: "Côte d'Ivoire", d: "+225", c: "ci" },
+            { n: "كرواتيا", e: "Croatia", d: "+385", c: "hr" },
+            { n: "كوبا", e: "Cuba", d: "+53", c: "cu" },
+            { n: "قبرص", e: "Cyprus", d: "+357", c: "cy" },
+            { n: "التشيك", e: "Czechia", d: "+420", c: "cz" },
+            { n: "الدنمارك", e: "Denmark", d: "+45", c: "dk" },
+            { n: "دومينيكا", e: "Dominica", d: "+1767", c: "dm" },
+            { n: "جمهورية الدومينيكان", e: "Dominican Republic", d: "+1809", c: "do" },
+            { n: "الإكوادور", e: "Ecuador", d: "+593", c: "ec" },
+            { n: "السلفادور", e: "El Salvador", d: "+503", c: "sv" },
+            { n: "غينيا الاستوائية", e: "Equatorial Guinea", d: "+240", c: "gq" },
+            { n: "إريتريا", e: "Eritrea", d: "+291", c: "er" },
+            { n: "إستونيا", e: "Estonia", d: "+372", c: "ee" },
+            { n: "إسواتيني", e: "Eswatini", d: "+268", c: "sz" },
+            { n: "إثيوبيا", e: "Ethiopia", d: "+251", c: "et" },
+            { n: "فيجي", e: "Fiji", d: "+679", c: "fj" },
+            { n: "فنلندا", e: "Finland", d: "+358", c: "fi" },
+            { n: "فرنسا", e: "France", d: "+33", c: "fr" },
+            { n: "الغابون", e: "Gabon", d: "+241", c: "ga" },
+            { n: "غامبيا", e: "Gambia", d: "+220", c: "gm" },
+            { n: "جورجيا", e: "Georgia", d: "+995", c: "ge" },
+            { n: "ألمانيا", e: "Germany", d: "+49", c: "de" },
+            { n: "غانا", e: "Ghana", d: "+233", c: "gh" },
+            { n: "اليونان", e: "Greece", d: "+30", c: "gr" },
+            { n: "غرينادا", e: "Grenada", d: "+1473", c: "gd" },
+            { n: "غواتيمالا", e: "Guatemala", d: "+502", c: "gt" },
+            { n: "غينيا", e: "Guinea", d: "+224", c: "gn" },
+            { n: "غينيا بيساو", e: "Guinea-Bissau", d: "+245", c: "gw" },
+            { n: "غيانا", e: "Guyana", d: "+592", c: "gy" },
+            { n: "هايتي", e: "Haiti", d: "+509", c: "ht" },
+            { n: "هندوراس", e: "Honduras", d: "+504", c: "hn" },
+            { n: "المجر", e: "Hungary", d: "+36", c: "hu" },
+            { n: "آيسلندا", e: "Iceland", d: "+354", c: "is" },
+            { n: "الهند", e: "India", d: "+91", c: "in" },
+            { n: "إندونيسيا", e: "Indonesia", d: "+62", c: "id" },
+            { n: "إيران", e: "Iran", d: "+98", c: "ir" },
+            { n: "أيرلندا", e: "Ireland", d: "+353", c: "ie" },
+            { n: "إيطاليا", e: "Italy", d: "+39", c: "it" },
+            { n: "جامايكا", e: "Jamaica", d: "+1876", c: "jm" },
+            { n: "اليابان", e: "Japan", d: "+81", c: "jp" },
+            { n: "كازاخستان", e: "Kazakhstan", d: "+7", c: "kz" },
+            { n: "كينيا", e: "Kenya", d: "+254", c: "ke" },
+            { n: "كيريباتي", e: "Kiribati", d: "+686", c: "ki" },
+            { n: "كوريا الشمالية", e: "North Korea", d: "+850", c: "kp" },
+            { n: "كوريا الجنوبية", e: "South Korea", d: "+82", c: "kr" },
+            { n: "قيرغيزستان", e: "Kyrgyzstan", d: "+996", c: "kg" },
+            { n: "لاوس", e: "Laos", d: "+856", c: "la" },
+            { n: "لاتفيا", e: "Latvia", d: "+371", c: "lv" },
+            { n: "ليسوتو", e: "Lesotho", d: "+266", c: "ls" },
+            { n: "ليبيريا", e: "Liberia", d: "+231", c: "lr" },
+            { n: "ليختنشتاين", e: "Liechtenstein", d: "+423", c: "li" },
+            { n: "ليتوانيا", e: "Lithuania", d: "+370", c: "lt" },
+            { n: "لوكسمبورغ", e: "Luxembourg", d: "+352", c: "lu" },
+            { n: "مدغشقر", e: "Madagascar", d: "+261", c: "mg" },
+            { n: "مالاوي", e: "Malawi", d: "+265", c: "mw" },
+            { n: "ماليزيا", e: "Malaysia", d: "+60", c: "my" },
+            { n: "المالديف", e: "Maldives", d: "+960", c: "mv" },
+            { n: "مالي", e: "Mali", d: "+223", c: "ml" },
+            { n: "مالطا", e: "Malta", d: "+356", c: "mt" },
+            { n: "جزر مارشال", e: "Marshall Islands", d: "+692", c: "mh" },
+            { n: "موريشيوس", e: "Mauritius", d: "+230", c: "mu" },
+            { n: "المكسيك", e: "Mexico", d: "+52", c: "mx" },
+            { n: "ميكرونيزيا", e: "Micronesia", d: "+691", c: "fm" },
+            { n: "مولدوفا", e: "Moldova", d: "+373", c: "md" },
+            { n: "موناكو", e: "Monaco", d: "+377", c: "mc" },
+            { n: "منغوليا", e: "Mongolia", d: "+976", c: "mn" },
+            { n: "الجبل الأسود", e: "Montenegro", d: "+382", c: "me" },
+            { n: "موزمبيق", e: "Mozambique", d: "+258", c: "mz" },
+            { n: "ميانمار", e: "Myanmar", d: "+95", c: "mm" },
+            { n: "ناميبيا", e: "Namibia", d: "+264", c: "na" },
+            { n: "ناورو", e: "Nauru", d: "+674", c: "nr" },
+            { n: "نيبال", e: "Nepal", d: "+977", c: "np" },
+            { n: "هولندا", e: "Netherlands", d: "+31", c: "nl" },
+            { n: "نيوزيلندا", e: "New Zealand", d: "+64", c: "nz" },
+            { n: "نيكاراغوا", e: "Nicaragua", d: "+505", c: "ni" },
+            { n: "النيجر", e: "Niger", d: "+227", c: "ne" },
+            { n: "نيجيريا", e: "Nigeria", d: "+234", c: "ng" },
+            { n: "مقدونيا الشمالية", e: "North Macedonia", d: "+389", c: "mk" },
+            { n: "النرويج", e: "Norway", d: "+47", c: "no" },
+            { n: "باكستان", e: "Pakistan", d: "+92", c: "pk" },
+            { n: "بالاو", e: "Palau", d: "+680", c: "pw" },
+            { n: "بنما", e: "Panama", d: "+507", c: "pa" },
+            { n: "بابوا غينيا الجديدة", e: "Papua New Guinea", d: "+675", c: "pg" },
+            { n: "باراغواي", e: "Paraguay", d: "+595", c: "py" },
+            { n: "بيرو", e: "Peru", d: "+51", c: "pe" },
+            { n: "الفلبين", e: "Philippines", d: "+63", c: "ph" },
+            { n: "بولندا", e: "Poland", d: "+48", c: "pl" },
+            { n: "البرتغال", e: "Portugal", d: "+351", c: "pt" },
+            { n: "رومانيا", e: "Romania", d: "+40", c: "ro" },
+            { n: "روسيا", e: "Russia", d: "+7", c: "ru" },
+            { n: "رواندا", e: "Rwanda", d: "+250", c: "rw" },
+            { n: "سانت كيتس ونيفيس", e: "Saint Kitts and Nevis", d: "+1869", c: "kn" },
+            { n: "سانت لوسيا", e: "Saint Lucia", d: "+1758", c: "lc" },
+            { n: "سانت فينسنت والغرينادين", e: "Saint Vincent and the Grenadines", d: "+1784", c: "vc" },
+            { n: "ساموا", e: "Samoa", d: "+685", c: "ws" },
+            { n: "سان مارينو", e: "San Marino", d: "+378", c: "sm" },
+            { n: "ساو تومي وبرينسيبي", e: "São Tomé and Príncipe", d: "+239", c: "st" },
+            { n: "السنغال", e: "Senegal", d: "+221", c: "sn" },
+            { n: "صربيا", e: "Serbia", d: "+381", c: "rs" },
+            { n: "سيشل", e: "Seychelles", d: "+248", c: "sc" },
+            { n: "سيراليون", e: "Sierra Leone", d: "+232", c: "sl" },
+            { n: "سنغافورة", e: "Singapore", d: "+65", c: "sg" },
+            { n: "سلوفاكيا", e: "Slovakia", d: "+421", c: "sk" },
+            { n: "سلوفينيا", e: "Slovenia", d: "+386", c: "si" },
+            { n: "جزر سليمان", e: "Solomon Islands", d: "+677", c: "sb" },
+            { n: "جنوب أفريقيا", e: "South Africa", d: "+27", c: "za" },
+            { n: "جنوب السودان", e: "South Sudan", d: "+211", c: "ss" },
+            { n: "إسبانيا", e: "Spain", d: "+34", c: "es" },
+            { n: "سريلانكا", e: "Sri Lanka", d: "+94", c: "lk" },
+            { n: "سورينام", e: "Suriname", d: "+597", c: "sr" },
+            { n: "السويد", e: "Sweden", d: "+46", c: "se" },
+            { n: "سويسرا", e: "Switzerland", d: "+41", c: "ch" },
+            { n: "تايوان", e: "Taiwan", d: "+886", c: "tw" },
+            { n: "طاجيكستان", e: "Tajikistan", d: "+992", c: "tj" },
+            { n: "تنزانيا", e: "Tanzania", d: "+255", c: "tz" },
+            { n: "تايلاند", e: "Thailand", d: "+66", c: "th" },
+            { n: "تيمور الشرقية", e: "Timor-Leste", d: "+670", c: "tl" },
+            { n: "توغو", e: "Togo", d: "+228", c: "tg" },
+            { n: "تونغا", e: "Tonga", d: "+676", c: "to" },
+            { n: "ترينيداد وتوباغو", e: "Trinidad and Tobago", d: "+1868", c: "tt" },
+            { n: "تركمانستان", e: "Turkmenistan", d: "+993", c: "tm" },
+            { n: "توفالو", e: "Tuvalu", d: "+688", c: "tv" },
+            { n: "أوغندا", e: "Uganda", d: "+256", c: "ug" },
+            { n: "أوكرانيا", e: "Ukraine", d: "+380", c: "ua" },
+            { n: "المملكة المتحدة", e: "United Kingdom", d: "+44", c: "gb" },
+            { n: "الولايات المتحدة", e: "United States", d: "+1", c: "us" },
+            { n: "أوروغواي", e: "Uruguay", d: "+598", c: "uy" },
+            { n: "أوزبكستان", e: "Uzbekistan", d: "+998", c: "uz" },
+            { n: "فانواتو", e: "Vanuatu", d: "+678", c: "vu" },
+            { n: "الفاتيكان", e: "Vatican City", d: "+379", c: "va" },
+            { n: "فنزويلا", e: "Venezuela", d: "+58", c: "ve" },
+            { n: "فيتنام", e: "Vietnam", d: "+84", c: "vn" },
+            { n: "زامبيا", e: "Zambia", d: "+260", c: "zm" },
+            { n: "زيمبابوي", e: "Zimbabwe", d: "+263", c: "zw" },
+          ];
+
+          let currentIndex = 0;
+
+          // Populate the (hidden) native select for form submission
+          countrySelect.innerHTML = "";
+          COUNTRIES.forEach((co) => {
+            const o = document.createElement("option");
+            o.value = co.d;
+            o.setAttribute("data-flag", co.c);
+            o.textContent = co.d;
+            countrySelect.appendChild(o);
+          });
+
+          // Build the custom menu
+          const menu = document.createElement("div");
+          menu.className = "join-country-menu";
+
+          const searchWrap = document.createElement("div");
+          searchWrap.className = "join-country-search";
+          const search = document.createElement("input");
+          search.type = "text";
+          search.placeholder = t("jm_country_search", "ابحث عن دولة أو رمز…");
+          searchWrap.appendChild(search);
+          menu.appendChild(searchWrap);
+
+          const list = document.createElement("div");
+          list.className = "join-country-list";
+          menu.appendChild(list);
+          countryBox.appendChild(menu);
+
+          function countryName(co) {
+            return getLang() === "en" ? co.e : co.n;
+          }
+
+          function renderList(filter) {
+            const q = (filter || "").trim().toLowerCase();
+            list.innerHTML = "";
+            COUNTRIES.forEach((co, i) => {
+              if (
+                q &&
+                co.n.toLowerCase().indexOf(q) === -1 &&
+                co.e.toLowerCase().indexOf(q) === -1 &&
+                co.d.toLowerCase().indexOf(q) === -1 &&
+                co.c.toLowerCase().indexOf(q) === -1
+              )
+                return;
+              const item = document.createElement("button");
+              item.type = "button";
+              item.className =
+                "join-country-option" + (i === currentIndex ? " is-selected" : "");
+              item.dataset.index = i;
+              item.innerHTML =
+                '<span class="fi fi-' +
+                co.c +
+                ' join-country-option-flag"></span>' +
+                '<span class="join-country-option-name">' +
+                countryName(co) +
+                "</span>" +
+                '<span class="join-country-option-code">' +
+                co.d +
+                "</span>";
+              item.addEventListener("click", function (e) {
+                e.stopPropagation();
+                selectCountry(i);
+                closeMenu();
+              });
+              list.appendChild(item);
+            });
+          }
+
+          function applyCountryLang() {
+            // Menu reads RTL for Arabic, LTR for English
+            menu.style.direction = getLang() === "en" ? "ltr" : "rtl";
+            search.placeholder = t("jm_country_search", "ابحث عن دولة أو رمز…");
+            if (countryBox.classList.contains("is-open")) renderList(search.value);
+          }
+
+          function selectCountry(i) {
+            currentIndex = i;
+            const co = COUNTRIES[i];
+            countrySelect.value = co.d;
+            countryCode.textContent = co.d;
+            countryFlag.className = "fi fi-" + co.c + " join-country-flag";
+          }
+
+          function openMenu() {
+            countryBox.classList.add("is-open");
+            renderList("");
+            search.value = "";
+            search.focus();
+          }
+          function closeMenu() {
+            countryBox.classList.remove("is-open");
+          }
+
+          countryBox.addEventListener("click", function (e) {
+            if (e.target.closest(".join-country-menu")) return;
+            countryBox.classList.contains("is-open") ? closeMenu() : openMenu();
+          });
+          search.addEventListener("input", function () {
+            renderList(search.value);
+          });
+          document.addEventListener("click", function (e) {
+            if (!e.target.closest(".join-country-box")) closeMenu();
+          });
+
+          selectCountry(0);
+          applyCountryLang();
+
+          // Re-render dropdowns when the site language is toggled
+          document.addEventListener("langchange", function () {
+            applyCountryLang();
+            refreshPlatformLang();
+          });
+        }
+
+        // Content-type chips (multi-select)
+        overlay.querySelectorAll(".join-chip").forEach((chip) => {
+          chip.addEventListener("click", function () {
+            chip.classList.toggle("is-selected");
+            clearError(fieldOf(chip));
+          });
+        });
+
+        // Clear a field's error as soon as the user edits it
+        if (form) {
+          form.addEventListener("input", function (e) {
+            clearError(fieldOf(e.target));
+          });
+        }
+
+        // Current UI language ("ar" | "en")
+        function getLang() {
+          try {
+            return (
+              (window.localStorage && localStorage.getItem("lang")) ||
+              document.documentElement.getAttribute("lang") ||
+              "ar"
+            );
+          } catch (e) {
+            return "ar";
+          }
+        }
+
+        // Bilingual platform names (keyed by <option> value)
+        const PLATFORM_LABELS = {
+          instagram: { ar: "انستقرام", en: "Instagram" },
+          facebook: { ar: "فيسبوك", en: "Facebook" },
+          x: { ar: "اكس (تويتر)", en: "X (Twitter)" },
+          tiktok: { ar: "تيك توك", en: "TikTok" },
+          youtube: { ar: "يوتيوب", en: "YouTube" },
+          linkedin: { ar: "لينكدإن", en: "LinkedIn" },
+        };
+        function platformLabel(value) {
+          const m = PLATFORM_LABELS[value];
+          if (!m) return value;
+          return getLang() === "en" ? m.en : m.ar;
+        }
+        // Re-label every platform dropdown (trigger + menu) for the current lang
+        function refreshPlatformLang() {
+          overlay.querySelectorAll(".join-platform").forEach((wrap) => {
+            const sel = wrap.querySelector(".join-platform-select");
+            const label = wrap.querySelector(".join-platform-label");
+            if (sel && label) {
+              const opt = sel.options[sel.selectedIndex];
+              label.textContent = platformLabel(opt ? opt.value : sel.value);
+            }
+            wrap.querySelectorAll(".join-platform-option").forEach((opt) => {
+              const lbl = opt.querySelector(".join-platform-option-label");
+              if (lbl) lbl.textContent = platformLabel(opt.dataset.value);
+            });
+          });
+        }
+
+        // Build a custom, icon-rich dropdown on top of the native <select>
+        function bindPlatformSelect(row) {
+          const wrap = row.querySelector(".join-platform");
+          const select = row.querySelector(".join-platform-select");
+          const icon = row.querySelector("[data-platform-icon]");
+          if (!wrap || !select || !icon) return;
+          if (wrap.dataset.enhanced === "1") return; // avoid double init
+          wrap.dataset.enhanced = "1";
+
+          const options = Array.from(select.options);
+
+          // Visible label for the current selection
+          const label = document.createElement("span");
+          label.className = "join-platform-label";
+          icon.insertAdjacentElement("afterend", label);
+
+          // Custom menu mirroring the select options, each with its icon
+          const menu = document.createElement("div");
+          menu.className = "join-platform-menu";
+          menu.setAttribute("role", "listbox");
+          options.forEach((opt, i) => {
+            const item = document.createElement("button");
+            item.type = "button";
+            item.className = "join-platform-option";
+            item.setAttribute("role", "option");
+            item.dataset.value = opt.value;
+            item.dataset.index = i;
+            item.innerHTML =
+              '<i class="fa-brands ' +
+              opt.getAttribute("data-icon") +
+              ' join-platform-option-icon"></i>' +
+              '<span class="join-platform-option-label">' +
+              platformLabel(opt.value) +
+              "</span>" +
+              '<i class="fa-solid fa-check join-platform-option-check"></i>';
+            item.addEventListener("click", function (e) {
+              e.stopPropagation();
+              select.selectedIndex = i;
+              select.dispatchEvent(new Event("change", { bubbles: true }));
+              close();
+            });
+            menu.appendChild(item);
+          });
+          wrap.appendChild(menu);
+
+          function sync() {
+            const opt = options[select.selectedIndex] || options[0];
+            icon.className =
+              "fa-brands " + opt.getAttribute("data-icon") + " join-platform-icon";
+            label.textContent = platformLabel(opt.value);
+            wrap.dataset.value = opt.value;
+            menu.querySelectorAll(".join-platform-option").forEach((it) => {
+              it.classList.toggle(
+                "is-selected",
+                Number(it.dataset.index) === select.selectedIndex
+              );
+            });
+          }
+
+          function open() {
+            document
+              .querySelectorAll(".join-platform.is-open")
+              .forEach((w) => w !== wrap && w.classList.remove("is-open"));
+            wrap.classList.add("is-open");
+          }
+          function close() {
+            wrap.classList.remove("is-open");
+          }
+
+          wrap.addEventListener("click", function (e) {
+            if (e.target.closest(".join-platform-menu")) return;
+            wrap.classList.contains("is-open") ? close() : open();
+          });
+
+          select.addEventListener("change", sync);
+          sync();
+        }
+
+        const socialList = document.getElementById("joinSocialList");
+        const addBtn = document.getElementById("joinAddPlatform");
+
+        function bindRow(row) {
+          bindPlatformSelect(row);
+          const del = row.querySelector(".join-row-del");
+          if (del) {
+            del.addEventListener("click", function () {
+              if (socialList.querySelectorAll(".join-social-row").length > 1) {
+                row.remove();
+              } else {
+                row.querySelector("input").value = "";
+              }
+            });
+          }
+        }
+
+        socialList
+          .querySelectorAll(".join-social-row")
+          .forEach((row) => bindRow(row));
+
+        // Close any open platform dropdown when clicking elsewhere
+        document.addEventListener("click", function (e) {
+          if (!e.target.closest(".join-platform")) {
+            socialList
+              .querySelectorAll(".join-platform.is-open")
+              .forEach((w) => w.classList.remove("is-open"));
+          }
+        });
+
+        if (addBtn) {
+          addBtn.addEventListener("click", function () {
+            const first = socialList.querySelector(".join-social-row");
+            const clone = first.cloneNode(true);
+            const input = clone.querySelector("input");
+            input.value = "";
+            input.setAttribute("placeholder", "رابط الحساب");
+            // Strip the generated dropdown DOM so it re-initializes fresh
+            const cWrap = clone.querySelector(".join-platform");
+            cWrap.classList.remove("is-open");
+            cWrap.removeAttribute("data-enhanced");
+            cWrap.removeAttribute("data-value");
+            clone
+              .querySelectorAll(".join-platform-label, .join-platform-menu")
+              .forEach((el) => el.remove());
+            const sel = clone.querySelector(".join-platform-select");
+            sel.selectedIndex = 0;
+            const icon = clone.querySelector("[data-platform-icon]");
+            icon.className = "fa-brands fa-instagram join-platform-icon";
+            socialList.appendChild(clone);
+            bindRow(clone);
+          });
+        }
+      })();
     </script>
   </body>
 </html>
