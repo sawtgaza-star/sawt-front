@@ -65,6 +65,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/content.css" />
+    <link rel="stylesheet" href="assets/css/search.css" />
   </head>
   <body>
     <header class="content">
@@ -122,6 +123,28 @@
         </div>
         <nav class="navbar navbar-expand-lg py-1">
           <div class="container bg-white shadow-sm py-1">
+            <button
+              class="btn mobile-nav-search d-lg-none p-0"
+              type="button"
+              aria-label="بحث"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.5em"
+                height="1.5em"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  fill="none"
+                  stroke="rgba(76, 92, 55, 1)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="m17 17l4 4m-2-10a8 8 0 1 0-16 0a8 8 0 0 0 16 0"
+                />
+              </svg>
+            </button>
             <a class="navbar-brand" href="#" style="margin-right: 0 !important">
               <img src="assets/images/صوت 1.png" alt="Sawt Logo" height="60" />
             </a>
@@ -235,6 +258,60 @@
             </div>
           </div>
         </nav>
+
+        <!-- Mobile search panel (revealed by the mobile search icon) -->
+        <div class="mobile-search-panel d-lg-none" id="mobileSearchPanel">
+          <form class="mobile-search-form container" role="search">
+            <button
+              type="button"
+              class="mobile-search-close"
+              id="mobileSearchClose"
+              aria-label="إغلاق"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.25em"
+                height="1.25em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="none"
+                  stroke="rgba(76, 92, 55, 1)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M6 6l12 12M18 6L6 18"
+                />
+              </svg>
+            </button>
+            <input
+              type="search"
+              class="form-control mobile-search-input"
+              id="mobileSearchInput"
+              placeholder="ابحث هنا..."
+              data-i18n-placeholder="search_placeholder"
+              aria-label="بحث"
+            />
+            <button type="submit" class="mobile-search-submit" aria-label="بحث">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.25em"
+                height="1.25em"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  fill="none"
+                  stroke="#fff"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="m17 17l4 4m-2-10a8 8 0 1 0-16 0a8 8 0 0 0 16 0"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
       <div class="swiper mySwiper">
         <div class="text-center" style="padding: 40px 0px">
@@ -291,7 +368,7 @@
       </div>
     </header>
     <main class="my-5">
-      <section class="container my-5">
+      <section class="container my-5" id="videoSection">
         <div
           class="d-flex justify-content-between align-items-center mb-2 flex-wrap gap-3"
         >
@@ -1778,6 +1855,7 @@
     ></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/translate.js"></script>
+    <script src="assets/js/search.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
