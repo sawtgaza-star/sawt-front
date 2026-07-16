@@ -761,6 +761,8 @@ svg {
   user-select: none;
   /* background: white; */
   /* padding: 10px 0; */
+
+  margin-bottom: 60px;
 }
 
 .marquee-group {
@@ -808,6 +810,15 @@ svg {
 
 .platform-sections {
   background-color: rgba(237, 239, 235, 1);
+}
+
+/* كانت هذه الأحجام مكتوبة inline بـ ‎!important‎ فيتعذّر تجاوزها في وضع الجوال */
+.platform-title {
+  font-size: 42px;
+}
+
+.platform-title .who-us {
+  font-size: 45px;
 }
 
 .platform-sections .torn-top {
@@ -3867,6 +3878,16 @@ svg {
   border-radius: 20px;
 }
 
+/* بطاقة النشرة البريدية للجوال مخفية على الشاشات الكبيرة (نسخة سطح المكتب تبقى داخل الفوتر) */
+.footer-newsletter-mobile {
+  display: none;
+}
+
+/* شبكة روابط الفوتر ذات الأعمدة الثلاثة مخصّصة للجوال فقط */
+.footer-links-mobile {
+  display: none;
+}
+
 .btn-control-custom {
   border: 1.8px solid #d37c4a !important;
   /* لون برتقالي ترابي مطابخ للصورة */
@@ -4588,7 +4609,7 @@ svg {
 
 @media (max-width: 767px) {
   .news-subtitle {
-    font-size: 1.15rem !important;
+    font-size: 16px !important;
   }
   .textForOpenion .highlight-text {
     position: relative;
@@ -4690,9 +4711,9 @@ svg {
     gap: 20px;
   }
 
-  .navbar .container {
+  /* .navbar .container {
     max-width: 90%;
-  }
+  } */
 
   .textForOpenion {
     max-width: 100%;
@@ -6546,4 +6567,1867 @@ svg {
 .creators-carousel2 .owl-next:hover,
 .team-carousel .owl-nav button:hover {
   background-color: rgb(229, 233, 223) !important;
+}
+
+/* =========================================================
+   ===== Figma Mobile — Home (Batch 1: Header/Hero/Stats) =====
+   Matches Figma frame 4169-20890 (390px). Mobile-only —
+   desktop (>=768px) is intentionally left untouched.
+   ========================================================= */
+
+/* mobile search icon is hidden on tablet/desktop, shown only on phones */
+.mobile-nav-search {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  /* ---------- Header — node 4169:20952 (390x72) ---------- */
+  header .navbar .container {
+    position: relative;
+    min-height: 72px;
+    border-radius: 0;
+  }
+  .mobile-nav-search {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    order: 2;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+  header .navbar .navbar-brand {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 !important;
+  }
+  header .navbar .navbar-brand img {
+    height: 44px;
+  }
+  header .navbar .navbar-toggler {
+    order: 0;
+    padding: 0.25rem 0.4rem;
+    border: none !important;
+    color: #1e1e1e;
+    font-size: 1.6rem;
+    line-height: 0;
+  }
+  header .navbar .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .navbar-toggler-svg {
+    width: 1em;
+    height: 1em;
+  }
+
+  /* ---------- Hero — node 4169:20892 (390x378) ---------- */
+  .main-header-wrapper {
+    min-height: auto !important;
+  }
+  #heroCarousel {
+    margin-top: 0 !important;
+  }
+  #heroCarousel .carousel-item {
+    min-height: 378px;
+  }
+  .carousel-img {
+    height: 378px !important;
+  }
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .carousel-caption-custom {
+    top: 50%;
+    padding: 0 20px;
+  }
+  /* trust row: 5 stars + text, kept inline */
+  .carousel-caption-custom .d-md-flex {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 4px !important;
+    margin-bottom: 16px !important;
+  }
+  .carousel-caption-custom .yellow-stars,
+  .carousel-caption-custom .gray-star {
+    font-size: 12px;
+  }
+  .hero-subtitle {
+    font-size: 12px !important;
+    margin-bottom: 0;
+  }
+  /* title + subtitle */
+  .carousel-caption-custom .font-60 {
+    font-size: 28px !important;
+    margin-bottom: 8px !important;
+  }
+  .carousel-caption-custom .font-24 {
+    font-size: 12px !important;
+    margin-bottom: 24px !important;
+  }
+  /* action buttons: two equal 40px pills side by side, gap 14px */
+  .heroOptionsBtn {
+    width: 100%;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 14px !important;
+  }
+  .heroOptionsBtn .btn {
+    flex: 1 1 0;
+    min-width: 0;
+    height: 40px;
+    padding: 8px 12px !important;
+    border-radius: 24px !important;
+    font-size: 14px !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* order: تعاون معنا (support) on the right, ادعم صوت (watch) on the left */
+  .heroOptionsBtn .hero-btn-support {
+    order: 0;
+  }
+  .heroOptionsBtn .hero-btn-watch {
+    order: 1;
+  }
+  /* dots indicator */
+  #heroCarousel .carousel-indicators {
+    bottom: 8px !important;
+  }
+  #heroCarousel .carousel-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
+  }
+  #heroCarousel .carousel-indicators .active {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* ---------- Stats card — node 4169:20913 (350 wide) ---------- */
+  .stats-bar {
+    margin-top: 0;
+    padding: 0;
+  }
+  .stats-bar .box-element.front-face {
+    width: auto;
+    max-width: none;
+    margin: -80px 20px 0;
+    border-radius: 16px !important;
+    padding: 24px 16px !important;
+    box-shadow: 0 5px 14.5px rgba(0, 0, 0, 0.05);
+    border: 1px solid #dadada;
+  }
+  .stats-bar .row {
+    flex-wrap: wrap;
+    row-gap: 24px;
+  }
+  .stats-bar .col.count {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+  /* source order: [team, stories, views, video, followers]
+     figma order (RTL, right->left) top: followers/video/views, bottom: stories/team */
+  .stats-bar .col.count:nth-child(1) {
+    order: 5;
+  }
+  .stats-bar .col.count:nth-child(2) {
+    order: 4;
+  }
+  .stats-bar .col.count:nth-child(3) {
+    order: 3;
+  }
+  .stats-bar .col.count:nth-child(4) {
+    order: 2;
+  }
+  .stats-bar .col.count:nth-child(5) {
+    order: 1;
+  }
+  .stats-bar .count i {
+    width: 40px;
+    height: 24px;
+    margin-bottom: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .stats-bar .count i svg {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  .stats-bar .count h3 {
+    font-size: 16px !important;
+    font-weight: 700;
+    color: #1e1e1e !important;
+    letter-spacing: 0.32px;
+    margin-bottom: 4px;
+  }
+  .stats-bar .count p {
+    font-size: 12px !important;
+    color: #484848 !important;
+    opacity: 1;
+  }
+}
+
+/* ===== قسم "من نحن" — نسخة الجوال (index.html) ===== */
+@media (max-width: 767.98px) {
+  .who-us {
+    font-size: 24px !important;
+  }
+
+  .sout-section {
+    padding-top: 0 !important;
+  }
+
+  .sout-section .container > .text-center {
+    margin-bottom: 24px !important;
+  }
+
+  .sout-section .who-us {
+    font-size: 24px;
+  }
+
+  .sout-mobile-lead {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .sout-mobile .image-swat {
+    display: block;
+    width: 88%;
+    margin: 0 auto 24px;
+  }
+
+  .sout-mobile-title {
+    font-size: 20px;
+    color: #1e1e1e;
+    margin-bottom: 12px;
+  }
+
+  .sout-mobile-desc {
+    font-size: 14px;
+    line-height: 2;
+    color: rgba(90, 90, 90, 1);
+    margin-bottom: 24px;
+  }
+
+  /* شبكة المزايا 2×2 — تتجاوز قاعدة .feature-item{width:100%} العامة */
+  .sout-mobile-features {
+    row-gap: 20px;
+    margin-bottom: 28px;
+  }
+
+  .sout-mobile-features .feature-item {
+    width: 50%;
+  }
+
+  .sout-mobile-features .icon-box {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    font-size: 1.1rem;
+    margin-left: 0;
+  }
+
+  .sout-mobile-features .feature-item span {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-right: 4px;
+    text-align: start;
+  }
+
+  .sout-mobile-btn {
+    border-radius: 18px !important;
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+}
+
+/* ===== قسم "آخر أخبارنا" — نسخة الجوال (index.html) ===== */
+@media (max-width: 767.98px) {
+  .creators-carousel .item {
+    height: auto;
+  }
+
+  .creators-carousel .news-card {
+    max-width: 322px;
+    margin-inline: auto;
+  }
+
+  .creators-carousel .news-card img {
+    height: 230px;
+  }
+
+  .creators-carousel .news-card .card-title {
+    font-size: 18px;
+  }
+
+  .creators-carousel .news-card .card-text {
+    font-size: 14px;
+  }
+  .card-footer {
+    font-size: 14px !important;
+  }
+
+  .card-body .card-title {
+    padding: 0px !important;
+  }
+
+  .owl-nav button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(76, 92, 55, 1) !important;
+    border-radius: 50%;
+    color: rgba(76, 92, 55, 1) !important;
+  }
+
+  .owl-nav .arrow {
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    left: 8px;
+    top: -15px;
+  }
+  .latest-news {
+    min-height: auto !important;
+  }
+
+  .show-more-news span,
+  .show-more-news i {
+    font-size: 14px !important;
+  }
+  .nav-link,
+  .search-input,
+  .register-btn a,
+  .sign-in-btn a {
+    font-size: 14px !important;
+  }
+}
+
+/* ===== قسم "صُناع المحتوى في صوت" — نسخة الجوال (index.html) ===== */
+@media (max-width: 767.98px) {
+  .content-section .creators-title {
+    font-size: 24px !important;
+    margin-top: 0;
+  }
+
+  .content-section .creators-subtitle {
+    font-size: 16px;
+    margin-top: 12px !important;
+    line-height: 1.9;
+  }
+
+  .content-section .container > .text-center {
+    margin: 24px 0px !important;
+  }
+
+  /* البطاقة تملأ عرض العنصر، فيبقى ‎stagePadding‎ وحده هو المتحكّم
+     بمقدار ظهور البطاقتين المجاورتين على الجانبين */
+  .content-section .main-container {
+    width: 100% !important;
+  }
+
+  /* ‎stagePadding‎ في Owl متماثل على الجانبين — نلغي اليمين لتبقى الحشوة يساراً فقط */
+  .creators-carousel2 .owl-stage {
+    padding-right: 0 !important;
+  }
+
+  /* على الجوال التنقّل بالنقاط والسحب بدل الأسهم */
+  .creators-carousel2 .owl-nav {
+    display: none !important;
+  }
+
+  /* النقاط داخل إطار بيضاوي — ‎fit-content‎ ليحيط الإطار بالنقاط فقط */
+  .creators-carousel2 .owl-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: fit-content;
+    margin: 16px auto 0;
+    padding: 5px 12px;
+    border: 1px solid rgba(76, 92, 55, 1);
+    border-radius: 999px;
+  }
+
+  .creators-carousel2 .owl-dots .owl-dot {
+    display: flex;
+    align-items: center;
+  }
+
+  .creators-carousel2 .owl-dots .owl-dot span {
+    display: block;
+    width: 9px;
+    height: 9px;
+    margin: 0;
+    background: rgba(199, 201, 204, 1);
+    border-radius: 50%;
+    transition: all 0.2s ease;
+  }
+
+  .creators-carousel2 .owl-dots .owl-dot.active span {
+    width: 13px;
+    height: 13px;
+    background: rgba(76, 92, 55, 1);
+  }
+
+  .content-section {
+    padding: 0;
+  }
+
+  .content-section .the-card {
+    height: 90% !important;
+  }
+
+  .creators-carousel2 .owl-dots {
+    border: 1px solid rgba(76, 92, 55, 1);
+    border-radius: 12px;
+  }
+}
+
+/* ===== قسم "أقسام المنصة" — نسخة الجوال (index.html) ===== */
+@media (max-width: 767.98px) {
+  .platform-sections .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .platform-sections .header-content .platform-title,
+  .platform-title .who-us {
+    font-size: 24px;
+  }
+
+  .platform-sections .header-content .font-24 {
+    font-size: 16px;
+    line-height: 1.9;
+  }
+
+  .platform-card .card-content {
+    margin-top: 12px !important;
+  }
+
+  .platform-card .card-content h4 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .read-more-btn {
+    font-size: 14px !important;
+  }
+
+  .platform-card .card-content p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+  }
+
+  .platform-card .stats .text-light-muted {
+    font-size: 14px;
+  }
+}
+
+/* ===== قسم "شركاؤنا في صوت" — نسخة الجوال (index.html) ===== */
+@media (max-width: 767.98px) {
+  /* ‎.partners-title‎ مضبوطة بـ ‎40px !important‎ داخل استعلام ‎max-width: 767px‎
+     لذا نحتاج ‎!important‎ هنا؛ والتحديد على العنوان والتظليل معاً
+     لأنهما كانا يظهران بحجمين مختلفين (‎40px‎ و‎24px‎) */
+  .partners-title,
+  .partners-title .partners-highlight {
+    font-size: 24px !important;
+  }
+
+  .partners-description {
+    font-size: 16px;
+  }
+
+  /* القاعدة العامة ‎.marquee img{height:80%}‎ تُحسب على ارتفاع تلقائي فتسقط إلى ‎auto‎،
+     فتظهر الشعارات بحجمها الأصلي (‎211×117‎) ولا يتّسع منها سوى شعارين */
+  .marquee img {
+    height: 50px;
+    width: auto;
+  }
+}
+
+/* ===== قسم "قصص من الواقع" — نسخة الجوال (index.html) ===== */
+@media (max-width: 767.98px) {
+  .real-stories-section .container {
+    padding-inline: 20px;
+  }
+
+  .real-stories-section .row {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-inline: 0;
+    align-items: stretch !important;
+  }
+
+  .real-stories-section .row > .col-lg-7,
+  .real-stories-section .row > .col-lg-5,
+  .real-stories-section .rs-intro {
+    display: contents;
+  }
+
+  .rs-title {
+    order: 1;
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+
+  .rs-desc {
+    order: 2;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .rs-count {
+    order: 3;
+    margin-bottom: 24px;
+  }
+
+  .real-stories-carousel {
+    order: 4;
+  }
+
+  .rs-comment-box {
+    order: 5;
+    margin-top: 18px;
+  }
+
+  /* القاعدة العامة ‎.owl-carousel .item{height:320px}‎ كانت تقصّ أسفل البطاقة
+     (شارة "قصة نجاح" والعنوان) لأن ‎.rs-card‎ فيها ‎overflow:hidden‎ */
+  .real-stories-carousel .item {
+    height: auto;
+  }
+
+  .rs-card-bg {
+    aspect-ratio: 3 / 3.23;
+  }
+
+  /* ‎rows="4"‎ يعطي الحقل ارتفاعاً تلقائياً بأربعة أسطر، و‎min-height‎ وحدها لا تقلّصه */
+  .rs-input {
+    height: 66px;
+    min-height: 0;
+    padding: 14px 16px;
+  }
+
+  /* النقاط داخل إطار بيضاوي كما في قسم صُنّاع المحتوى */
+  .real-stories-carousel .owl-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: fit-content;
+    margin: 16px auto 0;
+    padding: 5px 12px;
+    border: 1px solid rgba(76, 92, 55, 1);
+    border-radius: 999px;
+  }
+
+  .real-stories-carousel .owl-dots .owl-dot {
+    display: flex;
+    align-items: center;
+  }
+
+  .real-stories-carousel .owl-dots .owl-dot span {
+    width: 9px;
+    height: 9px;
+    margin: 0;
+    background: rgba(199, 201, 204, 1);
+  }
+
+  .real-stories-carousel .owl-dots .owl-dot.active span {
+    width: 13px;
+    height: 13px;
+    background: rgba(76, 92, 55, 1);
+    box-shadow: none;
+  }
+}
+
+/* ===== قسم "أعضاء فريقنا" — نسخة الجوال (index.html) ===== */
+@media (max-width: 767.98px) {
+  /* ‎.title‎ مضبوطة بـ ‎40px !important‎ في استعلام ‎max-width: 767px‎، بينما
+     ‎.who-us‎ عند ‎24px‎، فكان الشقّان يظهران بحجمين مختلفين */
+  .team-section .title,
+  .team-section .title .who-us {
+    font-size: 24px !important;
+  }
+
+  .team-section .describ-p {
+    font-size: 16px;
+  }
+
+  /* القاعدة العامة ‎.owl-carousel .item{height:320px}‎ كانت تقصّ أسفل المايك
+     وتُخفي زر "عرض الملف الشخصي" تماماً لأنه يقع بعد ‎.mic-container‎ */
+  .team-carousel .item {
+    height: auto;
+  }
+
+  .mic-container {
+    width: 225px;
+  }
+
+  .member-name-tag {
+    font-size: 18px;
+  }
+
+  .btn-view-profile {
+    font-size: 14px;
+  }
+
+  .join-us-section {
+    width: 90%;
+    margin: 0px auto 0px auto !important;
+  }
+}
+
+/* ===== قسم "انضم إلينا كصانع محتوى" — نسخة الجوال (index.html) ===== */
+@media (max-width: 767.98px) {
+  .join-us-banner {
+    min-height: 160px;
+  }
+
+  .join-us-content {
+    padding: 16px;
+  }
+
+  /* ‎h2‎ في بوتستراب حجمها متجاوب ‎calc(1.325rem + .9vw)‎ فتساوي ‎24.71px‎ هنا */
+  .join-us-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .join-us-desc {
+    font-size: 13px;
+    margin-bottom: 14px;
+  }
+
+  .join-us-btn {
+    font-size: 16px;
+    padding: 6px 24px;
+    gap: 6px;
+  }
+}
+
+/* ===== قسم "آراؤكم في المحتوى" — نسخة الجوال (index.html) ===== */
+@media (max-width: 767.98px) {
+  /* ثلاث حشوات متراكمة كانت تضغط المحتوى إلى ‎221px‎ من أصل ‎390px‎:
+     ‎35px‎ للقسم + ‎30px‎ inline على الصف + ‎12px‎ للعمود، على كل جانب */
+  /* خلفية بيضاء على الجوال: بلا زخرفة ‎pattern.png‎ وبلا اللوحة الرمادية */
+  .reviews-section {
+    width: 96%;
+    padding: 16px 0 !important;
+    background: transparent;
+  }
+
+  .reviews-section::before {
+    display: none;
+  }
+
+  /* لون اللوحة الرمادية وحوافها مكتوبان inline على الصف */
+  .reviews-section .row {
+    background-color: transparent !important;
+    border-radius: 0 !important;
+  }
+
+  /* حشوة الصف مكتوبة inline بلا ‎!important‎، فيكفي ‎!important‎ هنا لتجاوزها.
+     وتصفير الهوامش السالبة (‎-12px‎) يمنع تمدّد اللوحة الرمادية خارج القسم */
+  .reviews-section .row {
+    padding: 0 0 20px !important;
+    margin-inline: 0 !important;
+  }
+
+  /* استعلام ‎max-width: 700px‎ يجعل الترويسة عمودية، بينما التصميم يضعها
+     في سطر واحد: العدّاد يميناً وأزرار الفرز يساراً */
+  .reviews-comments-head {
+    flex-direction: row;
+  }
+
+  .comments-count {
+    white-space: nowrap;
+    font-size: 16px !important;
+  }
+
+  .newsletter-input-wrapper input {
+    font-size: 13px !important;
+    color: red !important;
+  }
+
+  .tab {
+    font-size: 13px !important;
+  }
+  th .reviews-intro {
+    text-align: center;
+    padding: 0 12px;
+  }
+
+  .reviews-title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .reviews-desc {
+    font-size: 16px;
+    line-height: 1.9;
+    font-weight: 400 !important;
+  }
+
+  /* بطاقة الريلز كانت محصورة بـ ‎max-width:300px‎ و‎width:95%‎.
+     ارتفاعها يبقى على ‎460px‎ من القاعدة الموجودة في استعلام ‎max-width: 768px‎ */
+  .review-reels {
+    max-width: none;
+    /* ظل ناعم يبرز البطاقة فوق الخلفية البيضاء */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .reels-container {
+    width: 100%;
+  }
+
+  /* بطاقة التعليقات: خلفية بيضاء بلا حدود وبلا ظل */
+  .reviews-comments {
+    background: #fff;
+    border: none;
+    box-shadow: none;
+  }
+
+  /* ===== الفوتر على الجوال ===== */
+  /* الفوتر نفسه بلا خلفية؛ الخلفية الداكنة انتقلت لبطاقة داخلية */
+  .footer-shell {
+    padding-top: 0;
+  }
+
+  /* بطاقة النشرة البريدية العلوية بخلفية فاتحة #EDEFEB */
+  .footer-newsletter-mobile {
+    display: block;
+    background: #edefeb;
+    border-radius: 16px;
+    margin: 0 20px 16px;
+    padding: 24px 22px;
+    text-align: start;
+  }
+  .footer-nl-title {
+    color: #1e1e1e;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 6px;
+    text-align: start;
+  }
+  .footer-nl-sub {
+    color: #6d6d6d;
+    font-size: 13px;
+    margin: 0 0 16px;
+    text-align: start;
+  }
+  .footer-newsletter-mobile .custom-newsletter-input {
+    gap: 10px;
+  }
+  .footer-newsletter-mobile .newsletter-input-wrapper {
+    flex: 1;
+    width: auto;
+  }
+
+  /* إخفاء نسخة النشرة البريدية الخاصة بسطح المكتب داخل الفوتر الداكن،
+     مع إبقاء بيانات التواصل (هاتف/بريد) ظاهرة ضمن البطاقة الداكنة */
+  .footer-newsletter-desktop {
+    display: none;
+  }
+
+  .newsletter-input-wrapper i {
+    display: none;
+  }
+
+  /* البطاقة الداكنة #364127 مع حواف دائرية */
+  .footer-custom-bg {
+    background-color: #364127;
+    margin: 0 20px;
+    border-radius: 20px;
+  }
+
+  /* إخفاء عمودَي الروابط الأصليين (الأقسام الرئيسية + روابط سريعة) على الجوال،
+     واستبدالهما بشبكة الأعمدة الثلاثة المخصّصة للجوال */
+  .footer-custom-width .row > .col.col-lg-3.text-white {
+    display: none;
+  }
+
+  /* روابط الفوتر: قسمان بعنوانين جنبًا إلى جنب، روابط 13px وعناوين 16px */
+  .footer-links-mobile {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+    /* مسافة أكبر تفصل العناوين عن فقرة التعريف بالأعلى */
+    margin-top: 32px;
+  }
+  /* القسم الأول (روابط سريعة) بعرض عمود واحد، والثاني (الأقسام) بعرض عمودين */
+  .footer-links-section-quick {
+    flex: 1;
+  }
+  .footer-links-section-main {
+    flex: 2;
+  }
+  .footer-links-mobile-title {
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 26px;
+  }
+
+  .footer-opyright {
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  /* القسم الأول: قائمة بعمود واحد متوسّطة */
+  .footer-links-mobile-single {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .footer-links-mobile-single li {
+    margin-bottom: 22px !important;
+  }
+
+  /* القسم الثاني: عمودان */
+  .footer-links-mobile-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8px;
+    row-gap: 0;
+    text-align: center;
+  }
+  .footer-links-mobile-two ul {
+    margin: 0;
+    padding: 0;
+  }
+  .footer-links-mobile-two li {
+    margin-bottom: 22px !important;
+  }
+
+  .footer-links-mobile a,
+  .footer-links-mobile a span {
+    font-size: 13px;
+    color: #fff;
+  }
+
+  /* صف التواصل: الهاتف والبريد في سطر واحد متوسّط مع مسافة بينهما (كصورة المرجع) */
+  .contact-info-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    margin: 26px 0 8px;
+  }
+  .contact-info-footer p {
+    margin: 0;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+}
+
+/* =========================================================
+   Join Creator Modal (index.html)
+   Multi-step "طلب الانضمام" dialog
+   ========================================================= */
+.join-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease;
+}
+
+.join-modal-overlay.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.join-modal {
+  width: 100%;
+  max-width: 700px;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+  transform: translateY(16px) scale(0.98);
+  transition: transform 0.28s ease;
+  text-align: start;
+}
+
+.join-modal-overlay.is-open .join-modal {
+  transform: translateY(0) scale(1);
+}
+
+/* ---------- Header ---------- */
+.join-modal-head {
+  position: relative;
+  padding: 22px 26px 20px;
+  text-align: center;
+  color: #000;
+  background: #f2f2f2;
+}
+
+.join-modal-close {
+  position: absolute;
+  inset-inline-end: 16px;
+  top: 14px;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: #000;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.join-modal-close:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.join-modal-title {
+  margin: 0 0 6px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.join-modal-subtitle {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.92;
+}
+
+/* ---------- Stepper ---------- */
+.join-stepper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 6px;
+  padding: 22px 22px 6px;
+}
+
+.join-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+  width: 96px;
+}
+
+.join-step-circle {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #e7e7e7;
+  color: #9a9a9a;
+  font-size: 13px;
+  font-weight: 700;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.join-step-check {
+  display: none;
+  font-size: 12px;
+}
+
+.join-step.is-active .join-step-circle {
+  background: #fff3eb;
+  color: #ff7420;
+}
+
+.join-step.is-done .join-step-circle {
+  background: #ff7420;
+  color: #fff;
+  box-shadow: none;
+}
+
+.join-step.is-done .join-step-num {
+  display: none;
+}
+
+.join-step.is-done .join-step-check {
+  display: inline-block;
+}
+
+.join-step-label {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: center;
+  color: #8c8c8c;
+  transition: color 0.2s ease;
+}
+
+.join-step.is-active .join-step-label,
+.join-step.is-done .join-step-label {
+  color: #3a4a2a;
+}
+
+.join-step-line {
+  flex: 1 1 auto;
+  min-width: 16px;
+  max-width: 60px;
+  height: 3px;
+  margin-top: 12px;
+  background: #c8c8c8;
+  transition: background 0.25s ease;
+}
+
+.join-step-line.is-active {
+  background: #e1723b;
+}
+
+/* ---------- Body ---------- */
+.join-modal-body {
+  padding: 14px 26px 22px;
+  overflow-y: auto;
+  flex: 1 1 auto;
+}
+
+.join-pane {
+  display: none;
+  animation: joinFade 0.25s ease;
+}
+
+.join-pane.is-active {
+  display: block;
+}
+
+@keyframes joinFade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.join-field {
+  margin-bottom: 16px;
+}
+
+.join-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2f2f2f;
+}
+
+.join-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.join-input-icon {
+  position: absolute;
+  inset-inline-start: 14px;
+  color: #b3b3b3;
+  font-size: 15px;
+  pointer-events: none;
+}
+[dir="rtl"] .join-input {
+  direction: rtl !important;
+}
+
+[dir="ltr"] .join-input {
+  direction: ltr !important;
+}
+
+.join-input {
+  width: 100%;
+  height: 46px;
+  padding-inline-start: 40px;
+  padding-inline-end: 14px;
+  border: 1px solid #e4e4e4;
+  border-radius: 12px;
+  background: #fff;
+  font-size: 14px;
+  color: #333;
+  text-align: start;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.join-input::placeholder {
+  color: #b9b9b9;
+}
+
+.join-input:focus {
+  border-color: #7f9257;
+  box-shadow: 0 0 0 3px rgba(76, 92, 55, 0.12);
+}
+
+.join-textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e4e4e4;
+  border-radius: 12px;
+  background: #fff;
+  font-size: 14px;
+  color: #333;
+  text-align: start;
+  resize: vertical;
+  min-height: 90px;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.join-textarea::placeholder {
+  color: #b9b9b9;
+}
+
+.join-textarea:focus {
+  border-color: #7f9257;
+  box-shadow: 0 0 0 3px rgba(76, 92, 55, 0.12);
+}
+
+/* ---------- Validation errors ---------- */
+.join-field-error {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  color: #e05252;
+}
+
+.join-field.has-error .join-input,
+.join-field.has-error .join-textarea {
+  border-color: #e05252;
+}
+
+.join-field.has-error .join-input:focus,
+.join-field.has-error .join-textarea:focus {
+  box-shadow: 0 0 0 3px rgba(224, 82, 82, 0.12);
+}
+
+.join-field.has-error .join-country-box {
+  border-color: #e05252;
+}
+
+.join-field.has-error .join-chips {
+  padding: 8px;
+  border: 1px solid #e05252;
+  border-radius: 12px;
+}
+
+/* ---------- Phone field ---------- */
+.join-phone-wrap {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.join-phone-num {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.join-country-box {
+  position: relative;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  height: 46px;
+  padding-inline-start: 28px;
+  padding-inline-end: 40px;
+  border: 1px solid #e4e4e4;
+  border-radius: 12px;
+  background: #fff;
+  direction: ltr;
+  cursor: pointer;
+  user-select: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.join-country-box:hover {
+  border-color: #c9c9c9;
+}
+
+.join-country-box.is-open {
+  border-color: #7f9257;
+  box-shadow: 0 0 0 3px rgba(76, 92, 55, 0.12);
+}
+
+/* Native select kept for its value, hidden visually */
+.join-country-select {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: none;
+  background: transparent;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.join-country-code {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  direction: ltr;
+}
+
+.join-country-caret {
+  position: absolute;
+  left: 12px;
+  font-size: 11px;
+  color: #8a8a8a;
+  pointer-events: none;
+  transition: transform 0.2s ease;
+}
+
+.join-country-box.is-open .join-country-caret {
+  transform: rotate(180deg);
+}
+
+.join-country-flag {
+  position: absolute;
+  right: 12px;
+  width: 22px;
+  height: 16px;
+  border-radius: 3px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+  pointer-events: none;
+}
+
+/* Custom country dropdown menu */
+[dir='ltr'] .join-country-menu {
+  left: 0;
+}
+
+.join-country-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 70;
+  width: 290px;
+  max-width: 78vw;
+  direction: rtl;
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition:
+    opacity 0.16s ease,
+    transform 0.16s ease,
+    visibility 0.16s;
+}
+
+.join-country-box.is-open .join-country-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.join-country-search {
+  padding: 8px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.join-country-search input {
+  width: 100%;
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid #e4e4e4;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 13px;
+  color: #444;
+  outline: none;
+  transition: border-color 0.16s ease;
+}
+
+.join-country-search input:focus {
+  border-color: #7f9257;
+}
+
+.join-country-list {
+  max-height: 260px;
+  overflow-y: auto;
+  padding: 6px;
+}
+
+.join-country-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  font-family: inherit;
+  font-size: 13px;
+  color: #555;
+  text-align: start;
+  cursor: pointer;
+  transition:
+    background 0.14s ease,
+    color 0.14s ease;
+}
+
+.join-country-option:hover {
+  background: #f4f6f0;
+  color: #4a5738;
+}
+
+.join-country-option.is-selected {
+  background: #f0f3ea;
+  color: #4a5738;
+  font-weight: 600;
+}
+
+.join-country-option-flag {
+  flex: 0 0 auto;
+  width: 22px;
+  height: 16px;
+  border-radius: 3px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.join-country-option-name {
+  flex: 1 1 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.join-country-option-code {
+  flex: 0 0 auto;
+  direction: ltr;
+  font-size: 12px;
+  color: #8a8a8a;
+}
+
+/* ---------- Chips ---------- */
+.join-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.join-chip {
+  padding: 7px 16px;
+  border: none;
+  border-radius: 12px;
+  background: #f5f5f5;
+  color: #7a7a7a;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.join-chip:hover {
+  border-color: #7f9257;
+  color: #4a5738;
+}
+
+.join-chip.is-selected {
+  background: #4a5738;
+  border-color: #4a5738;
+  color: #fff;
+}
+
+.join-hint {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #7f7f7f;
+}
+
+/* ---------- Social links ---------- */
+.join-social-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.join-social-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.join-platform {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  min-width: 148px;
+  height: 46px;
+  padding-inline-start: 12px;
+  padding-inline-end: 30px;
+  border: 1px solid #e4e4e4;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  user-select: none;
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.join-platform:hover {
+  border-color: #c9c9c9;
+}
+
+.join-platform.is-open {
+  border-color: #4a5738;
+  box-shadow: 0 0 0 3px rgba(74, 87, 56, 0.12);
+}
+
+.join-platform-icon {
+  font-size: 16px;
+  color: #919191;
+  margin-inline-end: 9px;
+  flex: 0 0 auto;
+}
+
+/* Brand colours for the selected-platform icon in the trigger */
+.join-platform[data-value="instagram"] .join-platform-icon {
+  color: #e4405f;
+}
+.join-platform[data-value="facebook"] .join-platform-icon {
+  color: #1877f2;
+}
+.join-platform[data-value="x"] .join-platform-icon {
+  color: #111;
+}
+.join-platform[data-value="tiktok"] .join-platform-icon {
+  color: #111;
+}
+.join-platform[data-value="youtube"] .join-platform-icon {
+  color: #ff0000;
+}
+.join-platform[data-value="linkedin"] .join-platform-icon {
+  color: #0a66c2;
+}
+
+/* Native select kept in the DOM for its value, hidden visually */
+.join-platform-select {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: none;
+  background: transparent;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.join-platform-label {
+  flex: 1 1 auto;
+  font-size: 13px;
+  font-weight: 600;
+  color: #4a4a4a;
+  text-align: start;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.join-platform-caret {
+  position: absolute;
+  inset-inline-end: 11px;
+  font-size: 11px;
+  color: #8a8a8a;
+  pointer-events: none;
+  transition: transform 0.2s ease;
+}
+
+.join-platform.is-open .join-platform-caret {
+  transform: rotate(180deg);
+}
+
+/* Custom dropdown menu */
+.join-platform-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 6px;
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.13);
+  max-height: 280px;
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition:
+    opacity 0.16s ease,
+    transform 0.16s ease,
+    visibility 0.16s;
+}
+
+.join-platform.is-open .join-platform-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.join-platform-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 9px 10px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  text-align: start;
+  cursor: pointer;
+  transition:
+    background 0.14s ease,
+    color 0.14s ease;
+}
+
+.join-platform-option:hover,
+.join-platform-option.is-active {
+  background: #f4f6f0;
+  color: #4a5738;
+}
+
+.join-platform-option.is-selected {
+  background: #f0f3ea;
+  color: #4a5738;
+}
+
+.join-platform-option-icon {
+  flex: 0 0 auto;
+  width: 18px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.join-platform-option[data-value="instagram"] .join-platform-option-icon {
+  color: #e4405f;
+}
+.join-platform-option[data-value="facebook"] .join-platform-option-icon {
+  color: #1877f2;
+}
+.join-platform-option[data-value="x"] .join-platform-option-icon {
+  color: #111;
+}
+.join-platform-option[data-value="tiktok"] .join-platform-option-icon {
+  color: #111;
+}
+.join-platform-option[data-value="youtube"] .join-platform-option-icon {
+  color: #ff0000;
+}
+.join-platform-option[data-value="linkedin"] .join-platform-option-icon {
+  color: #0a66c2;
+}
+
+.join-platform-option-label {
+  flex: 1 1 auto;
+}
+
+.join-platform-option-check {
+  flex: 0 0 auto;
+  font-size: 12px;
+  color: #4a5738;
+  opacity: 0;
+}
+
+.join-platform-option.is-selected .join-platform-option-check {
+  opacity: 1;
+}
+
+.join-link-wrap {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.join-row-del {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 20px;
+  background: transparent;
+  color: #e05252;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.18s ease;
+}
+
+.join-row-del:hover {
+  background: rgba(224, 82, 82, 0.1);
+}
+
+.join-add-platform {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 8px 16px;
+  border: 1px solid #4a5738;
+  border-radius: 20px;
+  background: #fff;
+  color: #4a5738;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.join-add-platform:hover {
+  background: #4a5738;
+  color: #fff;
+}
+
+/* ---------- Success pane ---------- */
+.join-success {
+  text-align: center;
+  padding: 26px 10px;
+}
+
+.join-success-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(76, 92, 55, 0.12);
+  color: #4a5738;
+  font-size: 28px;
+}
+
+.join-success-title {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #3a4a2a;
+}
+
+.join-success-text {
+  margin: 0;
+  font-size: 14px;
+  color: #6d6d6d;
+}
+
+/* ---------- Footer ---------- */
+.join-modal-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 26px 20px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.join-btn {
+  min-width: 96px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 24px;
+  background: #4a5738;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.join-btn:hover {
+  background: #38422a;
+}
+
+.join-btn-ghost {
+  padding: 10px 6px;
+  border: none;
+  background: transparent;
+  color: #7a7a7a;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.join-btn-ghost:hover {
+  color: #3a4a2a;
+}
+
+.join-dots {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border-radius: 12px;
+  border: 1px solid #4c5c37;
+  padding: 5px 10px;
+}
+
+.join-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d7d7d7;
+  transition: all 0.22s ease;
+}
+
+.join-dot.is-active {
+  border-radius: 4px;
+  background: #4a5738;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 575.98px) {
+  .join-modal-overlay {
+    padding: 0;
+    align-items: flex-end;
+  }
+
+  .join-modal {
+    max-width: 100%;
+    max-height: 94vh;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .join-modal-head {
+    padding: 18px 20px 16px;
+  }
+
+  .join-modal-title {
+    font-size: 20px;
+  }
+
+  .join-modal-subtitle {
+    font-size: 12.5px;
+  }
+
+  .join-stepper {
+    padding: 16px 10px 4px;
+    gap: 2px;
+  }
+
+  .join-step {
+    width: 82px;
+  }
+
+  .join-step-circle {
+    width: 24px;
+    height: 24px;
+    font-size: 11px;
+  }
+
+  .join-step-label {
+    font-size: 10.5px;
+  }
+
+  .join-step-line {
+    min-width: 10px;
+    max-width: 34px;
+    margin-top: 11px;
+  }
+
+  .join-modal-body {
+    padding: 12px 18px 18px;
+  }
+
+  .join-modal-foot {
+    padding: 14px 18px 16px;
+  }
+
+  .join-social-row {
+    gap: 6px;
+  }
+
+  .join-platform {
+    min-width: 122px;
+    height: 44px;
+    padding-inline-start: 10px;
+    padding-inline-end: 26px;
+  }
+
+  .join-platform-label {
+    font-size: 12px;
+  }
+
+  .join-platform-option {
+    font-size: 12px;
+  }
+
+  .join-row-del {
+    width: 34px;
+    height: 34px;
+    font-size: 15px;
+  }
+
+  .join-btn {
+    min-width: 84px;
+    padding: 10px 18px;
+  }
+}
+
+@media (max-width: 359.98px) {
+  .join-step-label {
+    font-size: 9.5px;
+  }
+
+  .join-step-line {
+    max-width: 18px;
+  }
 }
