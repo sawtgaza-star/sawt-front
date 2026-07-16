@@ -27,6 +27,7 @@ const translations = {
     nav_incubator: "حاضنة صوت",
     nav_media: "صوت ميديا",
     search_placeholder: "ابحث هنا...",
+    search_not_found: "لا توجد نتائج في هذه الصفحة",
 
     // Hero
     hero_title: "منصة صوت",
@@ -451,6 +452,7 @@ const translations = {
     nav_incubator: "Sawt Incubator",
     nav_media: "Sawt Media",
     search_placeholder: "Search here...",
+    search_not_found: "No results on this page",
     one_thousand: "K",
     // Hero
     hero_title: "Sawt Platform",
