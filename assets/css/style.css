@@ -3612,11 +3612,6 @@ svg {
   transform: rotate(205deg) scaleY(-1);
 }
 
-.branch-left-top-content-section {
-  top: 78%;
-  left: -165px;
-  transform: rotate(216deg) scaleY(-1);
-}
 
 .team-section .branch-left-top {
   top: 75% !important;
