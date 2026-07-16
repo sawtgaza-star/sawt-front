@@ -50,21 +50,32 @@ document.addEventListener("DOMContentLoaded", () => {
   const counters = document.querySelectorAll(".counter");
 
   counters.forEach((element) => {
-    const targetText = element.innerText;
-    const targetNumber = parseInt(targetText.replace(/[^0-9]/g, ""));
-    const suffix = targetText.replace(/[0-9]/g, "");
+    // نبحث عن العقدة النصية التي تحتوي على الرقم، حتى لا نمسح أي عنصر
+    // فرعي مثل span الخاص بكلمة "ألف"
+    const textNode = [...element.childNodes].find(
+      (node) => node.nodeType === Node.TEXT_NODE && /\d/.test(node.nodeValue)
+    );
+    if (!textNode) return;
+
+    // نفصل ما قبل الرقم (مثل "+") والرقم وما بعده لنحافظ على مكان كل جزء
+    const match = textNode.nodeValue.match(/(\D*)(\d+)(\D*)/);
+    if (!match) return;
+
+    const prefix = match[1];
+    const targetNumber = parseInt(match[2], 10);
+    const suffix = match[3];
 
     let currentNumber = 0;
     const duration = 2000;
-    const stepTime = Math.abs(Math.floor(duration / targetNumber));
+    const stepTime = Math.max(Math.floor(duration / targetNumber), 20);
 
     const timer = setInterval(() => {
       currentNumber += 1;
-      element.innerText = currentNumber + suffix;
-
       if (currentNumber >= targetNumber) {
+        currentNumber = targetNumber;
         clearInterval(timer);
       }
+      textNode.nodeValue = prefix + currentNumber + suffix;
     }, stepTime);
   });
 });
