@@ -7426,6 +7426,7 @@ svg {
     margin: 0;
     font-size: 13px;
     white-space: nowrap;
+    color: white !important;
   }
 }
 
